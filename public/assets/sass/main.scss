@@ -12,7 +12,7 @@ h1, h2, h3 {
 	font-weight: 700;
 }
 
-p {
+p, a {
 	font-family: $lato;
 	font-weight: 400;
 }
@@ -172,6 +172,24 @@ img {
 		padding-bottom: 5px;
 	}
 }
+
+.buildTile {
+	#{$a-tags} {
+		color: gray;
+		font-weight: 400;
+		text-decoration: none;
+
+		}
+	#{$a-tags-hover} {
+		color: #cecece;
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
+
+.sideNav {
+	background: #e5e5e5;
+}
 // =========END Unique Classes END===========
 
 // =========IDs=========
@@ -207,5 +225,11 @@ img {
 			line-height: 35px;
 		}
 	}
+}
+
+@media (min-width: 768px) {
+    .bootstrap-vertical-nav .collapse {
+        display: block;
+    }
 }
 // =========END Medias END=========
