@@ -133,7 +133,12 @@ img {
   font-weight: 700; }
 
 .sideNav {
-  background: #e5e5e5; }
+  background: #e5e5e5;
+  padding-top: 20px; }
+
+#collapseExample h3 {
+  font-size: 20px;
+  margin-top: 10px; }
 
 #navbarLogo {
   height: 30px;
