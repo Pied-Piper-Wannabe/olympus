@@ -12,7 +12,7 @@ class CreateRamTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('ram' function(Blueprint $table){
+		Schema::create('ram', function(Blueprint $table){
 			$table->
 		});
 	}

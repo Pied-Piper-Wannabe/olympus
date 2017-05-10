@@ -12,7 +12,7 @@ class CreateSliTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('sli' function(Blueprint $table){
+		Schema::create('sli', function(Blueprint $table){
 			$table->
 		});
 	}
