@@ -12,7 +12,11 @@ class CreateMotherboardTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('motherboard', function(Blueprint $table){
+            $table->string('partname');
+            $table->decimal('price', 5, 2);
+            $table->
+        });
     }
 
     /**
