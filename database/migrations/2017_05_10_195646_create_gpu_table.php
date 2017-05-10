@@ -12,7 +12,7 @@ class CreateGpuTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('gpu' function(Blueprint $table){
+		Schema::create('gpu', function(Blueprint $table){
 			$table->
 		});
 	}
