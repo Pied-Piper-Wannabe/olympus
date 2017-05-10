@@ -16,7 +16,7 @@
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="/">
 				<img src="/images/mountainLogo.png" id="navbarLogo" class="d-inline-block align-top" alt="">
 				olympus</a>
 			<div class="collapse navbar-collapse justify-content-stretch" id="navbarNavDropdown">
@@ -27,7 +27,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="#">Start Your Build</a>
-							<a class="dropdown-item" href="#">View Builds</a>
+							<a class="dropdown-item" href="/builds">View Builds</a>
 							<a class="dropdown-item" href="#">Recommended Builds</a>
 						</div>
 					</li>
@@ -54,11 +54,9 @@
 			</div>
 		</nav>
 
-	
-
 	@yield('content')
 	<!-- Footer -->
-		<div class="footer topMarginSm">
+		<div class="footer">
 			<div class="container-fluid">
 				<div class="row topPaddingSm">
 					<div class="col-md-3 col-sm-12 offset-sm-0">

@@ -33,6 +33,9 @@ img {
 .topMarginSm {
   margin-top: 20px; }
 
+.botMarginSm {
+  margin-bottom: 20px; }
+
 .btn-black, .btn-black:hover {
   border: 1px solid black;
   color: black; }
@@ -136,13 +139,31 @@ img {
   background: #e5e5e5;
   padding-top: 20px; }
 
-#collapseExample h3 {
-  font-size: 20px;
-  margin-top: 10px; }
+.imageBox {
+  position: relative; }
+
+.votesBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: gray;
+  opacity: .7; }
+  .votesBox p {
+    opacity: 1;
+    margin: 0; }
 
 #navbarLogo {
   height: 30px;
   width: auto; }
+
+#filterDropdown {
+  float: right; }
+
+#collapseExample h3 {
+  font-size: 20px;
+  margin-top: 10px; }
 
 @media (max-width: 576px) {
   .fpCoverText {
