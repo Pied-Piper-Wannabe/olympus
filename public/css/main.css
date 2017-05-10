@@ -1,6 +1,10 @@
 h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700; }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
 
 .centerText {
   text-align: center; }
@@ -26,6 +30,17 @@ img {
 .topPaddingSm {
   padding-top: 20px; }
 
+.topMarginSm {
+  margin-top: 20px; }
+
+.btn-black, .btn-black:hover {
+  border: 1px solid black;
+  color: black; }
+
+.btn-black:hover {
+  background: black;
+  color: white; }
+
 .fpCover {
   height: 100%;
   width: 100%;
@@ -46,24 +61,29 @@ img {
   text-align: center; }
   .fpCoverText h1 {
     font-size: 80px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 700; }
   .fpCoverText h2 {
     font-size: 50px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300; }
 
+.navbar {
+  padding: 1rem 1rem; }
+
 .navbar-brand {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300; }
 
 .footer {
   width: 100%;
   background: #5b5b5b; }
   .footer p, .footer li {
-    color: #cecece; }
+    color: #cecece;
+    font-weight: 300;
+    font-size: 20px; }
   .footer p {
-    line-height: 50px; }
+    line-height: 57px; }
   .footer ul {
     list-style-type: none;
     padding: 0; }
@@ -71,7 +91,9 @@ img {
     margin-top: 25px;
     text-decoration: none; }
     .footer li a, .footer li a:active, .footer li a:hover, .footer li a:visited {
+      font-family: "Lato", sans-serif;
       color: #cecece;
+      font-weight: 300;
       text-decoration: none; }
     .footer li a:active, .footer li a:hover {
       color: gray;
@@ -83,8 +105,41 @@ img {
   .footer img {
     max-width: 275px; }
 
+.footerNote {
+  text-align: center; }
+  .footerNote p {
+    color: gray;
+    font-size: 15px;
+    margin: 0; }
+
+.buildBanner {
+  text-align: center;
+  background: black; }
+  .buildBanner h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+
 #navbarLogo {
   height: 30px;
   width: auto; }
+
+@media (max-width: 576px) {
+  .fpCoverText {
+    width: 250px;
+    height: 110px; }
+    .fpCoverText h1 {
+      font-size: 60px;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    .fpCoverText h2 {
+      font-size: 40px;
+      font-family: "Lato", sans-serif;
+      font-weight: 300; } }
+@media (max-width: 1100px) {
+  .footer p {
+    line-height: 35px; } }
 
 /*# sourceMappingURL=main.css.map */
