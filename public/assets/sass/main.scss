@@ -1,14 +1,48 @@
 //Lato Font sizes: 300, 400, 700
 
+// Variables
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+// ==========END Variables END===========
+
 // =========General Text Attributes========
+h1, h2, h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
 .centerText {
 	text-align: center;
+}
+
+.forceWrap {
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
 }
 // =========END General Text Attributes END=======
 
 // =========Sizing Attributes==========
+img {
+	width: 100%;
+	height: auto;
+}
 .container {
 	margin-top: 40px;
+}
+
+.topPaddingSm {
+	padding-top: 20px;
 }
 // =========END Sizing Attributes END==========
 
@@ -47,6 +81,44 @@
 .navbar-brand {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+}
+
+.footer {
+	width: 100%;
+	background: #5b5b5b;
+	
+	p, li {
+		color: #cecece;
+	}
+	p {
+		line-height: 50px;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li {
+		margin-top: 25px;
+		text-decoration: none;
+
+		#{$a-tags} {
+		color: #cecece;
+		text-decoration: none;
+
+		}
+		#{$a-tags-hover} {
+			color: gray;
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+	h3 {
+		color: white;
+		font-size: 20px;
+	}
+	img {
+		max-width: 275px;
+	}
 }
 // =========END Unique Classes END===========
 
