@@ -21,7 +21,12 @@
 				<h3>Olympian - SubName</h3>
 			</div>
 			<div class="buildTile">
-				<img src="/images/uploads/04.jpg" alt="04">
+				<div class="imageBox">
+					<div class="votesBox">
+						<p class="votes">1200</p>
+					</div>
+					<img src="/images/uploads/04.jpg" alt="04">
+				</div>
 				<h3>ABS Intel-Watercooling PS</h3>
 				<p>By: <a href="#">KillerGamer12</a></p>
 			</div>
@@ -31,7 +36,12 @@
 				<h3>Titan - SubName</h3>
 			</div>
 			<div class="buildTile">
-				<img src="/images/uploads/02.jpg" alt="02">
+				<div class="imageBox">
+					<div class="votesBox">
+						<p class="votes">1200</p>
+					</div>
+					<img src="/images/uploads/02.jpg" alt="02">
+				</div>
 				<h3>CryEngine Workstation V3</h3>
 				<p>By: <a href="#">PCGOD101</a></p>
 			</div>
@@ -41,7 +51,12 @@
 				<h3>Olympian - SubName</h3>
 			</div>
 			<div class="buildTile">
-				<img src="/images/uploads/03.jpg" alt="03">
+				<div class="imageBox">
+					<div class="votesBox">
+						<p class="votes">1200</p>
+					</div>
+					<img src="/images/uploads/03.jpg" alt="03">
+				</div>
 				<h3>That Contrast Tho</h3>
 				<p>By: <a href="#">IDoThisForALivingGuys</a></p>
 			</div>
@@ -51,15 +66,20 @@
 				<h3>Demigod - SubName</h3>
 			</div>
 			<div class="buildTile">
-				<img src="/images/uploads/01.jpg" alt="01">
+				<div class="imageBox">
+					<div class="votesBox">
+						<p class="votes">1200</p>
+					</div>
+					<img src="/images/uploads/01.jpg" alt="01">
+				</div>
 				<h3>Compact i3 w/Mech</h3>
 				<p>By: <a href="#">LinuxMasterRace</a></p>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12 centerText">
-			<button type="button" class="btn btn-outline-primary btn-black">View More</button>
+		<div class="col-sm-12 centerText botMarginSm">
+			<a class="btn btn-outline-primary btn-black" href="/builds" role="button">View More</a>
 		</div>
 	</div>
 </div>
