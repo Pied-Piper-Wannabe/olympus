@@ -1,0 +1,42 @@
+.centerText {
+  text-align: center; }
+
+.container {
+  margin-top: 40px; }
+
+.fpCover {
+  height: 100%;
+  width: 100%;
+  background: url(/images/fpCover.jpg) center center;
+  background-repeat: none;
+  background-size: cover; }
+
+.fpCoverText {
+  position: absolute;
+  width: 340px;
+  height: 150px;
+  color: white;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center; }
+  .fpCoverText h1 {
+    font-size: 80px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; }
+  .fpCoverText h2 {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; }
+
+.navbar-brand {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+#navbarLogo {
+  height: 30px;
+  width: auto; }
+
+/*# sourceMappingURL=main.css.map */

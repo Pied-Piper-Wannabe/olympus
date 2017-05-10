@@ -4,6 +4,7 @@
 		<title>Laravel</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/css/app.css">
 
 		<style>
 			html, body {
@@ -38,7 +39,9 @@
 	<body>
 		<div class="container">
 			<div class="content">
+			<button type="button" class="btn btn-primary">Primary</button>
 				<div class="title">Laravel 5</div>
+
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
