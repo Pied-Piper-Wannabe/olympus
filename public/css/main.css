@@ -2,7 +2,7 @@ h1, h2, h3 {
   font-family: "Lato", sans-serif;
   font-weight: 700; }
 
-p {
+p, a {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
 
@@ -32,6 +32,9 @@ img {
 
 .topMarginSm {
   margin-top: 20px; }
+
+.botMarginSm {
+  margin-bottom: 20px; }
 
 .btn-black, .btn-black:hover {
   border: 1px solid black;
@@ -122,9 +125,45 @@ img {
     padding-top: 5px;
     padding-bottom: 5px; }
 
+.buildTile a, .buildTile a:active, .buildTile a:hover, .buildTile a:visited {
+  color: gray;
+  font-weight: 400;
+  text-decoration: none; }
+
+.buildTile a:active, .buildTile a:hover {
+  color: #cecece;
+  text-decoration: none;
+  font-weight: 700; }
+
+.sideNav {
+  background: #e5e5e5;
+  padding-top: 20px; }
+
+.imageBox {
+  position: relative; }
+
+.votesBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: gray;
+  opacity: .7; }
+  .votesBox p {
+    opacity: 1;
+    margin: 0; }
+
 #navbarLogo {
   height: 30px;
   width: auto; }
+
+#filterDropdown {
+  float: right; }
+
+#collapseExample h3 {
+  font-size: 20px;
+  margin-top: 10px; }
 
 @media (max-width: 576px) {
   .fpCoverText {
@@ -138,8 +177,11 @@ img {
       font-size: 40px;
       font-family: "Lato", sans-serif;
       font-weight: 300; } }
+
 @media (max-width: 1100px) {
   .footer p {
     line-height: 35px; } }
 
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 768px) {
+  .bootstrap-vertical-nav .collapse {
+    display: block; } }
