@@ -5,3 +5,4 @@ Homestead.json
 .env
 .sass-cache/
 *.log
+*.codekit3
