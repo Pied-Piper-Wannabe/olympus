@@ -61,6 +61,10 @@ img {
 // =========END Sizing Attributes END==========
 
 // =========Buttons===========
+button, .btn {
+	border-radius: 0;
+}
+
 .btn-black {
 	border: 1px solid black;
 	color: black;
@@ -70,6 +74,19 @@ img {
 	@extend .btn-black;
 	background: black;
 	color: white;
+}
+
+.btn-black:active {
+	background: gray;
+}
+
+.btn-black:focus {
+	box-shadow: 0 0 0 2px rgba(208, 208, 208, 0.5);
+}
+
+.show > .btn-outline-primary.dropdown-toggle {
+	background: gray;
+	border-color: gray;
 }
 // =========END Buttons END===========
 

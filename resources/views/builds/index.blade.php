@@ -70,6 +70,7 @@
 				      AMD
 				    </label>
 				  </div>
+				  <button type="submit" class="btn btn-block btn-outline-primary btn-black">Submit</button>
 				</div>
 			</div>
 		</div>
