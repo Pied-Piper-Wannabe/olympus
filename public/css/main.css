@@ -167,6 +167,14 @@ button, .btn {
     opacity: 1;
     margin: 0; }
 
+.border {
+  border: 1px solid black; }
+
+.table {
+  margin-top: 40px; }
+  .table .btn {
+    color: white; }
+
 .parallax {
   position: relative;
   /* The image used */
@@ -201,6 +209,9 @@ button, .btn {
 #collapseExample h3 {
   font-size: 20px;
   margin-top: 10px; }
+
+#tourBox p {
+  margin: 10px; }
 
 @media (max-width: 576px) {
   .fpCoverText {
