@@ -168,8 +168,9 @@ button, .btn {
     margin: 0; }
 
 .parallax {
+  position: relative;
   /* The image used */
-  background-image: url("../images/buildPC.jpg");
+  background-image: url("../images/createCover.jpeg");
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effect */
@@ -177,6 +178,18 @@ button, .btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.createCoverText h1 {
+  position: absolute;
+  margin: auto;
+  color: white;
+  font-size: 60px;
+  width: 375px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 #navbarLogo {
   height: 30px;
@@ -200,7 +213,11 @@ button, .btn {
     .fpCoverText h2 {
       font-size: 40px;
       font-family: "Lato", sans-serif;
-      font-weight: 300; } }
+      font-weight: 300; }
+  .createCoverText h1 {
+    font-size: 50px;
+    width: 307px;
+    height: 60px; } }
 
 @media (max-width: 1100px) {
   .footer p {

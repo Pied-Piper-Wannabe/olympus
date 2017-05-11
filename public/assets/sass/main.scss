@@ -235,8 +235,9 @@ button, .btn {
 
 // ==========Parallax==============
 .parallax { 
+	position: relative;
   /* The image used */
-  background-image: url("../images/buildPC.jpg");
+  background-image: url("../images/createCover.jpeg");
 
   /* Set a specific height */
   height: 500px; 
@@ -246,6 +247,21 @@ button, .btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.createCoverText {
+	h1 {
+		position: absolute;
+		margin: auto;
+		color: white;
+		font-size: 60px;
+		width: 375px;
+		height: 60px;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 }
 // ==========Parallax==============
 
@@ -281,6 +297,14 @@ button, .btn {
 			font-size: 40px;
 			font-family: $lato;
 			font-weight: 300;
+		}
+	}
+
+	.createCoverText {
+		h1 {
+			font-size: 50px;
+			width: 307px;
+			height: 60px;
 		}
 	}
 }
