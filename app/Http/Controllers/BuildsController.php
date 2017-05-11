@@ -26,7 +26,7 @@ class BuildsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -48,7 +48,7 @@ class BuildsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('builds/show');
     }
 
     /**
