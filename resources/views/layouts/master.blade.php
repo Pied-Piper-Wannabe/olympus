@@ -26,7 +26,7 @@
 							BUILD
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Start Your Build</a>
+							<a class="dropdown-item" href="/builds/create">Start Your Build</a>
 							<a class="dropdown-item" href="/builds">View Builds</a>
 							<a class="dropdown-item" href="#">Recommended Builds</a>
 						</div>

@@ -167,6 +167,17 @@ button, .btn {
     opacity: 1;
     margin: 0; }
 
+.parallax {
+  /* The image used */
+  background-image: url("../images/buildPC.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 #navbarLogo {
   height: 30px;
   width: auto; }
@@ -198,3 +209,7 @@ button, .btn {
 @media (min-width: 768px) {
   .bootstrap-vertical-nav .collapse {
     display: block; } }
+
+@media (max-width: 768px) {
+  .sideNav {
+    padding: 0px; } }
