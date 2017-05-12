@@ -6,10 +6,10 @@
 	<!-- Sidebar Menu/Filter Menu -->
 		<div class="col-md-4 col-lg-3 sideNav">
 			<div class="bootstrap-vertical-nav">
-				<button class="btn btn-outline-primary btn-black hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				<button class="btn btn-block btn-outline-primary btn-black hidden-md-up" id="filterBtn" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseExample">
 					<span class="">Filter</span>
 				</button>
-				<div class="collapse" id="collapseExample">
+				<div class="collapse" id="collapseFilter">
 					<h2 class="centerText">Filter</h2>
 
 					<!-- Tier Checks -->
