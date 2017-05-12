@@ -12,26 +12,6 @@
         <div class="collapse" id="collapseFilter">
           <h2 class="centerText">Filter</h2>
 
-          <!-- Tier Checks -->
-          <h3>Tier</h3>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              Titan
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              Olympian
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              Demigod
-            </label>
-          </div>
 
           <!-- Price -->
           <h3>Price: </h3>
@@ -78,7 +58,7 @@
     <div class="col-md-8 col-lg-9 topMarginSm">
       <div class="row">
         <div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-          <h2 class="centerText">All Builds</h2>
+          <h2 class="centerText">CPU</h2>
         </div>
       </div>
       <div class="row justify-content-end">
@@ -109,12 +89,12 @@
       <div class="buildTile">
         <div class="imageBox">
           <div class="votesBox">
-            <p class="votes">1200</p>
+            <p class="votes">5/5 Stars</p>
           </div>
           <img src="/images/uploads/04.jpg" alt="04">
         </div>
         <h3>ABS Intel-Watercooling PS</h3>
-        <p>By: <a href="#">KillerGamer12</a></p>
+        <p>By: <a href="#">KillerGamer12</a><span class="floatRight">$300</span></p>
       </div>
     </div>
     <div class="col-md-6 col-sm-12">
@@ -124,12 +104,12 @@
       <div class="buildTile">
         <div class="imageBox">
           <div class="votesBox">
-            <p class="votes">1200</p>
+            <p class="votes">5/5 Stars</p>
           </div>
           <img src="/images/uploads/02.jpg" alt="02">
         </div>
         <h3>CryEngine Workstation V3</h3>
-        <p>By: <a href="#">PCGOD101</a></p>
+        <p>By: <a href="#">PCGOD101</a><span class="floatRight">$300</span></p>
       </div>
     </div>
     <div class="col-md-6 col-sm-12">
@@ -139,12 +119,12 @@
       <div class="buildTile">
         <div class="imageBox">
           <div class="votesBox">
-            <p class="votes">1200</p>
+            <p class="votes">5/5 Stars</p>
           </div>
           <img src="/images/uploads/03.jpg" alt="03">
         </div>
         <h3>That Contrast Tho</h3>
-        <p>By: <a href="#">IDoThisForALivingGuys</a></p>
+        <p>By: <a href="#">IDoThisForALivingGuys</a><span class="floatRight">$300</span></p>
       </div>
     </div>
     <div class="col-md-6 col-sm-12">
@@ -154,12 +134,12 @@
       <div class="buildTile">
         <div class="imageBox">
           <div class="votesBox">
-            <p class="votes">1200</p>
+            <p class="votes">5/5 Stars</p>
           </div>
           <img src="/images/uploads/01.jpg" alt="01">
         </div>
         <h3>Compact i3 w/Mech</h3>
-        <p>By: <a href="#">LinuxMasterRace</a></p>
+        <p>By: <a href="#">LinuxMasterRace</a><span class="floatRight">$300</span></p>
       </div>
     </div>
     <div class="col-sm-12 centerText botMarginSm">
