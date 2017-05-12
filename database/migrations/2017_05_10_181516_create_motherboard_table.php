@@ -31,7 +31,6 @@ class CreateMotherboardTable extends Migration
 			$table->string('rear_panel_ports');
 			$table->string('io_connectors');
 			$table->string('form_factor');
-			$table->
 		});
 	}
 
