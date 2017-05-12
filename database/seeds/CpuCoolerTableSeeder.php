@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class GpuTableSeeder extends Seeder
+class CpuCoolerTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

@@ -5,7 +5,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class MoboTableSeeder extends Seeder
+class PsuTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
