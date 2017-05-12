@@ -39,6 +39,9 @@ img {
 .botMarginSm {
   margin-bottom: 20px; }
 
+.floatRight {
+  float: right; }
+
 button, .btn {
   border-radius: 0; }
 
@@ -67,7 +70,7 @@ button, .btn {
   background-repeat: none;
   background-size: cover; }
 
-.fpCoverText {
+.fpCoverText, #accountCover {
   position: absolute;
   width: 340px;
   height: 150px;
@@ -78,11 +81,11 @@ button, .btn {
   left: 0;
   bottom: 0;
   text-align: center; }
-  .fpCoverText h1 {
+  .fpCoverText h1, #accountCover h1 {
     font-size: 80px;
     font-family: "Lato", sans-serif;
     font-weight: 700; }
-  .fpCoverText h2 {
+  .fpCoverText h2, #accountCover h2 {
     font-size: 50px;
     font-family: "Lato", sans-serif;
     font-weight: 300; }
@@ -173,10 +176,25 @@ button, .btn {
 .border {
   border: 1px solid black; }
 
+.blueBorder {
+  box-shadow: 0 0 5px #51cbee;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #51cbee;
+  background: #213351; }
+
 .table {
   margin-top: 40px; }
   .table .btn {
     color: white; }
+
+.signupForm label {
+  color: white; }
+
+.signupForm .inverseInput {
+  opacity: .5;
+  color: white;
+  background: gray; }
 
 .parallax {
   position: relative;
@@ -202,6 +220,13 @@ button, .btn {
   right: 0;
   bottom: 0; }
 
+.blackBackground {
+  background: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
 #navbarLogo {
   height: 30px;
   width: auto; }
@@ -216,15 +241,31 @@ button, .btn {
 #tourBox p {
   margin: 10px; }
 
+#createAccountVideo {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden; }
+  #createAccountVideo video {
+    min-width: 100%;
+    min-height: 100%; }
+
+#accountCover {
+  width: 585px;
+  height: 125px; }
+  #accountCover h1 {
+    font-size: 150px;
+    opacity: .3; }
+
 @media (max-width: 576px) {
-  .fpCoverText {
+  .fpCoverText, #accountCover {
     width: 250px;
     height: 110px; }
-    .fpCoverText h1 {
+    .fpCoverText h1, #accountCover h1 {
       font-size: 60px;
       font-family: "Lato", sans-serif;
       font-weight: 700; }
-    .fpCoverText h2 {
+    .fpCoverText h2, #accountCover h2 {
       font-size: 40px;
       font-family: "Lato", sans-serif;
       font-weight: 300; }
