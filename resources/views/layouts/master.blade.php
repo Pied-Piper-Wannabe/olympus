@@ -36,9 +36,17 @@
 							SHOP
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">New Parts</a>
-							<a class="dropdown-item" href="#">Used Parts</a>
-							<a class="dropdown-item" href="#">Builds</a>
+							<a class="dropdown-item" href="/parts">CPU</a>
+							<a class="dropdown-item" href="/parts">CPU Cooler</a>
+							<a class="dropdown-item" href="/parts">Motherboard</a>
+							<a class="dropdown-item" href="/parts">Memory</a>
+							<a class="dropdown-item" href="/parts">Storage</a>
+							<a class="dropdown-item" href="/parts">GPU</a>
+							<a class="dropdown-item" href="/parts">Case</a>
+							<a class="dropdown-item" href="/parts">Power Supply</a>
+							<a class="dropdown-item" href="/parts">Optical Drive</a>
+							<a class="dropdown-item" href="/parts">Operating System</a>
+							<a class="dropdown-item" href="/parts">Misc</a>
 						</div>
 					</li>
 					<li class="nav-item">
@@ -48,7 +56,7 @@
 						<a class="nav-link" href="#">BLOG</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">LOGIN/REGISTER</a>
+						<a class="nav-link" href="/login">LOGIN/REGISTER</a>
 					</li>
 				</ul>
 			</div>

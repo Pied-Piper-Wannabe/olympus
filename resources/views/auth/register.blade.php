@@ -34,7 +34,7 @@
 					<input type="password" class="form-control inverseInput" id="Pverifyassword" placeholder="Password">
 				</div>
 				<button type="submit" class="btn btn-primary">Signup</button>
-				<a href="#" class="btn btn-primary floatRight">Go to login</a>
+				<a href="/login" class="btn btn-primary floatRight">Go to login</a>
 			</form>
 		</div>
 	</div>

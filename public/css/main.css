@@ -148,7 +148,6 @@ button, .btn {
   color: gray;
   font-weight: 400;
   text-decoration: none; }
-
 .buildTile a:active, .buildTile a:hover {
   color: #cecece;
   text-decoration: none;
@@ -190,11 +189,15 @@ button, .btn {
 
 .signupForm label {
   color: white; }
-
 .signupForm .inverseInput {
   opacity: .5;
   color: white;
   background: gray; }
+
+.userInfo {
+  text-align: center; }
+  .userInfo img {
+    width: 200px; }
 
 .parallax {
   position: relative;
@@ -269,19 +272,19 @@ button, .btn {
       font-size: 40px;
       font-family: "Lato", sans-serif;
       font-weight: 300; }
+
   .createCoverText h1 {
     font-size: 50px;
     width: 307px;
     height: 60px; } }
-
 @media (max-width: 1100px) {
   .footer p {
     line-height: 35px; } }
-
 @media (min-width: 768px) {
   .bootstrap-vertical-nav .collapse {
     display: block; } }
-
 @media (max-width: 768px) {
   .sideNav {
     padding: 0px; } }
+
+/*# sourceMappingURL=main.css.map */
