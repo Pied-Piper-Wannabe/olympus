@@ -36,9 +36,9 @@
 							SHOP
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">New Parts</a>
-							<a class="dropdown-item" href="#">Used Parts</a>
-							<a class="dropdown-item" href="#">Builds</a>
+							<a class="dropdown-item" href="/parts">New Parts</a>
+							<a class="dropdown-item" href="/parts">Used Parts</a>
+							<a class="dropdown-item" href="/parts">Builds</a>
 						</div>
 					</li>
 					<li class="nav-item">
