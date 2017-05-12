@@ -81,6 +81,9 @@
 				</tbody>
 			</table>
 		</div>
+		<div class="col-sm-12 rightText">
+			<h4>Total: $0.00</h4>
+		</div>
 	</div>
 </div>
 
