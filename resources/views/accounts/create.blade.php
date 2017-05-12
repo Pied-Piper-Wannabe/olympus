@@ -1,0 +1,44 @@
+@extends('layouts.dark')
+
+@section('content')
+<div id="createAccountVideo">
+	<video autoplay muted loop>
+	<source src="/assets/videos/createAccountVideo.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+	<div id="accountCover">
+		<h1>SIGN UP</h1>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row botMarginSm">
+		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+			<form class="signupForm">
+				<div class="form-group">
+					<label for="email">Email address</label>
+					<input type="email" class="form-control inverseInput" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="name">Username</label>
+					<input type="text" class="form-control inverseInput" id="name" placeholder="Enter username">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control inverseInput" id="password" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="verifyPassword">Verify Password</label>
+					<input type="password" class="form-control inverseInput" id="Pverifyassword" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-primary">Signup</button>
+				<a href="#" class="btn btn-primary floatRight">Go to login</a>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+@stop
