@@ -194,10 +194,8 @@ button, .btn {
   color: white;
   background: gray; }
 
-.userInfo {
-  text-align: center; }
-  .userInfo img {
-    width: 200px; }
+.userPhoto img {
+  width: 200px; }
 
 .parallax {
   position: relative;
