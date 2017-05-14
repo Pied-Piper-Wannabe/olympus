@@ -4,6 +4,7 @@
 <div id="createAccountVideo">
 	<video autoplay muted loop>
 	<source src="/assets/videos/createAccountVideo.mp4" type="video/mp4">
+	<source src="/assets/videos/createAccountVideo.webm" type="video/webm">
 	Your browser does not support the video tag.
 	</video>
 	<div id="accountCover">
