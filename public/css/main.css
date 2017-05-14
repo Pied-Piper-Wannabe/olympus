@@ -23,6 +23,9 @@ p, a {
   -webkit-hyphens: auto;
   hyphens: auto; }
 
+.bold {
+  font-weight: 700; }
+
 img {
   width: 100%;
   height: auto; }
@@ -41,6 +44,9 @@ img {
 
 .floatRight {
   float: right; }
+
+.boxGridPadding {
+  padding: 20px; }
 
 button, .btn {
   border-radius: 0; }
