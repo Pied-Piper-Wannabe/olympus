@@ -40,6 +40,10 @@ p, a {
 	hyphens: auto;
 
 }
+
+.bold {
+	font-weight: 700;
+}
 // =========END General Text Attributes END=======
 
 // =========Sizing Attributes==========
@@ -65,6 +69,10 @@ img {
 
 .floatRight {
 	float: right;
+}
+
+.boxGridPadding {
+	padding: 20px;
 }
 // =========END Sizing Attributes END==========
 
