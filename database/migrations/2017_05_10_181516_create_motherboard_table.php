@@ -17,21 +17,24 @@ class CreateMotherboardTable extends Migration
 			$table->string('model');
 			$table->string('brand');
 			$table->string('manufacturer');
-			$table->string('cpu_socket_type');
+			$table->string('cpu_socket');
 			$table->string('cpu_type');
-			$table->string('supported_cpu_technology');
 			$table->string('chipset');
 			$table->string('onboard_gpu');
-			$table->string('onboard_audio');
 			$table->string('onboard_audio');
 			$table->integer('memory_slot_number');
 			$table->integer('max_memory');
 			$table->string('supported_memory');
 			$table->string('expansion_slots');
+			//-----sata-------
 			$table->string('storage_devices');
+			// --------------
 			$table->string('rear_panel_ports');
-			$table->string('io_connectors');
+			$table->string('ethernet');
 			$table->string('form_factor');
+			$table->string('raid_support');
+			$table->string('crossfire_support');
+			$table->string('sli_support');
 		});
 	}
 

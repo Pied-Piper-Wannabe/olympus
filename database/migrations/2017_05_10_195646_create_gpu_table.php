@@ -13,26 +13,26 @@ class CreateGpuTable extends Migration
 	public function up()
 	{
 		Schema::create('gpu', function(Blueprint $table){
+			$table->integer('part_id');
 			$table->string('model');
 			$table->string('brand');
+			// --------------COMP CHECK--------
 			$table->string('interface');
-			$table->string('manufacturer');
+			$table->integer('wattage');
+			// -----------COMP CHECK--------
 			$table->integer('core_clock');
 			$table->integer('boost_clock');
-			$table->integer('cuda_cores');
+			$table->integer('cores');
+			$table->boolean('cuda_support');
 			$table->integer('memory_clock');
 			$table->integer('memory_size');
-			$table->string('memory_interface');
 			$table->string('memory_type');
 			$table->string('api_3d');
 			$table->integer('hdmi');
-			$table->string('multi_monitor_support');
 			$table->integer('dvi');
 			$table->boolean('sli_support');
-			$table->string('system_requirements');
-			$table->string('power_connector');
-			$table->string('dual_link_dvi_support');
-			$table->boolean('hdcp_ready');
+			$table->boolean('crossfire_support');
+			$table->boolean('gsync');
 		});
 	}
 
@@ -43,6 +43,6 @@ class CreateGpuTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('gpu');
 	}
 }

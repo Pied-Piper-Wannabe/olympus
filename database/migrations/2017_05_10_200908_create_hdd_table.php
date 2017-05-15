@@ -13,18 +13,16 @@ class CreateHddTable extends Migration
 	public function up()
 	{
 		Schema::create('hdd', function(Blueprint $table){
+			$table->integer('part_id');
 			$table->string('model');
 			$table->string('brand');
-			$table->string('series');
 			$table->string('interface');
-			$table->integer('capacity');
-			$table->integer('rpm');
-			$table->integer('cache');
+			$table->integer('size');
+			$table->integer('rpm')->nullable();
+			$table->integer('cache');->nullable();
 			$table->integer('average_latency');
-			$table->integer('height');
-			$table->integer('width');
-			$table->integer('length');
-			$table->string('ssd');
+			$table->decimal('form_factor', 3, 1);
+			$table->boolean('ssd');
 		});
 	}
 
@@ -35,6 +33,6 @@ class CreateHddTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		schema::drop('hdd');
 	}
 }

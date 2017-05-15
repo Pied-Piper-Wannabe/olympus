@@ -13,11 +13,12 @@ class CreateMiscTable extends Migration
 	public function up()
 	{
 		Schema::create('misc', function(Blueprint $table){
+			$table->string('part_id');
 			$table->string('name');
 			$table->string('type');
 			$table->string('description');
 			$table->string('specs');
-			$table->string('manufacturer');
+			$table->string('brand');
 		});
 	}
 
@@ -28,6 +29,6 @@ class CreateMiscTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		schema::drop('misc');
 	}
 }

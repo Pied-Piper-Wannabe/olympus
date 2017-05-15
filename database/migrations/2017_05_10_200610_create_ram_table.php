@@ -13,21 +13,24 @@ class CreateRamTable extends Migration
 	public function up()
 	{
 		Schema::create('ram', function(Blueprint $table){
+			$table->integer('part_id');
 			$table->string('model');
 			$table->string('brand');
-			$table->string('series');
-			$table->integer('capacity');
-			$table->string('type');
-			$table->integer('speed');
-			$table->string('cas_latency');
-			$table->string('timing');
-			$table->integer('voltage');
-			$table->string('ecc');
-			$table->string('buffered_registered');
-			$table->string('multi_channel_kit');
-			$table->string('heat_spreader');
-			$table->string('fan_included');
+			//---------COMP CHECK--------------
+			$table->integer('size');
 			$table->integer('number_of_sticks');
+			//-------DDR#--------------
+			$table->string('stick_type');
+			// -----------------------
+			$table->integer('voltage');
+			//---------COMP CHECK------------
+			$table->string('pin_type');
+			$table->integer('speed');
+			$table->integer('cas_latency');
+			$table->string('timing');
+			$table->string('ecc');
+			$table->string('registered');
+			$table->string('heat_sink');
 		});
 	}
 
@@ -38,6 +41,6 @@ class CreateRamTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('ram');
 	}
 }
