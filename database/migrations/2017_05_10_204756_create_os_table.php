@@ -13,7 +13,7 @@ class CreateOsTable extends Migration
 	public function up()
 	{
 		Schema::create('os', function(Blueprint $table){
-			$table->string('part_id');
+			$table->increments('id');
 			$table->string('name');
 			$table->string('brand');
 			$table->string('description');

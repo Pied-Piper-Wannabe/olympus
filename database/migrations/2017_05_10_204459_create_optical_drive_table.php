@@ -13,7 +13,7 @@ class CreateOpticalDriveTable extends Migration
 	public function up()
 	{
 		Schema::create('optical_drive', function(Blueprint $table){
-			$table->string('part_id');
+			$table->increments('id');
 			$table->string('model');
 			$table->string('brand');
 			$table->string('type');

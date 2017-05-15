@@ -13,7 +13,7 @@ class CreateMotherboardTable extends Migration
 	public function up()
 	{
 		Schema::create('motherboard', function(Blueprint $table){
-			$table->integer('part_id');
+			$table->increments('id');
 			$table->string('model');
 			$table->string('brand');
 			$table->string('manufacturer');

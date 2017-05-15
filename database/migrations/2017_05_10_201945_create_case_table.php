@@ -13,7 +13,7 @@ class CreateCaseTable extends Migration
 	public function up()
 	{
 		Schema::create('case', function(Blueprint $table){
-			$table->string('part_id');
+			$table->increments('id');
 			$table->string('model');
 			$table->string('brand');
 			$table->string('external_drive_bay');
