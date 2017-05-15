@@ -22,7 +22,7 @@ class CreateCpuTable extends Migration
 			$table->boolean('hyperthreading_support');
 			$table->integer('operating_frequency');
 			$table->integer('max_turbo_frequency');
-			$table->string('l1_cache')
+			$table->string('l1_cache');
 			$table->string('l2_cache');
 			$table->string('l3_cache');
 			$table->string('data_width');
