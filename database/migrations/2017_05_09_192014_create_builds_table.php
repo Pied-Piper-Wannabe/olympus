@@ -19,7 +19,7 @@ class CreateBuildsTable extends Migration
 			$table->integer('user_id')->unsigned();
 			$table->integer('user_id')->references('id')->on('users');
 
-			$table->text('description')->unsigned();
+			$table->text('description');
 			$table->decimal('price', 5, 2);
 			//------needs a compatibility check-------
 
@@ -54,10 +54,10 @@ class CreateBuildsTable extends Migration
 			$table->integer('optical_drive')->references('part_id')->on('optical_drive');
 
 			$table->integer('operating_system')->unsigned();
-			$table->integer('operating_system')->references('part_id')->on('operating_system');
+			$table->integer('operating_system')->references('part_id')->on('os');
 
-			$table->string('misc')->unsigned();
-			$table->string('misc')->references('part_id')->on('misc');
+			$table->integer('misc')->unsigned();
+			$table->integer('misc')->references('part_id')->on('misc');
 
 		});
 	}
@@ -69,6 +69,6 @@ class CreateBuildsTable extends Migration
 	 */
 	public function down()
 	{
-		schema::drop('builds');
+		Schema::drop('builds');
 	}
 }

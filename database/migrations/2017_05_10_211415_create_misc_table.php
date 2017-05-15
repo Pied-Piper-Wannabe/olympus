@@ -29,6 +29,6 @@ class CreateMiscTable extends Migration
 	 */
 	public function down()
 	{
-		schema::drop('misc');
+		Schema::drop('misc');
 	}
 }

@@ -31,6 +31,6 @@ class CreateOsTable extends Migration
 	 */
 	public function down()
 	{
-		schema::drop('os');
+		Schema::drop('os');
 	}
 }
