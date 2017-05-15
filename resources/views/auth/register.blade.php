@@ -12,27 +12,27 @@
 	</div>
 </div>
 
-
 <div class="container">
 	<div class="row botMarginSm">
 		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
 			<form class="signupForm">
-				<div class="form-group">
+			{!! csrf_field() !!}
+				<div class="form-group" method="POST" action="{{ action ('Auth\AuthController@postRegister') }}" data-validation data-required-message="This field is required">
 					<label for="email">Email address</label>
-					<input type="email" class="form-control inverseInput" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+					<input type="email" class="form-control inverseInput" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email" data-required>
 					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div>
 				<div class="form-group">
 					<label for="name">Username</label>
-					<input type="text" class="form-control inverseInput" id="name" placeholder="Enter username">
+					<input type="text" class="form-control inverseInput" name="name" id="name" placeholder="Enter username" data-required>
 				</div>
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input type="password" class="form-control inverseInput" id="password" placeholder="Password">
+					<input type="password" class="form-control inverseInput" name="password" id="password" placeholder="Password" data-required>
 				</div>
 				<div class="form-group">
 					<label for="verifyPassword">Verify Password</label>
-					<input type="password" class="form-control inverseInput" id="Pverifyassword" placeholder="Password">
+					<input type="password" class="form-control inverseInput" name="password_confirmation" id="password_confirmation" placeholder="Password" data-required>
 				</div>
 				<button type="submit" class="btn btn-primary">Signup</button>
 				<a href="/login" class="btn btn-primary floatRight">Go to login</a>
