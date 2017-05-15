@@ -37,6 +37,6 @@ class CreateOpticalDriveTable extends Migration
 	 */
 	public function down()
 	{
-		schema::drop('optical_drive');
+		Schema::drop('optical_drive');
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -51,4 +51,9 @@ class Builds extends Model
 	public function ram() {
 		return $this->belongsTo('App\Models\Ram', 'part_id');
 	}
+
+	public function user()
+	{
+    return $this->belongsTo('App\User', 'user_id');
+}
 }

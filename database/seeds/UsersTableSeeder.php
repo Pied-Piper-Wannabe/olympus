@@ -5,7 +5,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class CpuTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -20,11 +20,11 @@ class CpuTableSeeder extends Seeder
         $user->password = Hash::make('password');
         $user->save();
 
-        $user = new \App\User();
-        $user->name = 'testUser'
-        $user->email = 'testUser@gmail.com'
-        $user->password = Hash::make('password');
-        $user->save();
+        $user1 = new \App\User();
+        $user1->name = 'testUser'
+        $user1->email = 'testUser@gmail.com'
+        $user1->password = Hash::make('password');
+        $user1->save();
     }
 }
 
