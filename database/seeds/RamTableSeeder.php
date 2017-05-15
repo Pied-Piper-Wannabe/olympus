@@ -14,7 +14,7 @@ class RamTableSeeder extends Seeder
      */
     public function run()
     {
-        $ram = new \App\Models\Post();
+        $ram = new \App\Models\Ram();
         $ram->model =
         $ram->brand =
         $ram->series =
@@ -32,7 +32,7 @@ class RamTableSeeder extends Seeder
         $ram->number_of_sticks =
         $ram->save();
 
-        $ram1 = new \App\Models\Post();
+        $ram1 = new \App\Models\Ram();
         $ram1->model =
         $ram1->brand =
         $ram1->series =
@@ -50,7 +50,7 @@ class RamTableSeeder extends Seeder
         $ram1->number_of_sticks =
         $ram1->save();
 
-        $ram2 = new \App\Models\Post();
+        $ram2 = new \App\Models\Ram();
         $ram2->model =
         $ram2->brand =
         $ram2->series =
@@ -68,7 +68,7 @@ class RamTableSeeder extends Seeder
         $ram2->number_of_sticks =
         $ram2->save();
 
-        $ram3 = new \App\Models\Post();
+        $ram3 = new \App\Models\Ram();
         $ram3->model =
         $ram3->brand =
         $ram3->series =
@@ -86,7 +86,7 @@ class RamTableSeeder extends Seeder
         $ram3->number_of_sticks =
         $ram3->save();
 
-        $ram4 = new \App\Models\Post();
+        $ram4 = new \App\Models\Ram();
         $ram4->model =
         $ram4->brand =
         $ram4->series =
@@ -104,7 +104,7 @@ class RamTableSeeder extends Seeder
         $ram4->number_of_sticks =
         $ram4->save();
 
-        $ram5 = new \App\Models\Post();
+        $ram5 = new \App\Models\Ram();
         $ram5->model =
         $ram5->brand =
         $ram5->series =
@@ -122,7 +122,7 @@ class RamTableSeeder extends Seeder
         $ram5->number_of_sticks =
         $ram5->save();
 
-        $ram6 = new \App\Models\Post();
+        $ram6 = new \App\Models\Ram();
         $ram6->model =
         $ram6->brand =
         $ram6->series =
@@ -140,7 +140,7 @@ class RamTableSeeder extends Seeder
         $ram6->number_of_sticks =
         $ram6->save();
 
-        $ram7 = new \App\Models\Post();
+        $ram7 = new \App\Models\Ram();
         $ram7->model =
         $ram7->brand =
         $ram7->series =
@@ -158,7 +158,7 @@ class RamTableSeeder extends Seeder
         $ram7->number_of_sticks =
         $ram7->save();
 
-        $ram8 = new \App\Models\Post();
+        $ram8 = new \App\Models\Ram();
         $ram8->model =
         $ram8->brand =
         $ram8->series =
@@ -176,7 +176,7 @@ class RamTableSeeder extends Seeder
         $ram8->number_of_sticks =
         $ram8->save();
 
-        $ram9 = new \App\Models\Post();
+        $ram9 = new \App\Models\Ram();
         $ram9->model =
         $ram9->brand =
         $ram9->series =
@@ -194,7 +194,7 @@ class RamTableSeeder extends Seeder
         $ram9->number_of_sticks =
         $ram9->save();
 
-        $ram10 = new \App\Models\Post();
+        $ram10 = new \App\Models\Ram();
         $ram10->model =
         $ram10->brand =
         $ram10->series =
@@ -212,7 +212,7 @@ class RamTableSeeder extends Seeder
         $ram10->number_of_sticks =
         $ram10->save();
 
-        $ram11 = new \App\Models\Post();
+        $ram11 = new \App\Models\Ram();
         $ram11->model =
         $ram11->brand =
         $ram11->series =
@@ -230,7 +230,7 @@ class RamTableSeeder extends Seeder
         $ram11->number_of_sticks =
         $ram11->save();
 
-        $ram12 = new \App\Models\Post();
+        $ram12 = new \App\Models\Ram();
         $ram12->model =
         $ram12->brand =
         $ram12->series =
@@ -248,7 +248,7 @@ class RamTableSeeder extends Seeder
         $ram12->number_of_sticks =
         $ram12->save();
 
-        $ram13 = new \App\Models\Post();
+        $ram13 = new \App\Models\Ram();
         $ram13->model =
         $ram13->brand =
         $ram13->series =
@@ -266,7 +266,7 @@ class RamTableSeeder extends Seeder
         $ram13->number_of_sticks =
         $ram13->save();
 
-        $ram14 = new \App\Models\Post();
+        $ram14 = new \App\Models\Ram();
         $ram14->model =
         $ram14->brand =
         $ram14->series =
@@ -284,7 +284,7 @@ class RamTableSeeder extends Seeder
         $ram14->number_of_sticks =
         $ram14->save();
 
-        $ram15 = new \App\Models\Post();
+        $ram15 = new \App\Models\Ram();
         $ram15->model =
         $ram15->brand =
         $ram15->series =
@@ -302,7 +302,7 @@ class RamTableSeeder extends Seeder
         $ram15->number_of_sticks =
         $ram15->save();
 
-        $ram16 = new \App\Models\Post();
+        $ram16 = new \App\Models\Ram();
         $ram16->model =
         $ram16->brand =
         $ram16->series =
@@ -320,7 +320,7 @@ class RamTableSeeder extends Seeder
         $ram16->number_of_sticks =
         $ram16->save();
 
-        $ram17 = new \App\Models\Post();
+        $ram17 = new \App\Models\Ram();
         $ram17->model =
         $ram17->brand =
         $ram17->series =
@@ -338,7 +338,7 @@ class RamTableSeeder extends Seeder
         $ram17->number_of_sticks =
         $ram17->save();
 
-        $ram18 = new \App\Models\Post();
+        $ram18 = new \App\Models\Ram();
         $ram18->model =
         $ram18->brand =
         $ram18->series =
@@ -356,7 +356,7 @@ class RamTableSeeder extends Seeder
         $ram18->number_of_sticks =
         $ram18->save();
 
-        $ram19 = new \App\Models\Post();
+        $ram19 = new \App\Models\Ram();
         $ram19->model =
         $ram19->brand =
         $ram19->series =
@@ -374,7 +374,7 @@ class RamTableSeeder extends Seeder
         $ram19->number_of_sticks =
         $ram19->save();
 
-        $ram20 = new \App\Models\Post();
+        $ram20 = new \App\Models\Ram();
         $ram20->model =
         $ram20->brand =
         $ram20->series =

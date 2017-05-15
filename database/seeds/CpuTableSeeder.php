@@ -14,7 +14,7 @@ class CpuTableSeeder extends Seeder
      */
     public function run()
     {
-        $cpu = new \App\Models\Post();
+        $cpu = new \App\Models\Cpu();
         $cpu->name =
         $cpu->brand =
         $cpu->series =
@@ -36,7 +36,7 @@ class CpuTableSeeder extends Seeder
         $cpu->pci_lanes =
         $cpu->save();
 
-        $cpu1 = new \App\Models\Post();
+        $cpu1 = new \App\Models\Cpu();
         $cpu1->name =
         $cpu1->brand =
         $cpu1->series =
@@ -58,7 +58,7 @@ class CpuTableSeeder extends Seeder
         $cpu1->pci_lanes =
         $cpu1->save();
 
-        $cpu2 = new \App\Models\Post();
+        $cpu2 = new \App\Models\Cpu();
         $cpu2->name =
         $cpu2->brand =
         $cpu2->series =
@@ -80,7 +80,7 @@ class CpuTableSeeder extends Seeder
         $cpu2->pci_lanes =
         $cpu2->save();
 
-        $cpu3 = new \App\Models\Post();
+        $cpu3 = new \App\Models\Cpu();
         $cpu3->name =
         $cpu3->brand =
         $cpu3->series =
@@ -102,7 +102,7 @@ class CpuTableSeeder extends Seeder
         $cpu3->pci_lanes =
         $cpu3->save();
 
-        $cpu4 = new \App\Models\Post();
+        $cpu4 = new \App\Models\Cpu();
         $cpu4->name =
         $cpu4->brand =
         $cpu4->series =
@@ -124,7 +124,7 @@ class CpuTableSeeder extends Seeder
         $cpu4->pci_lanes =
         $cpu4->save();
 
-        $cpu5 = new \App\Models\Post();
+        $cpu5 = new \App\Models\Cpu();
         $cpu5->name =
         $cpu5->brand =
         $cpu5->series =
@@ -146,7 +146,7 @@ class CpuTableSeeder extends Seeder
         $cpu5->pci_lanes =
         $cpu5->save();
 
-        $cpu6 = new \App\Models\Post();
+        $cpu6 = new \App\Models\Cpu();
         $cpu6->name =
         $cpu6->brand =
         $cpu6->series =
@@ -168,7 +168,7 @@ class CpuTableSeeder extends Seeder
         $cpu6->pci_lanes =
         $cpu6->save();
 
-        $cpu7 = new \App\Models\Post();
+        $cpu7 = new \App\Models\Cpu();
         $cpu7->name =
         $cpu7->brand =
         $cpu7->series =
@@ -190,7 +190,7 @@ class CpuTableSeeder extends Seeder
         $cpu7->pci_lanes =
         $cpu7->save();
 
-        $cpu8 = new \App\Models\Post();
+        $cpu8 = new \App\Models\Cpu();
         $cpu8->name =
         $cpu8->brand =
         $cpu8->series =
@@ -212,7 +212,7 @@ class CpuTableSeeder extends Seeder
         $cpu8->pci_lanes =
         $cpu8->save();
 
-        $cpu9 = new \App\Models\Post();
+        $cpu9 = new \App\Models\Cpu();
         $cpu9->name =
         $cpu9->brand =
         $cpu9->series =
@@ -234,7 +234,7 @@ class CpuTableSeeder extends Seeder
         $cpu9->pci_lanes =
         $cpu9->save();
 
-        $cpu10 = new \App\Models\Post();
+        $cpu10 = new \App\Models\Cpu();
         $cpu10->name =
         $cpu10->brand =
         $cpu10->series =
@@ -256,7 +256,7 @@ class CpuTableSeeder extends Seeder
         $cpu10->pci_lanes =
         $cpu10->save();
 
-        $cpu11 = new \App\Models\Post();
+        $cpu11 = new \App\Models\Cpu();
         $cpu11->name =
         $cpu11->brand =
         $cpu11->series =
@@ -278,7 +278,7 @@ class CpuTableSeeder extends Seeder
         $cpu11->pci_lanes =
         $cpu11->save();
 
-        $cpu12 = new \App\Models\Post();
+        $cpu12 = new \App\Models\Cpu();
         $cpu12->name =
         $cpu12->brand =
         $cpu12->series =
@@ -300,7 +300,7 @@ class CpuTableSeeder extends Seeder
         $cpu12->pci_lanes =
         $cpu12->save();
 
-        $cpu13 = new \App\Models\Post();
+        $cpu13 = new \App\Models\Cpu();
         $cpu13->name =
         $cpu13->brand =
         $cpu13->series =
@@ -322,7 +322,7 @@ class CpuTableSeeder extends Seeder
         $cpu13->pci_lanes =
         $cpu13->save();
 
-        $cpu14 = new \App\Models\Post();
+        $cpu14 = new \App\Models\Cpu();
         $cpu14->name =
         $cpu14->brand =
         $cpu14->series =
@@ -344,7 +344,7 @@ class CpuTableSeeder extends Seeder
         $cpu14->pci_lanes =
         $cpu14->save();
 
-        $cpu15 = new \App\Models\Post();
+        $cpu15 = new \App\Models\Cpu();
         $cpu15->name =
         $cpu15->brand =
         $cpu15->series =
@@ -366,7 +366,7 @@ class CpuTableSeeder extends Seeder
         $cpu15->pci_lanes =
         $cpu15->save();
 
-        $cpu16 = new \App\Models\Post();
+        $cpu16 = new \App\Models\Cpu();
         $cpu16->name =
         $cpu16->brand =
         $cpu16->series =
@@ -388,7 +388,7 @@ class CpuTableSeeder extends Seeder
         $cpu16->pci_lanes =
         $cpu16->save();
 
-        $cpu17 = new \App\Models\Post();
+        $cpu17 = new \App\Models\Cpu();
         $cpu17->name =
         $cpu17->brand =
         $cpu17->series =
@@ -410,7 +410,7 @@ class CpuTableSeeder extends Seeder
         $cpu17->pci_lanes =
         $cpu17->save();
 
-        $cpu18 = new \App\Models\Post();
+        $cpu18 = new \App\Models\Cpu();
         $cpu18->name =
         $cpu18->brand =
         $cpu18->series =
@@ -432,7 +432,7 @@ class CpuTableSeeder extends Seeder
         $cpu18->pci_lanes =
         $cpu18->save();
 
-        $cpu19 = new \App\Models\Post();
+        $cpu19 = new \App\Models\Cpu();
         $cpu19->name =
         $cpu19->brand =
         $cpu19->series =
@@ -454,7 +454,7 @@ class CpuTableSeeder extends Seeder
         $cpu19->pci_lanes =
         $cpu19->save();
 
-        $cpu20 = new \App\Models\Post();
+        $cpu20 = new \App\Models\Cpu();
         $cpu20->name =
         $cpu20->brand =
         $cpu20->series =

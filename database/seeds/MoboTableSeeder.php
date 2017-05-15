@@ -14,7 +14,7 @@ class MoboTableSeeder extends Seeder
      */
     public function run()
     {
-        $mobo = new \App\Models\Post();
+        $mobo = new \App\Models\Motherboard();
         $mobo->model =
         $mobo->brand =
         $mobo->manufacturer =
@@ -36,7 +36,7 @@ class MoboTableSeeder extends Seeder
         $mobo->power_pin_number =
         $mobo->save();
 
-        $mobo1 = new \App\Models\Post();
+        $mobo1 = new \App\Models\Motherboard();
         $mobo1->model =
         $mobo1->brand =
         $mobo1->manufacturer =
@@ -58,7 +58,7 @@ class MoboTableSeeder extends Seeder
         $mobo1->power_pin_number =
         $mobo1->save();
 
-        $mobo2 = new \App\Models\Post();
+        $mobo2 = new \App\Models\Motherboard();
         $mobo2->model =
         $mobo2->brand =
         $mobo2->manufacturer =
@@ -80,7 +80,7 @@ class MoboTableSeeder extends Seeder
         $mobo2->power_pin_number =
         $mobo2->save();
 
-        $mobo3 = new \App\Models\Post();
+        $mobo3 = new \App\Models\Motherboard();
         $mobo3->model =
         $mobo3->brand =
         $mobo3->manufacturer =
@@ -102,7 +102,7 @@ class MoboTableSeeder extends Seeder
         $mobo3->power_pin_number =
         $mobo3->save();
 
-        $mobo4 = new \App\Models\Post();
+        $mobo4 = new \App\Models\Motherboard();
         $mobo4->model =
         $mobo4->brand =
         $mobo4->manufacturer =
@@ -124,7 +124,7 @@ class MoboTableSeeder extends Seeder
         $mobo4->power_pin_number =
         $mobo4->save();
 
-        $mobo5 = new \App\Models\Post();
+        $mobo5 = new \App\Models\Motherboard();
         $mobo5->model =
         $mobo5->brand =
         $mobo5->manufacturer =
@@ -146,7 +146,7 @@ class MoboTableSeeder extends Seeder
         $mobo5->power_pin_number =
         $mobo5->save();
 
-        $mobo6 = new \App\Models\Post();
+        $mobo6 = new \App\Models\Motherboard();
         $mobo6->model =
         $mobo6->brand =
         $mobo6->manufacturer =
@@ -168,7 +168,7 @@ class MoboTableSeeder extends Seeder
         $mobo6->power_pin_number =
         $mobo6->save();
 
-        $mobo7 = new \App\Models\Post();
+        $mobo7 = new \App\Models\Motherboard();
         $mobo7->model =
         $mobo7->brand =
         $mobo7->manufacturer =
@@ -190,7 +190,7 @@ class MoboTableSeeder extends Seeder
         $mobo7->power_pin_number =
         $mobo7->save();
 
-        $mobo8 = new \App\Models\Post();
+        $mobo8 = new \App\Models\Motherboard();
         $mobo8->model =
         $mobo8->brand =
         $mobo8->manufacturer =
@@ -212,7 +212,7 @@ class MoboTableSeeder extends Seeder
         $mobo8->power_pin_number =
         $mobo8->save();
 
-        $mobo9 = new \App\Models\Post();
+        $mobo9 = new \App\Models\Motherboard();
         $mobo9->model =
         $mobo9->brand =
         $mobo9->manufacturer =
@@ -234,7 +234,7 @@ class MoboTableSeeder extends Seeder
         $mobo9->power_pin_number =
         $mobo9->save();
 
-        $mobo10 = new \App\Models\Post();
+        $mobo10 = new \App\Models\Motherboard();
         $mobo10->model =
         $mobo10->brand =
         $mobo10->manufacturer =
@@ -256,7 +256,7 @@ class MoboTableSeeder extends Seeder
         $mobo10->power_pin_number =
         $mobo10->save();
 
-        $mobo11 = new \App\Models\Post();
+        $mobo11 = new \App\Models\Motherboard();
         $mobo11->model =
         $mobo11->brand =
         $mobo11->manufacturer =
@@ -278,7 +278,7 @@ class MoboTableSeeder extends Seeder
         $mobo10->power_pin_number =
         $mobo11->save();
 
-        $mobo12 = new \App\Models\Post();
+        $mobo12 = new \App\Models\Motherboard();
         $mobo12->model =
         $mobo12->brand =
         $mobo12->manufacturer =
@@ -300,7 +300,7 @@ class MoboTableSeeder extends Seeder
         $mobo10->power_pin_number =
         $mobo12->save();
 
-        $mobo13 = new \App\Models\Post();
+        $mobo13 = new \App\Models\Motherboard();
         $mobo13->model =
         $mobo13->brand =
         $mobo13->manufacturer =
@@ -322,7 +322,7 @@ class MoboTableSeeder extends Seeder
         $mobo13->power_pin_number =
         $mobo13->save();
 
-        $mobo14 = new \App\Models\Post();
+        $mobo14 = new \App\Models\Motherboard();
         $mobo14->model =
         $mobo14->brand =
         $mobo14->manufacturer =
@@ -344,7 +344,7 @@ class MoboTableSeeder extends Seeder
         $mobo14->power_pin_number =
         $mobo14->save();
 
-        $mobo15 = new \App\Models\Post();
+        $mobo15 = new \App\Models\Motherboard();
         $mobo15->model =
         $mobo15->brand =
         $mobo15->manufacturer =
@@ -366,7 +366,7 @@ class MoboTableSeeder extends Seeder
         $mobo15->power_pin_number =
         $mobo15->save();
 
-        $mobo16 = new \App\Models\Post();
+        $mobo16 = new \App\Models\Motherboard();
         $mobo16->model =
         $mobo16->brand =
         $mobo16->manufacturer =
@@ -388,7 +388,7 @@ class MoboTableSeeder extends Seeder
         $mobo16->power_pin_number =
         $mobo16->save();
 
-        $mobo17 = new \App\Models\Post();
+        $mobo17 = new \App\Models\Motherboard();
         $mobo17->model =
         $mobo17->brand =
         $mobo17->manufacturer =
@@ -410,7 +410,7 @@ class MoboTableSeeder extends Seeder
         $mobo17->power_pin_number =
         $mobo17->save();
 
-        $mobo18 = new \App\Models\Post();
+        $mobo18 = new \App\Models\Motherboard();
         $mobo18->model =
         $mobo18->brand =
         $mobo18->manufacturer =
@@ -432,7 +432,7 @@ class MoboTableSeeder extends Seeder
         $mobo18->power_pin_number =
         $mobo18->save();
 
-        $mobo19 = new \App\Models\Post();
+        $mobo19 = new \App\Models\Motherboard();
         $mobo19->model =
         $mobo19->brand =
         $mobo19->manufacturer =
@@ -454,7 +454,7 @@ class MoboTableSeeder extends Seeder
         $mobo19->power_pin_number =
         $mobo19->save();
 
-        $mobo20 = new \App\Models\Post();
+        $mobo20 = new \App\Models\Motherboard();
         $mobo20->model =
         $mobo20->brand =
         $mobo20->manufacturer =

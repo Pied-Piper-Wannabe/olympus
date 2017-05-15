@@ -12,7 +12,7 @@ class OpticalDriveTableSeeder extends Seeder
      */
     public function run()
     {
-        $op_drive = new \App\Models\Post();
+        $op_drive = new \App\Models\OpticalDrive();
         $op_drive->model =
         $op_drive->brand =
         $op_drive->type =
@@ -34,7 +34,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive->blue_ray =
         $op_drive->save();
 
-        $op_drive1 = new \App\Models\Post();
+        $op_drive1 = new \App\Models\OpticalDrive();
         $op_drive1->model =
         $op_drive1->brand =
         $op_drive1->type =
@@ -56,7 +56,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive1->blue_ray =
         $op_drive1->save();
 
-        $op_drive2 = new \App\Models\Post();
+        $op_drive2 = new \App\Models\OpticalDrive();
         $op_drive2->model =
         $op_drive2->brand =
         $op_drive2->type =
@@ -78,7 +78,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive2->blue_ray =
         $op_drive2->save();
 
-        $op_drive3 = new \App\Models\Post();
+        $op_drive3 = new \App\Models\OpticalDrive();
         $op_drive3->model =
         $op_drive3->brand =
         $op_drive3->type =
@@ -100,7 +100,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive3->blue_ray =
         $op_drive3->save();
 
-        $op_drive4 = new \App\Models\Post();
+        $op_drive4 = new \App\Models\OpticalDrive();
         $op_drive4->model =
         $op_drive4->brand =
         $op_drive4->type =
@@ -122,7 +122,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive4->blue_ray =
         $op_drive4->save();
 
-        $op_drive5 = new \App\Models\Post();
+        $op_drive5 = new \App\Models\OpticalDrive();
         $op_drive5->model =
         $op_drive5->brand =
         $op_drive5->type =
@@ -144,7 +144,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive5->blue_ray =
         $op_drive5->save();
 
-        $op_drive6 = new \App\Models\Post();
+        $op_drive6 = new \App\Models\OpticalDrive();
         $op_drive6->model =
         $op_drive6->brand =
         $op_drive6->type =
@@ -166,7 +166,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive6->blue_ray =
         $op_drive6->save();
 
-        $op_drive7 = new \App\Models\Post();
+        $op_drive7 = new \App\Models\OpticalDrive();
         $op_drive7->model =
         $op_drive7->brand =
         $op_drive7->type =
@@ -188,7 +188,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive7->blue_ray =
         $op_drive7->save();
 
-        $op_drive8 = new \App\Models\Post();
+        $op_drive8 = new \App\Models\OpticalDrive();
         $op_drive8->model =
         $op_drive8->brand =
         $op_drive8->type =
@@ -210,7 +210,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive8->blue_ray =
         $op_drive8->save();
 
-        $op_drive9 = new \App\Models\Post();
+        $op_drive9 = new \App\Models\OpticalDrive();
         $op_drive9->model =
         $op_drive9->brand =
         $op_drive9->type =
@@ -232,7 +232,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive9->blue_ray =
         $op_drive9->save();
 
-        $op_drive10 = new \App\Models\Post();
+        $op_drive10 = new \App\Models\OpticalDrive();
         $op_drive10->model =
         $op_drive10->brand =
         $op_drive10->type =
@@ -254,7 +254,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive10->blue_ray =
         $op_drive10->save();
 
-        $op_drive11 = new \App\Models\Post();
+        $op_drive11 = new \App\Models\OpticalDrive();
         $op_drive11->model =
         $op_drive11->brand =
         $op_drive11->type =
@@ -276,7 +276,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive11->blue_ray =
         $op_drive11->save();
 
-        $op_drive12 = new \App\Models\Post();
+        $op_drive12 = new \App\Models\OpticalDrive();
         $op_drive12->model =
         $op_drive12->brand =
         $op_drive12->type =
@@ -298,7 +298,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive12->blue_ray =
         $op_drive12->save();
 
-        $op_drive13 = new \App\Models\Post();
+        $op_drive13 = new \App\Models\OpticalDrive();
         $op_drive13->model =
         $op_drive13->brand =
         $op_drive13->type =
@@ -320,7 +320,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive13->blue_ray =
         $op_drive13->save();
 
-        $op_drive14 = new \App\Models\Post();
+        $op_drive14 = new \App\Models\OpticalDrive();
         $op_drive14->model =
         $op_drive14->brand =
         $op_drive14->type =
@@ -342,7 +342,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive14->blue_ray =
         $op_drive14->save();
 
-        $op_drive15 = new \App\Models\Post();
+        $op_drive15 = new \App\Models\OpticalDrive();
         $op_drive15->model =
         $op_drive15->brand =
         $op_drive15->type =
@@ -364,7 +364,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive15->blue_ray =
         $op_drive15->save();
 
-        $op_drive16 = new \App\Models\Post();
+        $op_drive16 = new \App\Models\OpticalDrive();
         $op_drive16->model =
         $op_drive16->brand =
         $op_drive16->type =
@@ -386,7 +386,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive16->blue_ray =
         $op_drive16->save();
 
-        $op_drive17 = new \App\Models\Post();
+        $op_drive17 = new \App\Models\OpticalDrive();
         $op_drive17->model =
         $op_drive17->brand =
         $op_drive17->type =
@@ -408,7 +408,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive17->blue_ray =
         $op_drive17->save();
 
-        $op_drive18 = new \App\Models\Post();
+        $op_drive18 = new \App\Models\OpticalDrive();
         $op_drive18->model =
         $op_drive18->brand =
         $op_drive18->type =
@@ -430,7 +430,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive18->blue_ray =
         $op_drive18->save();
 
-        $op_drive19 = new \App\Models\Post();
+        $op_drive19 = new \App\Models\OpticalDrive();
         $op_drive19->model =
         $op_drive19->brand =
         $op_drive19->type =
@@ -452,7 +452,7 @@ class OpticalDriveTableSeeder extends Seeder
         $op_drive19->blue_ray =
         $op_drive19->save();
 
-        $op_drive20 = new \App\Models\Post();
+        $op_drive20 = new \App\Models\OpticalDrive();
         $op_drive20->model =
         $op_drive20->brand =
         $op_drive20->type =

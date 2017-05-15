@@ -12,7 +12,7 @@ class GpuTableSeeder extends Seeder
      */
     public function run()
     {
-        $gpu = new \App\Models\Post();
+        $gpu = new \App\Models\Gpu();
         $gpu->model =
         $gpu->brand =
         $gpu->interface =
@@ -36,7 +36,7 @@ class GpuTableSeeder extends Seeder
         $gpu->hdcp_ready =
         $gpu->save();
 
-        $gpu1 = new \App\Models\Post();
+        $gpu1 = new \App\Models\Gpu();
         $gpu1->model =
         $gpu1->brand =
         $gpu1->interface =
@@ -60,7 +60,7 @@ class GpuTableSeeder extends Seeder
         $gpu1->hdcp_ready =
         $gpu1->save();
 
-        $gpu2 = new \App\Models\Post();
+        $gpu2 = new \App\Models\Gpu();
         $gpu2->model =
         $gpu2->brand =
         $gpu2->interface =
@@ -84,7 +84,7 @@ class GpuTableSeeder extends Seeder
         $gpu2->hdcp_ready =
         $gpu2->save();
 
-        $gpu3 = new \App\Models\Post();
+        $gpu3 = new \App\Models\Gpu();
         $gpu3->model =
         $gpu3->brand =
         $gpu3->interface =
@@ -108,7 +108,7 @@ class GpuTableSeeder extends Seeder
         $gpu3->hdcp_ready =
         $gpu3->save();
 
-        $gpu4 = new \App\Models\Post();
+        $gpu4 = new \App\Models\Gpu();
         $gpu4->model =
         $gpu4->brand =
         $gpu4->interface =
@@ -132,7 +132,7 @@ class GpuTableSeeder extends Seeder
         $gpu4->hdcp_ready =
         $gpu4->save();
 
-        $gpu5 = new \App\Models\Post();
+        $gpu5 = new \App\Models\Gpu();
         $gpu5->model =
         $gpu5->brand =
         $gpu5->interface =
@@ -156,7 +156,7 @@ class GpuTableSeeder extends Seeder
         $gpu5->hdcp_ready =
         $gpu5->save();
 
-        $gpu6 = new \App\Models\Post();
+        $gpu6 = new \App\Models\Gpu();
         $gpu6->model =
         $gpu6->brand =
         $gpu6->interface =
@@ -180,7 +180,7 @@ class GpuTableSeeder extends Seeder
         $gpu6->hdcp_ready =
         $gpu6->save();
 
-        $gpu7 = new \App\Models\Post();
+        $gpu7 = new \App\Models\Gpu();
         $gpu7->model =
         $gpu7->brand =
         $gpu7->interface =
@@ -204,7 +204,7 @@ class GpuTableSeeder extends Seeder
         $gpu7->hdcp_ready =
         $gpu7->save();
 
-        $gpu8 = new \App\Models\Post();
+        $gpu8 = new \App\Models\Gpu();
         $gpu8->model =
         $gpu8->brand =
         $gpu8->interface =
@@ -228,7 +228,7 @@ class GpuTableSeeder extends Seeder
         $gpu8->hdcp_ready =
         $gpu8->save();
 
-        $gpu9 = new \App\Models\Post();
+        $gpu9 = new \App\Models\Gpu();
         $gpu9->model =
         $gpu9->brand =
         $gpu9->interface =
@@ -252,7 +252,7 @@ class GpuTableSeeder extends Seeder
         $gpu9->hdcp_ready =
         $gpu9->save();
 
-        $gpu10 = new \App\Models\Post();
+        $gpu10 = new \App\Models\Gpu();
         $gpu10->model =
         $gpu10->brand =
         $gpu10->interface =
@@ -276,7 +276,7 @@ class GpuTableSeeder extends Seeder
         $gpu10->hdcp_ready =
         $gpu10->save();
 
-        $gpu11 = new \App\Models\Post();
+        $gpu11 = new \App\Models\Gpu();
         $gpu11->model =
         $gpu11->brand =
         $gpu11->interface =
@@ -300,7 +300,7 @@ class GpuTableSeeder extends Seeder
         $gpu11->hdcp_ready =
         $gpu11->save();
 
-        $gpu12 = new \App\Models\Post();
+        $gpu12 = new \App\Models\Gpu();
         $gpu12->model =
         $gpu12->brand =
         $gpu12->interface =
@@ -324,7 +324,7 @@ class GpuTableSeeder extends Seeder
         $gpu12->hdcp_ready =
         $gpu12->save();
 
-        $gpu13 = new \App\Models\Post();
+        $gpu13 = new \App\Models\Gpu();
         $gpu13->model =
         $gpu13->brand =
         $gpu13->interface =
@@ -348,7 +348,7 @@ class GpuTableSeeder extends Seeder
         $gpu13->hdcp_ready =
         $gpu13->save();
 
-        $gpu14 = new \App\Models\Post();
+        $gpu14 = new \App\Models\Gpu();
         $gpu14->model =
         $gpu14->brand =
         $gpu14->interface =
@@ -372,7 +372,7 @@ class GpuTableSeeder extends Seeder
         $gpu14->hdcp_ready =
         $gpu14->save();
 
-        $gpu15 = new \App\Models\Post();
+        $gpu15 = new \App\Models\Gpu();
         $gpu15->model =
         $gpu15->brand =
         $gpu15->interface =
@@ -396,7 +396,7 @@ class GpuTableSeeder extends Seeder
         $gpu15->hdcp_ready =
         $gpu15->save();
 
-        $gpu16 = new \App\Models\Post();
+        $gpu16 = new \App\Models\Gpu();
         $gpu16->model =
         $gpu16->brand =
         $gpu16->interface =
@@ -420,7 +420,7 @@ class GpuTableSeeder extends Seeder
         $gpu16->hdcp_ready =
         $gpu16->save();
 
-        $gpu17 = new \App\Models\Post();
+        $gpu17 = new \App\Models\Gpu();
         $gpu17->model =
         $gpu17->brand =
         $gpu17->interface =
@@ -444,7 +444,7 @@ class GpuTableSeeder extends Seeder
         $gpu17->hdcp_ready =
         $gpu17->save();
 
-        $gpu18 = new \App\Models\Post();
+        $gpu18 = new \App\Models\Gpu();
         $gpu18->model =
         $gpu18->brand =
         $gpu18->interface =
@@ -468,7 +468,7 @@ class GpuTableSeeder extends Seeder
         $gpu18->hdcp_ready =
         $gpu18->save();
 
-        $gpu19 = new \App\Models\Post();
+        $gpu19 = new \App\Models\Gpu();
         $gpu19->model =
         $gpu19->brand =
         $gpu19->interface =
@@ -492,7 +492,7 @@ class GpuTableSeeder extends Seeder
         $gpu19->hdcp_ready =
         $gpu19->save();
 
-        $gpu20 = new \App\Models\Post();
+        $gpu20 = new \App\Models\Gpu();
         $gpu20->model =
         $gpu20->brand =
         $gpu20->interface =

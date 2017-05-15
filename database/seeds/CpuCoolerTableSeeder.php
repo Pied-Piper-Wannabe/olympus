@@ -12,7 +12,7 @@ class CpuCoolerTableSeeder extends Seeder
      */
     public function run()
     {
-        $cooler = new \App\Models\Post();
+        $cooler = new \App\Models\CpuCooler();
         $cooler->model =
         $cooler->brand =
         $cooler->type =
@@ -29,7 +29,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler->number_of_fans =
         $cooler->save();
 
-        $cooler1 = new \App\Models\Post();
+        $cooler1 = new \App\Models\CpuCooler();
         $cooler1->model =
         $cooler1->brand =
         $cooler1->type =
@@ -46,7 +46,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler1->number_of_fans =
         $cooler1->save();
 
-        $cooler2 = new \App\Models\Post();
+        $cooler2 = new \App\Models\CpuCooler();
         $cooler2->model =
         $cooler2->brand =
         $cooler2->type =
@@ -63,7 +63,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler2->number_of_fans =
         $cooler2->save();
 
-        $cooler3 = new \App\Models\Post();
+        $cooler3 = new \App\Models\CpuCooler();
         $cooler3->model =
         $cooler3->brand =
         $cooler3->type =
@@ -80,7 +80,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler3->number_of_fans =
         $cooler3->save();
 
-        $cooler4 = new \App\Models\Post();
+        $cooler4 = new \App\Models\CpuCooler();
         $cooler4->model =
         $cooler4->brand =
         $cooler4->type =
@@ -97,7 +97,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler4->number_of_fans =
         $cooler4->save();
 
-        $cooler5 = new \App\Models\Post();
+        $cooler5 = new \App\Models\CpuCooler();
         $cooler5->model =
         $cooler5->brand =
         $cooler5->type =
@@ -114,7 +114,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler5->number_of_fans =
         $cooler5->save();
 
-        $cooler6 = new \App\Models\Post();
+        $cooler6 = new \App\Models\CpuCooler();
         $cooler6->model =
         $cooler6->brand =
         $cooler6->type =
@@ -131,7 +131,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler6->number_of_fans =
         $cooler6->save();
 
-        $cooler7 = new \App\Models\Post();
+        $cooler7 = new \App\Models\CpuCooler();
         $cooler7->model =
         $cooler7->brand =
         $cooler7->type =
@@ -148,7 +148,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler7->number_of_fans =
         $cooler7->save();
 
-        $cooler8 = new \App\Models\Post();
+        $cooler8 = new \App\Models\CpuCooler();
         $cooler8->model =
         $cooler8->brand =
         $cooler8->type =
@@ -165,7 +165,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler8->number_of_fans =
         $cooler8->save();
 
-        $cooler9 = new \App\Models\Post();
+        $cooler9 = new \App\Models\CpuCooler();
         $cooler9->model =
         $cooler9->brand =
         $cooler9->type =
@@ -182,7 +182,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler9->number_of_fans =
         $cooler9->save();
 
-        $cooler10 = new \App\Models\Post();
+        $cooler10 = new \App\Models\CpuCooler();
         $cooler10->model =
         $cooler10->brand =
         $cooler10->type =
@@ -199,7 +199,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler10->number_of_fans =
         $cooler10->save();
 
-        $cooler11 = new \App\Models\Post();
+        $cooler11 = new \App\Models\CpuCooler();
         $cooler11->model =
         $cooler11->brand =
         $cooler11->type =
@@ -216,7 +216,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler11->number_of_fans =
         $cooler11->save();
 
-        $cooler12 = new \App\Models\Post();
+        $cooler12 = new \App\Models\CpuCooler();
         $cooler12->model =
         $cooler12->brand =
         $cooler12->type =
@@ -233,7 +233,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler12->number_of_fans =
         $cooler12->save();
 
-        $cooler13 = new \App\Models\Post();
+        $cooler13 = new \App\Models\CpuCooler();
         $cooler13->model =
         $cooler13->brand =
         $cooler13->type =
@@ -250,7 +250,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler13->number_of_fans =
         $cooler13->save();
 
-        $cooler14 = new \App\Models\Post();
+        $cooler14 = new \App\Models\CpuCooler();
         $cooler14->model =
         $cooler14->brand =
         $cooler14->type =
@@ -267,7 +267,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler14->number_of_fans =
         $cooler14->save();
 
-        $cooler15 = new \App\Models\Post();
+        $cooler15 = new \App\Models\CpuCooler();
         $cooler15->model =
         $cooler15->brand =
         $cooler15->type =
@@ -284,7 +284,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler15->number_of_fans =
         $cooler15->save();
 
-        $cooler16 = new \App\Models\Post();
+        $cooler16 = new \App\Models\CpuCooler();
         $cooler16->model =
         $cooler16->brand =
         $cooler16->type =
@@ -301,7 +301,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler16->number_of_fans =
         $cooler16->save();
 
-        $cooler17 = new \App\Models\Post();
+        $cooler17 = new \App\Models\CpuCooler();
         $cooler17->model =
         $cooler17->brand =
         $cooler17->type =
@@ -318,7 +318,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler17->number_of_fans =
         $cooler17->save();
 
-        $cooler18 = new \App\Models\Post();
+        $cooler18 = new \App\Models\CpuCooler();
         $cooler18->model =
         $cooler18->brand =
         $cooler18->type =
@@ -335,7 +335,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler18->number_of_fans =
         $cooler18->save();
 
-        $cooler19 = new \App\Models\Post();
+        $cooler19 = new \App\Models\CpuCooler();
         $cooler19->model =
         $cooler19->brand =
         $cooler19->type =
@@ -352,7 +352,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cooler19->number_of_fans =
         $cooler19->save();
 
-        $cooler20 = new \App\Models\Post();
+        $cooler20 = new \App\Models\CpuCooler();
         $cooler20->model =
         $cooler20->brand =
         $cooler20->type =

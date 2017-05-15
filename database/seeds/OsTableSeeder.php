@@ -12,7 +12,7 @@ class OsTableSeeder extends Seeder
      */
     public function run()
     {
-        $os = new \App\Models\Post();
+        $os = new \App\Models\Os();
         $os->name =
         $os->description =
         $os->architecture =
@@ -22,7 +22,7 @@ class OsTableSeeder extends Seeder
         $os->manufacturer =
         $os->save();
 
-        $os1 = new \App\Models\Post();
+        $os1 = new \App\Models\Os();
         $os1->name =
         $os1->description =
         $os1->architecture =
@@ -32,7 +32,7 @@ class OsTableSeeder extends Seeder
         $os1->manufacturer =
         $os1->save();
 
-        $os2 = new \App\Models\Post();
+        $os2 = new \App\Models\Os();
         $os2->name =
         $os2->description =
         $os2->architecture =
@@ -42,7 +42,7 @@ class OsTableSeeder extends Seeder
         $os2->manufacturer =
         $os2->save();
 
-        $os3 = new \App\Models\Post();
+        $os3 = new \App\Models\Os();
         $os3->name =
         $os3->description =
         $os3->architecture =
@@ -52,7 +52,7 @@ class OsTableSeeder extends Seeder
         $os3->manufacturer =
         $os3->save();
 
-        $os4 = new \App\Models\Post();
+        $os4 = new \App\Models\Os();
         $os4->name =
         $os4->description =
         $os4->architecture =
@@ -62,7 +62,7 @@ class OsTableSeeder extends Seeder
         $os4->manufacturer =
         $os4->save();
 
-        $os5 = new \App\Models\Post();
+        $os5 = new \App\Models\Os();
         $os5->name =
         $os5->description =
         $os5->architecture =
