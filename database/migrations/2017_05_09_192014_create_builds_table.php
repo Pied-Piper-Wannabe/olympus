@@ -15,23 +15,28 @@ class CreateBuildsTable extends Migration
 		Schema::create('builds', function(Blueprint $table){
 			$table->increments('id');
 			$table->string('name', 150);
-			$table->integer('user_id');
-			$table->text('description');
+
+			$table->integer('user_id')->unsigned();
+			$table->integer('user_id')->references('id')->on('users');
+
+			$table->text('description')->nullable();;
 			$table->decimal('price', 5, 2);
 			//------needs a compatibility check-------
-			$table->integer('motherboard');
-			$table->integer('cpu');
-			$table->string('gpu');
-			$table->boolean('sli');
-			$table->integer('ram');
-			$table->integer('cpu_cooler');
+			$table->integer('motherboard')->nullable()->unsigned();
+			$table->integer('motherboard')->references('id')->on('motherbaord');
+
+			$table->integer('cpu')->nullable();
+			$table->integer('gpu')->nullable();
+			$table->boolean('sli')->nullable();
+			$table->integer('ram')->nullable();
+			$table->integer('cpu_cooler')->nullable();
 			//-----------------------------------------
-			$table->string('hdd');
-			$table->integer('psu');
-			$table->integer('case');
-			$table->integer('optical_drive');
-			$table->integer('operating_system');
-			$table->string('misc');
+			$table->integer('hdd')->nullable();
+			$table->integer('psu')->nullable();
+			$table->integer('case')->nullable();
+			$table->integer('optical_drive')->nullable();
+			$table->integer('operating_system')->nullable();
+			$table->integer('misc')->nullable();
 
 		});
 	}

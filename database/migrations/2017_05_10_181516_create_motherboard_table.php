@@ -13,6 +13,7 @@ class CreateMotherboardTable extends Migration
 	public function up()
 	{
 		Schema::create('motherboard', function(Blueprint $table){
+			$table->integer('part_id');
 			$table->string('model');
 			$table->string('brand');
 			$table->string('manufacturer');
@@ -25,7 +26,7 @@ class CreateMotherboardTable extends Migration
 			$table->string('onboard_audio');
 			$table->integer('memory_slot_number');
 			$table->integer('max_memory');
-			$table->string('channel_support');
+			$table->string('supported_memory');
 			$table->string('expansion_slots');
 			$table->string('storage_devices');
 			$table->string('rear_panel_ports');
@@ -41,6 +42,6 @@ class CreateMotherboardTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('motherboard');
 	}
 }
