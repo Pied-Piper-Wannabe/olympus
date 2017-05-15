@@ -13,7 +13,7 @@ class CreateCpuCoolerTable extends Migration
 	public function up()
 	{
 		Schema::create('cpu_cooler', function(Blueprint $table){
-			$table->string('part_id');
+			$table->increments('id');
 			$table->string('model');
 			$table->string('brand');
 			$table->string('type');

@@ -13,7 +13,7 @@ class CreateMiscTable extends Migration
 	public function up()
 	{
 		Schema::create('misc', function(Blueprint $table){
-			$table->string('part_id');
+			$table->increments('id');
 			$table->string('name');
 			$table->string('type');
 			$table->string('description');

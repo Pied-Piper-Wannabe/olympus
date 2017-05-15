@@ -21,7 +21,7 @@ Route::resource('/builds', 'BuildsController');
 
 Route::resource('/account', 'AccountsController');
 
-Route::resource('/parts', 'PartsController');
+// Manual PartsController
 
 // Login routes
 Route::get('/login', 'Auth\AuthController@getLogin');

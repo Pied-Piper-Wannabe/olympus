@@ -13,8 +13,7 @@ class CreateHddTable extends Migration
 	public function up()
 	{
 		Schema::create('hdd', function(Blueprint $table){
-			$table->integer('part_id');
-			$table->string('model');
+			$table->increments('id');
 			$table->string('brand');
 			$table->string('interface');
 			$table->integer('size');
