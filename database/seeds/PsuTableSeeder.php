@@ -14,7 +14,7 @@ class PsuTableSeeder extends Seeder
      */
     public function run()
     {
-        $psu = new \App\Models\Post();
+        $psu = new \App\Models\Psu();
         $psu->model =
         $psu->type =
         $psu->p_n =
@@ -35,7 +35,7 @@ class PsuTableSeeder extends Seeder
         $psu->modular =
         $psu->save();
 
-        $psu1 = new \App\Models\Post();
+        $psu1 = new \App\Models\Psu();
         $psu1->model =
         $psu1->type =
         $psu1->p_n =
@@ -56,7 +56,7 @@ class PsuTableSeeder extends Seeder
         $psu1->modular =
         $psu1->save();
 
-        $psu2 = new \App\Models\Post();
+        $psu2 = new \App\Models\Psu();
         $psu2->model =
         $psu2->type =
         $psu2->p_n =
@@ -77,7 +77,7 @@ class PsuTableSeeder extends Seeder
         $psu2->modular =
         $psu2->save();
 
-        $psu3 = new \App\Models\Post();
+        $psu3 = new \App\Models\Psu();
         $psu3->model =
         $psu3->type =
         $psu3->p_n =
@@ -98,7 +98,7 @@ class PsuTableSeeder extends Seeder
         $psu3->modular =
         $psu3->save();
 
-        $psu4 = new \App\Models\Post();
+        $psu4 = new \App\Models\Psu();
         $psu4->model =
         $psu4->type =
         $psu4->p_n =
@@ -119,7 +119,7 @@ class PsuTableSeeder extends Seeder
         $psu4->modular =
         $psu4->save();
 
-        $psu5 = new \App\Models\Post();
+        $psu5 = new \App\Models\Psu();
         $psu5->model =
         $psu5->type =
         $psu5->p_n =
@@ -140,7 +140,7 @@ class PsuTableSeeder extends Seeder
         $psu5->modular =
         $psu5->save();
 
-        $psu6 = new \App\Models\Post();
+        $psu6 = new \App\Models\Psu();
         $psu6->model =
         $psu6->type =
         $psu6->p_n =
@@ -161,7 +161,7 @@ class PsuTableSeeder extends Seeder
         $psu6->modular =
         $psu6->save();
 
-        $psu7 = new \App\Models\Post();
+        $psu7 = new \App\Models\Psu();
         $psu7->model =
         $psu7->type =
         $psu7->p_n =
@@ -182,7 +182,7 @@ class PsuTableSeeder extends Seeder
         $psu7->modular =
         $psu7->save();
 
-        $psu8 = new \App\Models\Post();
+        $psu8 = new \App\Models\Psu();
         $psu8->model =
         $psu8->type =
         $psu8->p_n =
@@ -203,7 +203,7 @@ class PsuTableSeeder extends Seeder
         $psu8->modular =
         $psu8->save();
 
-        $psu9 = new \App\Models\Post();
+        $psu9 = new \App\Models\Psu();
         $psu9->model =
         $psu9->type =
         $psu9->p_n =
@@ -224,7 +224,7 @@ class PsuTableSeeder extends Seeder
         $psu9->modular =
         $psu9->save();
 
-        $psu10 = new \App\Models\Post();
+        $psu10 = new \App\Models\Psu();
         $psu10->model =
         $psu10->type =
         $psu10->p_n =
@@ -245,7 +245,7 @@ class PsuTableSeeder extends Seeder
         $psu10->modular =
         $psu10->save();
 
-        $psu11 = new \App\Models\Post();
+        $psu11 = new \App\Models\Psu();
         $psu11->model =
         $psu11->type =
         $psu11->p_n =
@@ -266,7 +266,7 @@ class PsuTableSeeder extends Seeder
         $psu11->modular =
         $psu11->save();
 
-        $psu12 = new \App\Models\Post();
+        $psu12 = new \App\Models\Psu();
         $psu12->model =
         $psu12->type =
         $psu12->p_n =
@@ -287,7 +287,7 @@ class PsuTableSeeder extends Seeder
         $psu12->modular =
         $psu12->save();
 
-        $psu13 = new \App\Models\Post();
+        $psu13 = new \App\Models\Psu();
         $psu13->model =
         $psu13->type =
         $psu13->p_n =
@@ -308,7 +308,7 @@ class PsuTableSeeder extends Seeder
         $psu13->modular =
         $psu13->save();
 
-        $psu14 = new \App\Models\Post();
+        $psu14 = new \App\Models\Psu();
         $psu14->model =
         $psu14->type =
         $psu14->p_n =
@@ -329,7 +329,7 @@ class PsuTableSeeder extends Seeder
         $psu14->modular =
         $psu14->save();
 
-        $psu15 = new \App\Models\Post();
+        $psu15 = new \App\Models\Psu();
         $psu15->model =
         $psu15->type =
         $psu15->p_n =
@@ -350,7 +350,7 @@ class PsuTableSeeder extends Seeder
         $psu15->modular =
         $psu15->save();
 
-        $psu16 = new \App\Models\Post();
+        $psu16 = new \App\Models\Psu();
         $psu16->model =
         $psu16->type =
         $psu16->p_n =
@@ -371,7 +371,7 @@ class PsuTableSeeder extends Seeder
         $psu16->modular =
         $psu16->save();
 
-        $psu17 = new \App\Models\Post();
+        $psu17 = new \App\Models\Psu();
         $psu17->model =
         $psu17->type =
         $psu17->p_n =
@@ -392,7 +392,7 @@ class PsuTableSeeder extends Seeder
         $psu17->modular =
         $psu17->save();
 
-        $psu18 = new \App\Models\Post();
+        $psu18 = new \App\Models\Psu();
         $psu18->model =
         $psu18->type =
         $psu18->p_n =
@@ -413,7 +413,7 @@ class PsuTableSeeder extends Seeder
         $psu18->modular =
         $psu18->save();
 
-        $psu19 = new \App\Models\Post();
+        $psu19 = new \App\Models\Psu();
         $psu19->model =
         $psu19->type =
         $psu19->p_n =
@@ -434,7 +434,7 @@ class PsuTableSeeder extends Seeder
         $psu19->modular =
         $psu19->save();
 
-        $psu20 = new \App\Models\Post();
+        $psu20 = new \App\Models\Psu();
         $psu20->model =
         $psu20->type =
         $psu20->p_n =

@@ -12,7 +12,7 @@ class CasesTableSeeder extends Seeder
      */
     public function run()
     {
-        $case = new \App\Models\Post();
+        $case = new \App\Models\Case();
         $case->model =
         $case->brand =
         $case->type =
@@ -32,7 +32,7 @@ class CasesTableSeeder extends Seeder
         $case->weight =
         $case->save();
 
-        $case1 = new \App\Models\Post();
+        $case1 = new \App\Models\Case();
         $case1->model =
         $case1->brand =
         $case1->type =
@@ -52,7 +52,7 @@ class CasesTableSeeder extends Seeder
         $case1->weight =
         $case1->save();
 
-        $case2 = new \App\Models\Post();
+        $case2 = new \App\Models\Case();
         $case2->model =
         $case2->brand =
         $case2->type =
@@ -72,7 +72,7 @@ class CasesTableSeeder extends Seeder
         $case2->weight =
         $case2->save();
 
-        $case3 = new \App\Models\Post();
+        $case3 = new \App\Models\Case();
         $case3->model =
         $case3->brand =
         $case3->type =
@@ -92,7 +92,7 @@ class CasesTableSeeder extends Seeder
         $case3->weight =
         $case3->save();
 
-        $case4 = new \App\Models\Post();
+        $case4 = new \App\Models\Case();
         $case4->model =
         $case4->brand =
         $case4->type =
@@ -112,7 +112,7 @@ class CasesTableSeeder extends Seeder
         $case4->weight =
         $case4->save();
 
-        $case5 = new \App\Models\Post();
+        $case5 = new \App\Models\Case();
         $case5->model =
         $case5->brand =
         $case5->type =
@@ -132,7 +132,7 @@ class CasesTableSeeder extends Seeder
         $case5->weight =
         $case5->save();
 
-        $case6 = new \App\Models\Post();
+        $case6 = new \App\Models\Case();
         $case6->model =
         $case6->brand =
         $case6->type =
@@ -152,7 +152,7 @@ class CasesTableSeeder extends Seeder
         $case6->weight =
         $case6->save();
 
-        $case7 = new \App\Models\Post();
+        $case7 = new \App\Models\Case();
         $case7->model =
         $case7->brand =
         $case7->type =
@@ -172,7 +172,7 @@ class CasesTableSeeder extends Seeder
         $case7->weight =
         $case7->save();
 
-        $case8 = new \App\Models\Post();
+        $case8 = new \App\Models\Case();
         $case8->model =
         $case8->brand =
         $case8->type =
@@ -192,7 +192,7 @@ class CasesTableSeeder extends Seeder
         $case8->weight =
         $case8->save();
 
-        $case9 = new \App\Models\Post();
+        $case9 = new \App\Models\Case();
         $case9->model =
         $case9->brand =
         $case9->type =
@@ -212,7 +212,7 @@ class CasesTableSeeder extends Seeder
         $case9->weight =
         $case9->save();
 
-        $case10 = new \App\Models\Post();
+        $case10 = new \App\Models\Case();
         $case10->model =
         $case10->brand =
         $case10->type =
@@ -232,7 +232,7 @@ class CasesTableSeeder extends Seeder
         $case10->weight =
         $case10->save();
 
-        $case11 = new \App\Models\Post();
+        $case11 = new \App\Models\Case();
         $case11->model =
         $case11->brand =
         $case11->type =
@@ -252,7 +252,7 @@ class CasesTableSeeder extends Seeder
         $case11->weight =
         $case11->save();
 
-        $case12 = new \App\Models\Post();
+        $case12 = new \App\Models\Case();
         $case12->model =
         $case12->brand =
         $case12->type =
@@ -272,7 +272,7 @@ class CasesTableSeeder extends Seeder
         $case12->weight =
         $case12->save();
 
-        $case13 = new \App\Models\Post();
+        $case13 = new \App\Models\Case();
         $case13->model =
         $case13->brand =
         $case13->type =
@@ -292,7 +292,7 @@ class CasesTableSeeder extends Seeder
         $case13->weight =
         $case13->save();
 
-        $case14 = new \App\Models\Post();
+        $case14 = new \App\Models\Case();
         $case14->model =
         $case14->brand =
         $case14->type =
@@ -312,7 +312,7 @@ class CasesTableSeeder extends Seeder
         $case14->weight =
         $case14->save();
 
-        $case15 = new \App\Models\Post();
+        $case15 = new \App\Models\Case();
         $case15->model =
         $case15->brand =
         $case15->type =
@@ -332,7 +332,7 @@ class CasesTableSeeder extends Seeder
         $case15->weight =
         $case15->save();
 
-        $case16 = new \App\Models\Post();
+        $case16 = new \App\Models\Case();
         $case16->model =
         $case16->brand =
         $case16->type =
@@ -352,7 +352,7 @@ class CasesTableSeeder extends Seeder
         $case16->weight =
         $case16->save();
 
-        $case17 = new \App\Models\Post();
+        $case17 = new \App\Models\Case();
         $case17->model =
         $case17->brand =
         $case17->type =
@@ -372,7 +372,7 @@ class CasesTableSeeder extends Seeder
         $case17->weight =
         $case17->save();
 
-        $case18 = new \App\Models\Post();
+        $case18 = new \App\Models\Case();
         $case18->model =
         $case18->brand =
         $case18->type =
@@ -392,7 +392,7 @@ class CasesTableSeeder extends Seeder
         $case18->weight =
         $case18->save();
 
-        $case19 = new \App\Models\Post();
+        $case19 = new \App\Models\Case();
         $case19->model =
         $case19->brand =
         $case19->type =
@@ -412,7 +412,7 @@ class CasesTableSeeder extends Seeder
         $case19->weight =
         $case19->save();
 
-        $case20 = new \App\Models\Post();
+        $case20 = new \App\Models\Case();
         $case20->model =
         $case20->brand =
         $case20->type =

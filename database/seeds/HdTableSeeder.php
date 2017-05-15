@@ -12,7 +12,7 @@ class HdTableSeeder extends Seeder
      */
     public function run()
     {
-        $hd = new \App\Models\Post();
+        $hd = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -27,7 +27,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd->save();
 
-        $hd1 = new \App\Models\Post();
+        $hd1 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -42,7 +42,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd1->save();
 
-        $hd2 = new \App\Models\Post();
+        $hd2 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -57,7 +57,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd2->save();
 
-        $hd3 = new \App\Models\Post();
+        $hd3 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -72,7 +72,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd3->save();
 
-        $hd4 = new \App\Models\Post();
+        $hd4 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -87,7 +87,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd4->save();
 
-        $hd5 = new \App\Models\Post();
+        $hd5 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -102,7 +102,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd5->save();
 
-        $hd6 = new \App\Models\Post();
+        $hd6 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -117,7 +117,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd6->save();
 
-        $hd7 = new \App\Models\Post();
+        $hd7 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -132,7 +132,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd7->save();
 
-        $hd8 = new \App\Models\Post();
+        $hd8 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -147,7 +147,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd8->save();
 
-        $hd9 = new \App\Models\Post();
+        $hd9 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -162,7 +162,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd9->save();
 
-        $hd10 = new \App\Models\Post();
+        $hd10 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -177,7 +177,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd10->save();
 
-        $hd11 = new \App\Models\Post();
+        $hd11 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -192,7 +192,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd11->save();
 
-        $hd12 = new \App\Models\Post();
+        $hd12 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -207,7 +207,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd12->save();
 
-        $hd13 = new \App\Models\Post();
+        $hd13 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -222,7 +222,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd13->save();
 
-        $hd14 = new \App\Models\Post();
+        $hd14 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -237,7 +237,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd14->save();
 
-        $hd15 = new \App\Models\Post();
+        $hd15 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -252,7 +252,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd15->save();
 
-        $hd16 = new \App\Models\Post();
+        $hd16 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -267,7 +267,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd16->save();
 
-        $hd17 = new \App\Models\Post();
+        $hd17 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -282,7 +282,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd17->save();
 
-        $hd18 = new \App\Models\Post();
+        $hd18 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -297,7 +297,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd18->save();
 
-        $hd19 = new \App\Models\Post();
+        $hd19 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
@@ -312,7 +312,7 @@ class HdTableSeeder extends Seeder
         $hd->ssd =
         $hd19->save();
 
-        $hd20 = new \App\Models\Post();
+        $hd20 = new \App\Models\Hdd();
         $hd->model =
         $hd->brand =
         $hd->series =
