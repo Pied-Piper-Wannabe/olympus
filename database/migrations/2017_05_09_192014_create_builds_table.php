@@ -38,26 +38,26 @@ class CreateBuildsTable extends Migration
 			$table->integer('ram')->references('part_id')->on('ram');
 
 			$table->integer('cpu_cooler')->nullable()->unsigned();
-			$table->integer('cpu_cooler')->references('cpu_cooler')->on('cpu_cooler');
+			$table->integer('cpu_cooler')->references('part_id')->on('cpu_cooler');
 
 			//-----------------------------------------
 			$table->integer('hdd')->nullable()->unsigned();
-			$table->integer('hdd')->references('hdd')->on('hdd');
+			$table->integer('hdd')->references('part_id')->on('hdd');
 
 			$table->integer('psu')->nullable()->unsigned();
-			$table->integer('psu')->references('psu')->on('psu');
+			$table->integer('psu')->references('part_id')->on('psu');
 
 			$table->integer('case')->nullable()->unsigned();
-			$table->integer('case')->references('case')->on('case');
+			$table->integer('case')->references('part_id')->on('case');
 
 			$table->integer('optical_drive')->nullable()->unsigned();
-			$table->integer('optical_drive')->references('optical_drive')->on('optical_drive');
+			$table->integer('optical_drive')->references('part_id')->on('optical_drive');
 
 			$table->integer('operating_system')->nullable()->unsigned();
-			$table->integer('operating_system')->references('operating_system')->on('operating_system');
+			$table->integer('operating_system')->references('part_id')->on('operating_system');
 
 			$table->string('misc')->nullable()->unsigned();
-			$table->string('misc')->references('misc')->on('misc');
+			$table->string('misc')->references('part_id')->on('misc');
 
 		});
 	}
@@ -69,6 +69,6 @@ class CreateBuildsTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		schema::drop('builds');
 	}
 }

@@ -13,6 +13,7 @@ class CreateGpuTable extends Migration
 	public function up()
 	{
 		Schema::create('gpu', function(Blueprint $table){
+			$table->integer('part_id');
 			$table->string('model');
 			$table->string('brand');
 			// --------------COMP CHECK--------

@@ -13,13 +13,14 @@ class CreateOsTable extends Migration
 	public function up()
 	{
 		Schema::create('os', function(Blueprint $table){
+			$table->string('part_id');
 			$table->string('name');
+			$table->string('brand');
 			$table->string('description');
 			$table->string('architecture');
-			$table->string('system_requirements');
+			$table->string('max_memory');
 			$table->string('kernel');
 			$table->string('gui');
-			$table->string('manufacturer');
 		});
 	}
 
@@ -30,6 +31,6 @@ class CreateOsTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		schema::drop('os');
 	}
 }

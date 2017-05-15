@@ -13,23 +13,17 @@ class CreateCaseTable extends Migration
 	public function up()
 	{
 		Schema::create('case', function(Blueprint $table){
+			$table->string('part_id');
 			$table->string('model');
 			$table->string('brand');
-			$table->string('type');
-			$table->string('series');
-			$table->string('case_material');
-			$table->string('motherboard_compatability');
-			$table->string('side_window');
-			$table->string('led');
-			$table->string('removable_filter');
 			$table->string('external_drive_bay');
 			$table->string('internal_drive_bay');
-			$table->string('expansion_slots');
 			$table->string('front_ports');
-			$table->string('cooling_system');
+			// ----------COMP CHECK------------	
+			$table->string('form_factor');
 			$table->integer('max_gpu_length');
+			// ------------COMP CHECK------------
 			$table->integer('dimensions');
-			$table->integer('weight');
 		});
 	}
 
@@ -40,6 +34,6 @@ class CreateCaseTable extends Migration
 	 */
 	public function down()
 	{
-		//
+		schema::drop('case');
 	}
 }
