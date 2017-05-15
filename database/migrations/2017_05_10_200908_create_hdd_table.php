@@ -19,7 +19,7 @@ class CreateHddTable extends Migration
 			$table->string('interface');
 			$table->integer('size');
 			$table->integer('rpm')->nullable();
-			$table->integer('cache');->nullable();
+			$table->integer('cache')->nullable();
 			$table->integer('average_latency');
 			$table->decimal('form_factor', 3, 1);
 			$table->boolean('ssd');
