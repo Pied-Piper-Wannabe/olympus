@@ -31,7 +31,6 @@ class CreateMotherboardTable extends Migration
 			$table->string('sata_express');
 			$table->string('onboard_ethernet');
 			$table->string('onboard_usb3');
-			$table->string('expansion_slots');
 			$table->timestamps();
 		});
 	}
