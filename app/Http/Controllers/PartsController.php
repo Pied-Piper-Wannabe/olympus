@@ -98,9 +98,58 @@ class PartsController extends Controller
 	 * @param  int  $id
 	 * @return \Illuminate\Http\Response
 	 */
-	public function show($id)
+	public function show($type, $id)
 	{
-		//
+
+		$loggedInUser = "";
+    if (Auth::check()) {
+        $loggedInUser = Auth::user()->id;
+    }
+
+		switch ($type) {
+			case 'cpu':
+				$type = 'CPUs';
+				$parts = \App\Models\Cpu::paginate(10);
+				break;
+			case 'cpu-cooler':
+				$type = 'CPU Coolers';
+				break;
+			case 'motherboard':
+				$type = 'Motherboards';
+				$part = \App\Models\Motherboard::findOrFail($id);
+				break;
+			case 'memory':
+				$type = 'Memory';
+				break;
+			case 'storage':
+				$type = 'Storage Devices';
+				break;
+			case 'gpu':
+				$type = 'GPUs';
+				break;
+			case 'case':
+				$type = 'Cases';
+				break;
+			case 'power-supply':
+				$type = 'PSUs';
+				break;
+			case 'optical-drive':
+				$type = 'Optical Drives';
+				break;
+			case 'operating-system':
+				$type = 'Operating Systems';
+				break;
+			case 'misc':
+				$type = 'Misc';
+				break;
+
+		}
+		$data = array(
+			'type' => $type, 
+			'user' => $loggedInUser,
+			'part' => $part);
+		
+		return view('parts/show', $data);
 	}
 
 	/**
