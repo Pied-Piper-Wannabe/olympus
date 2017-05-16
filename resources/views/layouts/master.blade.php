@@ -55,12 +55,26 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">BLOG</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/login">LOGIN/REGISTER</a>
+					@if (Auth::check())
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								MY ACCOUNT
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="/account">View Profile</a>
+								<a class="dropdown-item" href="/account/edit">Edit Account</a>
+								<a class="dropdown-item" href="/logout">Logout</a>
+							</div>
 					</li>
+          @else
+          	<li class="nav-item">
+							<a class="nav-link" href="/login">LOGIN/REGISTER</a>
+						</li>
+          @endif
 				</ul>
 			</div>
 		</nav>
+
 
 	@yield('content')
 	<!-- Footer -->
