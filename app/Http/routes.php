@@ -16,6 +16,10 @@ Route::get('/', function () {
 	return view('frontpage');
 });
 
+Route::get('/tour', function () {
+  return view('tour');
+});
+
 // Resource Controllers
 Route::resource('/builds', 'BuildsController');
 

@@ -686,7 +686,7 @@
           </div>
 
           <!-- Video RAM -->
-          <h4>SLI/Crossfire Support</h4>
+          <h4>Video RAM</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -713,6 +713,39 @@
           </div>
 
 					@elseif($type === 'Cases')
+					<!-- Brand -->
+					<h4>Manufacturer</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							MSI
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							ASUS
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							GIGABYTE
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							EVGA
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Sapphire
+						</label>
+					</div>
+
 
 					@elseif($type === 'PSUs')
 
