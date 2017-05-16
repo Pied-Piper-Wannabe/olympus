@@ -14,24 +14,21 @@ class CreateCpuTable extends Migration
 	{
 		Schema::create('cpu', function(Blueprint $table){
 			$table->increments('id');
-			$table->decimal('price', 5, 2);
-			$table->string('brand');
 			$table->string('model');
-			$table->string('form_factor');
-			$table->string('cpu_socket');
-			$table->string('chipset');
-			$table->string('memory_slots');
-			$table->string('memory_type');
-			$table->integer('max_memory');
-			$table->string('raid_support');
-			$table->string('onboard_gpu');
-			$table->string('crossfire_support');
-			$table->string('sli_support');
-			$table->integer('sata6_gbs');
-			$table->string('sata_express');
-			$table->string('onboard_ethernet');
-			$table->string('onboard_usb3');
-			$table->timestamps();
+			$table->string('brand');
+			$table->string('socket_type');
+			$table->integer('number_of_cores');
+			$table->integer('number_of_threads');
+			$table->boolean('hyperthreading_support');
+			$table->integer('operating_frequency');
+			$table->integer('max_turbo_frequency');
+			$table->string('l1_cache');
+			$table->string('l2_cache');
+			$table->string('l3_cache');
+			$table->string('data_width');
+			$table->string('intergrated_graphics');
+			$table->integer('wattage');
+			$table->integer('max_supported_memory');
 		});
 	}
 
