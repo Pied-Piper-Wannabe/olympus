@@ -21,7 +21,8 @@ class MoboTableSeeder extends Seeder
         $mobo1->form_factor='atx ';
         $mobo1->cpu_socket='lga1151';
         $mobo1->chipset='intel z270';
-        $mobo1->memory_slots='4x 288-pin DIMM ';
+        $mobo1->memory_slots=4;
+        $mobo1->memory_pin='288-pin DIMM';
         $mobo1->memory_type='ddr4 2133/2400/2666/2800/3200/3300/3333/3400/3466/3600/3733/3866';
         $mobo1->max_memory=64;
         $mobo1->raid_support='yes';
@@ -41,7 +42,8 @@ class MoboTableSeeder extends Seeder
         $mobo2->form_factor='micro atx ';
         $mobo2->cpu_socket='am4';
         $mobo2->chipset='amd b350';
-        $mobo2->memory_slots='2x 288-pin DIMM';
+        $mobo2->memory_slots=2;
+        $mobo2->memory_pin='288-pin DIMM';
         $mobo2->memory_type='ddr4 1866/2133/2400/2666/2933/3200';
         $mobo2->max_memory=32;
         $mobo2->raid_support='yes';
@@ -61,7 +63,8 @@ class MoboTableSeeder extends Seeder
         $mobo3->form_factor='micro atx';
         $mobo3->cpu_socket='lga1151';
         $mobo3->chipset='intel b150 ';
-        $mobo3->memory_slots='4x 288-pin DIMM';
+        $mobo3->memory_slots=4;
+        $mobo3->memory_pin='288-pin DIMM';
         $mobo3->memory_type='ddr4 2133';
         $mobo3->max_memory=64;
         $mobo3->raid_support='no';
@@ -81,7 +84,8 @@ class MoboTableSeeder extends Seeder
         $mobo4->form_factor='atx';
         $mobo4->cpu_socket='lga1151';
         $mobo4->chipset='intel z170';
-        $mobo4->memory_slots='4x 288-pin DIMM';
+        $mobo4->memory_slots=4;
+        $mobo4->memory_pin='288-pin DIMM';
         $mobo4->memory_type='ddr4 2133/2400/2800/3000/3200';
         $mobo4->max_memory=64;
         $mobo4->raid_support='yes';
@@ -101,7 +105,8 @@ class MoboTableSeeder extends Seeder
         $mobo5->form_factor='atx';
         $mobo5->cpu_socket='am4';
         $mobo5->chipset='amd b350';
-        $mobo5->memory_slots='4x 288-pin DIMM';
+        $mobo5->memory_slots=4;
+        $mobo5->memory_pin='288-pin DIMM';
         $mobo5->memory_type='ddr4 1866/2133/2400/2666/2933/3200';
         $mobo5->max_memory=64;
         $mobo5->raid_support='yes';
@@ -121,7 +126,8 @@ class MoboTableSeeder extends Seeder
         $mobo6->form_factor='atx';
         $mobo6->cpu_socket='am4';
         $mobo6->chipset='amd b350';
-        $mobo6->memory_slots='4x 288-pin DIMM';
+        $mobo6->memory_slots=4;
+        $mobo6->memory_pin='288-pin DIMM';
         $mobo6->memory_type='ddr4 1866/2133/2400/2666/2933/3200';
         $mobo6->max_memory=64;
         $mobo6->raid_support='yes';
@@ -141,7 +147,8 @@ class MoboTableSeeder extends Seeder
         $mobo7->form_factor='micro atx';
         $mobo7->cpu_socket='lga1151';
         $mobo7->chipset='intel h110 ';
-        $mobo7->memory_slots='2x 288-pin DIMM';
+        $mobo7->memory_slots=2;
+        $mobo7->memory_pin='288-pin DIMM';
         $mobo7->memory_type='ddr4 2133';
         $mobo7->max_memory=32;
         $mobo7->raid_support='no';
@@ -161,7 +168,8 @@ class MoboTableSeeder extends Seeder
         $mobo8->form_factor='atx';
         $mobo8->cpu_socket='lga1151';
         $mobo8->chipset='intel z270';
-        $mobo8->memory_slots='4x 288-pin DIMM';
+        $mobo8->memory_slots=4;
+        $mobo9->memory_pin='288-pin DIMM';
         $mobo8->memory_type='ddr4 2133/2400/2800/3000/3200/3600';
         $mobo8->max_memory=64;
         $mobo8->raid_support='yes';
@@ -181,7 +189,8 @@ class MoboTableSeeder extends Seeder
         $mobo9->form_factor='atx';
         $mobo9->cpu_socket='am4';
         $mobo9->chipset='amd x370';
-        $mobo9->memory_slots='4x 288-pin DIMM';
+        $mobo9->memory_slots=4;
+        $mobo9->memory_pin='288-pin DIMM';
         $mobo9->memory_type='ddr4 2133/2400/2666/2933/3200';
         $mobo9->max_memory=64;
         $mobo9->raid_support='yes';
@@ -201,8 +210,9 @@ class MoboTableSeeder extends Seeder
         $mobo10->form_factor='atx';
         $mobo10->cpu_socket='lga1151';
         $mobo10->chipset='intel z270';
-        $mobo10->memory_slots='4x 288-pin DIMM';
-        $mobo10->memory_type='ddr4      2133/2400/2666/2800/3000/3200/3300/333/3400/3466/3600/3733/3866';
+        $mobo10->memory_slots=4;
+        $mobo10->memory_pin='288-pin DIMM';
+        $mobo10->memory_type='ddr4 2133/2400/2666/2800/3000/3200/3300/333/3400/3466/3600/3733/3866';
         $mobo10->max_memory=64;
         $mobo10->raid_support='yes';
         $mobo10->onboard_gpu='cpu dependent';
@@ -221,7 +231,8 @@ class MoboTableSeeder extends Seeder
         $mobo11->form_factor='micro atx';
         $mobo11->cpu_socket='lga1151';
         $mobo11->chipset='intel b250';
-        $mobo11->memory_slots='4x 288-pin DIMM';
+        $mobo11->memory_slots=4;
+        $mobo11->memory_pin='288-pin DIMM';
         $mobo11->memory_type='ddr4 2133/2400';
         $mobo11->max_memory=64;
         $mobo11->raid_support='no';
@@ -241,7 +252,8 @@ class MoboTableSeeder extends Seeder
         $mobo12->form_factor='micro atx';
         $mobo12->cpu_socket='lga1151';
         $mobo12->chipset='intel b250';
-        $mobo12->memory_slots='2x 288-pin DIMM';
+        $mobo12->memory_slots=2;
+        $mobo12->memory_pin='288-pin DIMM';
         $mobo12->memory_type='ddr4 2133/2400';
         $mobo12->max_memory=32;
         $mobo12->raid_support='no';
@@ -261,8 +273,9 @@ class MoboTableSeeder extends Seeder
         $mobo13->form_factor='atx';
         $mobo13->cpu_socket='lga1151';
         $mobo13->chipset='intel z270';
-        $mobo13->memory_slots='4x 288-pin DIMM';
-        $mobo13->memory_type='ddr4      2133/2400/2666/2800/3000/3200/3300/3333/3400/3466/3600/3733/3866/4000';
+        $mobo13->memory_slots=4;
+        $mobo13->memory_pin='288-pin DIMM';
+        $mobo13->memory_type='ddr4 2133/2400/2666/2800/3000/3200/3300/3333/3400/3466/3600/3733/3866/4000';
         $mobo13->max_memory=64;
         $mobo13->raid_support='yes';
         $mobo13->onboard_gpu='cpu dependent';
@@ -281,7 +294,8 @@ class MoboTableSeeder extends Seeder
         $mobo14->form_factor='atx';
         $mobo14->cpu_socket='am4';
         $mobo14->chipset='amd b350';
-        $mobo14->memory_slots='4x 288-pin DIMM';
+        $mobo14->memory_slots=4;
+        $mobo14->memory_pin='288-pin DIMM';
         $mobo14->memory_type='ddr4 2133/2400/2666';
         $mobo14->max_memory=64;
         $mobo14->raid_support='yes';
@@ -301,7 +315,8 @@ class MoboTableSeeder extends Seeder
         $mobo15->form_factor='mini itx';
         $mobo15->cpu_socket='lga1151';
         $mobo15->chipset='intel z270';
-        $mobo15->memory_slots='2x 288-pin DIMM';
+        $mobo15->memory_slots=2;
+        $mobo15->memory_pin='288-pin DIMM';
         $mobo15->memory_type='ddr4      2133/2400/2666/2800/3000/3200/3300/3333/3400/3466/3600/3733/3866/4000/4133;/4266';
         $mobo15->max_memory=32;
         $mobo15->raid_support='yes';
@@ -321,7 +336,8 @@ class MoboTableSeeder extends Seeder
         $mobo16->form_factor='atx';
         $mobo16->cpu_socket='lga1151';
         $mobo16->chipset='intel b250';
-        $mobo16->memory_slots='4x 288-pin DIMM';
+        $mobo16->memory_slots=4;
+        $mobo16->memory_pin='288-pin DIMM';
         $mobo16->memory_type='ddr4 2133/2400';
         $mobo16->max_memory=64;
         $mobo16->raid_support='no';
@@ -341,7 +357,8 @@ class MoboTableSeeder extends Seeder
         $mobo17->form_factor='atx';
         $mobo17->cpu_socket='am4';
         $mobo17->chipset='amd x370';
-        $mobo17->memory_slots='4x288pin DIMM';
+        $mobo17->memory_slots=4;
+        $mobo17->memory_pin='288pin DIMM';
         $mobo17->memory_type='ddr4 2133/2400/2666/2933/3200';
         $mobo17->max_memory=64;
         $mobo17->raid_support='yes';
@@ -361,7 +378,8 @@ class MoboTableSeeder extends Seeder
         $mobo18->form_factor='atx';
         $mobo18->cpu_socket='lga1151';
         $mobo18->chipset='intel z170';
-        $mobo18->memory_slots='4x288pin DIMM';
+        $mobo18->memory_slots=4;
+        $mobo18->memory_pin='288pin DIMM';
         $mobo18->memory_type='ddr4 2133/2400/2666/2800/2933/3000/3200/3300/3333/3400';
         $mobo18->max_memory=64;
         $mobo18->raid_support='yes';
@@ -381,7 +399,8 @@ class MoboTableSeeder extends Seeder
         $mobo19->form_factor='atx';
         $mobo19->cpu_socket='am3+';
         $mobo19->chipset='amd 970';
-        $mobo19->memory_slots='4x240pin DIMM';
+        $mobo19->memory_slots=4;
+        $mobo19->memory_pin='240pin DIMM';
         $mobo19->memory_type='ddr3 1066/1333/1600/1866/2133';
         $mobo19->max_memory=32;
         $mobo19->raid_support='yes';
@@ -401,7 +420,8 @@ class MoboTableSeeder extends Seeder
         $mobo20->form_factor='atx';
         $mobo20->cpu_socket='lga1151';
         $mobo20->chipset='intel z270';
-        $mobo20->memory_slots='4x288pin DIMM';
+        $mobo20->memory_slots=4;
+        $mobo20->memory_pin='288pin DIMM';
         $mobo20->memory_type='ddr4 2133/2400/2800/3000/3200/3600/3800';
         $mobo20->max_memory=64;
         $mobo20->raid_support='yes';
