@@ -718,31 +718,64 @@
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							MSI
+							Corsair
 						</label>
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							ASUS
+							NZXT
 						</label>
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							GIGABYTE
+							Fractal Design
 						</label>
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							EVGA
+							Cooler Master
 						</label>
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							Sapphire
+							Thermaltake
+						</label>
+					</div>
+
+					<!-- Type -->
+					<h4>Type</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							ATX Full Tower
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							ATX Mid Tower
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							MicroATX Mid Tower
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							MicroATX Mini Tower
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Mini ITX Tower
 						</label>
 					</div>
 
