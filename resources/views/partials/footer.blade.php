@@ -8,7 +8,7 @@
           <div class="col-md-3 offset-md-2 col-sm-12 offset-sm-0">
             <h3>NEED HELP?</h3>
             <ul>
-              <li><a href="">Visual Tour</a></li>
+              <li><a href="/tour">Visual Tour</a></li>
               <li><a href="">FAQs</a></li>
               <li><a href="">Contact Us</a></li>
               <li><a href="">Privacy</a></li>

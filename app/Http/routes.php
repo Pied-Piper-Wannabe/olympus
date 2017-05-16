@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 
 Route::get('/tour', function () {
-  return view('tour');
+  return view('tour.tour');
 });
 
 // Resource Controllers
