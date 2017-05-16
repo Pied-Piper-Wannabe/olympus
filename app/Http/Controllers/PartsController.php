@@ -28,12 +28,15 @@ class PartsController extends Controller
 		switch ($type) {
 			case 'cpu':
 				$type = 'CPUs';
+				$parts = \App\Models\Cpu::paginate(8);
 				break;
 			case 'cpu-cooler':
 				$type = 'CPU Coolers';
 				break;
 			case 'motherboard':
 				$type = 'Motherboards';
+				$parts = \App\Models\Motherboard::paginate(8);
+				dd($parts);
 				break;
 			case 'memory':
 				$type = 'Memory';
