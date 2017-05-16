@@ -64,6 +64,7 @@ class PartsController extends Controller
 		$data = array(
 			'type' => $type, 
 			'user' => $loggedInUser);
+		
 		return view('parts/index', $data);
 	}
 
