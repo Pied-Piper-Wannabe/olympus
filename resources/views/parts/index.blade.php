@@ -291,8 +291,10 @@
             </label>
           </div>
 
+
           <!-- Onboard Video -->
           <h4>Onboard Video</h4>
+
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -305,6 +307,7 @@
               No
             </label>
           </div>
+
 
           <!-- SLI/Crossfire -->
           <h4>SLI/Crossfire Support</h4>
