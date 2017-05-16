@@ -28,15 +28,14 @@ class PartsController extends Controller
 		switch ($type) {
 			case 'cpu':
 				$type = 'CPUs';
-				$parts = \App\Models\Cpu::paginate(8);
+				$parts = \App\Models\Cpu::paginate(10);
 				break;
 			case 'cpu-cooler':
 				$type = 'CPU Coolers';
 				break;
 			case 'motherboard':
 				$type = 'Motherboards';
-				$parts = \App\Models\Motherboard::paginate(8);
-				dd($parts);
+				$parts = \App\Models\Motherboard::paginate(10);
 				break;
 			case 'memory':
 				$type = 'Memory';
@@ -66,7 +65,8 @@ class PartsController extends Controller
 
 		$data = array(
 			'type' => $type, 
-			'user' => $loggedInUser);
+			'user' => $loggedInUser,
+			'parts' => $parts);
 		
 		return view('parts/index', $data);
 	}

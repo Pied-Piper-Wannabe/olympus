@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
             
       
             $this->call('UsersTableSeeder');
-            // $this->call('UserTableSeeder');
+            $this->call('MoboTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
