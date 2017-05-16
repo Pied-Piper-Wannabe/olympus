@@ -13,7 +13,7 @@
 					<h2 class="centerText">Filter</h2>
 
 					<!-- Price -->
-					<h4>Price: </h4>
+					<h4>Price:</h4>
 					<div class="form-group">
 						<label for="minPriceBox">Min price:</label>
 						<input type="number" class="form-control" id="minPriceBox" aria-describedby="minPrice" placeholder="min price">
@@ -1055,15 +1055,12 @@
 					</div>
 
 					@endif
-
-
-					
-
-
 					<button type="submit" class="btn btn-block btn-outline-primary btn-black">Submit</button>
 				</div>
 			</div>
 		</div>
+
+
 		<!-- List of builds -->
 		<div class="col-md-8 col-lg-9 topMarginSm">
 			<div class="row">
@@ -1092,70 +1089,38 @@
 			</div>
 				</div>
 	<div class="row topMarginSm">
-		<div class="col-md-6 col-sm-12">
-			<div class="buildBanner">
-				<h3>Olympian - SubName</h3>
-			</div>
-			<div class="buildTile">
-				<div class="imageBox">
-					<div class="votesBox">
-						<p class="votes">5/5 Stars</p>
-					</div>
-					<img src="/images/uploads/04.jpg" alt="04">
-				</div>
-				<h3>ABS Intel-Watercooling PS</h3>
-				<p>By: <a href="#">KillerGamer12</a><span class="floatRight">$300</span></p>
-			</div>
-		</div>
-		<div class="col-md-6 col-sm-12">
-			<div class="buildBanner">
-				<h3>Titan - SubName</h3>
-			</div>
-			<div class="buildTile">
-				<div class="imageBox">
-					<div class="votesBox">
-						<p class="votes">5/5 Stars</p>
-					</div>
-					<img src="/images/uploads/02.jpg" alt="02">
-				</div>
-				<h3>CryEngine Workstation V3</h3>
-				<p>By: <a href="#">PCGOD101</a><span class="floatRight">$300</span></p>
-			</div>
-		</div>
-		<div class="col-md-6 col-sm-12">
-			<div class="buildBanner">
-				<h3>Olympian - SubName</h3>
-			</div>
-			<div class="buildTile">
-				<div class="imageBox">
-					<div class="votesBox">
-						<p class="votes">5/5 Stars</p>
-					</div>
-					<img src="/images/uploads/03.jpg" alt="03">
-				</div>
-				<h3>That Contrast Tho</h3>
-				<p>By: <a href="#">IDoThisForALivingGuys</a><span class="floatRight">$300</span></p>
-			</div>
-		</div>
-		<div class="col-md-6 col-sm-12">
-			<div class="buildBanner">
-				<h3>Demigod - SubName</h3>
-			</div>
-			<div class="buildTile">
-				<div class="imageBox">
-					<div class="votesBox">
-						<p class="votes">5/5 Stars</p>
-					</div>
-					<img src="/images/uploads/01.jpg" alt="01">
-				</div>
-				<h3>Compact i3 w/Mech</h3>
-				<p>By: <a href="#">LinuxMasterRace</a><span class="floatRight">$300</span></p>
-			</div>
-		</div>
-		<div class="col-sm-12 centerText botMarginSm">
-			<button type="button" class="btn btn-outline-primary btn-black">View More</button>
-		</div>
-			</div>
+		<div class="col-sm-12 table-responsive">
+			<table class="table table-striped">
+				<thead>
+					@if($type === 'Motherboards')
+					<tr>
+						<th>Motherboard</th>
+						<th>Socket</th>
+						<th>Form Factor</th>
+						<th>RAM Slots</th>
+						<th>Max Ram</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/motherboard/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->cpu_socket}}</td>
+						<td>{{$part->form_factor}}</td>
+						<td>{{$part->memory_slots}}</td>
+						<td>{{$part->max_memory}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+				</tbody>
+			</table>
+			{!! $parts->render() !!}
 		</div>
 	</div>
 </div>
