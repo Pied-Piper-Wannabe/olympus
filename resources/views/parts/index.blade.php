@@ -13,7 +13,7 @@
           <h2 class="centerText">Filter</h2>
 
           <!-- Price -->
-          <h3>Price: </h3>
+          <h4>Price: </h4>
           <div class="form-group">
             <label for="minPriceBox">Min price:</label>
             <input type="number" class="form-control" id="minPriceBox" aria-describedby="minPrice" placeholder="min price">
@@ -24,7 +24,7 @@
           <!-- =========CPU========== -->
           @if($type === 'CPUs')
           <!-- Brand -->
-          <h3>Manufacturer</h3>
+          <h4>Manufacturer</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -39,7 +39,7 @@
           </div>
           
           <!-- Socket -->
-          <h3>Socket</h3>
+          <h4>Socket</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -60,7 +60,7 @@
           </div>
 
           <!-- Graphics -->
-          <h3>Integrated Graphics</h3>
+          <h4>Integrated Graphics</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -87,7 +87,7 @@
           </div>
 
           <!-- Cores -->
-          <h3>Cores</h3>
+          <h4>Cores</h4>
           <div class="form-group">
             <label for="minCoresBox">Min Cores:</label>
             <input type="number" class="form-control" id="minCoresBox" aria-describedby="minCores" placeholder="min cores">
@@ -98,7 +98,7 @@
           <!-- =========CPU COOLERS========== -->
           @elseif($type === 'CPU Coolers')
           <!-- Brand -->
-          <h3>Manufacturer</h3>
+          <h4>Manufacturer</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -131,7 +131,7 @@
           </div>
           
           <!-- Socket -->
-          <h3>Socket</h3>
+          <h4>Socket</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -152,7 +152,7 @@
           </div>
 
           <!-- Water Cooled -->
-          <h3>Water Cooled</h3>
+          <h4>Water Cooled</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -167,7 +167,7 @@
           </div>
 
           <!-- Cores -->
-          <h3>Fan Size</h3>
+          <h4>Fan Size</h4>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
