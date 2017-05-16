@@ -17,6 +17,7 @@
   <div class="row botMarginSm">
     <div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
       <form class="signupForm">
+      {!! csrf_field() !!}
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" class="form-control inverseInput" id="email" aria-describedby="emailHelp" placeholder="Enter email">
