@@ -15,14 +15,14 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $user = new \App\User();
-        $user->name = 'user'
-        $user->email = 'user@gmail.com'
+        $user->name = 'user';
+        $user->email = 'user@gmail.com';
         $user->password = Hash::make('password');
         $user->save();
 
         $user1 = new \App\User();
-        $user1->name = 'testUser'
-        $user1->email = 'testUser@gmail.com'
+        $user1->name = 'testUser';
+        $user1->email = 'testUser@gmail.com';
         $user1->password = Hash::make('password');
         $user1->save();
     }
