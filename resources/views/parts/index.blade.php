@@ -206,13 +206,25 @@
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							Intel
+							ASRock
 						</label>
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
 							<input type="checkbox" class="form-check-input">
-							AMD
+							Asus
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Gigabyte
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							MSI
 						</label>
 					</div>
 
@@ -316,6 +328,172 @@
           </div>
 
 					@elseif($type === 'Memory')
+					<!-- Brand -->
+					<h4>Manufacturer</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Corsair
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Crucial
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							G.Skill
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Kingston
+						</label>
+					</div>
+
+					<!-- Type -->
+					<h4>Type</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							DDR3
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							DDR4
+						</label>
+					</div>
+
+					<!-- Speed -->
+					<h4>Stick Type</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							1066-1900
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							2000-2500
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							2600-3200
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							3300-3600
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							3700-4266
+						</label>
+					</div>
+
+					<!-- Pin Type -->
+					<h4>Pin Type</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							184 DIMM
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							200 SODIMM
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							204 SODIMM
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							240 DIMM
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							260 SODIMM
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							288 DIMM
+						</label>
+					</div>
+
+					<!-- Size -->
+					<h4>Size</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							4GB (1x4GB)
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							8GB (1x8GB)
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							8GB (2x4GB)
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							16GB (2x8GB)
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							16GB (4x4GB)
+						</label>
+					</div>
+
+					<!-- Heat Sink -->
+					<h4>Heat Sink</h4>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							No
+						</label>
+					</div>
+					
+					
+					
+
+
 
 					@elseif($type === 'Storage Devices')
 
