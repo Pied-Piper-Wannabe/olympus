@@ -36,11 +36,11 @@
 				<a href="/register" class="btn btn-primary floatRight">Signup</a>
 			</form>
 		@if (count($errors))
-    <ul>
-      @foreach($errors->all() as $error)
-          <li class="whiteText">{{$error}}</li>
-      @endforeach
-    </ul>
+		<ul>
+			@foreach($errors->all() as $error)
+					<li class="whiteText">{{$error}}</li>
+			@endforeach
+		</ul>
 		@endif
 		</div>
 	</div>

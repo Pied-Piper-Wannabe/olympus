@@ -14,27 +14,25 @@ class CreateMotherboardTable extends Migration
 	{
 		Schema::create('motherboard', function(Blueprint $table){
 			$table->increments('id');
-			$table->string('model');
+			$table->decimal('price', 5, 2);
 			$table->string('brand');
-			$table->string('manufacturer');
-			$table->string('cpu_socket');
-			$table->string('cpu_type');
-			$table->string('chipset');
-			$table->string('onboard_gpu');
-			$table->string('onboard_audio');
-			$table->integer('memory_slot_number');
-			$table->integer('max_memory');
-			$table->string('supported_memory');
-			$table->string('expansion_slots');
-			//-----sata-------
-			$table->string('storage_devices');
-			// --------------
-			$table->string('rear_panel_ports');
-			$table->string('ethernet');
+			$table->string('model');
 			$table->string('form_factor');
+			$table->string('cpu_socket');
+			$table->string('chipset');
+			$table->integer('memory_slots');
+			$table->string('memory_type');
+			$table->integer('max_memory');
 			$table->string('raid_support');
+			$table->string('onboard_gpu');
 			$table->string('crossfire_support');
 			$table->string('sli_support');
+			$table->integer('sata6_gbs');
+			$table->string('sata_express');
+			$table->string('onboard_ethernet');
+			$table->string('onboard_usb3');
+			$table->string('expansion_slots');
+			$table->timestamps();
 		});
 	}
 
