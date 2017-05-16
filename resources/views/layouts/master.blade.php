@@ -36,17 +36,17 @@
 							SHOP
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="/parts">CPU</a>
-							<a class="dropdown-item" href="/parts">CPU Cooler</a>
-							<a class="dropdown-item" href="/parts">Motherboard</a>
-							<a class="dropdown-item" href="/parts">Memory</a>
-							<a class="dropdown-item" href="/parts">Storage</a>
-							<a class="dropdown-item" href="/parts">GPU</a>
-							<a class="dropdown-item" href="/parts">Case</a>
-							<a class="dropdown-item" href="/parts">Power Supply</a>
-							<a class="dropdown-item" href="/parts">Optical Drive</a>
-							<a class="dropdown-item" href="/parts">Operating System</a>
-							<a class="dropdown-item" href="/parts">Misc</a>
+							<a class="dropdown-item" href="/parts/cpu">CPU</a>
+							<a class="dropdown-item" href="/parts/cpu-cooler">CPU Cooler</a>
+							<a class="dropdown-item" href="/parts/motherboard">Motherboard</a>
+							<a class="dropdown-item" href="/parts/memory">Memory</a>
+							<a class="dropdown-item" href="/parts/storage">Storage</a>
+							<a class="dropdown-item" href="/parts/gpu">GPU</a>
+							<a class="dropdown-item" href="/parts/case">Case</a>
+							<a class="dropdown-item" href="/parts/power-supply">Power Supply</a>
+							<a class="dropdown-item" href="/parts/optical-drive">Optical Drive</a>
+							<a class="dropdown-item" href="/parts/operating-system">Operating System</a>
+							<a class="dropdown-item" href="/parts/misc">Misc</a>
 						</div>
 					</li>
 					<li class="nav-item">

@@ -21,23 +21,10 @@
             <label for="maxPriceBox">Max price:</label>
             <input type="number" class="form-control" id="maxPriceBox" aria-describedby="maxPrice" placeholder="max price">
           </div>
-
-          <!-- Card Type -->
-          <h3>GPU</h3>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              AMD
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              Nvidia
-            </label>
-          </div>
-
-          <h3>CPU</h3>
+          
+          @if($type === 'CPUs')
+          <!-- Brand -->
+          <h3>Manufacturer</h3>
           <div class="form-check">
             <label class="form-check-label">
               <input type="checkbox" class="form-check-input">
@@ -50,6 +37,90 @@
               AMD
             </label>
           </div>
+          
+          <!-- Socket -->
+          <h3>Socket</h3>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              AM4
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              LGA1151
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              AM3+
+            </label>
+          </div>
+
+          <!-- Graphics -->
+          <h3>Integrated Graphics</h3>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              None
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Intel HD Graphics 630
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Intel HD Graphics 610
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Intel HD Graphics 530
+            </label>
+          </div>
+
+          <!-- Cores -->
+          <h3>Cores</h3>
+          <div class="form-group">
+            <label for="minCoresBox">Min Cores:</label>
+            <input type="number" class="form-control" id="minCoresBox" aria-describedby="minCores" placeholder="min cores">
+            <label for="maxCoresBox">Max Cores:</label>
+            <input type="number" class="form-control" id="maxCoresBox" aria-describedby="maxCores" placeholder="max cores">
+          </div>
+
+          @elseif($type === 'CPU Coolers')
+
+          @elseif($type === 'Motherboards')
+
+          @elseif($type === 'Memory')
+
+          @elseif($type === 'Storage Devices')
+
+          @elseif($type === 'GPUs')
+
+          @elseif($type === 'Cases')
+
+          @elseif($type === 'PSUs')
+
+          @elseif($type === 'Optical Drives')
+
+          @elseif($type === 'Operating Systems')
+
+          @elseif($type === 'Misc')
+
+          @endif
+
+
+          
+
+
           <button type="submit" class="btn btn-block btn-outline-primary btn-black">Submit</button>
         </div>
       </div>
@@ -58,7 +129,7 @@
     <div class="col-md-8 col-lg-9 topMarginSm">
       <div class="row">
         <div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-          <h2 class="centerText">CPU</h2>
+          <h2 class="centerText">{{ $type }}</h2>
         </div>
       </div>
       <div class="row justify-content-end">

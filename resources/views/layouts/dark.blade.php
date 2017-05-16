@@ -36,17 +36,17 @@
 							SHOP
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="/parts">CPU</a>
-							<a class="dropdown-item" href="/parts">CPU Cooler</a>
-							<a class="dropdown-item" href="/parts">Motherboard</a>
-							<a class="dropdown-item" href="/parts">Memory</a>
-							<a class="dropdown-item" href="/parts">Storage</a>
-							<a class="dropdown-item" href="/parts">GPU</a>
-							<a class="dropdown-item" href="/parts">Case</a>
-							<a class="dropdown-item" href="/parts">Power Supply</a>
-							<a class="dropdown-item" href="/parts">Optical Drive</a>
-							<a class="dropdown-item" href="/parts">Operating System</a>
-							<a class="dropdown-item" href="/parts">Misc</a>
+							<a class="dropdown-item" href="/parts/cpu">CPU</a>
+							<a class="dropdown-item" href="/parts/cpu-cooler">CPU Cooler</a>
+							<a class="dropdown-item" href="/parts/motherboard">Motherboard</a>
+							<a class="dropdown-item" href="/parts/memory">Memory</a>
+							<a class="dropdown-item" href="/parts/storage">Storage</a>
+							<a class="dropdown-item" href="/parts/gpu">GPU</a>
+							<a class="dropdown-item" href="/parts/case">Case</a>
+							<a class="dropdown-item" href="/parts/power-supply">Power Supply</a>
+							<a class="dropdown-item" href="/parts/optical-drive">Optical Drive</a>
+							<a class="dropdown-item" href="/parts/operating-system">Operating System</a>
+							<a class="dropdown-item" href="/parts/misc">Misc</a>
 						</div>
 					</li>
 					<li class="nav-item">
@@ -55,12 +55,26 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">BLOG</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/login">LOGIN/REGISTER</a>
+					@if (Auth::check())
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								MY ACCOUNT
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="/account">View Profile</a>
+								<a class="dropdown-item" href="/account/edit">Edit Account</a>
+								<a class="dropdown-item" href="/logout">Logout</a>
+							</div>
 					</li>
+          @else
+          	<li class="nav-item">
+							<a class="nav-link" href="/login">LOGIN/REGISTER</a>
+						</li>
+          @endif
 				</ul>
 			</div>
 		</nav>
+
 
 	@yield('content')
 	<!-- Footer -->
@@ -98,5 +112,6 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="/js/main.js"></script>
 	</body>
 </html>
