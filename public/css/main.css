@@ -26,6 +26,9 @@ p, a {
 .bold {
   font-weight: 700; }
 
+.whiteText {
+  color: red; }
+
 img {
   width: 100%;
   height: auto; }
