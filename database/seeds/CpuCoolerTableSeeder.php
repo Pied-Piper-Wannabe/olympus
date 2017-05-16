@@ -12,362 +12,284 @@ class CpuCoolerTableSeeder extends Seeder
      */
     public function run()
     {
-        $cooler = new \App\Models\CpuCooler();
-        $cooler->model =
-        $cooler->brand =
-        $cooler->type =
-        $cooler->block_compatabilty =
-        $cooler->block_material =
-        $cooler->radiator_dimensions =
-        $cooler->radiator_material =
-        $cooler->fan_size =
-        $cooler->fan_dimensions =
-        $cooler->fan_rpm =
-        $cooler->fan_air_flow =
-        $cooler->fan_noise =
-        $cooler->tube_material =
-        $cooler->number_of_fans =
-        $cooler->save();
-
-        $cooler1 = new \App\Models\CpuCooler();
-        $cooler1->model =
-        $cooler1->brand =
-        $cooler1->type =
-        $cooler1->block_compatabilty =
-        $cooler1->block_material =
-        $cooler1->radiator_dimensions =
-        $cooler1->radiator_material =
-        $cooler1->fan_size =
-        $cooler1->fan_dimensions =
-        $cooler1->fan_rpm =
-        $cooler1->fan_air_flow =
-        $cooler1->fan_noise =
-        $cooler1->tube_material =
-        $cooler1->number_of_fans =
-        $cooler1->save();
-
-        $cooler2 = new \App\Models\CpuCooler();
-        $cooler2->model =
-        $cooler2->brand =
-        $cooler2->type =
-        $cooler2->block_compatabilty =
-        $cooler2->block_material =
-        $cooler2->radiator_dimensions =
-        $cooler2->radiator_material =
-        $cooler2->fan_size =
-        $cooler2->fan_dimensions =
-        $cooler2->fan_rpm =
-        $cooler2->fan_air_flow =
-        $cooler2->fan_noise =
-        $cooler2->tube_material =
-        $cooler2->number_of_fans =
-        $cooler2->save();
-
-        $cooler3 = new \App\Models\CpuCooler();
-        $cooler3->model =
-        $cooler3->brand =
-        $cooler3->type =
-        $cooler3->block_compatabilty =
-        $cooler3->block_material =
-        $cooler3->radiator_dimensions =
-        $cooler3->radiator_material =
-        $cooler3->fan_size =
-        $cooler3->fan_dimensions =
-        $cooler3->fan_rpm =
-        $cooler3->fan_air_flow =
-        $cooler3->fan_noise =
-        $cooler3->tube_material =
-        $cooler3->number_of_fans =
-        $cooler3->save();
-
-        $cooler4 = new \App\Models\CpuCooler();
-        $cooler4->model =
-        $cooler4->brand =
-        $cooler4->type =
-        $cooler4->block_compatabilty =
-        $cooler4->block_material =
-        $cooler4->radiator_dimensions =
-        $cooler4->radiator_material =
-        $cooler4->fan_size =
-        $cooler4->fan_dimensions =
-        $cooler4->fan_rpm =
-        $cooler4->fan_air_flow =
-        $cooler4->fan_noise =
-        $cooler4->tube_material =
-        $cooler4->number_of_fans =
-        $cooler4->save();
-
-        $cooler5 = new \App\Models\CpuCooler();
-        $cooler5->model =
-        $cooler5->brand =
-        $cooler5->type =
-        $cooler5->block_compatabilty =
-        $cooler5->block_material =
-        $cooler5->radiator_dimensions =
-        $cooler5->radiator_material =
-        $cooler5->fan_size =
-        $cooler5->fan_dimensions =
-        $cooler5->fan_rpm =
-        $cooler5->fan_air_flow =
-        $cooler5->fan_noise =
-        $cooler5->tube_material =
-        $cooler5->number_of_fans =
-        $cooler5->save();
-
-        $cooler6 = new \App\Models\CpuCooler();
-        $cooler6->model =
-        $cooler6->brand =
-        $cooler6->type =
-        $cooler6->block_compatabilty =
-        $cooler6->block_material =
-        $cooler6->radiator_dimensions =
-        $cooler6->radiator_material =
-        $cooler6->fan_size =
-        $cooler6->fan_dimensions =
-        $cooler6->fan_rpm =
-        $cooler6->fan_air_flow =
-        $cooler6->fan_noise =
-        $cooler6->tube_material =
-        $cooler6->number_of_fans =
-        $cooler6->save();
-
-        $cooler7 = new \App\Models\CpuCooler();
-        $cooler7->model =
-        $cooler7->brand =
-        $cooler7->type =
-        $cooler7->block_compatabilty =
-        $cooler7->block_material =
-        $cooler7->radiator_dimensions =
-        $cooler7->radiator_material =
-        $cooler7->fan_size =
-        $cooler7->fan_dimensions =
-        $cooler7->fan_rpm =
-        $cooler7->fan_air_flow =
-        $cooler7->fan_noise =
-        $cooler7->tube_material =
-        $cooler7->number_of_fans =
-        $cooler7->save();
-
-        $cooler8 = new \App\Models\CpuCooler();
-        $cooler8->model =
-        $cooler8->brand =
-        $cooler8->type =
-        $cooler8->block_compatabilty =
-        $cooler8->block_material =
-        $cooler8->radiator_dimensions =
-        $cooler8->radiator_material =
-        $cooler8->fan_size =
-        $cooler8->fan_dimensions =
-        $cooler8->fan_rpm =
-        $cooler8->fan_air_flow =
-        $cooler8->fan_noise =
-        $cooler8->tube_material =
-        $cooler8->number_of_fans =
-        $cooler8->save();
-
-        $cooler9 = new \App\Models\CpuCooler();
-        $cooler9->model =
-        $cooler9->brand =
-        $cooler9->type =
-        $cooler9->block_compatabilty =
-        $cooler9->block_material =
-        $cooler9->radiator_dimensions =
-        $cooler9->radiator_material =
-        $cooler9->fan_size =
-        $cooler9->fan_dimensions =
-        $cooler9->fan_rpm =
-        $cooler9->fan_air_flow =
-        $cooler9->fan_noise =
-        $cooler9->tube_material =
-        $cooler9->number_of_fans =
-        $cooler9->save();
-
-        $cooler10 = new \App\Models\CpuCooler();
-        $cooler10->model =
-        $cooler10->brand =
-        $cooler10->type =
-        $cooler10->block_compatabilty =
-        $cooler10->block_material =
-        $cooler10->radiator_dimensions =
-        $cooler10->radiator_material =
-        $cooler10->fan_size =
-        $cooler10->fan_dimensions =
-        $cooler10->fan_rpm =
-        $cooler10->fan_air_flow =
-        $cooler10->fan_noise =
-        $cooler10->tube_material =
-        $cooler10->number_of_fans =
-        $cooler10->save();
-
-        $cooler11 = new \App\Models\CpuCooler();
-        $cooler11->model =
-        $cooler11->brand =
-        $cooler11->type =
-        $cooler11->block_compatabilty =
-        $cooler11->block_material =
-        $cooler11->radiator_dimensions =
-        $cooler11->radiator_material =
-        $cooler11->fan_size =
-        $cooler11->fan_dimensions =
-        $cooler11->fan_rpm =
-        $cooler11->fan_air_flow =
-        $cooler11->fan_noise =
-        $cooler11->tube_material =
-        $cooler11->number_of_fans =
-        $cooler11->save();
-
-        $cooler12 = new \App\Models\CpuCooler();
-        $cooler12->model =
-        $cooler12->brand =
-        $cooler12->type =
-        $cooler12->block_compatabilty =
-        $cooler12->block_material =
-        $cooler12->radiator_dimensions =
-        $cooler12->radiator_material =
-        $cooler12->fan_size =
-        $cooler12->fan_dimensions =
-        $cooler12->fan_rpm =
-        $cooler12->fan_air_flow =
-        $cooler12->fan_noise =
-        $cooler12->tube_material =
-        $cooler12->number_of_fans =
-        $cooler12->save();
-
-        $cooler13 = new \App\Models\CpuCooler();
-        $cooler13->model =
-        $cooler13->brand =
-        $cooler13->type =
-        $cooler13->block_compatabilty =
-        $cooler13->block_material =
-        $cooler13->radiator_dimensions =
-        $cooler13->radiator_material =
-        $cooler13->fan_size =
-        $cooler13->fan_dimensions =
-        $cooler13->fan_rpm =
-        $cooler13->fan_air_flow =
-        $cooler13->fan_noise =
-        $cooler13->tube_material =
-        $cooler13->number_of_fans =
-        $cooler13->save();
-
-        $cooler14 = new \App\Models\CpuCooler();
-        $cooler14->model =
-        $cooler14->brand =
-        $cooler14->type =
-        $cooler14->block_compatabilty =
-        $cooler14->block_material =
-        $cooler14->radiator_dimensions =
-        $cooler14->radiator_material =
-        $cooler14->fan_size =
-        $cooler14->fan_dimensions =
-        $cooler14->fan_rpm =
-        $cooler14->fan_air_flow =
-        $cooler14->fan_noise =
-        $cooler14->tube_material =
-        $cooler14->number_of_fans =
-        $cooler14->save();
-
-        $cooler15 = new \App\Models\CpuCooler();
-        $cooler15->model =
-        $cooler15->brand =
-        $cooler15->type =
-        $cooler15->block_compatabilty =
-        $cooler15->block_material =
-        $cooler15->radiator_dimensions =
-        $cooler15->radiator_material =
-        $cooler15->fan_size =
-        $cooler15->fan_dimensions =
-        $cooler15->fan_rpm =
-        $cooler15->fan_air_flow =
-        $cooler15->fan_noise =
-        $cooler15->tube_material =
-        $cooler15->number_of_fans =
-        $cooler15->save();
-
-        $cooler16 = new \App\Models\CpuCooler();
-        $cooler16->model =
-        $cooler16->brand =
-        $cooler16->type =
-        $cooler16->block_compatabilty =
-        $cooler16->block_material =
-        $cooler16->radiator_dimensions =
-        $cooler16->radiator_material =
-        $cooler16->fan_size =
-        $cooler16->fan_dimensions =
-        $cooler16->fan_rpm =
-        $cooler16->fan_air_flow =
-        $cooler16->fan_noise =
-        $cooler16->tube_material =
-        $cooler16->number_of_fans =
-        $cooler16->save();
-
-        $cooler17 = new \App\Models\CpuCooler();
-        $cooler17->model =
-        $cooler17->brand =
-        $cooler17->type =
-        $cooler17->block_compatabilty =
-        $cooler17->block_material =
-        $cooler17->radiator_dimensions =
-        $cooler17->radiator_material =
-        $cooler17->fan_size =
-        $cooler17->fan_dimensions =
-        $cooler17->fan_rpm =
-        $cooler17->fan_air_flow =
-        $cooler17->fan_noise =
-        $cooler17->tube_material =
-        $cooler17->number_of_fans =
-        $cooler17->save();
-
-        $cooler18 = new \App\Models\CpuCooler();
-        $cooler18->model =
-        $cooler18->brand =
-        $cooler18->type =
-        $cooler18->block_compatabilty =
-        $cooler18->block_material =
-        $cooler18->radiator_dimensions =
-        $cooler18->radiator_material =
-        $cooler18->fan_size =
-        $cooler18->fan_dimensions =
-        $cooler18->fan_rpm =
-        $cooler18->fan_air_flow =
-        $cooler18->fan_noise =
-        $cooler18->tube_material =
-        $cooler18->number_of_fans =
-        $cooler18->save();
-
-        $cooler19 = new \App\Models\CpuCooler();
-        $cooler19->model =
-        $cooler19->brand =
-        $cooler19->type =
-        $cooler19->block_compatabilty =
-        $cooler19->block_material =
-        $cooler19->radiator_dimensions =
-        $cooler19->radiator_material =
-        $cooler19->fan_size =
-        $cooler19->fan_dimensions =
-        $cooler19->fan_rpm =
-        $cooler19->fan_air_flow =
-        $cooler19->fan_noise =
-        $cooler19->tube_material =
-        $cooler19->number_of_fans =
-        $cooler19->save();
-
-        $cooler20 = new \App\Models\CpuCooler();
-        $cooler20->model =
-        $cooler20->brand =
-        $cooler20->type =
-        $cooler20->block_compatabilty =
-        $cooler20->block_material =
-        $cooler20->radiator_dimensions =
-        $cooler20->radiator_material =
-        $cooler20->fan_size =
-        $cooler20->fan_dimensions =
-        $cooler20->fan_rpm =
-        $cooler20->fan_air_flow =
-        $cooler20->fan_noise =
-        $cooler20->tube_material =
-        $cooler20->number_of_fans =
-        $cooler20->save();
-
+        $cpucooler1=new \App\Models\CpuCooler();
+        $cpucooler1->price=24.88;
+        $cpucooler1->brand='cooler master';
+        $cpucooler1->model='hyper 212 evo';
+        $cpucooler1->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
+        $cpucooler1->liquid_cooled='no';
+        $cpucooler1->radiator_size='none'
+        $cpucooler1->noise_level='90.0-36.0 dbA';
+        $cpucooler1->fan_rpm='600-900 rpm';
+        $cpucooler1->height='159mm';
+        $cpucooler1->save();
+        
+        
+        
+        $cpucooler2=new \App\Models\CpuCooler();
+        $cpucooler2->price=98.99;
+        $cpucooler2->brand='cosair';
+        $cpucooler2->model='h100i v2'
+        $cpucooler2->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler2->liquid_cooled='yes';
+        $cpucooler2->radiator_size='240mm';
+        $cpucooler2->noise_level='37.7 dbA';
+        $cpucooler2->fan_rpm='2435rpm';
+        $cpucooler2->height='none';
+        $cpucooler2->save();
+        
+        
+        
+        $cpucooler3=new \App\Models\CpuCooler();
+        $cpucooler3->price=34.89;
+        $cpucooler3->brand='cryorig';
+        $cpucooler3->model='cr-h7';
+        $cpucooler3->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156';
+        $cpucooler3->liquid_cooled='no';
+        $cpucooler3->radiator_size='none';
+        $cpucooler3->noise_level='1.0-25.0 dbA';
+        $cpucooler3->fan_rpm='330-1600 rpm';
+        $cpucooler3->height='145mm';
+        $cpucooler3->save();
+        
+        
+        
+        $cpucooler4=new \App\Models\CpuCooler();
+        $cpucooler4->price='159.99';
+        $cpucooler4->brand='nzxt';
+        $cpucooler4->model='kraken x62';
+        $cpucooler4->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler4->liquid_cooled='yes';
+        $cpucooler4->radiator_size='280mm';
+        $cpucooler4->noise_level='21.0-38.0 dbA';
+        $cpucooler4->fan_rpm='500-1800';
+        $cpucooler4->height='none';
+        $cpucooler4->save();
+        
+        
+        
+        
+        $cpucooler5=new \App\Models\CpuCooler();
+        $cpucooler5->price=99.99;
+        $cpucooler5->brand='corsair';
+        $cpucooler5->model='h100i';
+        $cpucooler5->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler5->liquid_cooled='yes';
+        $cpucooler5->radiator_size='240mm';
+        $cpucooler5->noise_level='37.7 dbA';
+        $cpucooler5->fan_rpm='2700rpm';
+        $cpucooler5->height='none';
+        $cpucooler5->save();
+        
+        
+        
+        $cpucooler6=new \App\Models\CpuCooler();
+        $cpucooler6->price=54.99;
+        $cpucooler6->brand='corsair';
+        $cpucooler6->model='h60';
+        $cpucooler6->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler6->liquid_cooled='yes';
+        $cpucooler6->radiator_size='120mm';
+        $cpucooler6->noise_level='30.9 dbA';
+        $cpucooler6->fan_rpm='2000 rpm';
+        $cpucooler6->height='none';
+        $cpucooler->save();
+        
+        
+        
+        $cpucooler7=new \App\Models\CpuCooler();
+        $cpucooler7->price=29.88;
+        $cpucooler7->brand='cryorig';
+        $cpucooler7->model='cr-c7a';
+        $cpucooler7->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156';
+        $cpucooler7->liquid_cooled='no';
+        $cpucooler7->radiator_size='none';
+        $cpucooler7->noise_level='30.0 dbA';
+        $cpucooler7->fan_rpm='600-2500 rpm';
+        $cpucooler7->height='47mm';
+        $cpucooler7->save();
+        
+        
+        $cpucooler8=new \App\Models\CpuCooler();
+        $cpucooler8->price=144.49;
+        $cpucooler8->brand='nzxt';
+        $cpucooler8->model='kraken x52';
+        $cpucooler8->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler8->liquid_cooled='yes';
+        $cpucooler8->radiator_size='240mm';
+        $cpucooler8->noise_level='21.0-36.0 dbA';
+        $cpucooler8->fan_rpm='50-2000rpm';
+        $cpucooler8->height='none';
+        $cpucooler8->save();
+        
+        
+        
+        $cpucooler9=new \App\Models\CpuCooler();
+        $cpucooler9->price=65.49;
+        $cpucooler9->brand='be quiet!';
+        $cpucooler9->model='dark rock 3';
+        $cpucooler9->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
+        $cpucooler9->liquid_cooled='no';
+        $cpucooler9->radiator_size='none';
+        $cpucooler9->noise_level='8.4-21.1 dbA';
+        $cpucooler9->fan_rpm='400-1400 rpm';
+        $cpucooler9->height='160mm';
+        $cpucooler->save();
+        
+        
+        
+        $cpucooler10=new \App\Models\CpuCooler();
+        $cpucooler10->price=16.49;
+        $cpucooler10->brand='cooler master';
+        $cpucooler10->model='hyper t2';
+        $cpucooler10->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
+        $cpucooler10->liquid_cooled='no';
+        $cpucooler10->radiator_size='none'
+        $cpucooler10->noise_level='17.0-35.0 dbA';
+        $cpucooler10->fan_rpm='2800rpm';
+        $cpucooler10->height='140mm';
+        $cpucooler10->save();
+        
+        
+        
+        
+        $cpucooler11=new \App\Models\CpuCooler();
+        $cpucooler11->price=19.99;
+        $cpucooler11->brand='cooler master';
+        $cpucooler11->model='hyper 212 led';
+        $cpucooler11->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
+        $cpucooler11->liquid_cooled='no';
+        $cpucooler11->radiator_size='none';
+        $cpucooler11->noise_level='9.0-31.0 dbA';
+        $cpucooler11->fan_rpm='600-1600 rpm';
+        $cpucooler11->height='160mm';
+        $cpucooler11->save();
+        
+        
+        
+        $cpucooler12=new \App\Models\CpuCooler();
+        $cpucooler12->price=88.15;
+        $cpucooler12->brand='noctua';
+        $cpucooler12->model='nh-d15';
+        $cpucooler12->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler12->liquid_cooled='none';
+        $cpucooler12->radiator_size='none';
+        $cpucooler12->noise_level='19.2-24.6 dbA';
+        $cpucooler12->fan_rpm='300-1500 rpm';
+        $cpucooler12->height='165mm';
+        $cpucooler12->save();
+        
+        
+        
+        $cpucooler13=new \App\Models\CpuCooler();
+        $cpucooler13->price=16.49;
+        $cpucooler13->brand='cooler master';
+        $cpucooler13->model='hyper t2';
+        $cpucooler13->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
+        $cpucooler13->liquid_cooled='no';
+        $cpucooler13->radiator_size='none';
+        $cpucooler13->noise_level='17.0-35.0 dbA';
+        $cpucooler13->fan_rpm='2800 rpm';
+        $cpucooler13->height='140mm';
+        $cpucooler13->save();
+        
+        
+        
+        $cpucooler14=new \App\Models\CpuCooler();
+        $cpucooler14->price=49.99;
+        $cpucooler14->brand='corsair';
+        $cpucooler14->model='h55';
+        $cpucooler14->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler14->liquid_cooled='yes';
+        $cpucooler14->radiator_size='120mm';
+        $cpucooler14->noise_level='30.3 dbA';
+        $cpucooler14->fan_rpm='1700 rpm';
+        $cpucooler14->height='none';
+        $cpucooler14->save();
+        
+        
+        
+        
+        $cpucooler15=new \App\Models\CpuCooler();
+        $cpucooler15->price=299.99;
+        $cpucooler15->brand='phanteks';
+        $cpucooler15->model='ph-tc14pe-bl';
+        $cpucooler15->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
+        $cpucooler15->liquid_cooled='no';
+        $cpucooler15->radiator_size='none';
+        $cpucooler15->noise_level='13.4-19.0 dbA';
+        $cpucooler15->fan_rpm='700-1200 rpm';
+        $cpucooler15->height='171mm';
+        $cpucooler15->save();
+        
+        
+        
+        
+        $cpucooler16=new \App\Models\CpuCooler();
+        $cpucooler16->price=124.99;
+        $cpucooler16->brand='corsair';
+        $cpucooler16->model='h115i';
+        $cpucooler16->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
+        $cpucooler16->liquid_cooled='yes';
+        $cpucooler16->radiator_size='280mm';
+        $cpucooler16->noise_level='40.0 dbA';
+        $cpucooler16->fan_rpm='2000 rpm';
+        $cpucooler16->height='none';
+        $cpucooler16->save();
+        
+        
+        
+        $cpucooler17=new \App\Models\CpuCooler();
+        $cpucooler17->price=
+        $cpucooler17->brand=
+        $cpucooler17->model=
+        $cpucooler17->sockets=
+        $cpucooler17->liquid_cooled=
+        $cpucooler17->radiator_size=
+        $cpucooler17->noise_level=
+        $cpucooler17->fan_rpm=
+        $cpucooler17->height=
+        $cpucooler17->save();
+        
+        
+        
+        $cpucooler18=new \App\Models\CpuCooler();
+        $cpucooler18->price=
+        $cpucooler18->brand=
+        $cpucooler18->model=
+        $cpucooler18->sockets=
+        $cpucooler18->liquid_cooled=
+        $cpucooler18->radiator_size=
+        $cpucooler18->noise_level=
+        $cpucooler18->fan_rpm=
+        $cpucooler18->height=
+        $cpucooler18->save();
+        
+        
+        $cpucooler19=new \App\Models\CpuCooler();
+        $cpucooler19->price=
+        $cpucooler19->brand=
+        $cpucooler19->model=
+        $cpucooler19->sockets=
+        $cpucooler19->liquid_cooled=
+        $cpucooler19->radiator_size=
+        $cpucooler19->noise_level=
+        $cpucooler19->fan_rpm=
+        $cpucooler19->height=
+        $cpucooler19->save();
+        
+        
+        
+        $cpucooler20=new \App\Models\CpuCooler();
+        $cpucooler20->price=
+        $cpucooler20->brand=
+        $cpucooler20->model=
+        $cpucooler20->sockets=
+        $cpucooler20->liquid_cooled=
+        $cpucooler20->radiator_size=
+        $cpucooler20->noise_level=
+        $cpucooler20->fan_rpm=
+        $cpucooler20->height=
+        $cpucooler20->save();
     }
 }
