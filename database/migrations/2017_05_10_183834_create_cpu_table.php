@@ -14,21 +14,21 @@ class CreateCpuTable extends Migration
 	{
 		Schema::create('cpu', function(Blueprint $table){
 			$table->increments('id');
-			$table->string('model');
+			$table->decimal('price', 5, 2);
 			$table->string('brand');
+			$table->string('model');
+			$table->string('data_width');
 			$table->string('socket_type');
-			$table->integer('number_of_cores');
-			$table->integer('number_of_threads');
-			$table->boolean('hyperthreading_support');
 			$table->integer('operating_frequency');
 			$table->integer('max_turbo_frequency');
+			$table->integer('number_of_cores');
 			$table->string('l1_cache');
 			$table->string('l2_cache');
 			$table->string('l3_cache');
-			$table->string('data_width');
-			$table->string('intergrated_graphics');
 			$table->integer('wattage');
+			$table->boolean('hyperthreading_support');
 			$table->integer('max_supported_memory');
+			$table->string('intergrated_graphics');
 		});
 	}
 
