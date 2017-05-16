@@ -64,7 +64,7 @@ class PartsController extends Controller
 		$data = array(
 			'type' => $type, 
 			'user' => $loggedInUser);
-		flash('Welcome Aboard!');
+		
 		return view('parts/index', $data);
 	}
 

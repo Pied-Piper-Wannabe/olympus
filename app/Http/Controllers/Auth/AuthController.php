@@ -7,6 +7,7 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Auth;
 
 class AuthController extends Controller
 {
@@ -21,7 +22,7 @@ class AuthController extends Controller
     |
     */
 
-    protected $redirectPath = '/'; //brings you to /posts on correct login
+    protected $redirectPath = '/#content'; //brings you to /posts on correct login
 
     protected $loginPath = '/login'; //Defines path of login in case you fail
 
@@ -68,4 +69,19 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    public function getLogout()
+    {
+        Auth::logout();
+
+        flash('You were logged out!');
+        return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/#content');
+    }
+
+    public function authenticated( \Illuminate\Http\Request $request, \App\User $user ) {
+        // flash message
+        flash('Welcome back, ' . $user->name . '!');
+        return redirect()->intended( $this->redirectPath() );
+    }
+
 }

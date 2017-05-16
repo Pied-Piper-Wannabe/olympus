@@ -5,7 +5,8 @@
 	</head>
 	<body>
 	@yield('cover')
-
+	
+	<A NAME="content">
 	@include('partials.navbar')
 	
 	@include('flash::message')
