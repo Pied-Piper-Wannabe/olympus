@@ -7,6 +7,8 @@
 	@yield('cover')
 
 	@include('partials.navbar')
+	
+	@include('flash::message')
 
 	@yield('content')
 

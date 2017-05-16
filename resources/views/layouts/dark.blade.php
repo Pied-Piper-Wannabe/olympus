@@ -8,6 +8,8 @@
 	
 	@include('partials.navbar')
 
+	@include('flash::message')
+
 	@yield('content')
 
 	@include('partials.footer')
