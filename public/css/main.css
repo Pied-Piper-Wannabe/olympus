@@ -203,6 +203,11 @@ button, .btn {
 .userPhoto img {
   width: 200px; }
 
+.errorPage {
+  height: 100%; }
+  .errorPage h4 {
+    color: #cecece; }
+
 .parallax {
   position: relative;
   /* The image used */
