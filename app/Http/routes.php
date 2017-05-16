@@ -28,6 +28,8 @@ Route::resource('/account', 'AccountsController');
 // PartsController
 Route::get('/parts/{type}', 'PartsController@index');
 
+Route::get('/parts/{type}/{id}', 'PartsController@show');
+
 // Login routes
 Route::get('/login', 'Auth\AuthController@getLogin');
 
