@@ -12,7 +12,6 @@
         <div class="collapse" id="collapseFilter">
           <h2 class="centerText">Filter</h2>
 
-
           <!-- Price -->
           <h3>Price: </h3>
           <div class="form-group">
@@ -22,6 +21,7 @@
             <input type="number" class="form-control" id="maxPriceBox" aria-describedby="maxPrice" placeholder="max price">
           </div>
           
+          <!-- =========CPU========== -->
           @if($type === 'CPUs')
           <!-- Brand -->
           <h3>Manufacturer</h3>
@@ -95,7 +95,110 @@
             <input type="number" class="form-control" id="maxCoresBox" aria-describedby="maxCores" placeholder="max cores">
           </div>
 
+          <!-- =========CPU COOLERS========== -->
           @elseif($type === 'CPU Coolers')
+          <!-- Brand -->
+          <h3>Manufacturer</h3>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Cooler Master
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Corsair
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Cryorig
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              NZXT
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              be quiet!
+            </label>
+          </div>
+          
+          <!-- Socket -->
+          <h3>Socket</h3>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              AM4
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              LGA1151
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              AM3+
+            </label>
+          </div>
+
+          <!-- Water Cooled -->
+          <h3>Water Cooled</h3>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              No
+            </label>
+          </div>
+
+          <!-- Cores -->
+          <h3>Fan Size</h3>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              120mm
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              140mm
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              240mm
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+             280mm
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+             360mm
+            </label>
+          </div>
+          
 
           @elseif($type === 'Motherboards')
 
