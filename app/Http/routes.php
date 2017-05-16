@@ -16,12 +16,13 @@ Route::get('/', function () {
 	return view('frontpage');
 });
 
-// Controllers
+// Resource Controllers
 Route::resource('/builds', 'BuildsController');
 
 Route::resource('/account', 'AccountsController');
 
-// Manual PartsController
+// PartsController
+Route::get('/parts/{type}', 'PartsController@index');
 
 // Login routes
 Route::get('/login', 'Auth\AuthController@getLogin');
