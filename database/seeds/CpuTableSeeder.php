@@ -28,7 +28,7 @@ class CpuTableSeeder extends Seeder
         $cpu1->l3_cache='2x8mb';
         $cpu1->wattage=65;
         $cpu1->hyperthreading_support='yes';
-        $cpu1->max_supported_memory='none';
+        $cpu1->max_supported_memory='0';
         $cpu1->intergrated_graphics='no';
         $cpu1->save();
         
@@ -100,7 +100,7 @@ class CpuTableSeeder extends Seeder
         $cpu5->l3_cache='1 x 8MB ';
         $cpu5->wattage=65;
         $cpu5->hyperthreading_support='yes';
-        $cpu5->max_supported_memory='none';
+        $cpu5->max_supported_memory='0';
         $cpu5->intergrated_graphics='no';
         $cpu5->save();
         
@@ -118,7 +118,7 @@ class CpuTableSeeder extends Seeder
         $cpu6->l3_cache='1 x 6MB ';
         $cpu6->wattage=91;
         $cpu6->hyperthreading_support='no';
-        $cpu6->max_supported_memory='none';
+        $cpu6->max_supported_memory='0';
         $cpu6->intergrated_graphics='Intel HD Graphics 530 ';
         $cpu6->save();
         
@@ -172,7 +172,7 @@ class CpuTableSeeder extends Seeder
         $cpu9->l3_cache=' 2 x 8MB ';
         $cpu9->wattage=65;
         $cpu9->hyperthreading_support='yes';
-        $cpu9->max_supported_memory='none';
+        $cpu9->max_supported_memory='0';
         $cpu9->intergrated_graphics='no';
         $cpu9->save();
         
@@ -190,7 +190,7 @@ class CpuTableSeeder extends Seeder
         $cpu10->l3_cache=' 2 x 8MB ';
         $cpu10->wattage=95;
         $cpu10->hyperthreading_support='yes';
-        $cpu10->max_supported_memory='none';
+        $cpu10->max_supported_memory='0';
         $cpu10->intergrated_graphics='no';
         $cpu10->save();
         
@@ -208,7 +208,7 @@ class CpuTableSeeder extends Seeder
         $cpu11->l3_cache=' 2 x 8MB ';
         $cpu11->wattage=65;
         $cpu11->hyperthreading_support='yes';
-        $cpu11->max_supported_memory='none';
+        $cpu11->max_supported_memory='0';
         $cpu11->intergrated_graphics='no';
         $cpu11->();
         
@@ -244,7 +244,7 @@ class CpuTableSeeder extends Seeder
         $cpu13->l3_cache=' 1 x 8MB ';
         $cpu13->wattage=125;
         $cpu13->hyperthreading_support='no';
-        $cpu13->max_supported_memory='none';
+        $cpu13->max_supported_memory='0';
         $cpu13->intergrated_graphics='no';
         $cpu13->save();
         
@@ -262,7 +262,7 @@ class CpuTableSeeder extends Seeder
         $cpu14->l3_cache=' 2 x 8MB ';
         $cpu14->wattage=95;
         $cpu14->hyperthreading_support='yes';
-        $cpu14->max_supported_memory='none';
+        $cpu14->max_supported_memory='0';
         $cpu14->intergrated_graphics='no';
         $cpu14->save();
         
@@ -280,7 +280,7 @@ class CpuTableSeeder extends Seeder
         $cpu15->l3_cache='2 x 8MB';
         $cpu15->wattage=95;
         $cpu15->hyperthreading_support='yes';
-        $cpu15->max_supported_memory='none';
+        $cpu15->max_supported_memory='0';
         $cpu15->intergrated_graphics='no';
         $cpu15->save();
         
@@ -316,7 +316,7 @@ class CpuTableSeeder extends Seeder
         $cpu17->l3_cache=' 1 x 8MB ';
         $cpu17->wattage=95;
         $cpu17->hyperthreading_support='no';
-        $cpu17->max_supported_memory='none';
+        $cpu17->max_supported_memory='0';
         $cpu17->intergrated_graphics='no';
         $cpu17->save();
         

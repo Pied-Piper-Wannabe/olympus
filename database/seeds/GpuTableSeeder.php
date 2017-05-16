@@ -18,7 +18,7 @@ class GpuTableSeeder extends Seeder
         $gpu1->model='strix-gtx1080ti-011g-gaming';
         $gpu1->interface='pcie x16';
         $gpu1->chipset='geforce gtx 1080ti';
-        $gpu1->mem_size='11gb';
+        $gpu1->mem_size=11;
         $gpu1->mem_type='gddr5x';
         $gpu1->core_clock=1.57;
         $gpu1->boost_clock=1.71;
@@ -40,7 +40,7 @@ class GpuTableSeeder extends Seeder
         $gpu2->model='04g-p4-6253-kr';
         $gpu2->interface='pcie x16';
         $gpu2->chipset='geforce gtx 1050ti';
-        $gpu2->mem_size='4gb';
+        $gpu2->mem_size=4;
         $gpu2->mem_type='gddr5';
         $gpu2->core_clock=1.35;
         $gpu2->boost_clock=1.47;
@@ -62,7 +62,7 @@ class GpuTableSeeder extends Seeder
         $gpu3->model='gv-rx580gaming-8gd';
         $gpu3->interface='pcie x16';
         $gpu3->chipset='radeon rx 580';
-        $gpu3->mem_size='8gb';
+        $gpu3->mem_size=8;
         $gpu3->mem_type='gdrr5';
         $gpu3->core_clock=1.26;
         $gpu3->boost_clock=1.35;
@@ -84,7 +84,7 @@ class GpuTableSeeder extends Seeder
         $gpu4->model='geforce gtx 1060 gaming x 60';
         $gpu4->interface='pcie x16';
         $gpu4->chipset='geforce gtx 1060 6gb';
-        $gpu4->mem_size='6gb';
+        $gpu4->mem_size=6;
         $gpu4->mem_type='gddr5';
         $gpu4->core_clock=1.51;
         $gpu4->boost_clock=1.81;
@@ -106,7 +106,7 @@ class GpuTableSeeder extends Seeder
         $gpu5->model='rog-strix-gtx1070-o8g-gaming';
         $gpu5->interface='pcie x16';
         $gpu5->chipset='geforce gtx 1070';
-        $gpu5->mem_size='8gb';
+        $gpu5->mem_size=8;
         $gpu5->mem_type='gddr5';
         $gpu5->core_clock=1.63;
         $gpu5->boost_clock=1.86;
@@ -128,7 +128,7 @@ class GpuTableSeeder extends Seeder
         $gpu6->model='04g-p4-6251-kr';
         $gpu6->interface='pcie x16';
         $gpu6->chipset='geforce gtx 1050ti'
-        $gpu6->mem_size='4gb';
+        $gpu6->mem_size=4;
         $gpu6->mem_type='gddr5';
         $gpu6->core_clock=1.29;
         $gpu6->boost_clock=1.39;
@@ -150,7 +150,7 @@ class GpuTableSeeder extends Seeder
         $gpu7->model='04g-p4-6163-kr';
         $gpu7->interface='pcie x16';
         $gpu7->chipset='geforce gtx 1060 6gb';
-        $gpu7->mem_size='6gb';
+        $gpu7->mem_size=6;
         $gpu7->mem_type='gddr5';
         $gpu7->core_clock=1.61;
         $gpu7->boost_clock=1.83;
@@ -172,7 +172,7 @@ class GpuTableSeeder extends Seeder
         $gpu8->model='gtx 1070 gaming x8g';
         $gpu8->interface='pcie x16';
         $gpu8->chipset='geforce gtx 1070';
-        $gpu8->mem_size='8gb';
+        $gpu8->mem_size=8;
         $gpu8->mem_type='gddr5';
         $gpu8->core_clock=1.51;
         $gpu8->boost_clock=1.80;
@@ -194,7 +194,7 @@ class GpuTableSeeder extends Seeder
         $gpu9->model='dual-gtx1070-o8g';
         $gpu9->interface='pcie x16';
         $gpu9->chipset='geforce gtx 1070';
-        $gpu9->mem_size='8gb';
+        $gpu9->mem_size=8;
         $gpu9->mem_type='gddr5';
         $gpu9->core_clock=1.58;
         $gpu9->boost_clock=1.80;
@@ -216,7 +216,7 @@ class GpuTableSeeder extends Seeder
         $gpu10->model='08g-p4-5173-kr';
         $gpu10->interface='pcie x16';
         $gpu10->chipset='geforce gtx 1070';
-        $gpu10->mem_size='8gb';
+        $gpu10->mem_size=8;
         $gpu10->mem_type='gddr5';
         $gpu10->core_clock=1.59;
         $gpu10->boost_clock=1.78;
@@ -238,7 +238,7 @@ class GpuTableSeeder extends Seeder
         $gpu11->model='gv-rx580gaming-4gd';
         $gpu11->interface='pcie x16';
         $gpu11->chipset='radeon rx 580';
-        $gpu11->mem_size='4gb';
+        $gpu11->mem_size=4;
         $gpu11->mem_type='gddr5';
         $gpu11->core_clock=1.26;
         $gpu11->boost_clock=1.35;
@@ -260,7 +260,7 @@ class GpuTableSeeder extends Seeder
         $gpu12->model='zt-p10700g-10m';
         $gpu12->interface='pcie x16';
         $gpu12->chipset='geforce gtx 1070';
-        $gpu12->mem_size='8gb';
+        $gpu12->mem_size=8;
         $gpu12->mem_type='gddr5';
         $gpu12->core_clock=1.52;
         $gpu12->boost_clock=1.71;
@@ -282,7 +282,7 @@ class GpuTableSeeder extends Seeder
         $gpu13->model='rog strix-gtx1080-abg-gaming';
         $gpu13->interface='pcie x16';
         $gpu13->chipset='geforce gtx 1080';
-        $gpu13->mem_size='8gb';
+        $gpu13->mem_size=8;
         $gpu13->mem_type='gddr5x';
         $gpu13->core_clock=1.67;
         $gpu13->boost_clock=1.83;
@@ -304,7 +304,7 @@ class GpuTableSeeder extends Seeder
         $gpu14->model='11g-p4-6390-kr';
         $gpu14->interface='pcie x16';
         $gpu14->chipset='geforce gtx 1080ti';
-        $gpu14->mem_size='11gb';
+        $gpu14->mem_size=11;
         $gpu14->mem_type='gddr5x'
         $gpu14->core_clock=1.48;
         $gpu14->boost_clock=1.58;
@@ -326,7 +326,7 @@ class GpuTableSeeder extends Seeder
         $gpu15->model='08g-p4-6183-kr';
         $gpu15->interface='pcie x16';
         $gpu15->chipset='geforce gtx 1080';
-        $gpu15->mem_size='8gb';
+        $gpu15->mem_size=8;
         $gpu15->mem_type='gddr5x';
         $gpu15->core_clock=1.71;
         $gpu15->boost_clock=1.85;
@@ -348,7 +348,7 @@ class GpuTableSeeder extends Seeder
         $gpu16->model='gtx 1050 2g oc';
         $gpu16->interface='pcie x16';
         $gpu16->chipset='geforce gtx 1050';
-        $gpu16->mem_size='2gb';
+        $gpu16->mem_size=2;
         $gpu16->mem_type='gddr5';
         $gpu16->core_clock=1.40;
         $gpu16->boost_clock=1.52;
@@ -370,7 +370,7 @@ class GpuTableSeeder extends Seeder
         $gpu17->model='rog-strix-gtx1060-o6g-gaming';
         $gpu17->interface='pcie x16';
         $gpu17->chipset='geforce gtx 1060 6gb';
-        $gpu17->mem_size='6gb';
+        $gpu17->mem_size=6;
         $gpu17->mem_type='gddr5';
         $gpu17->core_clock=1.62;
         $gpu17->boost_clock=1.87;
@@ -392,7 +392,7 @@ class GpuTableSeeder extends Seeder
         $gpu18->model='03g-p4-6162';
         $gpu18->interface='pcie x16';
         $gpu18->chipset='geforce gtx 1060 3gb';
-        $gpu18->mem_size='3gb';
+        $gpu18->mem_size=3;
         $gpu18->mem_type='ddr5';
         $gpu18->core_clock=1.61;
         $gpu18->boost_clock=1.83;
@@ -414,7 +414,7 @@ class GpuTableSeeder extends Seeder
         $gpu19->model='gv-rx460wf2oc-4gd';
         $gpu19->interface='pcie x16';
         $gpu19->chipset='radeon rx 460';
-        $gpu19->mem_size='4gb';
+        $gpu19->mem_size=4;
         $gpu19->mem_type='ddr5';
         $gpu19->core_clock=1.09;
         $gpu19->boost_clock=1.21;
@@ -436,7 +436,7 @@ class GpuTableSeeder extends Seeder
         $gpu20->model='rx750 amor 4g oc';
         $gpu20->interface='pcie x16';
         $gpu20->chipset='radeon rx 570';
-        $gpu20->mem_size='4gb';
+        $gpu20->mem_size=4;
         $gpu20->mem_type='gddr5';
         $gpu20->core_clock=1.17;
         $gpu20->boost_clock=1.24;
