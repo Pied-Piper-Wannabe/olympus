@@ -21,6 +21,7 @@ class CreateOsTable extends Migration
 			$table->string('max_memory');
 			$table->string('kernel');
 			$table->string('gui');
+			$table->timestamps();
 		});
 	}
 

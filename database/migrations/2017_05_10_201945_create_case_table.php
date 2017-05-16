@@ -24,6 +24,7 @@ class CreateCaseTable extends Migration
 			$table->integer('max_gpu_length');
 			// ------------COMP CHECK------------
 			$table->integer('dimensions');
+			$table->timestamps();
 		});
 	}
 

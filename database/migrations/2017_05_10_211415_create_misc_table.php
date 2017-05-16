@@ -19,6 +19,7 @@ class CreateMiscTable extends Migration
 			$table->string('description');
 			$table->string('specs');
 			$table->string('brand');
+			$table->timestamps();
 		});
 	}
 

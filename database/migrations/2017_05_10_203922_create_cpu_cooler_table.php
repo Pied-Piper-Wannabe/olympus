@@ -25,6 +25,7 @@ class CreateCpuCoolerTable extends Migration
 			$table->integer('fan_rpm');
 			$table->integer('fan_noise');
 			$table->integer('number_of_fans');
+			$table->timestamps();
 		});
 	}
 
