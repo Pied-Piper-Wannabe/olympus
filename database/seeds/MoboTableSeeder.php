@@ -302,7 +302,7 @@ class MoboTableSeeder extends Seeder
         $mobo15->cpu_socket='lga1151';
         $mobo15->chipset='intel z270';
         $mobo15->memory_slots='2x 288-pin DIMM';
-        $mobo15->memory_type='ddr4      2133/2400/2666/2800/3000/3200/3300/3333/3400/3466/3600/3733/3866/4000/4133;/4266'
+        $mobo15->memory_type='ddr4      2133/2400/2666/2800/3000/3200/3300/3333/3400/3466/3600/3733/3866/4000/4133;/4266';
         $mobo15->max_memory=32;
         $mobo15->raid_support='yes';
         $mobo15->onboard_gpu='cpu dependent';

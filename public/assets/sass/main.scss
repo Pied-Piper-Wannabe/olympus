@@ -44,6 +44,10 @@ p, a {
 .bold {
 	font-weight: 700;
 }
+
+.whiteText {
+	color: red;
+}
 // =========END General Text Attributes END=======
 
 // =========Sizing Attributes==========
@@ -284,6 +288,12 @@ button, .btn {
 	}
 }
 
+.errorPage {
+	height: 100%;
+	h4 {
+		color: #cecece;
+	}
+}
 
 // =========END Unique Classes END===========
 

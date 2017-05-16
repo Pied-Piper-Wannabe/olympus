@@ -15,9 +15,9 @@
 <div class="container">
 	<div class="row botMarginSm">
 		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-			<form class="signupForm">
+			<form class="signupForm" method="POST" action="{{ action ('Auth\AuthController@postRegister') }}" data-validation data-required-message="This field is required">
 			{!! csrf_field() !!}
-				<div class="form-group" method="POST" action="{{ action ('Auth\AuthController@postRegister') }}" data-validation data-required-message="This field is required">
+				<div class="form-group">
 					<label for="email">Email address</label>
 					<input type="email" class="form-control inverseInput" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email" data-required>
 					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -37,6 +37,13 @@
 				<button type="submit" class="btn btn-primary">Signup</button>
 				<a href="/login" class="btn btn-primary floatRight">Go to login</a>
 			</form>
+			@if (count($errors))
+			<ul>
+				@foreach($errors->all() as $error)
+						<li class="whiteText">{{$error}}</li>
+				@endforeach
+			</ul>
+			@endif
 		</div>
 	</div>
 </div>

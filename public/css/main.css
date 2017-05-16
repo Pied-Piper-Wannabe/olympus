@@ -26,6 +26,9 @@ p, a {
 .bold {
   font-weight: 700; }
 
+.whiteText {
+  color: red; }
+
 img {
   width: 100%;
   height: auto; }
@@ -202,6 +205,11 @@ button, .btn {
 
 .userPhoto img {
   width: 200px; }
+
+.errorPage {
+  height: 100%; }
+  .errorPage h4 {
+    color: #cecece; }
 
 .parallax {
   position: relative;

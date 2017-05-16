@@ -9,51 +9,51 @@ class Builds extends Model
 	protected $table = 'builds';
 
 	public function motherboard() {
-		return $this->belongsTo('App\Models\Motherboard', 'part_id');
+		return $this->belongsTo('App\Models\Motherboard', 'id');
 	}
 
 	public function case() {
-		return $this->belongsTo('App\Models\Case', 'part_id');
+		return $this->belongsTo('App\Models\Case', 'id');
 	}
 
 	public function cpu() {
-		return $this->belongsTo('App\Models\Cpu', 'part_id');
+		return $this->belongsTo('App\Models\Cpu', 'id');
 	}
 
 	public function cpuCooler() {
-		return $this->belongsTo('App\Models\CpuCooler', 'part_id');
+		return $this->belongsTo('App\Models\CpuCooler', 'id');
 	}
 
 	public function gpu() {
-		return $this->belongsTo('App\Models\Gpu', 'part_id');
+		return $this->belongsTo('App\Models\Gpu', 'id');
 	}
 
 	public function hdd() {
-		return $this->belongsTo('App\Models\Hdd', 'part_id');
+		return $this->belongsTo('App\Models\Hdd', 'id');
 	}
 
 	public function misc() {
-		return $this->belongsTo('App\Models\Misc', 'part_id');
+		return $this->belongsTo('App\Models\Misc', 'id');
 	}
 
 	public function opticalDrive() {
-		return $this->belongsTo('App\Models\OpticalDrive', 'part_id');
+		return $this->belongsTo('App\Models\OpticalDrive', 'id');
 	}
 
 	public function os() {
-		return $this->belongsTo('App\Models\Os', 'part_id');
+		return $this->belongsTo('App\Models\Os', 'id');
 	}
 
 	public function psu() {
-		return $this->belongsTo('App\Models\Psu', 'part_id');
+		return $this->belongsTo('App\Models\Psu', 'id');
 	}
 
 	public function ram() {
-		return $this->belongsTo('App\Models\Ram', 'part_id');
+		return $this->belongsTo('App\Models\Ram', 'id');
 	}
 
 	public function user()
 	{
-    return $this->belongsTo('App\User', 'user_id');
-}
+    return $this->belongsTo('App\User', 'created_by');
+	}
 }

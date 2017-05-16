@@ -13,7 +13,7 @@ class CreateCpuTable extends Migration
 	public function up()
 	{
 		Schema::create('cpu', function(Blueprint $table){
-			$table->integer('part_id');
+			$table->increments('id');
 			$table->string('model');
 			$table->string('brand');
 			$table->string('socket_type');

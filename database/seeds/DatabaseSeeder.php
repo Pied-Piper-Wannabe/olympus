@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
 		Model::unguard();
 
 		$this->command->info('Deleting builds records');
+
             DB::table('builds')->delete();
       
             $this->command->info('Deleting motherboard records');
@@ -71,7 +72,6 @@ class DatabaseSeeder extends Seeder
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
-      
 		Model::reguard();
 	}
 }

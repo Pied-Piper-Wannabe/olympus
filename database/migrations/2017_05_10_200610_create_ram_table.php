@@ -13,7 +13,7 @@ class CreateRamTable extends Migration
 	public function up()
 	{
 		Schema::create('ram', function(Blueprint $table){
-			$table->integer('part_id');
+			$table->increments('id');
 			$table->string('model');
 			$table->string('brand');
 			//---------COMP CHECK--------------

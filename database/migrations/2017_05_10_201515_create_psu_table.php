@@ -13,7 +13,7 @@ class CreatePsuTable extends Migration
 	public function up()
 	{
 		Schema::create('psu', function(Blueprint $table){
-			$table->string('part_id');
+			$table->increments('id');
 			$table->string('model');
 			// ----------COMP CHECK--------
 			$table->string('type');
