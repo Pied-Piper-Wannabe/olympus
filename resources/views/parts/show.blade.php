@@ -135,48 +135,64 @@
 				<p>{{$part->interface}}</p>
 			</div>
 			<div class="spec">
-				<h5>SOCKET TYPE</h5>
-				<p>{{$part->socket_type}}</p>
+				<h5>CHIPSET</h5>
+				<p>{{$part->chipset}}</p>
 			</div>
 			<div class="spec">
-				<h5>NUMBER OF CORES</h5>
-				<p>{{$part->number_of_cores}}</p>
+				<h5>VIDEO MEMORY</h5>
+				<p>{{$part->mem_size}}GB</p>
 			</div>
 			<div class="spec">
-				<h5>OPERATING FREQUENCY</h5>
-				<p>{{$part->operating_frequency}}</p>
+				<h5>MEMORY TYPE</h5>
+				<p>{{$part->mem_type}}</p>
 			</div>
 			<div class="spec">
-				<h5>MAX TURBO FREQUENCY</h5>
-				<p>{{$part->max_turbo_frequency}}</p>
+				<h5>CORE CLOCK</h5>
+				<p>{{$part->core_clock}}GHz</p>
 			</div>
 			<div class="spec">
-				<h5>L1 CACHE</h5>
-				<p>{{$part->l1_cache}}</p>
+				<h5>BOOST CLOCK</h5>
+				<p>{{$part->boost_clock}}GHz</p>
 			</div>
 			<div class="spec">
-				<h5>L2 CACHE</h5>
-				<p>{{$part->l2_cache}}</p>
+				<h5>TDP</h5>
+				<p>{{$part->tdp}}W</p>
 			</div>
 			<div class="spec">
-				<h5>L3 CACHE</h5>
-				<p>{{$part->l3_cache}}</p>
+				<h5>FAN</h5>
+				<p>{{$part->fan}}</p>
 			</div>
 			<div class="spec">
-				<h5>WATTAGE</h5>
-				<p>{{$part->wattage}}</p>
+				<h5>SLI</h5>
+				<p>{{$part->sli_support}}</p>
 			</div>
 			<div class="spec">
-				<h5>HYPERTHREADING</h5>
-				<p>{{$part->hyperthreading_support}}</p>
+				<h5>CROSSFIRE</h5>
+				<p>{{$part->crossfire_support}}</p>
 			</div>
 			<div class="spec">
-				<h5>MAX SUPPORTED MEMORY</h5>
-				<p>{{$part->max_supported_memory}}</p>
+				<h5>LENGTH</h5>
+				<p>{{$part->length}}mm</p>
 			</div>
 			<div class="spec">
-				<h5>INTERGRATED GRAPHICS</h5>
-				<p>{{$part->intergrated_graphics}}</p>
+				<h5>GSYNC</h5>
+				<p>{{$part->gsync}}</p>
+			</div>
+			<div class="spec">
+				<h5>FREESYNC</h5>
+				<p>{{$part->freesync}}</p>
+			</div>
+			<div class="spec">
+				<h5>DVI-D</h5>
+				<p>{{$part->dvi_d}}</p>
+			</div>
+			<div class="spec">
+				<h5>DISPLAY PORT</h5>
+				<p>{{$part->display_port}}</p>
+			</div>
+			<div class="spec">
+				<h5>HDMI</h5>
+				<p>{{$part->hdmi}}</p>
 			</div>
 			@endif
 
