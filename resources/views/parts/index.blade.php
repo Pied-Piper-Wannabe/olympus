@@ -1192,8 +1192,43 @@
 						<td>{{$part->type}}-{{$part->speed}}</td>
 						<td>{{$part->memory_slot_type}}</td>
 						<td>{{$part->CASlatency}}</td>
-						<td>{{$part->number_of_sticks}}x{{$part->stick_size}}</td>
-						<td>{{$part->size}}</td>
+						<td>{{$part->number_of_sticks}}x{{$part->stick_size}}GB</td>
+						<td>{{$part->size}}GB</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					@if($type === 'Storage Devices')
+					<tr>
+						<th>Storage</th>
+						<th>Form</th>
+						<th>Type</th>
+						<th>Capacity</th>
+						<th>Cache</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/memory/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->form_factor}}</td>
+						@if($part->rpm === 0)
+						<td>SSD</td>
+						@else
+						<td>{{$part->rpm}}RPM</td>
+						@endif
+						<td>{{$part->size}}GB</td>
+						@if($part->cache === 'none')
+						<td>N/A</td>
+						@else
+						<td>{{$part->cache}}</td>
+						@endif
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
 						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
