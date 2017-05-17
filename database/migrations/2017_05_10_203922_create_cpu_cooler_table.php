@@ -14,17 +14,15 @@ class CreateCpuCoolerTable extends Migration
 	{
 		Schema::create('cpu_cooler', function(Blueprint $table){
 			$table->increments('id');
-			$table->string('model');
+			$table->decimal('price', 5, 2);
 			$table->string('brand');
-			$table->string('type');
-			// ------------COMP CHECK---------
+			$table->string('model');
 			$table->string('sockets');
-			//-----------COMP CHECK-----------
-			$table->integer('radiator_dimensions');
-			$table->integer('fan_size');
-			$table->integer('fan_rpm');
-			$table->integer('fan_noise');
-			$table->integer('number_of_fans');
+			$table->string('liquid_cooled');
+			$table->string('radiator_size');
+			$table->string('noise_level');
+			$table->string('fan_rpm');
+			$table->string('height');
 			$table->timestamps();
 		});
 	}
