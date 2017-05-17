@@ -21,8 +21,8 @@ class CreateGpuTable extends Migration
 			$table->string('chipset');
 			$table->integer('mem_size');
 			$table->string('mem_type');
-			$table->integer('core_clock');
-			$table->integer('boost_clock');
+			$table->decimal('core_clock', 4, 2);
+			$table->decimal('boost_clock', 4, 2);
 			$table->integer('tdp');
 			$table->string('fan');
 			$table->string('sli_support');

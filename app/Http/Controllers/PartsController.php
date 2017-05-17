@@ -114,10 +114,11 @@ class PartsController extends Controller
 		switch ($type) {
 			case 'cpu':
 				$type = 'CPUs';
-				$parts = \App\Models\Cpu::paginate(10);
+				$part = \App\Models\Cpu::findOrFail($id);
 				break;
 			case 'cpu-cooler':
 				$type = 'CPU Coolers';
+				$part = \App\Models\CpuCooler::findOrFail($id);
 				break;
 			case 'motherboard':
 				$type = 'Motherboards';
@@ -125,29 +126,32 @@ class PartsController extends Controller
 				break;
 			case 'memory':
 				$type = 'Memory';
+				$part = \App\Models\Ram::findOrFail($id);
 				break;
 			case 'storage':
 				$type = 'Storage Devices';
+				$part = \App\Models\Hdd::findOrFail($id);
 				break;
 			case 'gpu':
 				$type = 'GPUs';
+				$part = \App\Models\Gpu::findOrFail($id);
 				break;
 			case 'case':
 				$type = 'Cases';
+				$part = \App\Models\ComputerCase::findOrFail($id);
 				break;
 			case 'power-supply':
 				$type = 'PSUs';
-				break;
-			case 'optical-drive':
-				$type = 'Optical Drives';
+				$part = \App\Models\Psu::findOrFail($id);
 				break;
 			case 'operating-system':
 				$type = 'Operating Systems';
+				$part = \App\Models\Os::findOrFail($id);
 				break;
 			case 'misc':
 				$type = 'Misc';
+				$part = \App\Models\Misc::findOrFail($id);
 				break;
-
 		}
 		$data = array(
 			'type' => $type, 
