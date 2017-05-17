@@ -1092,6 +1092,7 @@
 		<div class="col-sm-12 table-responsive">
 			<table class="table table-striped">
 				<thead>
+					<!-- Motherboard Table -->
 					@if($type === 'Motherboards')
 					<tr>
 						<th>Motherboard</th>
@@ -1112,6 +1113,58 @@
 						<td>{{$part->form_factor}}</td>
 						<td>{{$part->memory_slots}}</td>
 						<td>{{$part->max_memory}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- CPU Table -->
+					@if($type === 'CPUs')
+					<tr>
+						<th>CPU</th>
+						<th>Speed</th>
+						<th>Cores</th>
+						<th>TDP</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/cpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->operating_frequency}}</td>
+						<td>{{$part->number_of_cores}}</td>
+						<td>{{$part->wattage}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- GPU Table -->
+					@if($type === 'GPUs')
+					<tr>
+						<th>Video Card</th>
+						<th>Chipset</th>
+						<th>Memory</th>
+						<th>Core Clock</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/cpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->chipset}}</td>
+						<td>{{$part->mem_size}}</td>
+						<td>{{$part->core_clock}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
 						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
