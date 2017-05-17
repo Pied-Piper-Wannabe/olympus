@@ -14,14 +14,14 @@ class CreateHddTable extends Migration
 	{
 		Schema::create('hdd', function(Blueprint $table){
 			$table->increments('id');
+			$table->decimal('price', 5, 2);
 			$table->string('brand');
-			$table->string('interface');
+			$table->string('model');
 			$table->integer('size');
-			$table->integer('rpm')->nullable();
-			$table->integer('cache')->nullable();
-			$table->integer('average_latency');
-			$table->decimal('form_factor', 3, 1);
-			$table->boolean('ssd');
+			$table->string('interface');
+			$table->string('cache');
+			$table->integer('rpm');
+			$table->string('form_factor');
 			$table->timestamps();
 		});
 	}

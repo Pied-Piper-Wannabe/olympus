@@ -51,7 +51,7 @@ class PartsController extends Controller
 				break;
 			case 'case':
 				$type = 'Cases';
-				$parts = \App\Models\Case::paginate(10);
+				$parts = \App\Models\ComputerCase::paginate(10);
 				break;
 			case 'power-supply':
 				$type = 'PSUs';
