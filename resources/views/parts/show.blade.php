@@ -323,24 +323,16 @@
 			<!-- OS -->
 			@if($type === 'Operating Systems')
 			<div class="spec">
-				<h5>DESCRIPTION</h5>
-				<p>{{$part->description}}</p>
-			</div>
-			<div class="spec">
 				<h5>ARCHITECTURE</h5>
 				<p>{{$part->architecture}}</p>
 			</div>
 			<div class="spec">
-				<h5>SYSTEM REQUIRMENTS</h5>
-				<p>{{$part->system_requirements}}</p>
+				<h5>MAX SUPPORTED MEMORY</h5>
+				<p>{{$part->system_max_supported_memory}}GB</p>
 			</div>
 			<div class="spec">
 				<h5>KERNEL</h5>
 				<p>{{$part->kernel}}</p>
-			</div>
-			<div class="spec">
-				<h5>GUI</h5>
-				<p>{{$part->gui}}</p>
 			</div>
 			@endif
 

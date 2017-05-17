@@ -15,7 +15,7 @@ class CreateOsTable extends Migration
 		Schema::create('os', function(Blueprint $table){
 			$table->increments('id');
 			$table->decimal('price', 5, 2);
-			$table->string('name');
+			$table->string('model');
 			$table->string('architecture');
 			$table->integer('max_supported_memory');
 			$table->string('kernel');
