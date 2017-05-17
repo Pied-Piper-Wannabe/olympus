@@ -196,6 +196,134 @@
 			</div>
 			@endif
 
+			<!-- HDD -->
+			@if($type === 'Storage Devices')
+			<div class="spec">
+				<h5>SIZE</h5>
+				<p>{{$part->size}}GB</p>
+			</div>
+			<div class="spec">
+				<h5>INTERFACE</h5>
+				<p>{{$part->interface}}</p>
+			</div>
+			<div class="spec">
+				<h5>CACHE</h5>
+				@if($part->cache === 'none')
+				<p>N/A</p>
+				@else
+				<p>{{$part->cache}}</p>
+				@endif
+			</div>
+			<div class="spec">
+				<h5>RPM</h5>
+				@if($part->rpm === 0)
+				<p>SSD</p>
+				@else
+				<p>{{$part->rpm}}RPM</p>
+				@endif
+			</div>
+			<div class="spec">
+				<h5>FORM FACTOR</h5>
+				<p>{{$part->form_factor}}"</p>
+			</div>
+			@endif
+
+			<!-- MISC -->
+			@if($type === 'Misc')
+			<div class="spec">
+				<h5>TYPE</h5>
+				<p>{{$part->type}}</p>
+			</div>
+			<div class="spec">
+				<h5>DESCRIPTION</h5>
+				<p>{{$part->description}}</p>
+			</div>
+			<div class="spec">
+				<h5>Other</h5>
+				<p>{{$part->specs}}</p>
+			</div>
+			<div class="spec">
+				<h5>RPM</h5>
+				@if($part->rpm === 0)
+				<p>SSD</p>
+				@else
+				<p>{{$part->rpm}}RPM</p>
+				@endif
+			</div>
+			<div class="spec">
+				<h5>FORM FACTOR</h5>
+				<p>{{$part->form_factor}}"</p>
+			</div>
+			@endif
+
+			<!-- MOBO -->
+			@if($type === 'GPUs')
+			<div class="spec">
+				<h5>INTERFACE</h5>
+				<p>{{$part->interface}}</p>
+			</div>
+			<div class="spec">
+				<h5>CHIPSET</h5>
+				<p>{{$part->chipset}}</p>
+			</div>
+			<div class="spec">
+				<h5>VIDEO MEMORY</h5>
+				<p>{{$part->mem_size}}GB</p>
+			</div>
+			<div class="spec">
+				<h5>MEMORY TYPE</h5>
+				<p>{{$part->mem_type}}</p>
+			</div>
+			<div class="spec">
+				<h5>CORE CLOCK</h5>
+				<p>{{$part->core_clock}}GHz</p>
+			</div>
+			<div class="spec">
+				<h5>BOOST CLOCK</h5>
+				<p>{{$part->boost_clock}}GHz</p>
+			</div>
+			<div class="spec">
+				<h5>TDP</h5>
+				<p>{{$part->tdp}}W</p>
+			</div>
+			<div class="spec">
+				<h5>FAN</h5>
+				<p>{{$part->fan}}</p>
+			</div>
+			<div class="spec">
+				<h5>SLI</h5>
+				<p>{{$part->sli_support}}</p>
+			</div>
+			<div class="spec">
+				<h5>CROSSFIRE</h5>
+				<p>{{$part->crossfire_support}}</p>
+			</div>
+			<div class="spec">
+				<h5>LENGTH</h5>
+				<p>{{$part->length}}mm</p>
+			</div>
+			<div class="spec">
+				<h5>GSYNC</h5>
+				<p>{{$part->gsync}}</p>
+			</div>
+			<div class="spec">
+				<h5>FREESYNC</h5>
+				<p>{{$part->freesync}}</p>
+			</div>
+			<div class="spec">
+				<h5>DVI-D</h5>
+				<p>{{$part->dvi_d}}</p>
+			</div>
+			<div class="spec">
+				<h5>DISPLAY PORT</h5>
+				<p>{{$part->display_port}}</p>
+			</div>
+			<div class="spec">
+				<h5>HDMI</h5>
+				<p>{{$part->hdmi}}</p>
+			</div>
+			@endif
+
 
 
 		</div>
