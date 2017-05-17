@@ -174,5 +174,32 @@ class MiscTableSeeder extends Seeder
         $misc18->brand='tp-link';
         $misc18->save();
 
+        $misc19= new \App\Models\Misc();
+        $misc19->price=194.89;
+        $misc19->model='bw-12b1st/blk/g/as';
+        $misc19->type='optical drive';
+        $misc19->description='sata 3 gb/s';
+        $misc19->specs='cache 8mb, cd-r48x, cd-rw24x, dvd-r16x, dvd-r-dl8x, dvd-rw6x, dvd-ram12x, bd-r12x';
+        $misc19->brand='brand';
+        $misc19->save();
+
+        $misc20= new \App\Models\Misc();
+        $misc20->price=18.69;
+        $misc20->model='gh24nscob';
+        $misc20->type='optical drive';
+        $misc20->description='sata 3 gb/s';
+        $misc20->specs='cache 0mb, cd-r48x, cd-rw24x, dvd-r16x, dvd-r-dl8x, dvd-rw6x, dvd-ram5x';
+        $misc20->brand='lg';
+        $misc20->save();
+
+        $misc21= new \App\Models\Misc();
+        $misc21->price=23.89;
+        $misc21->model='sh-224bb';
+        $misc21->type='optical drive';
+        $misc21->description='sata 3 gb/s';
+        $misc21->specs='cache 1.5mb, cd-r48x, cd-rw24x, dvd-r16x, dvd-r-dl8x, dvd-rw6x, dvd-ram12x';
+        $misc21->brand='samsung';
+        $misc21->save();
+
     }
 }
