@@ -16,7 +16,7 @@ class MiscTableSeeder extends Seeder
         $misc1->price=182.99;
         $misc1->name='gn246hl';
         $misc1->type='monitor';
-        $misc1->description=24;
+        $misc1->description='24';
         $misc1->specs='1920x1080, 16:9, 144hz, hdmi, vga, dvi';
         $misc1->brand='acer';
         $misc1->save();
@@ -25,7 +25,7 @@ class MiscTableSeeder extends Seeder
         $misc2->price=229.99;
         $misc2->name='vg248qe';
         $misc2->type='monitor';
-        $misc2->description=24;
+        $misc2->description='24';
         $misc2->specs='1920x1080, 16:9, 144hz, hdmi, vga, dvi';
         $misc2->brand='asus';
         $misc2->save();
@@ -34,7 +34,7 @@ class MiscTableSeeder extends Seeder
         $misc3->price=99.49;
         $misc3->name='vs228h-p';
         $misc3->type='monitor';
-        $misc3->description=21.5;
+        $misc3->description='21.5';
         $misc3->specs='1920x1080, 16:9, 5ms, hdmi, vga, dvi'
         $misc3->brand='asus';
         $misc3->save();
@@ -43,7 +43,7 @@ class MiscTableSeeder extends Seeder
         $misc4->price=5104.98;
         $misc4->name='cg318-bk';
         $misc4->type='monitor';
-        $misc4->description=31.1;
+        $misc4->description='31.1';
         $misc4->specs='4096x2160, 256:135, 9ms, hdmi, display port';
         $misc4->brand='eizo';
         $misc4->save();
@@ -52,7 +52,7 @@ class MiscTableSeeder extends Seeder
         $misc5->price=6.30;
         $misc5->name='sickleflow (red)';
         $misc5->type='case fan';
-        $misc5->description=120;
+        $misc5->description='120';
         $misc5->specs='translucent/gray, red led, 69.7cfm, 2000rpm';
         $misc5->brand='cooler master';
         $misc5->save();
@@ -61,7 +61,7 @@ class MiscTableSeeder extends Seeder
         $misc6->price=25.99;
         $misc6->name='air series af120 quiet edition';
         $misc6->type='case fan';
-        $misc6->description=120;
+        $misc6->description='120';
         $misc6->specs='black, 39.9cfm, 1100rpm';
         $misc6->brand='corsair';
         $misc6->save();
@@ -70,7 +70,7 @@ class MiscTableSeeder extends Seeder
         $misc7->price=17.59;
         $misc7->name='air series af140 quiet edition'
         $misc7->type='case fan';
-        $misc7->description=140;
+        $misc7->description='140';
         $misc7->specs='black, 67.8cfm, 1150rpm';
         $misc7->brand='corsair';
         $misc7->save();
@@ -79,7 +79,7 @@ class MiscTableSeeder extends Seeder
         $misc8->price=86.99;
         $misc8->name='aer rgb140(3pack)';
         $misc8->type='case fan';
-        $misc8->description=140;
+        $misc8->description='140';
         $misc8->specs='black, multi-color led, 23.9-71.6cfm, 500-1000rpm';
         $misc8->brand='nzxt'
         $misc8->save();
