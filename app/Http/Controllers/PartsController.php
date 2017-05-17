@@ -39,27 +39,35 @@ class PartsController extends Controller
 				break;
 			case 'memory':
 				$type = 'Memory';
+				$parts = \App\Models\Ram::paginate(10);
 				break;
 			case 'storage':
 				$type = 'Storage Devices';
+				$parts = \App\Models\Hdd::paginate(10);
 				break;
 			case 'gpu':
 				$type = 'GPUs';
+				$parts = \App\Models\Gpu::paginate(10);
 				break;
 			case 'case':
 				$type = 'Cases';
+				$parts = \App\Models\Case::paginate(10);
 				break;
 			case 'power-supply':
 				$type = 'PSUs';
+				$parts = \App\Models\Psu::paginate(10);
 				break;
 			case 'optical-drive':
 				$type = 'Optical Drives';
+				$parts = \App\Models\OpticalDrive::paginate(10);
 				break;
 			case 'operating-system':
 				$type = 'Operating Systems';
+				$parts = \App\Models\Os::paginate(10);
 				break;
 			case 'misc':
 				$type = 'Misc';
+				$parts = \App\Models\Misc::paginate(10);
 				break;
 		}
 

@@ -22,6 +22,7 @@ class CreatePsuTable extends Migration
 			$table->string('fans');
 			$table->string('efficiency');
 			$table->string('modular');
+			$table->timestamps();
 		});
 	}
 

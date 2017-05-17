@@ -21,6 +21,7 @@ class CreateMotherboardTable extends Migration
 			$table->string('cpu_socket');
 			$table->string('chipset');
 			$table->integer('memory_slots');
+			$table->string('memory_pin');
 			$table->string('memory_type');
 			$table->integer('max_memory');
 			$table->string('raid_support');

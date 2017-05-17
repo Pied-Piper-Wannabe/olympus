@@ -14,23 +14,22 @@ class CreateRamTable extends Migration
 	{
 		Schema::create('ram', function(Blueprint $table){
 			$table->increments('id');
-			$table->string('model');
+			$table->decimal('price', 5, 2);
 			$table->string('brand');
-			//---------COMP CHECK--------------
+			$table->string('model');
+			$table->string('memory_slot_type');
+			$table->integer('speed');
+			$table->string('type');
 			$table->integer('size');
 			$table->integer('number_of_sticks');
-			//-------DDR#--------------
-			$table->string('stick_type');
-			// -----------------------
+			$table->integer('stick_size');
+			$table->integer('CASlatency');
 			$table->integer('voltage');
-			//---------COMP CHECK------------
-			$table->string('pin_type');
-			$table->integer('speed');
-			$table->integer('cas_latency');
-			$table->string('timing');
-			$table->string('ecc');
-			$table->string('registered');
 			$table->string('heat_sink');
+			$table->string('ECC');
+			$table->string('registered');
+			$table->string('color');
+			$table->timestamps();
 		});
 	}
 
