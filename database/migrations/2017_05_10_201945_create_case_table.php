@@ -14,16 +14,14 @@ class CreateCaseTable extends Migration
 	{
 		Schema::create('case', function(Blueprint $table){
 			$table->increments('id');
-			$table->string('model');
+			$table->decimal('price', 5, 2);
 			$table->string('brand');
-			$table->string('external_drive_bay');
-			$table->string('internal_drive_bay');
-			$table->string('front_ports');
-			// ----------COMP CHECK------------	
+			$table->string('model');
 			$table->string('form_factor');
-			$table->integer('max_gpu_length');
-			// ------------COMP CHECK------------
-			$table->integer('dimensions');
+			$table->string('color');
+			$table->string('include_power');
+			$table->string('mobo_comp');
+			$table->string('front_panel_usb');
 			$table->timestamps();
 		});
 	}

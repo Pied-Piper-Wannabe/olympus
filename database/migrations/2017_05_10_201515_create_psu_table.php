@@ -14,12 +14,15 @@ class CreatePsuTable extends Migration
 	{
 		Schema::create('psu', function(Blueprint $table){
 			$table->increments('id');
+			$table->decimal('price', 5, 2);
+			$table->string('brand');
 			$table->string('model');
-			$table->string('type');
-			$table->string('max_wattage');
-			$table->string('fans');
-			$table->string('efficiency');
+			$table->string('form_factor');
+			$table->integer('max_wattage');
+			$table->integer('fans');
 			$table->string('modular');
+			$table->string('efficiency');
+			$table->integer('pcie_62pin');
 			$table->timestamps();
 		});
 	}
