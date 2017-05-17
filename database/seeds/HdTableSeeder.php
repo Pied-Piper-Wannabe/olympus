@@ -108,7 +108,7 @@ class HdTableSeeder extends Seeder
         $hdd9->interface='pcie x8';
         $hdd9->cache='none';
         $hdd9->rpm=0;
-        $hdd9->form_factor='pcie'
+        $hdd9->form_factor='pcie';
         $hdd9->save();
         
         $hdd10=new \App\Models\Hdd();

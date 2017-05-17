@@ -18,10 +18,10 @@ class PsuTableSeeder extends Seeder
         $psu1->price= 49.99;
         $psu1->brand='corsair'; 
         $psu1->model='cx450m';
-        $psu1->form_factor='atx'
+        $psu1->form_factor='atx';
         $psu1->max_wattage= 450;
         $psu1->fans= 1;
-        $psu1->modular='semi'; 
+        $psu1->moduler='semi'; 
         $psu1->efficiency='80+bronze';
         $psu1->pcie_62pin= 2;
         $psu1->save();
@@ -66,12 +66,12 @@ class PsuTableSeeder extends Seeder
         $psu5->price=29.89;
         $psu5->brand='evga';
         $psu5->model='none';
-        $spu5->form_factor='atx12v/eps12v';
-        $spu5->max_wattage=430;
+        $psu5->form_factor='atx12v/eps12v';
+        $psu5->max_wattage=430;
         $psu5->fans=1;
         $psu5->moduler='no';
         $psu5->efficiency='80+';
-        $psu5->pcie_62pin='none';
+        $psu5->pcie_62pin=0;
         $psu5->save();
         
         $psu6=new \App\Models\Psu();
@@ -197,7 +197,7 @@ class PsuTableSeeder extends Seeder
         $psu16=new \App\Models\Psu();
         $psu16->price=79.39;
         $psu16->brand='evga';
-        $psu16->model='supernova'
+        $psu16->model='supernova';
         $psu16->form_factor='atx';
         $psu16->max_wattage=850;
         $psu16->fans=1;

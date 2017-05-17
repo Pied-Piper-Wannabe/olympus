@@ -127,7 +127,7 @@ class GpuTableSeeder extends Seeder
         $gpu6->brand='evga';
         $gpu6->model='04g-p4-6251-kr';
         $gpu6->interface='pcie x16';
-        $gpu6->chipset='geforce gtx 1050ti'
+        $gpu6->chipset='geforce gtx 1050ti';
         $gpu6->mem_size=4;
         $gpu6->mem_type='gddr5';
         $gpu6->core_clock=1.29;
@@ -159,7 +159,7 @@ class GpuTableSeeder extends Seeder
         $gpu7->sli_support='no';
         $gpu7->crossfire_support='no';
         $gpu7->length=173;
-        $gpu7->gsync='yes'
+        $gpu7->gsync='yes';
         $gpu7->freesync='none';
         $gpu7->dvi_d=1;
         $gpu7->display_port=3;
@@ -176,7 +176,7 @@ class GpuTableSeeder extends Seeder
         $gpu8->mem_type='gddr5';
         $gpu8->core_clock=1.51;
         $gpu8->boost_clock=1.80;
-        $gpu8->tdp=130
+        $gpu8->tdp=130;
         $gpu8->fan='yes';
         $gpu8->sli_support='yes';
         $gpu8->crossfire_support='no';
@@ -186,7 +186,7 @@ class GpuTableSeeder extends Seeder
         $gpu8->dvi_d=1;
         $gpu8->display_port=3;
         $gpu8->hdmi=1;
-        $gpu->save();
+        $gpu8->save();
         
         $gpu9=new \App\Models\Gpu();
         $gpu9->price=374.99;
@@ -305,7 +305,7 @@ class GpuTableSeeder extends Seeder
         $gpu14->interface='pcie x16';
         $gpu14->chipset='geforce gtx 1080ti';
         $gpu14->mem_size=11;
-        $gpu14->mem_type='gddr5x'
+        $gpu14->mem_type='gddr5x';
         $gpu14->core_clock=1.48;
         $gpu14->boost_clock=1.58;
         $gpu14->tdp=250;
@@ -376,7 +376,7 @@ class GpuTableSeeder extends Seeder
         $gpu17->boost_clock=1.87;
         $gpu17->tdp=120;
         $gpu17->fan='yes';
-        $gpu17->sli_support='no'
+        $gpu17->sli_support='no';
         $gpu17->crossfire_support='no';
         $gpu17->length=298;
         $gpu17->gsync='yes';

@@ -20,7 +20,7 @@ class CreatePsuTable extends Migration
 			$table->string('form_factor');
 			$table->integer('max_wattage');
 			$table->integer('fans');
-			$table->string('modular');
+			$table->string('moduler');
 			$table->string('efficiency');
 			$table->integer('pcie_62pin');
 			$table->timestamps();
