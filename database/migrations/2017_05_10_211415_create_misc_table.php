@@ -14,6 +14,7 @@ class CreateMiscTable extends Migration
 	{
 		Schema::create('misc', function(Blueprint $table){
 			$table->increments('id');
+			$table->decimal('price', 3, 2);
 			$table->string('name');
 			$table->string('type');
 			$table->string('description');
