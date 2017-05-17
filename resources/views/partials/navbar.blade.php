@@ -30,7 +30,6 @@
 					<a class="dropdown-item" href="/parts/gpu">GPU</a>
 					<a class="dropdown-item" href="/parts/case">Case</a>
 					<a class="dropdown-item" href="/parts/power-supply">Power Supply</a>
-					<a class="dropdown-item" href="/parts/optical-drive">Optical Drive</a>
 					<a class="dropdown-item" href="/parts/operating-system">Operating System</a>
 					<a class="dropdown-item" href="/parts/misc">Misc</a>
 				</div>

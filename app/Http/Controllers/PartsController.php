@@ -32,6 +32,7 @@ class PartsController extends Controller
 				break;
 			case 'cpu-cooler':
 				$type = 'CPU Coolers';
+				$parts = \App\Models\CpuCooler::paginate(10);
 				break;
 			case 'motherboard':
 				$type = 'Motherboards';
@@ -56,10 +57,6 @@ class PartsController extends Controller
 			case 'power-supply':
 				$type = 'PSUs';
 				$parts = \App\Models\Psu::paginate(10);
-				break;
-			case 'optical-drive':
-				$type = 'Optical Drives';
-				$parts = \App\Models\OpticalDrive::paginate(10);
 				break;
 			case 'operating-system':
 				$type = 'Operating Systems';

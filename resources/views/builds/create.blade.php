@@ -64,11 +64,6 @@
 						<td>$0.00</td>
 					</tr>
 					<tr>
-						<th scope="row"><a href="/parts/optical-drive">Optical Drive</a></th>
-						<td><a class="btn btn-primary btn-sm" href="/parts/optical-drive" role="button">Choose an Optical Drive</a></td>
-						<td>$0.00</td>
-					</tr>
-					<tr>
 						<th scope="row"><a href="/parts/operating-system">Operating System</a></th>
 						<td><a class="btn btn-primary btn-sm" href="/parts/operating-system" role="button">Choose an Operating System</a></td>
 						<td>$0.00</td>
