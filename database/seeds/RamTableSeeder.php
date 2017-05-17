@@ -337,6 +337,6 @@ class RamTableSeeder extends Seeder
         $ram18->registered='no';
         $ram18->color='red';
         $ram18->save();
-      
+       
     }
 }

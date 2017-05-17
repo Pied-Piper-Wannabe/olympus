@@ -16,10 +16,10 @@ class HdTableSeeder extends Seeder
         $hdd1->price=107.88;
         $hdd1->brand='samsung';
         $hdd1->model='mz-75e250b/am';
-        $hdd1->size='250gb';
+        $hdd1->size=250;
         $hdd1->interface='sata 6 gb/s';
         $hdd1->cache='none';
-        $hdd1->rpm='none';
+        $hdd1->rpm=0;
         $hdd1->form_factor='2.5';
         $hdd1->save();
         
@@ -27,10 +27,10 @@ class HdTableSeeder extends Seeder
         $hdd2->price=159.00;
         $hdd2->brand='samsung';
         $hdd2->model='mz-75e500b/am';
-        $hdd2->size='500gb';
+        $hdd2->size=500;
         $hdd2->interface='sata 6 gb/s';
         $hdd2->cache='none';
-        $hdd2->rpm='none';
+        $hdd2->rpm=0;
         $hdd2->form_factor='2.5';
         $hdd2->save();
         
@@ -38,7 +38,7 @@ class HdTableSeeder extends Seeder
         $hdd3->price=69.89;
         $hdd3->brand='seagate';
         $hdd3->model='st2000dm001';
-        $hdd3->size='2tb';
+        $hdd3->size=2000;
         $hdd3->interface='sata 6 gb/s';
         $hdd3->cache='64mb';
         $hdd3->rpm=7200;
@@ -49,7 +49,7 @@ class HdTableSeeder extends Seeder
         $hdd4->price=48.88;
         $hdd4->brand='western digital';
         $hdd4->model='wd10ezex';
-        $hdd4->size='1tb';
+        $hdd4->size=1000;
         $hdd4->interface='sata 6 gb/s';
         $hdd4->cache='64mb';
         $hdd4->rpm=7200;
@@ -60,10 +60,10 @@ class HdTableSeeder extends Seeder
         $hdd5->price=247.99;
         $hdd5->brand='samsung';
         $hdd5->model='mz-v6e500';
-        $hdd5->size='500gb';
+        $hdd5->size=500;
         $hdd5->interface='m.2';
         $hdd5->cache='512mb';
-        $hdd5->rpm='none';
+        $hdd5->rpm=0;
         $hdd5->form_factor='m.2-2280';
         $hdd5->save();
         
@@ -71,10 +71,10 @@ class HdTableSeeder extends Seeder
         $hdd6->price=349.99;
         $hdd6->brand='samsung';
         $hdd6->model='mz-75e1t0b/am';
-        $hdd6->size='1tb';
+        $hdd6->size=1000;
         $hdd6->interface='sata 6 gb/s';
         $hdd6->cache='none';
-        $hdd6->rpm='none';
+        $hdd6->rpm=0;
         $hdd6->form_factor='2.5';
         $hdd6->save();
         
@@ -82,7 +82,7 @@ class HdTableSeeder extends Seeder
         $hdd7->price=89.89;
         $hdd7->brand='seagate';
         $hdd7->model='st3000dm008';
-        $hdd7->size='3tb';
+        $hdd7->size=3000;
         $hdd7->interface='sata 6 gb/s';
         $hdd7->cache='64mb';
         $hdd7->rpm=7200;
@@ -90,10 +90,10 @@ class HdTableSeeder extends Seeder
         $hdd7->save();
         
         $hdd8=new \App\Models\Hdd();
-        $hdd8->price='117.39';
+        $hdd8->price=117.39;
         $hdd8->brand='western digital';
         $hdd8->model='wd2003fzex';
-        $hdd8->size='2tb';
+        $hdd8->size=2000;
         $hdd8->interface='sata 6 gb/s';
         $hdd8->cache='64mb';
         $hdd8->rpm=7200;
@@ -104,10 +104,10 @@ class HdTableSeeder extends Seeder
         $hdd9->price=8867.99;
         $hdd9->brand='intel';
         $hdd9->model='ssdpecme040t401';
-        $hdd9->size='4tb';
+        $hdd9->size=4000;
         $hdd9->interface='pcie x8';
         $hdd9->cache='none';
-        $hdd9->rpm='none';
+        $hdd9->rpm=0;
         $hdd9->form_factor='pcie'
         $hdd9->save();
         
@@ -115,10 +115,10 @@ class HdTableSeeder extends Seeder
         $hdd10->price=50.99;
         $hdd10->brand='kingston';
         $hdd10->model='suv400s37/120g';
-        $hdd10->size='120gb';
+        $hdd10->size=120;
         $hdd10->interface='sata 6 gb/s';
         $hdd10->cache='none';
-        $hdd10->rpm='none';
+        $hdd10->rpm=0;
         $hdd10->form_factor='2.5';
         $hdd10->save();
         
@@ -126,10 +126,10 @@ class HdTableSeeder extends Seeder
         $hdd11->price=323.98;
         $hdd11->brand='samsung';
         $hdd11->model='mz-v6p512bw';
-        $hdd11->size='512gb'
+        $hdd11->size=512;
         $hdd11->interface='m.2';
         $hdd11->cache='512mb';
-        $hdd11->rpm='none';
+        $hdd11->rpm=0;
         $hdd11->form_factor='m.2-2280';
         $hdd11->save();
         
@@ -137,10 +137,10 @@ class HdTableSeeder extends Seeder
         $hdd12->price=77.95;
         $hdd12->brand='sandisk';
         $hdd12->model='sdssda-240g-g26';
-        $hdd12->size='240gb';
+        $hdd12->size=240;
         $hdd12->interface='sata 6 gb/s';
         $hdd12->cache='none';
-        $hdd12->rpm='none'
+        $hdd12->rpm=0;
         $hdd12->form_factor='2.5';
         $hdd12->save();
         
@@ -148,10 +148,10 @@ class HdTableSeeder extends Seeder
         $hdd13->price=80.99;
         $hdd13->brand='kingston';
         $hdd13->model='shfs37a/240g';
-        $hdd13->size='240gb';
+        $hdd13->size=240;
         $hdd13->interface='sata 6 gb/s';
         $hdd13->cache='none';
-        $hdd13->rpm='none';
+        $hdd13->rpm=0;
         $hdd13->form_factor='2.5';
         $hdd13->save();
         
@@ -159,10 +159,10 @@ class HdTableSeeder extends Seeder
         $hdd14->price=127.98;
         $hdd14->brand='samsung';
         $hdd14->model='mz-v6e250';
-        $hdd14->size='250gb';
+        $hdd14->size=250;
         $hdd14->interface='m.2';
         $hdd14->cache='512mb';
-        $hdd14->rpm='none';
+        $hdd14->rpm=0;
         $hdd14->form_factor='m.2-2280';
         $hdd14->save();
         
@@ -170,10 +170,10 @@ class HdTableSeeder extends Seeder
         $hdd15->price=54.99;
         $hdd15->brand='sandisk';
         $hdd15->model='sdssda-120g-g26';
-        $hdd15->size='120gb';
+        $hdd15->size=120;
         $hdd15->interface='sata 6 gb/s';
         $hdd15->cache='none';
-        $hdd15->rpm='none';
+        $hdd15->rpm=0;
         $hdd15->form_factor='2.5';
         $hdd15->save();
         
@@ -181,55 +181,12 @@ class HdTableSeeder extends Seeder
         $hdd16->price=46.88;
         $hdd16->brand='seagate';
         $hdd16->model='st1000dm010';
-        $hdd16->size='1tb';
+        $hdd16->size=1000;
         $hdd16->interface='sata 6 gb/s';
         $hdd16->cache='64mb';
-        $hdd16->rpm='7200rpm';
+        $hdd16->rpm=7200;
         $hdd16->form_factor='3.5';
         $hdd16->save();
-        
-        $hdd17=new \App\Models\Hdd();
-        $hdd17->price=
-        $hdd17->brand=
-        $hdd17->model=
-        $hdd17->size=
-        $hdd17->interface=
-        $hdd17->cache=
-        $hdd17->rpm=
-        $hdd17->form_factor=
-        $hdd17->save();
-        
-        $hdd18=new \App\Models\Hdd();
-        $hdd18->price=
-        $hdd18->brand=
-        $hdd18->model=
-        $hdd18->size=
-        $hdd18->interface=
-        $hdd18->cache=
-        $hdd18->rpm=
-        $hdd18->form_factor=
-        $hdd18->save();
-        
-        $hdd19=new \App\Models\Hdd();
-        $hdd19->price=
-        $hdd19->brand=
-        $hdd19->model=
-        $hdd19->size=
-        $hdd19->interface=
-        $hdd19->cache=
-        $hdd19->rpm=
-        $hdd19->form_factor=
-        $hdd19->save();
-        
-        $hdd20=new \App\Models\Hdd();
-        $hdd20->price=
-        $hdd20->brand=
-        $hdd20->model=
-        $hdd20->size=
-        $hdd20->interface=
-        $hdd20->cache=
-        $hdd20->rpm=
-        $hdd20->form_factor=
-        $hdd20->save();
+
     }
 }
