@@ -1181,16 +1181,19 @@
 						<th>CAS</th>
 						<th>Modules</th>
 						<th>Size</th>
+						<th>Rating</th>
 						<th>Button here</th>
 					</tr>
 				</thead>
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/gpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
-						<td>{{$part->chipset}}</td>
-						<td>{{$part->mem_size}}</td>
-						<td>{{$part->core_clock}}</td>
+						<th scope="row"><a class="bold" href="/parts/memory/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->type}}-{{$part->speed}}</td>
+						<td>{{$part->memory_slot_type}}</td>
+						<td>{{$part->CASlatency}}</td>
+						<td>{{$part->number_of_sticks}}x{{$part->stick_size}}</td>
+						<td>{{$part->size}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
 						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
