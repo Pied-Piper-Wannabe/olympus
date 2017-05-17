@@ -63,7 +63,7 @@ class DatabaseSeeder extends Seeder
             $this->call('CpuCoolerTableSeeder');
             $this->call('MiscTableSeeder');
             $this->call('OsTableSeeder');
-            // $this->call('UserTableSeeder');
+            $this->call('BuildsTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
 		Model::reguard();

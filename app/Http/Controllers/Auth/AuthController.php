@@ -63,7 +63,7 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {   
-        flash('User successfully created. Please login.');
+        flash('User successfully created. Welcome!');
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
