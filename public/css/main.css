@@ -51,6 +51,10 @@ img {
 .boxGridPadding {
   padding: 20px; }
 
+.showImgMax {
+  max-height: 300px;
+  width: auto; }
+
 button, .btn {
   border-radius: 0; }
 
