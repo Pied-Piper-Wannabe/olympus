@@ -1317,7 +1317,7 @@
 					@if($type === 'Operating Systems')
 					<tr>
 						<th>Operating System</th>
-						<th>Family</th>
+						<th>Architecture</th>
 						<th>Rating</th>
 						<th>Price</th>
 						<th>Button here</th>
@@ -1326,8 +1326,8 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/operating-system/{{$part->id}}">{{$part->name}}</a></th>
-						<td>{{$part->family}}</td>
+						<th scope="row"><a class="bold" href="/parts/operating-system/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->architecture}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
 						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
