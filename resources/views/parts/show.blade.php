@@ -320,6 +320,86 @@
 			</div>
 			@endif
 
+			<!-- OS -->
+			@if($type === 'Operating Systems')
+			<div class="spec">
+				<h5>DESCRIPTION</h5>
+				<p>{{$part->description}}</p>
+			</div>
+			<div class="spec">
+				<h5>ARCHITECTURE</h5>
+				<p>{{$part->architecture}}</p>
+			</div>
+			<div class="spec">
+				<h5>SYSTEM REQUIRMENTS</h5>
+				<p>{{$part->system_requirements}}</p>
+			</div>
+			<div class="spec">
+				<h5>KERNEL</h5>
+				<p>{{$part->kernel}}</p>
+			</div>
+			<div class="spec">
+				<h5>GUI</h5>
+				<p>{{$part->gui}}</p>
+			</div>
+			@endif
+
+			<!-- PSU -->
+			@if($type === 'PSUs')
+			<div class="spec">
+				<h5>FORM FACTOR</h5>
+				<p>{{$part->form_factor}}</p>
+			</div>
+			<div class="spec">
+				<h5>MAX WATTAGE</h5>
+				<p>{{$part->max_wattage}}W</p>
+			</div>
+			<div class="spec">
+				<h5>FANS</h5>
+				<p>{{$part->fans}}</p>
+			</div>
+			<div class="spec">
+				<h5>MODULAR</h5>
+				<p>{{$part->moduler}}</p>
+			</div>
+			<div class="spec">
+				<h5>EFFICIENCY</h5>
+				<p>{{$part->efficiency}}</p>
+			</div>
+			<div class="spec">
+				<h5>PCIE-62PIN</h5>
+				<p>{{$part->pcie_62pin}}</p>
+			</div>
+			@endif
+
+			<!-- RAM -->
+			@if($type === 'PSUs')
+			<div class="spec">
+				<h5>MEMORY SLOT TYPE</h5>
+				<p>{{$part->memory_slot_type}}</p>
+			</div>
+			<div class="spec">
+				<h5>MAX WATTAGE</h5>
+				<p>{{$part->max_wattage}}W</p>
+			</div>
+			<div class="spec">
+				<h5>FANS</h5>
+				<p>{{$part->fans}}</p>
+			</div>
+			<div class="spec">
+				<h5>MODULAR</h5>
+				<p>{{$part->moduler}}</p>
+			</div>
+			<div class="spec">
+				<h5>EFFICIENCY</h5>
+				<p>{{$part->efficiency}}</p>
+			</div>
+			<div class="spec">
+				<h5>PCIE-62PIN</h5>
+				<p>{{$part->pcie_62pin}}</p>
+			</div>
+			@endif
+
 
 
 		</div>
