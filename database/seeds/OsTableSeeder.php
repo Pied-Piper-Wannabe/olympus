@@ -19,7 +19,7 @@ class OsTableSeeder extends Seeder
         $os1->architecture=32, 64;
         $os1->max_supported_memory=512;
         $os1->kernel='none';
-        $os1->manufacturer='windows';
+        $os1->brand='windows';
         $os1->save();
 
         $os2= new \App\Models\Os();
@@ -28,7 +28,7 @@ class OsTableSeeder extends Seeder
         $os2->architecture=32, 64;
         $os2->max_supported_memory=16;
         $os2->kernel='none';
-        $os2->manufacturer='windows';
+        $os2->brand='windows';
         $os2->save();
 
         $os3= new \App\Models\Os();
@@ -37,7 +37,7 @@ class OsTableSeeder extends Seeder
         $os3->architecture=64;
         $os3->max_supported_memory=16;
         $os3->kernel='none';
-        $os3->manufacturer='windows';
+        $os3->brand='windows';
         $os3->save();
 
         $os4= new \App\Models\Os();
@@ -46,7 +46,7 @@ class OsTableSeeder extends Seeder
         $os4->architecture=32, 64;
         $os4->max_supported_memory=128;
         $os4->kernel='none';
-        $os4->manufacturer='windows';
+        $os4->brand='windows';
         $os4->save();
 
         $os5= new \App\Models\Os();
@@ -55,7 +55,7 @@ class OsTableSeeder extends Seeder
         $os5->architecture=
         $os5->max_supported_memory=
         $os5->kernel=
-        $os5->manufacturer=
+        $os5->brand=
         $os5->save();
 
         $os6= new \App\Models\Os();
@@ -64,7 +64,7 @@ class OsTableSeeder extends Seeder
         $os6->architecture=
         $os6->max_supported_memory=
         $os6->kernel=
-        $os6->manufacturer=
+        $os6->brand=
         $os6->save();
 
         $os7= new \App\Models\Os();
