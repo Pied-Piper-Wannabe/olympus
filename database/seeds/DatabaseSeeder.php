@@ -61,8 +61,8 @@ class DatabaseSeeder extends Seeder
             $this->call('PsuTableSeeder');
             $this->call('CasesTableSeeder');
             $this->call('CpuCoolerTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
+            $this->call('MiscTableSeeder');
+            $this->call('OsTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');

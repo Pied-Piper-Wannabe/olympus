@@ -14,13 +14,12 @@ class CreateOsTable extends Migration
 	{
 		Schema::create('os', function(Blueprint $table){
 			$table->increments('id');
+			$table->decimal('price', 5, 2);
 			$table->string('name');
-			$table->string('brand');
-			$table->string('description');
 			$table->string('architecture');
-			$table->string('max_memory');
+			$table->integer('max_supported_memory');
 			$table->string('kernel');
-			$table->string('gui');
+			$table->string('brand');
 			$table->timestamps();
 		});
 	}

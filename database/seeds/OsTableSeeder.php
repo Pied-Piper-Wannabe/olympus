@@ -16,7 +16,7 @@ class OsTableSeeder extends Seeder
         $os1= new \App\Models\Os();
         $os1->price=199.99;
         $os1->name='windows 10 pro full';
-        $os1->architecture=32, 64;
+        $os1->architecture='32bit, 64bit';
         $os1->max_supported_memory=512;
         $os1->kernel='none';
         $os1->brand='windows';
@@ -25,7 +25,7 @@ class OsTableSeeder extends Seeder
         $os2= new \App\Models\Os();
         $os2->price=223.10;
         $os2->name='windows 7 home premium full';
-        $os2->architecture=32, 64;
+        $os2->architecture='32bit, 64bit';
         $os2->max_supported_memory=16;
         $os2->kernel='none';
         $os2->brand='windows';
@@ -43,7 +43,7 @@ class OsTableSeeder extends Seeder
         $os4= new \App\Models\Os();
         $os4->price=104.88;
         $os4->name='windows 10 home full usb';
-        $os4->architecture=32, 64;
+        $os4->architecture='32bit, 64bit';
         $os4->max_supported_memory=128;
         $os4->kernel='none';
         $os4->brand='windows';
