@@ -26,7 +26,6 @@ class CreateRamTable extends Migration
 			$table->integer('CASlatency');
 			$table->integer('voltage');
 			$table->string('heat_sink');
-			$table->string('timing');
 			$table->string('ECC');
 			$table->string('registered');
 			$table->string('color');
