@@ -1313,6 +1313,51 @@
 					@endforeach
 					@endif
 
+					<!-- ==========OS Table========= -->
+					@if($type === 'Operating Systems')
+					<tr>
+						<th>Operating System</th>
+						<th>Family</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/operating-system/{{$part->id}}">{{$part->name}}</a></th>
+						<td>{{$part->family}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- ==========Misc Table========= -->
+					@if($type === 'Misc')
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/misc/{{$part->id}}">{{$part->name}}</a></th>
+						<td>{{$part->type}}</td>
+						<td>{{$part->noise_level}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
 
 
 
