@@ -373,30 +373,42 @@
 			@endif
 
 			<!-- RAM -->
-			@if($type === 'PSUs')
+			@if($type === 'Memory')
 			<div class="spec">
 				<h5>MEMORY SLOT TYPE</h5>
 				<p>{{$part->memory_slot_type}}</p>
 			</div>
 			<div class="spec">
-				<h5>MAX WATTAGE</h5>
-				<p>{{$part->max_wattage}}W</p>
+				<h5>SPEED</h5>
+				<p>{{$part->type}}-{{$part->speed}}</p>
 			</div>
 			<div class="spec">
-				<h5>FANS</h5>
-				<p>{{$part->fans}}</p>
+				<h5>SIZE</h5>
+				<p>{{$part->size}}GB ({{$part->number_of_sticks}}x{{$part->stick_size}}GB)</p>
 			</div>
 			<div class="spec">
-				<h5>MODULAR</h5>
-				<p>{{$part->moduler}}</p>
+				<h5>CAS Latency</h5>
+				<p>{{$part->CASlatency}}</p>
 			</div>
 			<div class="spec">
-				<h5>EFFICIENCY</h5>
-				<p>{{$part->efficiency}}</p>
+				<h5>VOLTAGE</h5>
+				<p>{{$part->voltage}}V</p>
 			</div>
 			<div class="spec">
-				<h5>PCIE-62PIN</h5>
-				<p>{{$part->pcie_62pin}}</p>
+				<h5>HEAT SPREADER</h5>
+				<p>{{$part->heat_sink}}</p>
+			</div>
+			<div class="spec">
+				<h5>EEC</h5>
+				<p>{{$part->ECC}}</p>
+			</div>
+			<div class="spec">
+				<h5>REGISTERED</h5>
+				<p>{{$part->registered}}</p>
+			</div>
+			<div class="spec">
+				<h5>COLOR</h5>
+				<p>{{$part->color}}</p>
 			</div>
 			@endif
 

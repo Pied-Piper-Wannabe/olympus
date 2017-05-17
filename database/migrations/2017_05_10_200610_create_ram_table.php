@@ -24,7 +24,7 @@ class CreateRamTable extends Migration
 			$table->integer('number_of_sticks');
 			$table->integer('stick_size');
 			$table->integer('CASlatency');
-			$table->integer('voltage');
+			$table->decimal('voltage', 5, 2);
 			$table->string('heat_sink');
 			$table->string('ECC');
 			$table->string('registered');
