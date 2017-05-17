@@ -12,14 +12,6 @@ class MiscTableSeeder extends Seeder
      */
     public function run()
     {
-        $misc = new \App\Models\Misc();
-        $misc->name =
-        $misc->type =
-        $misc->description =
-        $misc->specs =
-        $misc->manufacturer =
-        $misc->save();
-
         $misc1 = new \App\Models\Misc();
         $misc1->name =
         $misc1->type =
