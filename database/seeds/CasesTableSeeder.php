@@ -12,7 +12,7 @@ class CasesTableSeeder extends Seeder
      */
     public function run()
     {
-        $case1=new \App\Models\Case();
+        $case1=new \App\Models\ComputerCase();
         $case1->price=46.99;
         $case1->brand='corsair';
         $case1->model='200r';
@@ -23,7 +23,7 @@ class CasesTableSeeder extends Seeder
         $case1->front_panel_usb='yes';
         $case1->save();
         
-        $case2=new \App\Models\Case();
+        $case2=new \App\Models\ComputerCase();
         $case2->price=39.99;
         $case2->brand='deepcool';
         $case2->model='tesseract sw';
@@ -34,7 +34,7 @@ class CasesTableSeeder extends Seeder
         $case2->front_panel_usb='yes';
         $case2->save();
         
-        $case3=new \App\Models\Case();
+        $case3=new \App\Models\ComputerCase();
         $case3->price=61.99;
         $case3->brand='nzxt';
         $case3->model='s340';
@@ -45,7 +45,7 @@ class CasesTableSeeder extends Seeder
         $case3->front_panel_usb='yes';
         $case3->save();
         
-        $case4=new \App\Models\Case();
+        $case4=new \App\Models\ComputerCase();
         $case4->price=64.99;
         $case4->brand='nzxt';
         $case4->model='s340';
@@ -56,7 +56,7 @@ class CasesTableSeeder extends Seeder
         $case4->front_panel_usb='yes';
         $case4->save();
         
-        $case5=new \App\Models\Case();
+        $case5=new \App\Models\ComputerCase();
         $case5->price=34.99;
         $case5->brand='fractal_design';
         $case5->model='core_2300';
@@ -67,7 +67,7 @@ class CasesTableSeeder extends Seeder
         $case5->front_panel_usb='yes';
         $case5->save();
         
-        $case6=new \App\Models\Case();
+        $case6=new \App\Models\ComputerCase();
         $case6->price=89.99;
         $case6->brand='nzxt';
         $case6->model='s340_elite';
@@ -78,7 +78,7 @@ class CasesTableSeeder extends Seeder
         $case6->front_panel_usb='yes';
         $case6->save();
         
-        $case7=new \App\Models\Case();
+        $case7=new \App\Models\ComputerCase();
         $case7->price=59.99;
         $case7->brand='nzxt';
         $case7->model='s340';
@@ -89,18 +89,18 @@ class CasesTableSeeder extends Seeder
         $case7->front_panel_usb='yes';
         $case7->save();
         
-        $case8=new \App\Models\Case();
+        $case8=new \App\Models\ComputerCase();
         $case8->price=29.99;
         $case8->brand='thermaltake';
         $case8->model='versa_n21';
         $case8->form_factor='atx_mid_tower';
         $case8->color='black';
         $case8->include_power='no';
-        $case8->mobo_comp='atx; micro_atx, mini_itx';
+        $case8->mobo_comp='atx, micro_atx, mini_itx';
         $case8->front_panel_usb='yes';
         $case8->save();
         
-        $case9=new \App\Models\Case();
+        $case9=new \App\Models\ComputerCase();
         $case9->price=139.99;
         $case9->brand='corsair';
         $case9->model='crystal_460x_rgb';
@@ -111,7 +111,7 @@ class CasesTableSeeder extends Seeder
         $case9->front_panel_usb='yes';
         $case9->save();
         
-        $case10=new \App\Models\Case();
+        $case10=new \App\Models\ComputerCase();
         $case10->price=19.99;
         $case10->brand='rosewill';
         $case10->model='fbm-05';
@@ -122,7 +122,7 @@ class CasesTableSeeder extends Seeder
         $case10->front_panel_usb='yes';
         $case10->save();
         
-        $case11=new \App\Models\Case();
+        $case11=new \App\Models\ComputerCase();
         $case11->price=19.99;
         $case11->brand='rosewill';
         $case11->model='srm-01';
@@ -133,29 +133,29 @@ class CasesTableSeeder extends Seeder
         $case11->front_panel_usb='yes';
         $case11->save();
         
-        $case12=new \App\Models\Case();
+        $case12=new \App\Models\ComputerCase();
         $case12->price=39.99;
         $case12->brand='thermaltake';
         $case12->model='core_v21';
         $case12->form_factor='micro_atx_mini_tower';
         $case12->color='black';
         $case12->include_power='no';
-        $case12->mobo_comp'micro_atx, mini_itx';
+        $case12->mobo_comp='micro_atx, mini_itx';
         $case12->front_panel_usb='yes';
         $case12->save();
         
-        $case13=new \App\Models\Case();
+        $case13=new \App\Models\ComputerCase();
         $case13->price=149.99;
         $case13->brand='corsair';
         $case13->model='750d';
         $case13->form_factor='atx_full_tower';
         $case13->color='black';
         $case13->include_power='no';
-        $case13->mobo_comp='atx, eatx, micro_atx, mini_itx,xl_atx';
+        $case13->mobo_comp='atx, eatx, micro_atx, mini_itx, xl_atx';
         $case13->front_panel_usb='yes';
         $case13->save();
         
-        $case14=new \App\Models\Case();
+        $case14=new \App\Models\ComputerCase();
         $case14->price=39.99;
         $case14->brand='corsair';
         $case14->model='100r';
@@ -166,18 +166,18 @@ class CasesTableSeeder extends Seeder
         $case14->front_panel_usb='yes';
         $case14->save();
         
-        $case15=new \App\Models\Case();
+        $case15=new \App\Models\ComputerCase();
         $case15->price=79.99;
         $case15->brand='corsair';
         $case15->model='carbide_400c';
         $case15->form_factor='atx_mid_tower';
-        $case15->color'black';
+        $case15->color='black';
         $case15->include_power='no';
         $case15->mobo_comp='atx, eatx, micro_atx, mini_itx';
         $case15->front_panel_usb='yes';
         $case15->save();
         
-        $case16=new \App\Models\Case();
+        $case16=new \App\Models\ComputerCase();
         $case16->price=89.99;
         $case16->brand='nzxt';
         $case16->model='s340_elite';
@@ -188,7 +188,7 @@ class CasesTableSeeder extends Seeder
         $case16->front_panel_usb='yes';
         $case16->save();
         
-        $case17=new \App\Models\Case();
+        $case17=new \App\Models\ComputerCase();
         $case17->price=162.86;
         $case17->brand='corsair';
         $case17->model='crystal_570x_rgb';
@@ -199,7 +199,7 @@ class CasesTableSeeder extends Seeder
         $case17->front_panel_usb='yes';
         $case17->save();
         
-        $case18=new \App\Models\Case();
+        $case18=new \App\Models\ComputerCase();
         $case18->price=79.99;
         $case18->brand='fractal_design';
         $case18->model='define_mini_c_with_window';
@@ -210,7 +210,7 @@ class CasesTableSeeder extends Seeder
         $case18->front_panel_usb='yes';
         $case18->save();
         
-        $case19=new \App\Models\Case();
+        $case19=new \App\Models\ComputerCase();
         $case19->price=179.99;
         $case19->brand='phanteks';
         $case19->model='enthoo_evolve_atx_glass';
@@ -221,7 +221,7 @@ class CasesTableSeeder extends Seeder
         $case19->front_panel_usb='yes';
         $case19->save();
         
-        $case20=new \App\Models\Case();
+        $case20=new \App\Models\ComputerCase();
         $case20->price=85.98;
         $case20->brand='phanteks';
         $case20->model='eclipse_p400_tempered_glass';

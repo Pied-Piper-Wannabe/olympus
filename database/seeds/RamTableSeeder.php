@@ -128,7 +128,7 @@ class RamTableSeeder extends Seeder
         $ram7->model='f4-2400c15s-8gis';
         $ram7->memory_slot_type='288-pin DIMM';
         $ram7->speed=2400;
-        $ram7->type='ddr4'
+        $ram7->type='ddr4';
         $ram7->size=8;
         $ram7->number_of_sticks=1;
         $ram7->stick_size=8;
@@ -223,7 +223,7 @@ class RamTableSeeder extends Seeder
         $ram12->number_of_sticks=2;
         $ram12->stick_size=4;
         $ram12->CASlatency=15;
-        $ram12->voltage=1.2
+        $ram12->voltage=1.2;
         $ram12->heat_sink='no';
         $ram12->ECC='no';
         $ram12->registered='no';
@@ -258,8 +258,8 @@ class RamTableSeeder extends Seeder
         $ram14->size=8;
         $ram14->number_of_sticks=1;
         $ram14->stick_size=8;
-        $ram14->CASlatency=16
-        $ram14->voltage=1.2
+        $ram14->CASlatency=16;
+        $ram14->voltage=1.2;
         $ram14->heat_sink='yes';
         $ram14->ECC='yes';
         $ram14->registered='no';
@@ -294,7 +294,7 @@ class RamTableSeeder extends Seeder
         $ram16->size=16;
         $ram16->number_of_sticks=2;
         $ram16->stick_size=8;
-        ram16->CASlatency=16;
+        $ram16->CASlatency=16;
         $ram16->voltage=1.35;
         $ram16->heat_sink='yes';
         $ram16->ECC='no';
@@ -312,8 +312,8 @@ class RamTableSeeder extends Seeder
         $ram17->size=64;
         $ram17->number_of_sticks=1;
         $ram17->stick_size=64;
-        $ram17->CASlatency=17
-        $ram17->voltage=1.2
+        $ram17->CASlatency=17;
+        $ram17->voltage=1.2;
         $ram17->heat_sink='no';
         $ram17->ECC='yes';
         $ram17->registered='yes';

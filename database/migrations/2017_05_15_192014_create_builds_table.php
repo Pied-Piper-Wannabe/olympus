@@ -50,9 +50,6 @@ class CreateBuildsTable extends Migration
 			$table->integer('case')->unsigned();
 			$table->foreign('case')->references('id')->on('case');
 
-			$table->integer('optical_drive')->unsigned();
-			$table->foreign('optical_drive')->references('id')->on('optical_drive');
-
 			$table->integer('operating_system')->unsigned();
 			$table->foreign('operating_system')->references('id')->on('os');
 

@@ -13,7 +13,7 @@ class Builds extends Model
 	}
 
 	public function case() {
-		return $this->belongsTo('App\Models\Case', 'id');
+		return $this->belongsTo('App\Models\ComputerCase', 'id');
 	}
 
 	public function cpu() {
@@ -34,10 +34,6 @@ class Builds extends Model
 
 	public function misc() {
 		return $this->belongsTo('App\Models\Misc', 'id');
-	}
-
-	public function opticalDrive() {
-		return $this->belongsTo('App\Models\OpticalDrive', 'id');
 	}
 
 	public function os() {

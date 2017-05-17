@@ -42,17 +42,11 @@ class DatabaseSeeder extends Seeder
             $this->command->info('Deleting cpu_cooler records');
             DB::table('cpu_cooler')->delete();
       
-            $this->command->info('Deleting optical_drive records');
-            DB::table('optical_drive')->delete();
-      
             $this->command->info('Deleting os records');
             DB::table('os')->delete();
       
             $this->command->info('Deleting misc records');
             DB::table('misc')->delete();
-      
-            $this->command->info('Deleting parts records');
-            DB::table('parts')->delete();
       
             $this->command->info('Deleting users records');
             DB::table('users')->delete();
@@ -60,13 +54,13 @@ class DatabaseSeeder extends Seeder
       
             $this->call('UsersTableSeeder');
             $this->call('MoboTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
+            $this->call('CpuTableSeeder');
+            $this->call('GpuTableSeeder');
+            $this->call('RamTableSeeder');
+            $this->call('HdTableSeeder');
+            $this->call('PsuTableSeeder');
+            $this->call('CasesTableSeeder');
+            $this->call('CpuCoolerTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');
             // $this->call('UserTableSeeder');

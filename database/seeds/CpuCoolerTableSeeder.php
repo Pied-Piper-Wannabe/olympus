@@ -18,18 +18,18 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler1->model='hyper 212 evo';
         $cpucooler1->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
         $cpucooler1->liquid_cooled='no';
-        $cpucooler1->radiator_size='none'
+        $cpucooler1->radiator_size='none';
         $cpucooler1->noise_level='90.0-36.0 dbA';
         $cpucooler1->fan_rpm='600-900 rpm';
         $cpucooler1->height='159mm';
         $cpucooler1->save();
-        
-        
-        
+
+
+
         $cpucooler2=new \App\Models\CpuCooler();
         $cpucooler2->price=98.99;
         $cpucooler2->brand='cosair';
-        $cpucooler2->model='h100i v2'
+        $cpucooler2->model='h100i v2';
         $cpucooler2->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
         $cpucooler2->liquid_cooled='yes';
         $cpucooler2->radiator_size='240mm';
@@ -37,9 +37,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler2->fan_rpm='2435rpm';
         $cpucooler2->height='none';
         $cpucooler2->save();
-        
-        
-        
+
+
+
         $cpucooler3=new \App\Models\CpuCooler();
         $cpucooler3->price=34.89;
         $cpucooler3->brand='cryorig';
@@ -51,9 +51,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler3->fan_rpm='330-1600 rpm';
         $cpucooler3->height='145mm';
         $cpucooler3->save();
-        
-        
-        
+
+
+
         $cpucooler4=new \App\Models\CpuCooler();
         $cpucooler4->price='159.99';
         $cpucooler4->brand='nzxt';
@@ -65,10 +65,10 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler4->fan_rpm='500-1800';
         $cpucooler4->height='none';
         $cpucooler4->save();
-        
-        
-        
-        
+
+
+
+
         $cpucooler5=new \App\Models\CpuCooler();
         $cpucooler5->price=99.99;
         $cpucooler5->brand='corsair';
@@ -80,9 +80,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler5->fan_rpm='2700rpm';
         $cpucooler5->height='none';
         $cpucooler5->save();
-        
-        
-        
+
+
+
         $cpucooler6=new \App\Models\CpuCooler();
         $cpucooler6->price=54.99;
         $cpucooler6->brand='corsair';
@@ -93,10 +93,10 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler6->noise_level='30.9 dbA';
         $cpucooler6->fan_rpm='2000 rpm';
         $cpucooler6->height='none';
-        $cpucooler->save();
-        
-        
-        
+        $cpucooler6->save();
+
+
+
         $cpucooler7=new \App\Models\CpuCooler();
         $cpucooler7->price=29.88;
         $cpucooler7->brand='cryorig';
@@ -108,8 +108,8 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler7->fan_rpm='600-2500 rpm';
         $cpucooler7->height='47mm';
         $cpucooler7->save();
-        
-        
+
+
         $cpucooler8=new \App\Models\CpuCooler();
         $cpucooler8->price=144.49;
         $cpucooler8->brand='nzxt';
@@ -121,9 +121,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler8->fan_rpm='50-2000rpm';
         $cpucooler8->height='none';
         $cpucooler8->save();
-        
-        
-        
+
+
+
         $cpucooler9=new \App\Models\CpuCooler();
         $cpucooler9->price=65.49;
         $cpucooler9->brand='be quiet!';
@@ -134,25 +134,25 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler9->noise_level='8.4-21.1 dbA';
         $cpucooler9->fan_rpm='400-1400 rpm';
         $cpucooler9->height='160mm';
-        $cpucooler->save();
-        
-        
-        
+        $cpucooler9->save();
+
+
+
         $cpucooler10=new \App\Models\CpuCooler();
         $cpucooler10->price=16.49;
         $cpucooler10->brand='cooler master';
         $cpucooler10->model='hyper t2';
         $cpucooler10->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3, lga775';
         $cpucooler10->liquid_cooled='no';
-        $cpucooler10->radiator_size='none'
+        $cpucooler10->radiator_size='none';
         $cpucooler10->noise_level='17.0-35.0 dbA';
         $cpucooler10->fan_rpm='2800rpm';
         $cpucooler10->height='140mm';
         $cpucooler10->save();
-        
-        
-        
-        
+
+
+
+
         $cpucooler11=new \App\Models\CpuCooler();
         $cpucooler11->price=19.99;
         $cpucooler11->brand='cooler master';
@@ -164,9 +164,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler11->fan_rpm='600-1600 rpm';
         $cpucooler11->height='160mm';
         $cpucooler11->save();
-        
-        
-        
+
+
+
         $cpucooler12=new \App\Models\CpuCooler();
         $cpucooler12->price=88.15;
         $cpucooler12->brand='noctua';
@@ -178,9 +178,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler12->fan_rpm='300-1500 rpm';
         $cpucooler12->height='165mm';
         $cpucooler12->save();
-        
-        
-        
+
+
+
         $cpucooler13=new \App\Models\CpuCooler();
         $cpucooler13->price=16.49;
         $cpucooler13->brand='cooler master';
@@ -192,9 +192,9 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler13->fan_rpm='2800 rpm';
         $cpucooler13->height='140mm';
         $cpucooler13->save();
-        
-        
-        
+
+
+
         $cpucooler14=new \App\Models\CpuCooler();
         $cpucooler14->price=49.99;
         $cpucooler14->brand='corsair';
@@ -206,10 +206,10 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler14->fan_rpm='1700 rpm';
         $cpucooler14->height='none';
         $cpucooler14->save();
-        
-        
-        
-        
+
+
+
+
         $cpucooler15=new \App\Models\CpuCooler();
         $cpucooler15->price=299.99;
         $cpucooler15->brand='phanteks';
@@ -221,10 +221,10 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler15->fan_rpm='700-1200 rpm';
         $cpucooler15->height='171mm';
         $cpucooler15->save();
-        
-        
-        
-        
+
+
+
+
         $cpucooler16=new \App\Models\CpuCooler();
         $cpucooler16->price=124.99;
         $cpucooler16->brand='corsair';
@@ -236,6 +236,6 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler16->fan_rpm='2000 rpm';
         $cpucooler16->height='none';
         $cpucooler16->save();
-       
+
     }
 }

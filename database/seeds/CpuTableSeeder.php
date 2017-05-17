@@ -210,7 +210,7 @@ class CpuTableSeeder extends Seeder
         $cpu11->hyperthreading_support='yes';
         $cpu11->max_supported_memory='0';
         $cpu11->intergrated_graphics='no';
-        $cpu11->();
+        $cpu11->save();
         
         $cpu12=new \App\Models\Cpu();
         $cpu12->price=108.75;

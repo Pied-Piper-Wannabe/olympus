@@ -34,7 +34,7 @@ class MoboTableSeeder extends Seeder
         $mobo1->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo1->onboard_usb3='yes';
         $mobo1->save();
-        
+
         $mobo2=new \App\Models\Motherboard();
         $mobo2->price=78.88;
         $mobo2->brand='msi';
@@ -55,7 +55,7 @@ class MoboTableSeeder extends Seeder
         $mobo2->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo2->onboard_usb3='yes';
         $mobo2->save();
-        
+
         $mobo3=new \App\Models\Motherboard();
         $mobo3->price=41.98;
         $mobo3->brand='msi';
@@ -76,7 +76,7 @@ class MoboTableSeeder extends Seeder
         $mobo3->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo3->onboard_usb3='yes';
         $mobo3->save();
-        
+
         $mobo4=new \App\Models\Motherboard();
         $mobo4->price=102.98;
         $mobo4->brand='msi';
@@ -97,7 +97,7 @@ class MoboTableSeeder extends Seeder
         $mobo4->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo4->onboard_usb3='yes';
         $mobo4->save();
-        
+
         $mobo5=new \App\Models\Motherboard();
         $mobo5->price=84.49;
         $mobo5->brand='msi';
@@ -118,7 +118,7 @@ class MoboTableSeeder extends Seeder
         $mobo5->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo5->onboard_usb3='yes';
         $mobo5->save();
-        
+
         $mobo6=new \App\Models\Motherboard();
         $mobo6->price=107.89;
         $mobo6->brand='msi';
@@ -139,7 +139,7 @@ class MoboTableSeeder extends Seeder
         $mobo6->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo6->onboard_usb3='yes';
         $mobo6->save();
-        
+
         $mobo7=new \App\Models\Motherboard();
         $mobo7->price=50.89;
         $mobo7->brand='msi';
@@ -160,7 +160,7 @@ class MoboTableSeeder extends Seeder
         $mobo7->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo7->onboard_usb3='yes';
         $mobo7->save();
-        
+
         $mobo8=new \App\Models\Motherboard();
         $mobo8->price=109.89;
         $mobo8->brand='msi';
@@ -169,7 +169,7 @@ class MoboTableSeeder extends Seeder
         $mobo8->cpu_socket='lga1151';
         $mobo8->chipset='intel z270';
         $mobo8->memory_slots=4;
-        $mobo9->memory_pin='288-pin DIMM';
+        $mobo8->memory_pin='288-pin DIMM';
         $mobo8->memory_type='ddr4 2133/2400/2800/3000/3200/3600';
         $mobo8->max_memory=64;
         $mobo8->raid_support='yes';
@@ -181,7 +181,7 @@ class MoboTableSeeder extends Seeder
         $mobo8->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo8->onboard_usb3='yes';
         $mobo8->save();
-        
+
         $mobo9=new \App\Models\Motherboard();
         $mobo9->price=49.49;
         $mobo9->brand='asus';
@@ -202,7 +202,7 @@ class MoboTableSeeder extends Seeder
         $mobo9->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo9->onboard_usb3='yes';
         $mobo9->save();
-        
+
         $mobo10=new \App\Models\Motherboard();
         $mobo10->price=149.99;
         $mobo10->brand='asus';
@@ -223,7 +223,7 @@ class MoboTableSeeder extends Seeder
         $mobo10->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo10->onboard_usb3='yes';
         $mobo10->save();
-        
+
         $mobo11=new \App\Models\Motherboard();
         $mobo11->price=69.89;
         $mobo11->brand='gigabyte';
@@ -244,7 +244,7 @@ class MoboTableSeeder extends Seeder
         $mobo11->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo11->onboard_usb3='yes';
         $mobo11->save();
-        
+
         $mobo12=new \App\Models\Motherboard();
         $mobo12->price=63.44;
         $mobo12->brand='msi';
@@ -265,7 +265,7 @@ class MoboTableSeeder extends Seeder
         $mobo12->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo12->onboard_usb3='yes';
         $mobo12->save();
-        
+
         $mobo13=new \App\Models\Motherboard();
         $mobo13->price=215.99;
         $mobo13->brand='asus';
@@ -286,7 +286,7 @@ class MoboTableSeeder extends Seeder
         $mobo13->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo13->onboard_usb3='yes';
         $mobo13->save();
-        
+
         $mobo14=new \App\Models\Motherboard();
         $mobo14->price=97.88;
         $mobo14->brand='asus';
@@ -307,7 +307,7 @@ class MoboTableSeeder extends Seeder
         $mobo14->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo14->onboard_usb3='yes';
         $mobo14->save();
-        
+
         $mobo15=new \App\Models\Motherboard();
         $mobo15->price=169.89;
         $mobo15->brand='asus';
@@ -328,7 +328,7 @@ class MoboTableSeeder extends Seeder
         $mobo15->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo15->onboard_usb3='yes';
         $mobo15->save();
-        
+
         $mobo16=new \App\Models\Motherboard();
         $mobo16->price=81.98;
         $mobo16->brand='msi';
@@ -349,7 +349,7 @@ class MoboTableSeeder extends Seeder
         $mobo16->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo16->onboard_usb3='yes';
         $mobo16->save();
-        
+
         $mobo17=new \App\Models\Motherboard();
         $mobo17->price=243.99;
         $mobo17->brand='asus';
@@ -370,7 +370,7 @@ class MoboTableSeeder extends Seeder
         $mobo17->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo17->onboard_usb3='yes';
         $mobo17->save();
-        
+
         $mobo18=new \App\Models\Motherboard();
         $mobo18->price=87.98;
         $mobo18->brand='asus';
@@ -391,7 +391,7 @@ class MoboTableSeeder extends Seeder
         $mobo18->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo18->onboard_usb3='yes';
         $mobo18->save();
-        
+
         $mobo19=new \App\Models\Motherboard();
         $mobo19->price=81.99;
         $mobo19->brand='msi';
@@ -412,7 +412,7 @@ class MoboTableSeeder extends Seeder
         $mobo19->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo19->onboard_usb3='yes';
         $mobo19->save();
-        
+
         $mobo20=new \App\Models\Motherboard();
         $mobo20->price=157.98;
         $mobo20->brand='msi';
