@@ -32,8 +32,6 @@ class CreateBuildsTable extends Migration
 			$table->integer('gpu')->unsigned();
 			$table->foreign('gpu')->references('id')->on('gpu');
 
-			$table->boolean('sli');
-
 			$table->integer('ram')->unsigned();
 			$table->foreign('ram')->references('id')->on('ram');
 
@@ -55,6 +53,7 @@ class CreateBuildsTable extends Migration
 
 			$table->integer('misc')->unsigned();
 			$table->foreign('misc')->references('id')->on('misc');
+			$table->timestamps();
 
 		});
 	}
