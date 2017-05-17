@@ -236,60 +236,6 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler16->fan_rpm='2000 rpm';
         $cpucooler16->height='none';
         $cpucooler16->save();
-        
-        
-        
-        $cpucooler17=new \App\Models\CpuCooler();
-        $cpucooler17->price=
-        $cpucooler17->brand=
-        $cpucooler17->model=
-        $cpucooler17->sockets=
-        $cpucooler17->liquid_cooled=
-        $cpucooler17->radiator_size=
-        $cpucooler17->noise_level=
-        $cpucooler17->fan_rpm=
-        $cpucooler17->height=
-        $cpucooler17->save();
-        
-        
-        
-        $cpucooler18=new \App\Models\CpuCooler();
-        $cpucooler18->price=
-        $cpucooler18->brand=
-        $cpucooler18->model=
-        $cpucooler18->sockets=
-        $cpucooler18->liquid_cooled=
-        $cpucooler18->radiator_size=
-        $cpucooler18->noise_level=
-        $cpucooler18->fan_rpm=
-        $cpucooler18->height=
-        $cpucooler18->save();
-        
-        
-        $cpucooler19=new \App\Models\CpuCooler();
-        $cpucooler19->price=
-        $cpucooler19->brand=
-        $cpucooler19->model=
-        $cpucooler19->sockets=
-        $cpucooler19->liquid_cooled=
-        $cpucooler19->radiator_size=
-        $cpucooler19->noise_level=
-        $cpucooler19->fan_rpm=
-        $cpucooler19->height=
-        $cpucooler19->save();
-        
-        
-        
-        $cpucooler20=new \App\Models\CpuCooler();
-        $cpucooler20->price=
-        $cpucooler20->brand=
-        $cpucooler20->model=
-        $cpucooler20->sockets=
-        $cpucooler20->liquid_cooled=
-        $cpucooler20->radiator_size=
-        $cpucooler20->noise_level=
-        $cpucooler20->fan_rpm=
-        $cpucooler20->height=
-        $cpucooler20->save();
+       
     }
 }
