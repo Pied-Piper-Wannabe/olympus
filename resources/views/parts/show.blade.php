@@ -257,70 +257,66 @@
 			@endif
 
 			<!-- MOBO -->
-			@if($type === 'GPUs')
+			@if($type === 'Motherboards')
 			<div class="spec">
-				<h5>INTERFACE</h5>
-				<p>{{$part->interface}}</p>
+				<h5>FORM FACTOR</h5>
+				<p>{{$part->form_factor}}</p>
+			</div>
+			<div class="spec">
+				<h5>CPU SOCKET</h5>
+				<p>{{$part->cpu_socket}}</p>
 			</div>
 			<div class="spec">
 				<h5>CHIPSET</h5>
 				<p>{{$part->chipset}}</p>
 			</div>
 			<div class="spec">
-				<h5>VIDEO MEMORY</h5>
-				<p>{{$part->mem_size}}GB</p>
+				<h5>MEMORY SLOTS</h5>
+				<p>{{$part->memory_slots}}</p>
 			</div>
 			<div class="spec">
-				<h5>MEMORY TYPE</h5>
-				<p>{{$part->mem_type}}</p>
+				<h5>MEMORY PIN</h5>
+				<p>{{$part->memory_pin}}</p>
 			</div>
 			<div class="spec">
-				<h5>CORE CLOCK</h5>
-				<p>{{$part->core_clock}}GHz</p>
+				<h5>SUPPORTED MEMORY</h5>
+				<p>{{$part->memory_type}}</p>
 			</div>
 			<div class="spec">
-				<h5>BOOST CLOCK</h5>
-				<p>{{$part->boost_clock}}GHz</p>
+				<h5>MAX MEMORY</h5>
+				<p>{{$part->max_memory}}GB</p>
 			</div>
 			<div class="spec">
-				<h5>TDP</h5>
-				<p>{{$part->tdp}}W</p>
+				<h5>RAID SUPPORT</h5>
+				<p>{{$part->raid_support}}</p>
 			</div>
 			<div class="spec">
-				<h5>FAN</h5>
-				<p>{{$part->fan}}</p>
-			</div>
-			<div class="spec">
-				<h5>SLI</h5>
-				<p>{{$part->sli_support}}</p>
+				<h5>ONBOARD GPU</h5>
+				<p>{{$part->onboard_gpu}}</p>
 			</div>
 			<div class="spec">
 				<h5>CROSSFIRE</h5>
 				<p>{{$part->crossfire_support}}</p>
 			</div>
 			<div class="spec">
-				<h5>LENGTH</h5>
-				<p>{{$part->length}}mm</p>
+				<h5>SLI</h5>
+				<p>{{$part->sli_support}}</p>
 			</div>
 			<div class="spec">
-				<h5>GSYNC</h5>
-				<p>{{$part->gsync}}</p>
+				<h5>SATA6 GBS</h5>
+				<p>{{$part->sata6_gbs}}</p>
 			</div>
 			<div class="spec">
-				<h5>FREESYNC</h5>
-				<p>{{$part->freesync}}</p>
+				<h5>SATA EXPRESS</h5>
+				<p>{{$part->sata_express}}</p>
 			</div>
 			<div class="spec">
-				<h5>DVI-D</h5>
-				<p>{{$part->dvi_d}}</p>
+				<h5>ONBOARD ETHERNET</h5>
+				<p>{{$part->onboard_ethernet}}</p>
 			</div>
 			<div class="spec">
-				<h5>DISPLAY PORT</h5>
-				<p>{{$part->display_port}}</p>
-			</div>
-			<div class="spec">
-				<h5>HDMI</h5>
-				<p>{{$part->hdmi}}</p>
+				<h5>ONBOARD USB3</h5>
+				<p>{{$part->onboard_usb3}}</p>
 			</div>
 			@endif
 
