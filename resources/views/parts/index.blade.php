@@ -1092,7 +1092,7 @@
 		<div class="col-sm-12 table-responsive">
 			<table class="table table-striped">
 				<thead>
-					<!-- Motherboard Table -->
+					<!-- ==========Motherboard Table========= -->
 					@if($type === 'Motherboards')
 					<tr>
 						<th>Motherboard</th>
@@ -1120,7 +1120,7 @@
 					@endforeach
 					@endif
 
-					<!-- CPU Table -->
+					<!-- ==========CPU Table========= -->
 					@if($type === 'CPUs')
 					<tr>
 						<th>CPU</th>
@@ -1146,7 +1146,7 @@
 					@endforeach
 					@endif
 
-					<!-- GPU Table -->
+					<!-- ==========GPU Table========= -->
 					@if($type === 'GPUs')
 					<tr>
 						<th>Video Card</th>
@@ -1172,7 +1172,7 @@
 					@endforeach
 					@endif
 
-					<!-- RAM Table -->
+					<!-- ==========RAM Table========= -->
 					@if($type === 'Memory')
 					<tr>
 						<th>RAM</th>
@@ -1200,7 +1200,8 @@
 					</tr>
 					@endforeach
 					@endif
-
+						
+					<!-- ==========HDD Table========= -->
 					@if($type === 'Storage Devices')
 					<tr>
 						<th>Storage</th>
@@ -1216,7 +1217,7 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/memory/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row"><a class="bold" href="/parts/storage/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
 						<td>{{$part->form_factor}}</td>
 						@if($part->rpm === 0)
 						<td>SSD</td>
@@ -1235,6 +1236,133 @@
 					</tr>
 					@endforeach
 					@endif
+
+					<!-- ==========PSU Table========= -->
+					@if($type === 'PSUs')
+					<tr>
+						<th>Power Supply</th>
+						<th>Form</th>
+						<th>Efficiency</th>
+						<th>Watts</th>
+						<th>Modular</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/power-supply/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->form_factor}}</td>
+						<td>{{$part->efficiency}}</td>
+						<td>{{$part->max_wattage}}W</td>
+						<td>{{$part->moduler}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- ==========Case Table========= -->
+					@if($type === 'Cases')
+					<tr>
+						<th>Case</th>
+						<th>Type</th>
+						<th>Power Supply</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/case/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->form_factor}}</td>
+						<td>{{$part->include_power}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- ==========CPU Cooler========= -->
+					@if($type === 'CPU Coolers')
+					<tr>
+						<th>CPU Cooler</th>
+						<th>Fan RPM</th>
+						<th>Noise Level</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/cpu-cooler/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<td>{{$part->fan_rpm}} RPM</td>
+						<td>{{$part->noise_level}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- ==========OS Table========= -->
+					@if($type === 'Operating Systems')
+					<tr>
+						<th>Operating System</th>
+						<th>Family</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/operating-system/{{$part->id}}">{{$part->name}}</a></th>
+						<td>{{$part->family}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+					<!-- ==========Misc Table========= -->
+					@if($type === 'Misc')
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Rating</th>
+						<th>Price</th>
+						<th>Button here</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach ($parts as $part)
+					<tr>
+						<th scope="row"><a class="bold" href="/parts/misc/{{$part->id}}">{{$part->name}}</a></th>
+						<td>{{$part->type}}</td>
+						<td>{{$part->noise_level}}</td>
+						<td>TBD SOON</td>
+						<td class="bold">${{$part->price}}</td>
+						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+					</tr>
+					@endforeach
+					@endif
+
+
+
+
+
+
 				</tbody>
 			</table>
 			{!! $parts->render() !!}
