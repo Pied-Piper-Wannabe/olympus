@@ -23,8 +23,8 @@ class User extends Model implements AuthenticatableContract,
 	 */
 	protected $table = 'users';
 
-	public function builds() {
-        return $this->hasMany('App\User', 'created_by');
+	public function extractBuilds() {
+        return $this->hasMany('App\Models\Builds', 'created_by');
     }
 
 	/**

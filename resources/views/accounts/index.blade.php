@@ -23,18 +23,15 @@
 			</ul>
 			<!-- Tab Content -->
 			<div class="row topMarginSm">
+			@foreach($builds as $build)
 				<div class="col-md-6 col-sm-12 boxGridPadding">
 					<div class="border">
-						<h4>Build 1</h4>
-						<p>This is my primary build</p>
+						<h4><a href="/builds/{{$build->id}}">{{$build->name}}</a></h4>
+						<p>Created: {{$build->created_at}}</p>
+						<p>Last Updated: {{$build->updated_at}}</p>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-12 boxGridPadding">
-					<div class="border">
-						<h4>Build 2</h4>
-						<p>This is my secondary build</p>
-					</div>
-				</div>
+			@endforeach
 			</div>
 
 		</div>

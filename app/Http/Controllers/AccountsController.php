@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Log;
+use Input;
+use Auth;
 
 class AccountsController extends Controller
 {
@@ -16,7 +19,17 @@ class AccountsController extends Controller
 	 */
 	public function index()
 	{
-		return view('accounts/index');
+		$loggedInUser = "";
+    if (Auth::check()) {
+        $loggedInUser = Auth::user()->id;
+    }
+    $builds = \App\Models\Builds::where('created_by', $loggedInUser)->orderBy('created_at', 'desc')->paginate(4);
+
+		$data = array( 
+			'user' => $loggedInUser,
+			'builds' => $builds);
+
+		return view('accounts/index', $data);
 	}
 
 	/**
