@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Log;
 use Input;
 use Auth;
+use Cookie;
 
 class BuildsController extends Controller
 {
@@ -27,9 +28,42 @@ class BuildsController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function create()
+	public function create(Request $request)
 	{
-		return view('builds/create');
+		// $cookie = $request->cookie('keep_build');
+		// Cookie::queue('keep_build', true);
+	
+		if (!Auth::check()) {
+			flash('Please login or register!')->error();
+      return view('auth/login');
+    }
+    $user = Auth::user()->id;
+    $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
+    if($build === null) {
+    	$newBuild = new \App\Models\Builds();
+    	$newBuild->created_by = $user;
+    	$newBuild->save();
+    }
+    $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
+    dd($build);
+    // Price Check
+    if($build->cpu)
+   //  $total = $build->cpuExtract->price 
+			// + $build->cpuCoolerExtract->price 
+			// + $build->motherboardExtract->price
+			// + $build->ramExtract->price
+			// + $build->hddExtract->price
+			// + $build->gpuExtract->price
+			// + $build->caseExtract->price
+			// + $build->psuExtract->price
+			// + $build->osExtract->price
+			// + $build->miscExtract->price
+
+    $data = array(
+			'user' => $user,
+			'build' => $build);
+		return view('builds/create', $data);
+
 	}
 
 	/**
@@ -49,8 +83,10 @@ class BuildsController extends Controller
 	 * @param  int  $id
 	 * @return \Illuminate\Http\Response
 	 */
-	public function show($id)
+	public function show(Request $request, $id)
 	{
+		$value = $request->cookie('keep_build');
+		dd($value);
 
 		if (Auth::check()) {
 			$loggedInUser = Auth::user()->id;
