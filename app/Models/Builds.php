@@ -8,44 +8,44 @@ class Builds extends Model
 {
 	protected $table = 'builds';
 
-	public function motherboard() {
-		return $this->belongsTo('App\Models\Motherboard', 'id');
+	public function motherboardExtract() {
+		return $this->belongsTo('App\Models\Motherboard', 'motherboard');
 	}
 
-	public function case() {
-		return $this->belongsTo('App\Models\ComputerCase', 'id');
+	public function caseExtract() {
+		return $this->belongsTo('App\Models\ComputerCase', 'case');
 	}
 
-	public function cpu() {
-		return $this->belongsTo('App\Models\Cpu', 'id');
+	public function cpuExtract() {
+		return $this->belongsTo('App\Models\Cpu', 'cpu');
 	}
 
-	public function cpuCooler() {
-		return $this->belongsTo('App\Models\CpuCooler', 'id');
+	public function cpuCoolerExtract() {
+		return $this->belongsTo('App\Models\CpuCooler', 'cpu_cooler');
 	}
 
-	public function gpu() {
-		return $this->belongsTo('App\Models\Gpu', 'id');
+	public function gpuExtract() {
+		return $this->belongsTo('App\Models\Gpu', 'gpu');
 	}
 
-	public function hdd() {
-		return $this->belongsTo('App\Models\Hdd', 'id');
+	public function hddExtract() {
+		return $this->belongsTo('App\Models\Hdd', 'hdd');
 	}
 
-	public function misc() {
-		return $this->belongsTo('App\Models\Misc', 'id');
+	public function miscExtract() {
+		return $this->belongsTo('App\Models\Misc', 'misc');
 	}
 
-	public function os() {
-		return $this->belongsTo('App\Models\Os', 'id');
+	public function osExtract() {
+		return $this->belongsTo('App\Models\Os', 'operating_system');
 	}
 
-	public function psu() {
-		return $this->belongsTo('App\Models\Psu', 'id');
+	public function psuExtract() {
+		return $this->belongsTo('App\Models\Psu', 'psu');
 	}
 
-	public function ram() {
-		return $this->belongsTo('App\Models\Ram', 'id');
+	public function ramExtract() {
+		return $this->belongsTo('App\Models\Ram', 'ram');
 	}
 
 	public function user()
