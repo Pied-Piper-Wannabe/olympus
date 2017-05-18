@@ -63,7 +63,7 @@ class BuildsController extends Controller
 
     	//CPU CHECK
     	if($build->cpu !== null){
-    		if($build->motherboardExtract->cpu_socket !== $build->cpuExtract->socket_type){
+    		if(trim($build->motherboardExtract->cpu_socket) !== trim($build->cpuExtract->socket_type)){
     			$compatable = 'NOT COMPATABLE';
     			array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
     		}
@@ -75,7 +75,7 @@ class BuildsController extends Controller
     	  $compatable = 'NOT COMPATABLE';
     	  array_push($compatabilityErrors, 'CPU/Motherboard and CPU Cooler sockets do not match!');
     	  foreach ($sockets as $socket) {
-    	  	if($build->motherboardExtract->cpu_socket === $socket) {
+    	  	if(trim($build->motherboardExtract->cpu_socket) === trim($socket)) {
     	  		$compatable = 'clean';
     	  		array_pop($compatabilityErrors);
     	  		break;
@@ -83,7 +83,7 @@ class BuildsController extends Controller
     	  } 
     	}
 
-    	// TODO: Remove TRIM
+    	//Case to MOBO check
     	if($build->case !== null){
     		$factors = explode(", ", $build->caseExtract->mobo_comp);
     		$compatable = 'NOT COMPATABLE';
@@ -96,6 +96,28 @@ class BuildsController extends Controller
     	  		break;
     	  	}
     	  }
+    	}
+
+
+    	// Memory to MOBO check
+    	if($build->ram !== null){
+    		// Number of sticks check
+    		if(trim($build->ramExtract->number_of_sticks) > trim($build->motherboardExtract->memory_slots)){
+    			$compatable = 'NOT COMPATABLE';
+    	  	array_push($compatabilityErrors, 'There are more RAM sticks than avalabile slots on Motherboard');
+    		}
+
+    		// Ram Type Check
+    		if(strpos(trim($build->motherboardExtract->memory_type), trim($build->ramExtract->type)) === false){
+    			$compatable = 'NOT COMPATABLE';
+    	  	array_push($compatabilityErrors, 'RAM is not compatable with Motherboard');
+    		}
+
+    		// RAM Total Size Check
+    		if(trim($build->ramExtract->size) > trim($build->motherboardExtract->max_memory)){
+    			$compatable = 'NOT COMPATABLE';
+    	  	array_push($compatabilityErrors, 'RAM is over capacity for Motherboard');
+    		}
     	}
 
 
