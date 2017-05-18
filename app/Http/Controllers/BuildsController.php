@@ -59,7 +59,41 @@ class BuildsController extends Controller
 	 */
 	public function store(Request $request)
 	{
-		//
+		$id = $request->session()->get('currentBuild');
+		$build = \App\Models\Builds::findOrFail($id);
+		dd($build);
+
+		if($request->type === 'case') {
+			$build->case = $request->case;
+		}
+		else if($request->type === 'cpu') {
+			$build->cpu = $request->cpu;
+		}
+		else if($request->type === 'cooler') {
+			$build->cpu_cooler = $request->cooler;
+		}
+		else if($request->type === 'gpu') {
+			$build->gpu = $request->gpu;
+		}
+		else if($request->type === 'hdd') {
+			$build->hdd = $request->hdd;
+		}
+		else if($request->type === 'misc') {
+			$build->misc = $request->misc;
+		}
+		else if($request->type === 'motherboard') {
+			$build->motherboard = $request->motherboard;
+		}
+		else if($request->type === 'os') {
+			$build->case = $request->case;
+		}
+		else if($request->type === 'psu') {
+			$build->case = $request->case;
+		}
+		else if($request->type === 'ram') {
+
+		}
+
 	}
 
 	/**
@@ -70,8 +104,7 @@ class BuildsController extends Controller
 	 */
 	public function show(Request $request, $id)
 	{
-		$value = $request->cookie('keep_build');
-
+		
 		if (Auth::check()) {
 			$loggedInUser = Auth::user()->id;
 		}else{
@@ -94,140 +127,136 @@ class BuildsController extends Controller
 	 * @param  int  $id
 	 * @return \Illuminate\Http\Response
 	 */
-	public function edit($id)
+	public function edit(Request $request, $id)
 	{
-		// $request->session()->put('key', 'value');
 		// Use request to determine which build to edit
+		$request->session()->put('currentBuild', $id);
 
-		dd($id);
+		if (!Auth::check()) {
+			flash('Please login or register!')->error();
+			return view('auth/login');
+		}
+		$user = Auth::user()->id;
 
 
-		// $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
-		// if($build === null) {
-		// 	$newBuild = new \App\Models\Builds();
-		// 	$newBuild->created_by = $user;
-		// 	$newBuild->save();
-		// }
+		$build = \App\Models\Builds::findOrFail($id);
 
-		// //Use cookie to find current build ID
-		// $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
-		// $total = 0;
-		// $compatable = 'clean';
-		// $compatabilityErrors = [];
+		// Set compatability clean slate and total
+		$compatable = 'clean';
+		$compatabilityErrors = [];
+		$total = 0;
 
-		// //==========COMPATABILITY CHECK===========
+		//==========COMPATABILITY CHECK===========
 		
-		// if($build->cpu !== null){
-		// 	$total += $build->cpuExtract->price;// Price Check
-		// }
-		// if($build->cpu_cooler !== null){
-		// 	$total += $build->cpuCoolerExtract->price;// Price Check
-		// }
-		// //Primary Check
-		// if($build->motherboard !== null){
-		// 	$total += $build->motherboardExtract->price;// Price Check
+		if($build->cpu !== null){
+			$total += $build->cpuExtract->price;// Price Check
+		}
+		if($build->cpu_cooler !== null){
+			$total += $build->cpuCoolerExtract->price;// Price Check
+		}
+		//Primary Check
+		if($build->motherboard !== null){
+			$total += $build->motherboardExtract->price;// Price Check
 
-		// 	//CPU CHECK
-		// 	if($build->cpu !== null){
-		// 		if(trim($build->motherboardExtract->cpu_socket) !== trim($build->cpuExtract->socket_type)){
-		// 			$compatable = 'NOT COMPATABLE';
-		// 			array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
-		// 		}
-		// 	}
+			//CPU CHECK
+			if($build->cpu !== null){
+				if(trim($build->motherboardExtract->cpu_socket) !== trim($build->cpuExtract->socket_type)){
+					$compatable = 'NOT COMPATABLE';
+					array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
+				}
+			}
 
-		// 	//CPU COOLER CHECK
-		// 	if($build->cpu_cooler !== null){
-		// 	  $sockets = explode(", ", $build->cpuCoolerExtract->sockets);
-		// 	  $compatable = 'NOT COMPATABLE';
-		// 	  array_push($compatabilityErrors, 'CPU/Motherboard and CPU Cooler sockets do not match!');
-		// 	  foreach ($sockets as $socket) {
-		// 		if(trim($build->motherboardExtract->cpu_socket) === trim($socket)) {
-		// 			$compatable = 'clean';
-		// 			array_pop($compatabilityErrors);
-		// 			break;
-		// 		}
-		// 	  } 
-		// 	}
+			//CPU COOLER CHECK
+			if($build->cpu_cooler !== null){
+			  $sockets = explode(", ", $build->cpuCoolerExtract->sockets);
+			  $compatable = 'NOT COMPATABLE';
+			  array_push($compatabilityErrors, 'CPU/Motherboard and CPU Cooler sockets do not match!');
+			  foreach ($sockets as $socket) {
+				if(trim($build->motherboardExtract->cpu_socket) === trim($socket)) {
+					$compatable = 'clean';
+					array_pop($compatabilityErrors);
+					break;
+				}
+			  } 
+			}
 
-		// 	//Case to MOBO check
-		// 	if($build->case !== null){
-		// 		$factors = explode(", ", $build->caseExtract->mobo_comp);
-		// 		$compatable = 'NOT COMPATABLE';
-		// 	  array_push($compatabilityErrors, 'Motherboard and Case form factors do not match!');
-		// 	  // dd($build->motherboardExtract->form_factor);
-		// 	  foreach ($factors as $factor) {
-		// 		if(trim($build->motherboardExtract->form_factor) === trim($factor)) {
-		// 			$compatable = 'clean';
-		// 			array_pop($compatabilityErrors);
-		// 			break;
-		// 		}
-		// 	  }
-		// 	}
-
-
-		// 	// Memory to MOBO check
-		// 	if($build->ram !== null){
-		// 		// Number of sticks check
-		// 		if(trim($build->ramExtract->number_of_sticks) > trim($build->motherboardExtract->memory_slots)){
-		// 			$compatable = 'NOT COMPATABLE';
-		// 		array_push($compatabilityErrors, 'There are more RAM sticks than avalabile slots on Motherboard');
-		// 		}
-
-		// 		// Ram Type Check
-		// 		if(strpos(trim($build->motherboardExtract->memory_type), trim($build->ramExtract->type)) === false){
-		// 			$compatable = 'NOT COMPATABLE';
-		// 		array_push($compatabilityErrors, 'RAM is not compatable with Motherboard');
-		// 		}
-
-		// 		// RAM Total Size Check
-		// 		if(trim($build->ramExtract->size) > trim($build->motherboardExtract->max_memory)){
-		// 			$compatable = 'NOT COMPATABLE';
-		// 		array_push($compatabilityErrors, 'RAM is over capacity for Motherboard');
-		// 		}
-
-		// 		// RAM Pin Check
-		// 		if(trim($build->ramExtract->memory_slot_type) !== trim($build->motherboardExtract->memory_pin)){
-		// 			$compatable = 'NOT COMPATABLE';
-		// 		array_push($compatabilityErrors, 'RAM pin types do not match');
-		// 		}
-		// 	}
-		// }
-
-		// if($build->ram !== null){
-		// 	$total += $build->ramExtract->price;// Price Check
-		// }
-		// if($build->hdd !== null){
-		// 	$total += $build->hddExtract->price;// Price Check
-		// }
-		// if($build->gpu !== null){
-		// 	$total += $build->gpuExtract->price;// Price Check
-		// }
-		// if($build->case !== null){
-		// 	$total += $build->caseExtract->price;// Price Check
-		// }
-		// if($build->psu !== null){
-		// 	$total += $build->psuExtract->price;// Price Check
-		// }
-		// if($build->operating_system !== null){
-		// 	$total += $build->osExtract->price;// Price Check
-		// }
-		// if($build->misc !== null){
-		// 	$total += $build->miscExtract->price;// Price Check
-		// }
-
-		// // =========END PRICE/COMPATABILITY CHECKS==========
-
-		
+			//Case to MOBO check
+			if($build->case !== null){
+				$factors = explode(", ", $build->caseExtract->mobo_comp);
+				$compatable = 'NOT COMPATABLE';
+			  array_push($compatabilityErrors, 'Motherboard and Case form factors do not match!');
+			  // dd($build->motherboardExtract->form_factor);
+			  foreach ($factors as $factor) {
+				if(trim($build->motherboardExtract->form_factor) === trim($factor)) {
+					$compatable = 'clean';
+					array_pop($compatabilityErrors);
+					break;
+				}
+			  }
+			}
 
 
-		// $data = array(
-		// 		'user' => $user,
-		// 		'total' => $total,
-		// 		'compatable' => $compatable,
-		// 		'compatabilityErrors' => $compatabilityErrors,
-		// 		'build' => $build);
-		// 	return view('builds/create', $data);
-		
+			// Memory to MOBO check
+			if($build->ram !== null){
+				// Number of sticks check
+				if(trim($build->ramExtract->number_of_sticks) > trim($build->motherboardExtract->memory_slots)){
+					$compatable = 'NOT COMPATABLE';
+				array_push($compatabilityErrors, 'There are more RAM sticks than avalabile slots on Motherboard');
+				}
+
+				// Ram Type Check
+				if(strpos(trim($build->motherboardExtract->memory_type), trim($build->ramExtract->type)) === false){
+					$compatable = 'NOT COMPATABLE';
+				array_push($compatabilityErrors, 'RAM is not compatable with Motherboard');
+				}
+
+				// RAM Total Size Check
+				if(trim($build->ramExtract->size) > trim($build->motherboardExtract->max_memory)){
+					$compatable = 'NOT COMPATABLE';
+				array_push($compatabilityErrors, 'RAM is over capacity for Motherboard');
+				}
+
+				// RAM Pin Check
+				if(trim($build->ramExtract->memory_slot_type) !== trim($build->motherboardExtract->memory_pin)){
+					$compatable = 'NOT COMPATABLE';
+				array_push($compatabilityErrors, 'RAM pin types do not match');
+				}
+			}
+		}
+
+		if($build->ram !== null){
+			$total += $build->ramExtract->price;// Price Check
+		}
+		if($build->hdd !== null){
+			$total += $build->hddExtract->price;// Price Check
+		}
+		if($build->gpu !== null){
+			$total += $build->gpuExtract->price;// Price Check
+		}
+		if($build->case !== null){
+			$total += $build->caseExtract->price;// Price Check
+		}
+		if($build->psu !== null){
+			$total += $build->psuExtract->price;// Price Check
+		}
+		if($build->operating_system !== null){
+			$total += $build->osExtract->price;// Price Check
+		}
+		if($build->misc !== null){
+			$total += $build->miscExtract->price;// Price Check
+		}
+
+		// =========END PRICE/COMPATABILITY CHECKS==========
+
+		$data = array(
+			'user' => $user,
+			'total' => $total,
+			'compatable' => $compatable,
+			'compatabilityErrors' => $compatabilityErrors,
+			'build' => $build);
+
+
+		return view('builds/edit', $data);	
 	}
 
 	/**
@@ -244,7 +273,6 @@ class BuildsController extends Controller
 
 	public function new()
 	{
-		dd('madeit');
 		if (!Auth::check()) {
 			flash('Please login or register!')->error();
 			return view('auth/login');
@@ -257,9 +285,10 @@ class BuildsController extends Controller
 		$newBuild->save();
 
 		$id = $newBuild->id;
+
 		
 
-		return view('/');
+		header( "Location: /builds/$id/edit" );
 	}
 
 	/**
