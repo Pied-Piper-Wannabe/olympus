@@ -138,6 +138,12 @@ class BuildsController extends Controller
 				$build->ram = $request->part;
 			}
 		}
+
+		if(Input::has('buildName') || Input::has('buildDescription')) {
+			$build->name = Input::get('buildName');
+			$build->description = Input::get('buildDescription');
+		}
+
 		$build->save();
 
 		header( "Location: /builds/$id/edit" );
@@ -197,6 +203,14 @@ class BuildsController extends Controller
 		$compatabilityErrors = [];
 		$total = 0;
 
+		$check1 = true;
+		$check2 = true;
+		$check3 = true;
+		$check4 = true;
+		$check5 = true;
+		$check6 = true;
+		$check7 = true;
+
 		//==========COMPATABILITY CHECK===========
 		
 		if($build->cpu !== null){
@@ -212,7 +226,7 @@ class BuildsController extends Controller
 			//CPU CHECK
 			if($build->cpu !== null){
 				if(trim($build->motherboardExtract->cpu_socket) !== trim($build->cpuExtract->socket_type)){
-					$compatable = 'NOT COMPATABLE';
+					$check1 = false;
 					array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
 				}
 			}
@@ -220,11 +234,11 @@ class BuildsController extends Controller
 			//CPU COOLER CHECK
 			if($build->cpu_cooler !== null){
 			  $sockets = explode(", ", $build->cpuCoolerExtract->sockets);
-			  $compatable = 'NOT COMPATABLE';
+			  $check2 = false;
 			  array_push($compatabilityErrors, 'CPU/Motherboard and CPU Cooler sockets do not match!');
 			  foreach ($sockets as $socket) {
 				if(trim($build->motherboardExtract->cpu_socket) === trim($socket)) {
-					$compatable = 'clean';
+					$check2 = true;
 					array_pop($compatabilityErrors);
 					break;
 				}
@@ -234,12 +248,12 @@ class BuildsController extends Controller
 			//Case to MOBO check
 			if($build->case !== null){
 				$factors = explode(", ", $build->caseExtract->mobo_comp);
-				$compatable = 'NOT COMPATABLE';
+				$check3 = false;
 			  array_push($compatabilityErrors, 'Motherboard and Case form factors do not match!');
 			  // dd($build->motherboardExtract->form_factor);
 			  foreach ($factors as $factor) {
 				if(trim($build->motherboardExtract->form_factor) === trim($factor)) {
-					$compatable = 'clean';
+					$check3 = true;
 					array_pop($compatabilityErrors);
 					break;
 				}
@@ -251,25 +265,25 @@ class BuildsController extends Controller
 			if($build->ram !== null){
 				// Number of sticks check
 				if(trim($build->ramExtract->number_of_sticks) > trim($build->motherboardExtract->memory_slots)){
-					$compatable = 'NOT COMPATABLE';
+					$check4 = false;
 				array_push($compatabilityErrors, 'There are more RAM sticks than avalabile slots on Motherboard');
 				}
 
 				// Ram Type Check
 				if(strpos(trim($build->motherboardExtract->memory_type), trim($build->ramExtract->type)) === false){
-					$compatable = 'NOT COMPATABLE';
+					$check5 = 'NOT COMPATABLE';
 				array_push($compatabilityErrors, 'RAM is not compatable with Motherboard');
 				}
 
 				// RAM Total Size Check
 				if(trim($build->ramExtract->size) > trim($build->motherboardExtract->max_memory)){
-					$compatable = 'NOT COMPATABLE';
+					$check6 = 'NOT COMPATABLE';
 				array_push($compatabilityErrors, 'RAM is over capacity for Motherboard');
 				}
 
 				// RAM Pin Check
 				if(trim($build->ramExtract->memory_slot_type) !== trim($build->motherboardExtract->memory_pin)){
-					$compatable = 'NOT COMPATABLE';
+					$check7 = 'NOT COMPATABLE';
 				array_push($compatabilityErrors, 'RAM pin types do not match');
 				}
 			}
@@ -295,6 +309,17 @@ class BuildsController extends Controller
 		}
 		if($build->misc !== null){
 			$total += $build->miscExtract->price;// Price Check
+		}
+
+
+		if ($check1 === false
+			|| $check2 === false
+			|| $check3 === false
+			|| $check4 === false
+			|| $check5 === false
+			|| $check6 === false
+			|| $check7 === false) {
+			$compatable = 'NOT COMPATABLE';
 		}
 
 		// =========END PRICE/COMPATABILITY CHECKS==========
