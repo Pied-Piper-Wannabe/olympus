@@ -59,10 +59,40 @@ class BuildsController extends Controller
 	 */
 	public function store(Request $request)
 	{
-		dd($request);
-		$build = $request->session('currentBuild');
+		$id = $request->session()->get('currentBuild');
+		$build = \App\Models\Builds::findOrFail($id);
+		dd($build);
 
+		if($request->type === 'case') {
+			$build->case = $request->case;
+		}
+		else if($request->type === 'cpu') {
+			$build->cpu = $request->cpu;
+		}
+		else if($request->type === 'cooler') {
+			$build->cpu_cooler = $request->cooler;
+		}
+		else if($request->type === 'gpu') {
+			$build->gpu = $request->gpu;
+		}
+		else if($request->type === 'hdd') {
+			$build->hdd = $request->hdd;
+		}
+		else if($request->type === 'misc') {
+			$build->misc = $request->misc;
+		}
+		else if($request->type === 'motherboard') {
+			$build->motherboard = $request->motherboard;
+		}
+		else if($request->type === 'os') {
+			$build->case = $request->case;
+		}
+		else if($request->type === 'psu') {
+			$build->case = $request->case;
+		}
+		else if($request->type === 'ram') {
 
+		}
 
 	}
 
