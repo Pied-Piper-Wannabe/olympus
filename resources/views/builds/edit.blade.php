@@ -52,9 +52,12 @@
             <th scope="row"><a href="/parts/cpu">CPU</a></th>
             <td><a href="/parts/cpu/{{$build->cpu}}">{{$build->cpuExtract->brand}} {{$build->cpuExtract->model}}</a></td>
             <td>${{$build->cpuExtract->price}}</td>
-            <!-- Form -->
-            <td><a href="#">[X]</a></td>
-            <!--  -->
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="cpu">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
           
@@ -71,7 +74,12 @@
             <th scope="row"><a href="/parts/cpu-cooler">CPU Cooler</a></th>
             <td><a href="/parts/cpu-cooler/{{$build->cpu_cooler}}">{{$build->cpuCoolerExtract->brand}} {{$build->cpuCoolerExtract->model}}</a></td>
             <td>${{$build->cpuCoolerExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="cooler">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -88,7 +96,12 @@
             <th scope="row"><a href="/parts/motherboard/">Motherboard</a></th>
             <td><a href="/parts/motherboard/{{$build->motherboard}}">{{$build->motherboardExtract->brand}} {{$build->motherboardExtract->model}}</a></td>
             <td>${{$build->motherboardExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="motherboard">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -105,7 +118,12 @@
             <th scope="row"><a href="/parts/memory/">Memory</a></th>
             <td><a href="/parts/memory/{{$build->ram}}">{{$build->ramExtract->brand}} {{$build->ramExtract->model}}</a></td>
             <td>${{$build->ramExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="ram">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -122,7 +140,12 @@
             <th scope="row"><a href="/parts/storage/">Storage</a></th>
             <td><a href="/parts/storage/{{$build->hdd}}">{{$build->hddExtract->brand}} {{$build->hddExtract->model}}</a></td>
             <td>${{$build->hddExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="hdd">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -139,7 +162,12 @@
             <th scope="row"><a href="/parts/gpu/">Video Card</a></th>
             <td><a href="/parts/gpu/{{$build->gpu}}">{{$build->gpuExtract->brand}} {{$build->gpuExtract->model}}</a></td>
             <td>${{$build->gpuExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="gpu">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -156,7 +184,12 @@
             <th scope="row"><a href="/parts/case/">Case</a></th>
             <td><a href="/parts/case/{{$build->case}}">{{$build->caseExtract->brand}} {{$build->caseExtract->model}}</a></td>
             <td>${{$build->caseExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="case">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -173,7 +206,12 @@
             <th scope="row"><a href="/parts/power-supply/">Power Supply</a></th>
             <td><a href="/parts/power-supply/{{$build->psu}}">{{$build->psuExtract->brand}} {{$build->psuExtract->model}}</a></td>
             <td>${{$build->psuExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="psu">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
 
@@ -190,7 +228,12 @@
             <th scope="row"><a href="/parts/operating-system/">Operating System</a></th>
             <td><a href="/parts/operating-system/{{$build->operating_system}}">{{$build->osExtract->brand}} {{$build->osExtract->model}}</a></td>
             <td>${{$build->osExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="os">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
             
@@ -207,7 +250,12 @@
             <th scope="row"><a href="/parts/misc/">Misc</a></th>
             <td><a href="/parts/misc/{{$build->misc}}">{{$build->miscExtract->brand}} {{$build->miscExtract->model}}</a></td>
             <td>${{$build->miscExtract->price}}</td>
-            <td><a href="#">[X]</a></td>
+            <form method="POST" action="/builds">
+            {!! csrf_field() !!}
+              <input type="hidden" name="type" value="misc">
+              <input type="hidden" name="part" value="null">
+              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
+            </form>
           </tr>
           @endif
         </tbody>

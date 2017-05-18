@@ -11,7 +11,11 @@
 			  </button>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 			  	@foreach($builds as $build)
+			  		@if($build->name === null)
+			  		<a class="dropdown-item" href="/builds/{{$build->id}}/edit">Build created on: {{$build->created_at}}</a>
+			  		@else
 						<a class="dropdown-item" href="/builds/{{$build->id}}/edit">{{$build->name}}</a>
+						@endif
 					@endforeach
 			  </div>
 			</div>

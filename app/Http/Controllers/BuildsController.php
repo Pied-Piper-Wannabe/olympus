@@ -69,34 +69,74 @@ class BuildsController extends Controller
 
 
 		if($request->type === 'case') {
+			if($request->part === 'null'){
+				$build->case = null;
+			}else {
 			$build->case = $request->part;
+			}
 		}
 		else if($request->type === 'cpu') {
-			$build->cpu = $request->part;
+			if($request->part === 'null'){
+				$build->cpu = null;
+			}else {
+				$build->cpu = $request->part;
+			}
 		}
 		else if($request->type === 'cooler') {
-			$build->cpu_cooler = $request->part;
+			if($request->part === 'null'){
+				$build->cpu_cooler = null;
+			}else {
+				$build->cpu_cooler = $request->part;
+			}
 		}
 		else if($request->type === 'gpu') {
-			$build->gpu = $request->part;
+			if($request->part === 'null'){
+				$build->gpu = null;
+			}else {
+				$build->gpu = $request->part;
+			}
 		}
 		else if($request->type === 'hdd') {
-			$build->hdd = $request->part;
+			if($request->part === 'null'){
+				$build->hdd = null;
+			}else {
+				$build->hdd = $request->part;
+			}
 		}
 		else if($request->type === 'misc') {
-			$build->misc = $request->part;
+			if($request->part === 'null'){
+				$build->misc = null;
+			}else {
+				$build->misc = $request->part;
+			}
 		}
 		else if($request->type === 'motherboard') {
-			$build->motherboard = $request->part;
+			if($request->part === 'null'){
+				$build->motherboard = null;
+			}else {
+				$build->motherboard = $request->part;
+			}
 		}
 		else if($request->type === 'os') {
-			$build->operating_system = $request->part;
+			if($request->part === 'null'){
+				$build->operating_system = null;
+			}else {
+				$build->operating_system = $request->part;
+			}
 		}
 		else if($request->type === 'psu') {
-			$build->psu = $request->part;
+			if($request->part === 'null'){
+				$build->psu = null;
+			}else {
+				$build->psu = $request->part;
+			}
 		}
 		else if($request->type === 'ram') {
-			$build->ram = $request->part;
+			if($request->part === 'null'){
+				$build->ram = null;
+			}else {
+				$build->ram = $request->part;
+			}
 		}
 		$build->save();
 
