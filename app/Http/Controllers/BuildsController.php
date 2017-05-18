@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Log;
+use Input;
+use Auth;
 
 class BuildsController extends Controller
 {
@@ -48,7 +51,21 @@ class BuildsController extends Controller
 	 */
 	public function show($id)
 	{
-		return view('builds/show');
+
+		if (Auth::check()) {
+			$loggedInUser = Auth::user()->id;
+		}else{
+			$loggedInUser = "";
+		}
+
+		$build = \App\Models\Builds::findOrFail($id);
+
+		$data = array(
+			'user' => $loggedInUser,
+			'build' => $build);
+
+
+		return view('builds/show', $data);
 	}
 
 	/**
