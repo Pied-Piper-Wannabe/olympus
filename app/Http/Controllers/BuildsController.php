@@ -33,11 +33,8 @@ class BuildsController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function create(Request $request)
+	public function create()
 	{
-
-		//Ask user if they want to create a new build or edit an existing
-	
 		if (!Auth::check()) {
 			flash('Please login or register!')->error();
 			return view('auth/login');
@@ -52,21 +49,57 @@ class BuildsController extends Controller
 
 		// Ask user if they want to create a new build or edit existing
 		return view('builds/create', $data);
+	}
+
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function store(Request $request)
+	{
+		//
+	}
+
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function show(Request $request, $id)
+	{
+		$value = $request->cookie('keep_build');
+
+		if (Auth::check()) {
+			$loggedInUser = Auth::user()->id;
+		}else{
+			$loggedInUser = "";
+		}
+
+		$build = \App\Models\Builds::findOrFail($id);
+
+		$data = array(
+			'user' => $loggedInUser,
+			'build' => $build);
 
 
+		return view('builds/show', $data);
+	}
 
+	/**
+	 * Show the form for editing the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function edit($id)
+	{
+		// $request->session()->put('key', 'value');
+		// Use request to determine which build to edit
 
-
-
-
-
-
-
-
-
-
-
-
+		dd($id);
 
 
 		// $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
@@ -194,56 +227,6 @@ class BuildsController extends Controller
 		// 		'compatabilityErrors' => $compatabilityErrors,
 		// 		'build' => $build);
 		// 	return view('builds/create', $data);
-
-	}
-
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @return \Illuminate\Http\Response
-	 */
-	public function store(Request $request)
-	{
-		//
-	}
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
-	public function show(Request $request, $id)
-	{
-		$value = $request->cookie('keep_build');
-
-		if (Auth::check()) {
-			$loggedInUser = Auth::user()->id;
-		}else{
-			$loggedInUser = "";
-		}
-
-		$build = \App\Models\Builds::findOrFail($id);
-
-		$data = array(
-			'user' => $loggedInUser,
-			'build' => $build);
-
-
-		return view('builds/show', $data);
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
-	public function edit($id)
-	{
-		// $request->session()->put('key', 'value');
-		// Use request to determine which build to edit
 		
 	}
 
@@ -257,6 +240,26 @@ class BuildsController extends Controller
 	public function update(Request $request, $id)
 	{
 		//
+	}
+
+	public function new()
+	{
+		dd('madeit');
+		if (!Auth::check()) {
+			flash('Please login or register!')->error();
+			return view('auth/login');
+		}
+
+		$loggedInUser = Auth::user()->id;
+
+		$newBuild = new \App\Models\Builds();
+		$newBuild->created_by = $loggedInUser;
+		$newBuild->save();
+
+		$id = $newBuild->id;
+		
+
+		return view('/');
 	}
 
 	/**

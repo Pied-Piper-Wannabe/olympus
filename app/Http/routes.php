@@ -20,15 +20,16 @@ Route::get('/tour', function () {
   return view('tour.tour');
 });
 
-// Resource Controllers
-Route::resource('/builds', 'BuildsController');
+Route::get('/builds/new', 'BuildsController@new');
 
+// Resource Controllers
 Route::resource('/account', 'AccountsController');
+Route::resource('/builds', 'BuildsController');
 
 // PartsController
 Route::get('/parts/{type}', 'PartsController@index');
-
 Route::get('/parts/{type}/{id}', 'PartsController@show');
+
 
 // Login routes
 Route::get('/login', 'Auth\AuthController@getLogin');
