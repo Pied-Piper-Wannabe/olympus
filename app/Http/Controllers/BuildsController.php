@@ -20,7 +20,12 @@ class BuildsController extends Controller
 	 */
 	public function index()
 	{
-		return view('builds/index');
+		$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
+
+		$data = array(
+			'builds' => $builds);
+
+		return view('builds/index', $data);
 	}
 
 	/**
@@ -182,7 +187,6 @@ class BuildsController extends Controller
 	public function show(Request $request, $id)
 	{
 		$value = $request->cookie('keep_build');
-		dd($value);
 
 		if (Auth::check()) {
 			$loggedInUser = Auth::user()->id;
