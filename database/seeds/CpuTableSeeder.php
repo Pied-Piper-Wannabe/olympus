@@ -17,7 +17,7 @@ class CpuTableSeeder extends Seeder
         $cpu1=new \App\Models\Cpu();
         $cpu1->price=218.49;
         $cpu1->brand='amd';
-        $cpu1->model='yd1600bbaebox';
+        $cpu1->model='Ryzen 5 1600 3.2GHz 6-Core Processor';
         $cpu1->data_width='64-bit';
         $cpu1->socket_type='am4';
         $cpu1->operating_frequency='3.2ghz';
@@ -35,7 +35,7 @@ class CpuTableSeeder extends Seeder
         $cpu2=new \App\Models\Cpu();
         $cpu2->price=188.59;
         $cpu2->brand='intel';
-        $cpu2->model='bx80677i5';
+        $cpu2->model='Core i5-7500 3.4GHz Quad-Core Processor';
         $cpu2->data_width='64-bit';
         $cpu2->socket_type='lga1151';
         $cpu2->operating_frequency='3.4ghz';
@@ -53,7 +53,7 @@ class CpuTableSeeder extends Seeder
         $cpu3=new \App\Models\Cpu();
         $cpu3->price=228.79;
         $cpu3->brand='intel';
-        $cpu3->model='bx80677i57600k';
+        $cpu3->model='Core i5-7600K 3.8GHz Quad-Core Processor';
         $cpu3->data_width='64-bit';
         $cpu3->socket_type='lga1151';
         $cpu3->operating_frequency='3.8ghz';
@@ -71,7 +71,7 @@ class CpuTableSeeder extends Seeder
         $cpu4=new \App\Models\Cpu();
         $cpu4->price=328.47;
         $cpu4->brand='intel';
-        $cpu4->model='bx80677i77700k';
+        $cpu4->model='Core i7-7700K 4.2GHz Quad-Core Processor';
         $cpu4->data_width='64-bit';
         $cpu4->socket_type='lga1151';
         $cpu4->operating_frequency='4.2ghz';
@@ -89,7 +89,7 @@ class CpuTableSeeder extends Seeder
         $cpu5=new \App\Models\Cpu();
         $cpu5->price=165.88;
         $cpu5->brand='amd';
-        $cpu5->model='YD1400BBAEBOX ';
+        $cpu5->model='Ryzen 5 1400 3.2GHz Quad-Core Processor';
         $cpu5->data_width='64-bit';
         $cpu5->socket_type='am4';
         $cpu5->operating_frequency='3.2ghz';
@@ -107,7 +107,7 @@ class CpuTableSeeder extends Seeder
         $cpu6=new \App\Models\Cpu();
         $cpu6->price=219.99;
         $cpu6->brand='intel';
-        $cpu6->model='BX80662I56600K';
+        $cpu6->model='Core i5-6600K 3.5GHz Quad-Core Processor';
         $cpu6->data_width='64-bit';
         $cpu6->socket_type='lga1151';
         $cpu6->operating_frequency='3.5ghz';
@@ -119,13 +119,13 @@ class CpuTableSeeder extends Seeder
         $cpu6->wattage=91;
         $cpu6->hyperthreading_support='no';
         $cpu6->max_supported_memory='0';
-        $cpu6->intergrated_graphics='Intel HD Graphics 530 ';
+        $cpu6->intergrated_graphics='Intel HD Graphics 530';
         $cpu6->save();
         
         $cpu7=new \App\Models\Cpu();
         $cpu7->price=305.06;
         $cpu7->brand='intel';
-        $cpu7->model='BX80662I76700K';
+        $cpu7->model='Core i7-6700K 4.0GHz Quad-Core Processor';
         $cpu7->data_width='64-bit';
         $cpu7->socket_type='lga1151';
         $cpu7->operating_frequency='4.0ghz';
@@ -137,13 +137,13 @@ class CpuTableSeeder extends Seeder
         $cpu7->wattage=91;
         $cpu7->hyperthreading_support='yes';
         $cpu7->max_supported_memory=64;
-        $cpu7->intergrated_graphics='Intel HD Graphics 530 ';
+        $cpu7->intergrated_graphics='Intel HD Graphics 530';
         $cpu7->save();
         
         $cpu8=new \App\Models\Cpu();
         $cpu8->price=57.88;
         $cpu8->brand='intel';
-        $cpu8->model='BX80677G4560';
+        $cpu8->model='Pentium G4560 3.5GHz Dual-Core Processor';
         $cpu8->data_width='64-bit';
         $cpu8->socket_type='lga1151';
         $cpu8->operating_frequency='3.5ghz';
@@ -161,7 +161,7 @@ class CpuTableSeeder extends Seeder
         $cpu9=new \App\Models\Cpu();
         $cpu9->price=188.98;
         $cpu9->brand='amd';
-        $cpu9->model='YD150XBBAEBOX ';
+        $cpu9->model='Ryzen 5 1500X 3.5GHz Quad-Core Processor';
         $cpu9->data_width='64-bit';
         $cpu9->socket_type='am4';
         $cpu9->operating_frequency=' 3.5GHz ';
@@ -179,7 +179,7 @@ class CpuTableSeeder extends Seeder
         $cpu10=new \App\Models\Cpu();
         $cpu10->price=247.88;
         $cpu10->brand='amd';
-        $cpu10->model='YD160XBCAEWOF';
+        $cpu10->model='Ryzen 5 1600X 3.6GHz 6-Core Processor';
         $cpu10->data_width='64-bit';
         $cpu10->socket_type='am4';
         $cpu10->operating_frequency='3.6ghz';
@@ -197,7 +197,7 @@ class CpuTableSeeder extends Seeder
         $cpu11=new \App\Models\Cpu();
         $cpu11->price=310.90;
         $cpu11->brand='amd';
-        $cpu11->model='YD1700BBAEBOX';
+        $cpu11->model='Ryzen 7 1700 3.0GHz 8-Core Processor';
         $cpu11->data_width='64-bit';
         $cpu11->socket_type='am4';
         $cpu11->operating_frequency='3.0ghz';
@@ -215,7 +215,7 @@ class CpuTableSeeder extends Seeder
         $cpu12=new \App\Models\Cpu();
         $cpu12->price=108.75;
         $cpu12->brand='intel';
-        $cpu12->model='BX80662I36100';
+        $cpu12->model='Core i3-6100 3.7GHz Dual-Core Processor';
         $cpu12->data_width='64-bit';
         $cpu12->socket_type='lga1151';
         $cpu12->operating_frequency='3.7ghz';
@@ -233,7 +233,7 @@ class CpuTableSeeder extends Seeder
         $cpu13=new \App\Models\Cpu();
         $cpu13->price=120.89;
         $cpu13->brand='amd';
-        $cpu13->model=' FD8350FRHKBOX ';
+        $cpu13->model='FX-8350 4.0GHz 8-Core Processor';
         $cpu13->data_width='64-bit';
         $cpu13->socket_type=' AM3+ ';
         $cpu13->operating_frequency='4.0ghz';
@@ -251,7 +251,7 @@ class CpuTableSeeder extends Seeder
         $cpu14=new \App\Models\Cpu();
         $cpu14->price=342.84;
         $cpu14->brand='amd';
-        $cpu14->model='YD170XBCAEWOF';
+        $cpu14->model='Ryzen 7 1700X 3.4GHz 8-Core Processor';
         $cpu14->data_width='64-bit';
         $cpu14->socket_type='AM4';
         $cpu14->operating_frequency='3.4ghz';
@@ -269,7 +269,7 @@ class CpuTableSeeder extends Seeder
         $cpu15=new \App\Models\Cpu();
         $cpu15->price=464.79;
         $cpu15->brand='amd';
-        $cpu15->model='YD180XBCAEWOF';
+        $cpu15->model='Ryzen 7 1800X 3.6GHz 8-Core Processor';
         $cpu15->data_width='64-bit';
         $cpu15->socket_type='am4';
         $cpu15->operating_frequency='3.6ghz';
@@ -287,7 +287,7 @@ class CpuTableSeeder extends Seeder
         $cpu16=new \App\Models\Cpu();
         $cpu16->price=187.89;
         $cpu16->brand='intel';
-        $cpu16->model='BX80662I56500';
+        $cpu16->model='Core i5-6500 3.2GHz Quad-Core Processor';
         $cpu16->data_width='64-bit';
         $cpu16->socket_type='lga1151';
         $cpu16->operating_frequency='3.2ghz';
@@ -305,7 +305,7 @@ class CpuTableSeeder extends Seeder
         $cpu17=new \App\Models\Cpu();
         $cpu17->price=77.59;
         $cpu17->brand='amd';
-        $cpu17->model='FD6300WMHKBOX';
+        $cpu17->model='FX-6300 3.5GHz 6-Core Processor';
         $cpu17->data_width='64-bit';
         $cpu17->socket_type='am3';
         $cpu17->operating_frequency='3.5ghz';
@@ -323,7 +323,7 @@ class CpuTableSeeder extends Seeder
         $cpu18=new \App\Models\Cpu();
         $cpu18->price=110.88;
         $cpu18->brand='intel';
-        $cpu18->model='BX80677I37100';
+        $cpu18->model='Core i3-7100 3.9GHz Dual-Core Processor';
         $cpu18->data_width='64-bit';
         $cpu18->socket_type='lga1151';
         $cpu18->operating_frequency='3.9ghz';
@@ -341,7 +341,7 @@ class CpuTableSeeder extends Seeder
         $cpu19=new \App\Models\Cpu();
         $cpu19->price=176.44;
         $cpu19->brand='intel';
-        $cpu19->model=' BX80677I57400 ';
+        $cpu19->model='Core i5-7400 3.0GHz Quad-Core Processor';
         $cpu19->data_width='64-bit';
         $cpu19->socket_type='lga1151';
         $cpu19->operating_frequency='3.0ghz';
@@ -359,7 +359,7 @@ class CpuTableSeeder extends Seeder
         $cpu20=new \App\Models\Cpu();
         $cpu20->price=294.98;
         $cpu20->brand='intel';
-        $cpu20->model='BX80677I77700';
+        $cpu20->model='Core i7-7700 3.6GHz Quad-Core Processor';
         $cpu20->data_width='64-bit';
         $cpu20->socket_type='lga1151';
         $cpu20->operating_frequency='3.6ghz';
