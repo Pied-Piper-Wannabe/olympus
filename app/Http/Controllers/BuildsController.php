@@ -138,6 +138,12 @@ class BuildsController extends Controller
 				$build->ram = $request->part;
 			}
 		}
+
+		if(Input::has('buildName') || Input::has('buildDescription')) {
+			$build->name = Input::get('buildName');
+			$build->description = Input::get('buildDescription');
+		}
+
 		$build->save();
 
 		header( "Location: /builds/$id/edit" );
