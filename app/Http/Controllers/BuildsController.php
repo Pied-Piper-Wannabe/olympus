@@ -118,6 +118,12 @@ class BuildsController extends Controller
     			$compatable = 'NOT COMPATABLE';
     	  	array_push($compatabilityErrors, 'RAM is over capacity for Motherboard');
     		}
+
+    		// RAM Pin Check
+    		if(trim($build->ramExtract->memory_slot_type) !== trim($build->motherboardExtract->memory_pin)){
+    			$compatable = 'NOT COMPATABLE';
+    	  	array_push($compatabilityErrors, 'RAM pin types do not match');
+    		}
     	}
 
 
