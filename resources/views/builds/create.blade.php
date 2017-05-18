@@ -176,16 +176,7 @@
 			</table>
 		</div>
 		<div class="col-sm-12 rightText">
-			<h4>Total: ${!! $total = $build->cpuExtract->price 
-			+ $build->cpuCoolerExtract->price 
-			+ $build->motherboardExtract->price
-			+ $build->ramExtract->price
-			+ $build->hddExtract->price
-			+ $build->gpuExtract->price
-			+ $build->caseExtract->price
-			+ $build->psuExtract->price
-			+ $build->osExtract->price
-			+ $build->miscExtract->price !!}</h4>
+			<h4>Total: ${{$total}}</h4>
 		</div>
 	</div>
 </div>

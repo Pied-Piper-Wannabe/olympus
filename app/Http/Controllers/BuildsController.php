@@ -45,22 +45,43 @@ class BuildsController extends Controller
     	$newBuild->save();
     }
     $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
-    dd($build);
+    $total = 0;
+
     // Price Check
-    if($build->cpu)
-   //  $total = $build->cpuExtract->price 
-			// + $build->cpuCoolerExtract->price 
-			// + $build->motherboardExtract->price
-			// + $build->ramExtract->price
-			// + $build->hddExtract->price
-			// + $build->gpuExtract->price
-			// + $build->caseExtract->price
-			// + $build->psuExtract->price
-			// + $build->osExtract->price
-			// + $build->miscExtract->price
+    if($build->cpu !== null){
+    	$total += $build->cpuExtract->price;
+    }
+    if($build->cpu_cooler !== null){
+    	$total += $build->cpuCoolerExtract->price;
+    }
+    if($build->motherboard !== null){
+    	$total += $build->motherboardExtract->price;
+    }
+    if($build->ram !== null){
+    	$total += $build->ramExtract->price;
+    }
+    if($build->hdd !== null){
+    	$total += $build->hddExtract->price;
+    }
+    if($build->gpu !== null){
+    	$total += $build->gpuExtract->price;
+    }
+    if($build->case !== null){
+    	$total += $build->caseExtract->price;
+    }
+    if($build->psu !== null){
+    	$total += $build->psuExtract->price;
+    }
+    if($build->operating_system !== null){
+    	$total += $build->osExtract->price;
+    }
+    if($build->misc !== null){
+    	$total += $build->miscExtract->price;
+    }
 
     $data = array(
 			'user' => $user,
+			'total' => $total,
 			'build' => $build);
 		return view('builds/create', $data);
 
