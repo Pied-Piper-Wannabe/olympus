@@ -51,7 +51,9 @@
                 <br>
                 <p>Never worry about returning parts that don't fit or aren't compatabile with each other again!</p>
                 <br>
-                <p>Below is an infographic that shows you how each piece of hardware in a PC works</p>
+                <p>Building your own PC and need inspiration on where to start? No problem, our builds section has plenty of pre built PC's to help get you started</p>
+                <br>
+                <p>Below is an infographic that shows new computer enthusiasts how each piece of hardware in a PC works</p>
             </div>
         </div>
     </section>
