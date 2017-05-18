@@ -59,40 +59,48 @@ class BuildsController extends Controller
 	 */
 	public function store(Request $request)
 	{
+		if (!Auth::check()) {
+			flash('Please login or register!')->error();
+			return view('auth/login');
+		}
+
 		$id = $request->session()->get('currentBuild');
 		$build = \App\Models\Builds::findOrFail($id);
-		dd($build);
+
 
 		if($request->type === 'case') {
-			$build->case = $request->case;
+			$build->case = $request->part;
 		}
 		else if($request->type === 'cpu') {
-			$build->cpu = $request->cpu;
+			$build->cpu = $request->part;
 		}
 		else if($request->type === 'cooler') {
-			$build->cpu_cooler = $request->cooler;
+			$build->cpu_cooler = $request->part;
 		}
 		else if($request->type === 'gpu') {
-			$build->gpu = $request->gpu;
+			$build->gpu = $request->part;
 		}
 		else if($request->type === 'hdd') {
-			$build->hdd = $request->hdd;
+			$build->hdd = $request->part;
 		}
 		else if($request->type === 'misc') {
-			$build->misc = $request->misc;
+			$build->misc = $request->part;
 		}
 		else if($request->type === 'motherboard') {
-			$build->motherboard = $request->motherboard;
+			$build->motherboard = $request->part;
 		}
 		else if($request->type === 'os') {
-			$build->case = $request->case;
+			$build->operating_system = $request->part;
 		}
 		else if($request->type === 'psu') {
-			$build->case = $request->case;
+			$build->psu = $request->part;
 		}
 		else if($request->type === 'ram') {
-
+			$build->ram = $request->part;
 		}
+		$build->save();
+
+		header( "Location: /builds/$id/edit" );
 
 	}
 
@@ -136,10 +144,13 @@ class BuildsController extends Controller
 			flash('Please login or register!')->error();
 			return view('auth/login');
 		}
+
 		$user = Auth::user()->id;
-
-
 		$build = \App\Models\Builds::findOrFail($id);
+
+		if($user !== $build->created_by){
+			abort(403);
+		}
 
 		// Set compatability clean slate and total
 		$compatable = 'clean';
