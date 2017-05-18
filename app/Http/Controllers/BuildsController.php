@@ -60,23 +60,46 @@ class BuildsController extends Controller
     //Primary Check
     if($build->motherboard !== null){
     	$total += $build->motherboardExtract->price;// Price Check
+
+    	//CPU CHECK
     	if($build->cpu !== null){
     		if($build->motherboardExtract->cpu_socket !== $build->cpuExtract->socket_type){
     			$compatable = 'NOT COMPATABLE';
     			array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
     		}
     	}
+
+    	//CPU COOLER CHECK
     	if($build->cpu_cooler !== null){
     	  $sockets = explode(", ", $build->cpuCoolerExtract->sockets);
     	  $compatable = 'NOT COMPATABLE';
-    	  array_push($compatabilityErrors, 'CPU and CPU Cooler sockets do not match!');
+    	  array_push($compatabilityErrors, 'CPU/Motherboard and CPU Cooler sockets do not match!');
     	  foreach ($sockets as $socket) {
     	  	if($build->motherboardExtract->cpu_socket === $socket) {
     	  		$compatable = 'clean';
+    	  		array_pop($compatabilityErrors);
     	  		break;
     	  	}
     	  } 
     	}
+
+    	// TODO: Remove TRIM
+    	if($build->case !== null){
+    		$factors = explode(", ", $build->caseExtract->mobo_comp);
+    		$compatable = 'NOT COMPATABLE';
+    	  array_push($compatabilityErrors, 'Motherboard and Case form factors do not match!');
+    	  // dd($build->motherboardExtract->form_factor);
+    	  foreach ($factors as $factor) {
+    	  	if(trim($build->motherboardExtract->form_factor) === trim($factor)) {
+    	  		$compatable = 'clean';
+    	  		array_pop($compatabilityErrors);
+    	  		break;
+    	  	}
+    	  }
+    	}
+
+
+
     }
 
     if($build->ram !== null){
