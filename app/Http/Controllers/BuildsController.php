@@ -125,9 +125,6 @@ class BuildsController extends Controller
     	  	array_push($compatabilityErrors, 'RAM pin types do not match');
     		}
     	}
-
-
-
     }
 
     if($build->ram !== null){

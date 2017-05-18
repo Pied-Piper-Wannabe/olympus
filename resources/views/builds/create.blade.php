@@ -13,8 +13,15 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12 centerText">
-			{{$compatable}}
+		<div class="col-sm-12">
+			@if($compatable === 'clean')
+			<p><span class="compGreen">Compatability Check</span>: {{$compatable}}</p>
+			@elseif($compatable === 'warning')
+			<p><span class="compYellow">Compatability Check</span>: {{$compatable}}</p>
+			@elseif($compatable === 'NOT COMPATABLE')
+			<p><span class="compRed">Compatability Check</span>: {{$compatable}}</p>
+			@endif
+
 			@if($compatable !== 'clean')
 				@foreach($compatabilityErrors as $compatabilityError)
 				<p>{{$compatabilityError}}</p>
