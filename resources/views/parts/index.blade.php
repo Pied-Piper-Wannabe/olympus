@@ -1060,6 +1060,7 @@
 			</div>
 		</div>
 
+<!-- =========================PARTS===================================== -->
 
 		<!-- List of builds -->
 		<div class="col-md-8 col-lg-9 topMarginSm">
@@ -1092,6 +1093,8 @@
 		<div class="col-sm-12 table-responsive">
 			<table class="table table-striped">
 				<thead>
+
+
 					<!-- ==========Motherboard Table========= -->
 					@if($type === 'Motherboards')
 					<tr>
@@ -1115,7 +1118,13 @@
 						<td>{{$part->max_memory}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="motherboard">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif

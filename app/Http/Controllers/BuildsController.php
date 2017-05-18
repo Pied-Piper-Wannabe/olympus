@@ -59,7 +59,11 @@ class BuildsController extends Controller
 	 */
 	public function store(Request $request)
 	{
-		//
+		dd($request);
+		$build = $request->session('currentBuild');
+
+
+
 	}
 
 	/**
@@ -70,8 +74,7 @@ class BuildsController extends Controller
 	 */
 	public function show(Request $request, $id)
 	{
-		$value = $request->cookie('keep_build');
-
+		
 		if (Auth::check()) {
 			$loggedInUser = Auth::user()->id;
 		}else{
@@ -94,10 +97,11 @@ class BuildsController extends Controller
 	 * @param  int  $id
 	 * @return \Illuminate\Http\Response
 	 */
-	public function edit($id)
+	public function edit(Request $request, $id)
 	{
-		// $request->session()->put('key', 'value');
 		// Use request to determine which build to edit
+		$request->session()->put('currentBuild', $id);
+
 		if (!Auth::check()) {
 			flash('Please login or register!')->error();
 			return view('auth/login');
@@ -214,17 +218,15 @@ class BuildsController extends Controller
 
 		// =========END PRICE/COMPATABILITY CHECKS==========
 
-		
-
-
 		$data = array(
-				'user' => $user,
-				'total' => $total,
-				'compatable' => $compatable,
-				'compatabilityErrors' => $compatabilityErrors,
-				'build' => $build);
-			return view('builds/edit', $data);
-		
+			'user' => $user,
+			'total' => $total,
+			'compatable' => $compatable,
+			'compatabilityErrors' => $compatabilityErrors,
+			'build' => $build);
+
+
+		return view('builds/edit', $data);	
 	}
 
 	/**
