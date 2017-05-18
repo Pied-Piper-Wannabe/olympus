@@ -154,6 +154,8 @@ class BuildsController extends Controller
     	$total += $build->miscExtract->price;// Price Check
     }
 
+    // =========END PRICE/COMPATABILITY CHECKS==========
+
     
 
 
