@@ -14,44 +14,44 @@ class CreateBuildsTable extends Migration
 	{
 		Schema::create('builds', function(Blueprint $table){
 			$table->increments('id');
-			$table->string('name', 150);
+			$table->string('name', 150)->nullable();
 
 			$table->integer('created_by')->unsigned();
 			$table->foreign('created_by')->references('id')->on('users');
 
-			$table->text('description');
+			$table->text('description')->nullable();
 			$table->decimal('price', 5, 2);
 			//------needs a compatibility check-------
 
-			$table->integer('motherboard')->unsigned();
+			$table->integer('motherboard')->nullable()->unsigned();
 			$table->foreign('motherboard')->references('id')->on('motherboard');
 
-			$table->integer('cpu')->unsigned();
+			$table->integer('cpu')->nullable()->unsigned();
 			$table->foreign('cpu')->references('id')->on('cpu');
 
-			$table->integer('gpu')->unsigned();
+			$table->integer('gpu')->nullable()->unsigned();
 			$table->foreign('gpu')->references('id')->on('gpu');
 
-			$table->integer('ram')->unsigned();
+			$table->integer('ram')->nullable()->unsigned();
 			$table->foreign('ram')->references('id')->on('ram');
 
-			$table->integer('cpu_cooler')->unsigned();
+			$table->integer('cpu_cooler')->nullable()->unsigned();
 			$table->foreign('cpu_cooler')->references('id')->on('cpu_cooler');
 
 			//-----------------------------------------
-			$table->integer('hdd')->unsigned();
+			$table->integer('hdd')->nullable()->unsigned();
 			$table->foreign('hdd')->references('id')->on('hdd');
 
-			$table->integer('psu')->unsigned();
+			$table->integer('psu')->nullable()->unsigned();
 			$table->foreign('psu')->references('id')->on('psu');
 
-			$table->integer('case')->unsigned();
+			$table->integer('case')->nullable()->unsigned();
 			$table->foreign('case')->references('id')->on('case');
 
-			$table->integer('operating_system')->unsigned();
+			$table->integer('operating_system')->nullable()->unsigned();
 			$table->foreign('operating_system')->references('id')->on('os');
 
-			$table->integer('misc')->unsigned();
+			$table->integer('misc')->nullable()->unsigned();
 			$table->foreign('misc')->references('id')->on('misc');
 			$table->timestamps();
 
