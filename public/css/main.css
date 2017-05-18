@@ -29,6 +29,18 @@ p, a {
 .whiteText {
   color: red; }
 
+.compGreen {
+  color: green;
+  font-weight: 700; }
+
+.compYellow {
+  color: yellow;
+  font-weight: 700; }
+
+.compRed {
+  color: red;
+  font-weight: 700; }
+
 img {
   width: 100%;
   height: auto; }
