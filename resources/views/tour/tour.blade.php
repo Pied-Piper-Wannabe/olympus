@@ -61,7 +61,7 @@
         <div class="infographic">
             <div class="container">
                 <div class="col-lg-8 offset-md-2">
-                    <img id="diagram" src="/../img/DIY-diagram.png" alt="">
+                    <img id="diagram" src="/images/DIY-diagram.png" alt="">
                     <table class="table table-striped">
                          <thead>
                             <tr>
