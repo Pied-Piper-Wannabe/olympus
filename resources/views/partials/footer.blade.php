@@ -3,7 +3,7 @@
         <div class="row topPaddingSm">
           <div class="col-md-3 col-sm-12 offset-sm-0">
             <h3>WHAT WE'RE ABOUT</h3>
-            <p>We are about giving the power back to the creator... rather they are experienced or just getting started. Some more stuff, some more stuffff man. We provide the tools needed to make it happen. Build your dream.</p>
+            <p>We are about giving the power back to the creator, whether they are the experienced enthusiast or just a beginner. We provide the tools to make finding the part you want simpler than ever. Build your dream!</p>
           </div>
           <div class="col-md-3 offset-md-2 col-sm-12 offset-sm-0">
             <h3>NEED HELP?</h3>
@@ -18,7 +18,7 @@
           <div class="col-md-3 offset-md-1 col-sm-12 offset-sm-0 centerText">
             <img src="/images/mountainLogo.png" alt="Olympus Logo">
             <h3>OLYMPUS PC BUILDER</h3>
-            <p class="forceWrap">contact@olympuspcbuilder.com</p>
+            <p class="forceWrap">olympuspc17@gmail.com</p>
           </div>
         </div>
         <div class="row footerNote">
