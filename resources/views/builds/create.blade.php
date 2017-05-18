@@ -13,6 +13,14 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-sm-12 centerText">
+			{{$compatable}}
+			@if($compatable !== 'clean')
+				@foreach($compatabilityErrors as $compatabilityError)
+				<p>{{$compatabilityError}}</p>
+				@endforeach
+			@endif
+		</div>
 		<div class="col-sm-12">
 			<table class="table table-striped">
 				<thead>

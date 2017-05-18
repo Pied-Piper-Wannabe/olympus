@@ -46,42 +46,57 @@ class BuildsController extends Controller
     }
     $build = \App\Models\Builds::where('created_by', $user)->orderBy('created_at', 'desc')->first();
     $total = 0;
+    $compatable = 'clean';
+    $compatabilityErrors = [];
 
-    // Price Check
+    //==========COMPATABILITY CHECK===========
+    
     if($build->cpu !== null){
-    	$total += $build->cpuExtract->price;
+    	$total += $build->cpuExtract->price;// Price Check
     }
     if($build->cpu_cooler !== null){
-    	$total += $build->cpuCoolerExtract->price;
+    	$total += $build->cpuCoolerExtract->price;// Price Check
     }
+    //Primary Check
     if($build->motherboard !== null){
-    	$total += $build->motherboardExtract->price;
+    	$total += $build->motherboardExtract->price;// Price Check
+    	if($build->cpu !== null){
+    		if($build->motherboardExtract->cpu_socket !== $build->cpuExtract->socket_type){
+    			$compatable = 'NOT COMPATABLE';
+    			array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
+    		}
+    	}
     }
     if($build->ram !== null){
-    	$total += $build->ramExtract->price;
+    	$total += $build->ramExtract->price;// Price Check
     }
     if($build->hdd !== null){
-    	$total += $build->hddExtract->price;
+    	$total += $build->hddExtract->price;// Price Check
     }
     if($build->gpu !== null){
-    	$total += $build->gpuExtract->price;
+    	$total += $build->gpuExtract->price;// Price Check
     }
     if($build->case !== null){
-    	$total += $build->caseExtract->price;
+    	$total += $build->caseExtract->price;// Price Check
     }
     if($build->psu !== null){
-    	$total += $build->psuExtract->price;
+    	$total += $build->psuExtract->price;// Price Check
     }
     if($build->operating_system !== null){
-    	$total += $build->osExtract->price;
+    	$total += $build->osExtract->price;// Price Check
     }
     if($build->misc !== null){
-    	$total += $build->miscExtract->price;
+    	$total += $build->miscExtract->price;// Price Check
     }
+
+    
+
 
     $data = array(
 			'user' => $user,
 			'total' => $total,
+			'compatable' => $compatable,
+			'compatabilityErrors' => $compatabilityErrors,
 			'build' => $build);
 		return view('builds/create', $data);
 
