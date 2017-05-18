@@ -66,7 +66,19 @@ class BuildsController extends Controller
     			array_push($compatabilityErrors, 'CPU and Motherboard sockets do not match!');
     		}
     	}
+    	if($build->cpu_cooler !== null){
+    	  $sockets = explode(", ", $build->cpuCoolerExtract->sockets);
+    	  $compatable = 'NOT COMPATABLE';
+    	  array_push($compatabilityErrors, 'CPU and CPU Cooler sockets do not match!');
+    	  foreach ($sockets as $socket) {
+    	  	if($build->motherboardExtract->cpu_socket === $socket) {
+    	  		$compatable = 'clean';
+    	  		break;
+    	  	}
+    	  } 
+    	}
     }
+
     if($build->ram !== null){
     	$total += $build->ramExtract->price;// Price Check
     }
