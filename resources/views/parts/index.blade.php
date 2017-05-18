@@ -1150,7 +1150,13 @@
 						<td>{{$part->wattage}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="cpu">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1176,7 +1182,13 @@
 						<td>{{$part->core_clock}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="gpu">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1205,7 +1217,13 @@
 						<td>{{$part->size}}GB</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="ram">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1241,7 +1259,13 @@
 						@endif
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="hdd">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1269,7 +1293,13 @@
 						<td>{{$part->moduler}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="psu">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1293,7 +1323,13 @@
 						<td>{{$part->include_power}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="case">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1317,7 +1353,13 @@
 						<td>{{$part->noise_level}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="cooler">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1339,7 +1381,13 @@
 						<td>{{$part->architecture}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="os">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
@@ -1362,7 +1410,13 @@
 						<td>{{$part->noise_level}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
-						<td><a href="#" class="btn btn-primary btn-sm">Add</a></td>
+						<!-- FORM for adding part -->
+						<form method="POST" action="/builds">
+						{!! csrf_field() !!}
+							<input type="hidden" name="type" value="misc">
+							<input type="hidden" name="part" value="{{$part->id}}">
+							<td><input type="submit" class="btn btn-primary btn-sm" value="Add"></td>
+						</form>
 					</tr>
 					@endforeach
 					@endif
