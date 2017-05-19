@@ -112,7 +112,7 @@
 					<div class="votesBox">
 						<p class="votes">1200</p>
 					</div>
-					<img src="/images/uploads/04.jpg" alt="04">
+					<a href="/builds/{{$build->id}}"><img src="/images/uploads/04.jpg" alt="04"></a>
 				</div>
 				<h3>{{$build->name}}</h3>
 				<p>By: <a href="#">{{$build->user->name}}</a></p>
