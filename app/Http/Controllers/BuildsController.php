@@ -13,6 +13,15 @@ use Cookie;
 
 class BuildsController extends Controller
 {
+
+	public function frontPage() {
+		$builds = \App\Models\Builds::orderBy('created_at', 'desc')->orderBy('created_at', 'desc')->paginate(4);
+
+		$data = array(
+			'builds' => $builds);
+
+		return view('frontpage', $data);
+	}
 	/**
 	 * Display a listing of the resource.
 	 *
