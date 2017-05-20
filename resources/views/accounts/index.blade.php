@@ -66,15 +66,3 @@
 </div>
 
 @stop
-
-
-<!-- 
-@foreach($builds as $build)
-				<div class="col-md-6 col-sm-12 boxGridPadding">
-					<div class="border">
-						<h4><a href="/builds/{{$build->id}}">{{$build->name}}</a></h4>
-						<p>Created: {{$build->created_at}}</p>
-						<p>Last Updated: {{$build->updated_at}}</p>
-					</div>
-				</div>
-			@endforeach -->

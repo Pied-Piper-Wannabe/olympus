@@ -11,15 +11,11 @@
 |
 */
 
-
-Route::get('/', function () {
-	return view('frontpage');
-});
-
 Route::get('/tour', function () {
   return view('tour.tour');
 });
 
+Route::get('/', 'BuildsController@frontPage');
 Route::get('/builds/new', 'BuildsController@setupBuild');
 
 // Resource Controllers
