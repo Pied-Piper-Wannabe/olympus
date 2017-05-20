@@ -20,7 +20,7 @@ Route::get('/tour', function () {
   return view('tour.tour');
 });
 
-Route::get('/builds/new', 'BuildsController@new');
+Route::get('/builds/new', 'BuildsController@setupBuild');
 
 // Resource Controllers
 Route::resource('/account', 'AccountsController');

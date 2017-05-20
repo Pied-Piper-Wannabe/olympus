@@ -347,7 +347,7 @@ class BuildsController extends Controller
 		//
 	}
 
-	public function new()
+	public function setupBuild()
 	{
 		if (!Auth::check()) {
 			flash('Please login or register!')->error();
