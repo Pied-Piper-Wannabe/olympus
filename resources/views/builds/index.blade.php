@@ -114,7 +114,11 @@
 					</div>
 					<a href="/builds/{{$build->id}}"><img src="/images/uploads/04.jpg" alt="04"></a>
 				</div>
+				@if($build->name === null)
+				<h3>Build Created On: {{$build->created_at}}</h3>
+				@else
 				<h3>{{$build->name}}</h3>
+				@endif
 				<p>By: <a href="#">{{$build->user->name}}</a></p>
 			</div>
 		</div>

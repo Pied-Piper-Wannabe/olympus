@@ -21,9 +21,9 @@ class AccountsController extends Controller
 	{
 		$loggedInUser = "";
     if (Auth::check()) {
-        $loggedInUser = Auth::user()->id;
+        $loggedInUser = Auth::user();
     }
-    $builds = \App\Models\Builds::where('created_by', $loggedInUser)->orderBy('created_at', 'desc')->paginate(4);
+    $builds = \App\Models\Builds::where('created_by', $loggedInUser->id)->orderBy('created_at', 'desc')->paginate(10);
 
 		$data = array( 
 			'user' => $loggedInUser,
