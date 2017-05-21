@@ -14,7 +14,7 @@ class CreateCpuTable extends Migration
 	{
 		Schema::create('cpu', function(Blueprint $table){
 			$table->increments('id');
-			$table->decimal('price', 5, 2);
+			$table->decimal('price', 7, 2);
 			$table->string('brand');
 			$table->string('model');
 			$table->string('data_width');

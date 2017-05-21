@@ -20,7 +20,7 @@ class CreateBuildsTable extends Migration
 			$table->foreign('created_by')->references('id')->on('users');
 
 			$table->text('description')->nullable();
-			$table->decimal('price', 5, 2);
+			$table->decimal('price', 7, 2);
 			//------needs a compatibility check-------
 
 			$table->integer('motherboard')->nullable()->unsigned();

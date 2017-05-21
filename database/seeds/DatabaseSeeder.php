@@ -15,8 +15,13 @@ class DatabaseSeeder extends Seeder
 		Model::unguard();
 
 		$this->command->info('Deleting builds records');
-
             DB::table('builds')->delete();
+
+            $this->command->info('Deleting upvotes records');
+            DB::table('upvotes')->delete();
+
+            $this->command->info('Deleting allvotes records');
+            DB::table('all_votes')->delete();
       
             $this->command->info('Deleting motherboard records');
             DB::table('motherboard')->delete();
@@ -64,8 +69,7 @@ class DatabaseSeeder extends Seeder
             $this->call('MiscTableSeeder');
             $this->call('OsTableSeeder');
             $this->call('BuildsTableSeeder');
-            // $this->call('UserTableSeeder');
-            // $this->call('UserTableSeeder');
+            $this->call('UpvotesTableSeeder');
 		Model::reguard();
 	}
 }

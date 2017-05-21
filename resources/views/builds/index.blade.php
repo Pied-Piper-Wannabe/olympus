@@ -92,11 +92,11 @@
 				    <a class="dropdown-item" href="#">Most Popular This Week</a>
 				    <a class="dropdown-item" href="#">Most Popular All Time</a>
 				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">Newest</a>
-				    <a class="dropdown-item" href="#">Oldest</a>
+				    <a class="dropdown-item" href="/builds?sort=newest">Newest</a>
+				    <a class="dropdown-item" href="/builds?sort=oldest">Oldest</a>
 				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">Most Expensive</a>
-				    <a class="dropdown-item" href="#">Least Expensive</a>
+				    <a class="dropdown-item" href="/builds?sort=expensive">Most Expensive</a>
+				    <a class="dropdown-item" href="/builds?sort=least-expensive">Least Expensive</a>
 				  </div>
 				</div>
 			</div>
@@ -105,7 +105,13 @@
 		@foreach($builds as $build)
 		<div class="col-md-6 col-sm-12">
 			<div class="buildBanner">
-				<h3>Olympian - SubName</h3>
+				@if($build->price < 500.00)
+				<h3>Demigod</h3>
+				@elseif($build->price > 500.00 and $build->price < 1500.00)
+				<h3>Olympian</h3>
+				@elseif($build->price > 1500.00)
+				<h3>Titan</h3>
+				@endif
 			</div>
 			<div class="buildTile">
 				<div class="imageBox">

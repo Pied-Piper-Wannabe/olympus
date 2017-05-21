@@ -14,7 +14,7 @@ class CreateRamTable extends Migration
 	{
 		Schema::create('ram', function(Blueprint $table){
 			$table->increments('id');
-			$table->decimal('price', 5, 2);
+			$table->decimal('price', 7, 2);
 			$table->string('brand');
 			$table->string('model');
 			$table->string('memory_slot_type');

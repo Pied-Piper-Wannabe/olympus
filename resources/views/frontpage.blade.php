@@ -19,12 +19,18 @@
 		@foreach($builds as $build)
 		<div class="col-md-6 col-sm-12">
 			<div class="buildBanner">
-				<h3>Olympian - SubName</h3>
+				@if($build->price < 500.00)
+				<h3>Demigod</h3>
+				@elseif($build->price > 500.00 and $build->price < 1500.00)
+				<h3>Olympian</h3>
+				@elseif($build->price > 1500.00)
+				<h3>Titan</h3>
+				@endif
 			</div>
 			<div class="buildTile">
 				<div class="imageBox">
 					<div class="votesBox">
-						<p class="votes">1200</p>
+						<p class="votes">{{$build->price}}</p>
 					</div>
 					<a href="/builds/{{$build->id}}"><img src="/images/uploads/04.jpg" alt="04"></a>
 				</div>
@@ -33,7 +39,7 @@
 				@else
 				<h3>{{$build->name}}</h3>
 				@endif
-				<p>By: <a href="#">KillerGamer12</a></p>
+				<p>By: <a href="#">{{$build->user->name}}</a></p>
 			</div>
 		</div>
 		@endforeach

@@ -5,7 +5,13 @@
 	<div class="row">
 		<div class="col-md-8 col-sm-12">
 			<div class="buildBanner">
-				<h3>Demigod - SubName</h3>
+				@if($build->price < 500.00)
+				<h3>Demigod</h3>
+				@elseif($build->price > 500.00 and $build->price < 1500.00)
+				<h3>Olympian</h3>
+				@elseif($build->price > 1500.00)
+				<h3>Titan</h3>
+				@endif
 			</div>
 			<div class="buildTile">
 				<div class="imageBox">
