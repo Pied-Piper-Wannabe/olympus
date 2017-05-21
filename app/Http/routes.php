@@ -46,3 +46,7 @@ Route::get('/register', 'Auth\AuthController@getRegister');
 
 Route::post('/register', 'Auth\AuthController@postRegister');
 
+//FAQ route
+Route::get('/faq', function () {
+	return view('/help/faq');
+});
