@@ -17,6 +17,8 @@ class BuildsController extends Controller
 	public function frontPage() {
 		$builds = \App\Models\Builds::orderBy('created_at', 'desc')->orderBy('created_at', 'desc')->paginate(4);
 
+		// $upvotes = \App\Models\Upvotes::
+
 		$data = array(
 			'builds' => $builds);
 

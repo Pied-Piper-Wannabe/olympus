@@ -14,7 +14,7 @@ class CreateCaseTable extends Migration
 	{
 		Schema::create('case', function(Blueprint $table){
 			$table->increments('id');
-			$table->decimal('price', 5, 2);
+			$table->decimal('price', 7, 2);
 			$table->string('brand');
 			$table->string('model');
 			$table->string('form_factor');
