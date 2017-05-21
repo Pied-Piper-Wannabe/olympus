@@ -9,7 +9,7 @@
             <h3>NEED HELP?</h3>
             <ul>
               <li><a href="/tour">Visual Tour</a></li>
-              <li><a href="">FAQs</a></li>
+              <li><a href="/faq">FAQs</a></li>
               <li><a href="">Contact Us</a></li>
               <li><a href="">Privacy</a></li>
               <li><a href="">Terms</a></li>
