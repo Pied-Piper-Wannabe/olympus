@@ -1145,9 +1145,9 @@
 					@foreach ($parts as $part)
 					<tr>
 						<th scope="row"><a class="bold" href="/parts/cpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
-						<td>{{$part->operating_frequency}}</td>
-						<td>{{$part->number_of_cores}}</td>
-						<td>{{$part->wattage}}</td>
+						<td>{{$part->operating_frequency}}GHz</td>
+						<td>{{$part->number_of_cores}} Cores</td>
+						<td>{{$part->wattage}}W</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
 						<!-- FORM for adding part -->

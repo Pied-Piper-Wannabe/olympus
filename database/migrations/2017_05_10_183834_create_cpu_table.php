@@ -19,7 +19,7 @@ class CreateCpuTable extends Migration
 			$table->string('model');
 			$table->string('data_width');
 			$table->string('socket_type');
-			$table->integer('operating_frequency');
+			$table->decimal('operating_frequency', 3, 2);
 			$table->integer('max_turbo_frequency');
 			$table->integer('number_of_cores');
 			$table->string('l1_cache');
