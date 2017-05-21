@@ -92,11 +92,11 @@
 				    <a class="dropdown-item" href="#">Most Popular This Week</a>
 				    <a class="dropdown-item" href="#">Most Popular All Time</a>
 				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">Newest</a>
-				    <a class="dropdown-item" href="#">Oldest</a>
+				    <a class="dropdown-item" href="/builds?sort=newest">Newest</a>
+				    <a class="dropdown-item" href="/builds?sort=oldest">Oldest</a>
 				    <div class="dropdown-divider"></div>
-				    <a class="dropdown-item" href="#">Most Expensive</a>
-				    <a class="dropdown-item" href="#">Least Expensive</a>
+				    <a class="dropdown-item" href="/builds?sort=expensive">Most Expensive</a>
+				    <a class="dropdown-item" href="/builds?sort=least-expensive">Least Expensive</a>
 				  </div>
 				</div>
 			</div>

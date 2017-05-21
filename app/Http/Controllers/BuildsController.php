@@ -29,7 +29,22 @@ class BuildsController extends Controller
 	 */
 	public function index()
 	{
+		// Default (most recent)
 		$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
+
+		if(Input::has('sort')){
+			if(Input::get('sort') === 'oldest') {
+				$builds = \App\Models\Builds::orderBy('created_at', 'asc')->paginate(10);
+			}else if(Input::get('sort') === 'newest'){
+				$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
+			}else if(Input::get('sort') === 'expensive'){
+				$builds = \App\Models\Builds::orderBy('price', 'desc')->paginate(10);
+			}else if(Input::get('sort') === 'least-expensive'){
+				$builds = \App\Models\Builds::orderBy('price', 'asc')->paginate(10);
+			}else {
+				$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
+			}
+		}
 
 		$data = array(
 			'builds' => $builds);
