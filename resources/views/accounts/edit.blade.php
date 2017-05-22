@@ -2,13 +2,13 @@
 
 @section('content')
 
-<div class="container">
+<div class="container botMarginLg">
 	<div class="row">
-		<div class="col-sm-12 userPhoto centerText">
+		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0 userPhoto centerText">
 			<h1>Edit Account</h1>
 			<img src="/images/users/01.jpeg" alt="user01">
 		</div>
-		<div class="col-sm-12">
+		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
 			<form action="{{ action ('AccountsController@store') }}" method="POST">
 			{!! csrf_field() !!}
 				<div class="form-group">
