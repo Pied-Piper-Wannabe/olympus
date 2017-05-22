@@ -21,7 +21,7 @@
 			<div class="buildBanner">
 				@if($build->price < 500.00)
 				<h3>Demigod</h3>
-				@elseif($build->price > 500.00 and $build->price < 1500.00)
+				@elseif($build->price > 500.00 && $build->price < 1500.00)
 				<h3>Olympian</h3>
 				@elseif($build->price > 1500.00)
 				<h3>Titan</h3>
