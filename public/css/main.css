@@ -227,6 +227,12 @@ button, .btn {
   .errorPage h4 {
     color: #cecece; }
 
+.largeBox {
+  border: 1px solid black;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .parallax, .ascendParallax {
   position: relative;
   /* The image used */
