@@ -227,7 +227,7 @@ button, .btn {
   .errorPage h4 {
     color: #cecece; }
 
-.parallax {
+.parallax, .ascendParallax {
   position: relative;
   /* The image used */
   background-image: url("../images/createCover.jpeg");
@@ -239,7 +239,7 @@ button, .btn {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.createCoverText h1 {
+.createCoverText h1, .ascendCoverText h1 {
   position: absolute;
   margin: auto;
   color: white;
@@ -250,6 +250,20 @@ button, .btn {
   left: 0;
   right: 0;
   bottom: 0; }
+
+.ascendParallax {
+  background-image: url("../images/pcmasterrace.png"); }
+
+.ascendCoverText h1 {
+  width: 400px;
+  height: 100px;
+  font-size: 100px;
+  font-weight: 700px;
+  color: gray;
+  left: 0;
+  right: 0;
+  bottom: -134px;
+  top: 0; }
 
 .blackBackground {
   background: black;
@@ -308,10 +322,18 @@ button, .btn {
       font-family: "Lato", sans-serif;
       font-weight: 300; }
 
-  .createCoverText h1 {
+  .createCoverText h1, .ascendCoverText h1 {
     font-size: 50px;
     width: 307px;
-    height: 60px; } }
+    height: 60px; }
+
+  .ascendCoverText h1 {
+    width: 200px;
+    color: gray;
+    left: 0;
+    right: 0;
+    bottom: -310px;
+    top: 0; } }
 @media (max-width: 1100px) {
   .footer p {
     line-height: 35px; } }
