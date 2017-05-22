@@ -53,7 +53,7 @@ class PsuTableSeeder extends Seeder
         $psu4=new \App\Models\Psu();
         $psu4->price=99.99;
         $psu4->brand='evga';
-        $psu4->model='supernova 750';
+        $psu4->model='supernova g3 750';
         $psu4->form_factor='atx12v/eps12v';
         $psu4->max_wattage=750;
         $psu4->fans=1;
