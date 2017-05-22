@@ -265,7 +265,7 @@
       <h4>Total: ${{$total}}</h4>
     </div>
     <div class="col-sm-12">
-      <form method="POST" action="/builds">
+      <form method="POST" action="/builds" enctype="multipart/form-data" novalidate>
       {!! csrf_field() !!}
         <div class="form-group">
           <label for="buildName">Build Name</label>
@@ -274,6 +274,11 @@
         <div class="form-group">
           <label for="buildDescription">Build Description</label>
           <textarea name="buildDescription" class="form-control" id="buildDescription" rows="3">{{$build->description}}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">Photo</label>
+          <input type="file" name="image" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <small id="fileHelp" class="form-text text-muted">Max image size: 2MB.</small>
         </div>
         <button type="submit" class="btn btn-primary">Update Build</button>
       </form>
