@@ -28,7 +28,7 @@ class CpuCoolerTableSeeder extends Seeder
 
         $cpucooler2=new \App\Models\CpuCooler();
         $cpucooler2->price=98.99;
-        $cpucooler2->brand='cosair';
+        $cpucooler2->brand='corsair';
         $cpucooler2->model='h100i v2';
         $cpucooler2->sockets='am2, am2+, am3, am3+, am4, fm1, fm2, fm2+, lga1150, lga1151, lga1155, lga1156, lga1366, lga2011, lga2011-3';
         $cpucooler2->liquid_cooled='yes';
