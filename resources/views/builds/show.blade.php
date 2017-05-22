@@ -18,7 +18,7 @@
 					<div class="votesBox">
 						<p class="votes">1200</p>
 					</div>
-					<img src="/images/uploads/01.jpg" alt="01">
+					<img src="/images/uploads/builds/{{$build->photo}}" alt="01">
 				</div>
 			</div>
 		</div>
