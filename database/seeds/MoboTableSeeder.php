@@ -38,8 +38,8 @@ class MoboTableSeeder extends Seeder
         $mobo2=new \App\Models\Motherboard();
         $mobo2->price=78.88;
         $mobo2->brand='msi';
-        $mobo2->model='b350 gaming pro ';
-        $mobo2->form_factor='micro atx ';
+        $mobo2->model='b350 gaming pro';
+        $mobo2->form_factor='micro atx';
         $mobo2->cpu_socket='am4';
         $mobo2->chipset='amd b350';
         $mobo2->memory_slots=2;
