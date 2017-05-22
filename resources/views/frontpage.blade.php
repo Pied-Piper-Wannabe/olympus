@@ -30,7 +30,7 @@
 			<div class="buildTile">
 				<div class="imageBox">
 					<div class="votesBox">
-						<p class="votes">{{$build->price}}</p>
+						<p class="votes">${{$build->price}}</p>
 					</div>
 					@if($build->photo === null)
 					<a href="/builds/{{$build->id}}"><img src="/images/terryCrews.jpg" alt="build photo"></a>
