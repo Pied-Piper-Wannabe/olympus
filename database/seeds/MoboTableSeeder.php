@@ -27,7 +27,7 @@ class MoboTableSeeder extends Seeder
         $mobo1->max_memory=64;
         $mobo1->raid_support='yes';
         $mobo1->onboard_gpu='cpu dependent';
-        $mobo1->crossfire_support='yes ';
+        $mobo1->crossfire_support='yes';
         $mobo1->sli_support='yes';
         $mobo1->sata6_gbs=6;
         $mobo1->sata_express='none';
@@ -62,7 +62,7 @@ class MoboTableSeeder extends Seeder
         $mobo3->model='b150m bazooka';
         $mobo3->form_factor='micro atx';
         $mobo3->cpu_socket='lga1151';
-        $mobo3->chipset='intel b150 ';
+        $mobo3->chipset='intel b150';
         $mobo3->memory_slots=4;
         $mobo3->memory_pin='288-pin DIMM';
         $mobo3->memory_type='ddr4 2133';
@@ -80,7 +80,7 @@ class MoboTableSeeder extends Seeder
         $mobo4=new \App\Models\Motherboard();
         $mobo4->price=102.98;
         $mobo4->brand='msi';
-        $mobo4->model='z170a gaming m5 ';
+        $mobo4->model='z170a gaming m5';
         $mobo4->form_factor='atx';
         $mobo4->cpu_socket='lga1151';
         $mobo4->chipset='intel z170';
@@ -146,7 +146,7 @@ class MoboTableSeeder extends Seeder
         $mobo7->model='h110m gaming';
         $mobo7->form_factor='micro atx';
         $mobo7->cpu_socket='lga1151';
-        $mobo7->chipset='intel h110 ';
+        $mobo7->chipset='intel h110';
         $mobo7->memory_slots=2;
         $mobo7->memory_pin='288-pin DIMM';
         $mobo7->memory_type='ddr4 2133';
@@ -374,7 +374,7 @@ class MoboTableSeeder extends Seeder
         $mobo18=new \App\Models\Motherboard();
         $mobo18->price=87.98;
         $mobo18->brand='asus';
-        $mobo18->model='z170';
+        $mobo18->model='Z170-K ATX';
         $mobo18->form_factor='atx';
         $mobo18->cpu_socket='lga1151';
         $mobo18->chipset='intel z170';
