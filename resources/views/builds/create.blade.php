@@ -6,10 +6,10 @@
     <h1>ASCEND</h1>
   </div>
 </div>
-<div class="container">
+<div class="container botMarginLg">
 	<div class="row">
 		<div class="col-sm-12">
-			<h1>Builds:</h1>
+			<h1>Build Your PC</h1>
 		</div>
 		<div class="col-md-6 col-sm-12 botMarginSm">
 			<div>

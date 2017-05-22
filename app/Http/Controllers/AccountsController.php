@@ -86,7 +86,15 @@ class AccountsController extends Controller
 	 */
 	public function show($id)
 	{
-		//
+		$user = \App\User::findOrFail($id);
+		$builds = \App\Models\Builds::where('created_by', $user->id)->orderBy('created_at', 'desc')->paginate(10);
+
+		$data = array( 
+			'user' => $user,
+			'builds' => $builds
+			);
+
+		return view('accounts/show', $data);
 	}
 
 	/**
