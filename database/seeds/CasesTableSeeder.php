@@ -59,7 +59,7 @@ class CasesTableSeeder extends Seeder
         $case5=new \App\Models\ComputerCase();
         $case5->price=34.99;
         $case5->brand='fractal design';
-        $case5->model='core_2300';
+        $case5->model='core 2300';
         $case5->form_factor='atx mid tower';
         $case5->color='black';
         $case5->include_power='no';
@@ -70,7 +70,7 @@ class CasesTableSeeder extends Seeder
         $case6=new \App\Models\ComputerCase();
         $case6->price=89.99;
         $case6->brand='nzxt';
-        $case6->model='s340_elite';
+        $case6->model='s340 elite';
         $case6->form_factor='atx mid tower';
         $case6->color='black';
         $case6->include_power='no';
