@@ -433,7 +433,7 @@ class GpuTableSeeder extends Seeder
         $gpu20=new \App\Models\Gpu();
         $gpu20->price=174.99;
         $gpu20->brand='msi';
-        $gpu20->model='rx750 amor 4g oc';
+        $gpu20->model='rx570 amor 4g oc';
         $gpu20->interface='pcie x16';
         $gpu20->chipset='radeon rx 570';
         $gpu20->mem_size=4;
