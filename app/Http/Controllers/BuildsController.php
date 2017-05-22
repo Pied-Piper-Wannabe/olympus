@@ -100,7 +100,6 @@ class BuildsController extends Controller
 				$build->case = null;
 			}else {
 			$build->case = $request->part;
-			$price += $build->caseExtract->price;
 			}
 		}
 		else if($request->type === 'cpu') {
@@ -108,7 +107,6 @@ class BuildsController extends Controller
 				$build->cpu = null;
 			}else {
 				$build->cpu = $request->part;
-				$price += $build->cpuExtract->price;
 			}
 		}
 		else if($request->type === 'cooler') {
@@ -116,7 +114,6 @@ class BuildsController extends Controller
 				$build->cpu_cooler = null;
 			}else {
 				$build->cpu_cooler = $request->part;
-				$price += $build->cpuCoolerExtract->price;
 			}
 		}
 		else if($request->type === 'gpu') {
@@ -124,7 +121,6 @@ class BuildsController extends Controller
 				$build->gpu = null;
 			}else {
 				$build->gpu = $request->part;
-				$price += $build->gpuExtract->price;
 			}
 		}
 		else if($request->type === 'hdd') {
@@ -132,7 +128,6 @@ class BuildsController extends Controller
 				$build->hdd = null;
 			}else {
 				$build->hdd = $request->part;
-				$price += $build->hddExtract->price;
 			}
 		}
 		else if($request->type === 'misc') {
@@ -140,7 +135,6 @@ class BuildsController extends Controller
 				$build->misc = null;
 			}else {
 				$build->misc = $request->part;
-				$price += $build->miscExtract->price;
 			}
 		}
 		else if($request->type === 'motherboard') {
@@ -148,7 +142,6 @@ class BuildsController extends Controller
 				$build->motherboard = null;
 			}else {
 				$build->motherboard = $request->part;
-				$price += $build->motherboardExtract->price;
 			}
 		}
 		else if($request->type === 'os') {
@@ -156,7 +149,6 @@ class BuildsController extends Controller
 				$build->operating_system = null;
 			}else {
 				$build->operating_system = $request->part;
-				$price += $build->osExtract->price;
 			}
 		}
 		else if($request->type === 'psu') {
@@ -164,7 +156,6 @@ class BuildsController extends Controller
 				$build->psu = null;
 			}else {
 				$build->psu = $request->part;
-				$price += $build->psuExtract->price;
 			}
 		}
 		else if($request->type === 'ram') {
@@ -172,11 +163,8 @@ class BuildsController extends Controller
 				$build->ram = null;
 			}else {
 				$build->ram = $request->part;
-				$price += $build->ramExtract->price;
 			}
 		}
-
-		$build->price = $price;
 
 
 		if(Input::has('buildName') || Input::has('buildDescription')) {
@@ -204,6 +192,8 @@ class BuildsController extends Controller
 						return "fail";  // TODO: Change this to a functional error message
 				}
 			}
+ 		
+		$build->price = Input::get('price');
 
 		$build->save();
 
