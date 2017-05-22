@@ -77,7 +77,7 @@ class MiscTableSeeder extends Seeder
 
         $misc8= new \App\Models\Misc();
         $misc8->price=86.99;
-        $misc8->model='aer rgb140(3pack)';
+        $misc8->model='nzxt aer rgb140(3pack)';
         $misc8->type='case fan';
         $misc8->description='140';
         $misc8->specs='black, multi-color led, 23.9-71.6cfm, 500-1000rpm';
@@ -158,7 +158,7 @@ class MiscTableSeeder extends Seeder
 
         $misc17= new \App\Models\Misc();
         $misc17->price=29.99;
-        $misc17->model='gc-wb867d-1';
+        $misc17->model='gc-wb867d-i';
         $misc17->type='wireless network adapter';
         $misc17->description='pcie x1';
         $misc17->specs='none';

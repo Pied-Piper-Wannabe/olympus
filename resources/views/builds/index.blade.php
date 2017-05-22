@@ -125,7 +125,7 @@
 				@else
 				<h3>{{$build->name}}</h3>
 				@endif
-				<p>By: <a href="#">{{$build->user->name}}</a></p>
+				<p>By: <a href="/account/{{$build->user->id}}">{{$build->user->name}}</a></p>
 			</div>
 		</div>
 		@endforeach

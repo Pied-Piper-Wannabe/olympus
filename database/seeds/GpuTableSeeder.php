@@ -15,7 +15,7 @@ class GpuTableSeeder extends Seeder
         $gpu1=new \App\Models\Gpu();
         $gpu1->price=768.99;
         $gpu1->brand='asus';
-        $gpu1->model='strix-gtx1080ti-011g-gaming';
+        $gpu1->model='strix gtx1080ti 011g gaming';
         $gpu1->interface='pcie x16';
         $gpu1->chipset='geforce gtx 1080ti';
         $gpu1->mem_size=11;
@@ -37,7 +37,7 @@ class GpuTableSeeder extends Seeder
         $gpu2=new \App\Models\Gpu();
         $gpu2->price=119.99;
         $gpu2->brand='evga';
-        $gpu2->model='04g-p4-6253-kr';
+        $gpu2->model='04g p4 6253 kr';
         $gpu2->interface='pcie x16';
         $gpu2->chipset='geforce gtx 1050ti';
         $gpu2->mem_size=4;
@@ -59,7 +59,7 @@ class GpuTableSeeder extends Seeder
         $gpu3=new \App\Models\Gpu();
         $gpu3->price=220.99;
         $gpu3->brand='gigabyte';
-        $gpu3->model='gv-rx580gaming-8gd';
+        $gpu3->model='gv rx580gaming 8gd';
         $gpu3->interface='pcie x16';
         $gpu3->chipset='radeon rx 580';
         $gpu3->mem_size=8;
@@ -103,7 +103,7 @@ class GpuTableSeeder extends Seeder
         $gpu5=new \App\Models\Gpu();
         $gpu5->price=408.80;
         $gpu5->brand='asus';
-        $gpu5->model='rog-strix-gtx1070-o8g-gaming';
+        $gpu5->model='rog strix gtx1070 o8g gaming';
         $gpu5->interface='pcie x16';
         $gpu5->chipset='geforce gtx 1070';
         $gpu5->mem_size=8;
@@ -125,7 +125,7 @@ class GpuTableSeeder extends Seeder
         $gpu6=new \App\Models\Gpu();
         $gpu6->price=114.99;
         $gpu6->brand='evga';
-        $gpu6->model='04g-p4-6251-kr';
+        $gpu6->model='04g p4 6251 kr';
         $gpu6->interface='pcie x16';
         $gpu6->chipset='geforce gtx 1050ti';
         $gpu6->mem_size=4;
@@ -147,7 +147,7 @@ class GpuTableSeeder extends Seeder
         $gpu7=new \App\Models\Gpu();
         $gpu7->price=210.78;
         $gpu7->brand='evga';
-        $gpu7->model='04g-p4-6163-kr';
+        $gpu7->model='04g p4 6163 kr';
         $gpu7->interface='pcie x16';
         $gpu7->chipset='geforce gtx 1060 6gb';
         $gpu7->mem_size=6;
@@ -191,7 +191,7 @@ class GpuTableSeeder extends Seeder
         $gpu9=new \App\Models\Gpu();
         $gpu9->price=374.99;
         $gpu9->brand='asus';
-        $gpu9->model='dual-gtx1070-o8g';
+        $gpu9->model='dual gtx1070 o8g';
         $gpu9->interface='pcie x16';
         $gpu9->chipset='geforce gtx 1070';
         $gpu9->mem_size=8;
@@ -213,7 +213,7 @@ class GpuTableSeeder extends Seeder
         $gpu10=new \App\Models\Gpu();
         $gpu10->price=379.99;
         $gpu10->brand='evga';
-        $gpu10->model='08g-p4-5173-kr';
+        $gpu10->model='08g p4 5173 kr';
         $gpu10->interface='pcie x16';
         $gpu10->chipset='geforce gtx 1070';
         $gpu10->mem_size=8;
@@ -235,7 +235,7 @@ class GpuTableSeeder extends Seeder
         $gpu11=new \App\Models\Gpu();
         $gpu11->price=198.88;
         $gpu11->brand='gigabyte';
-        $gpu11->model='gv-rx580gaming-4gd';
+        $gpu11->model='gv rx580gaming 4gd';
         $gpu11->interface='pcie x16';
         $gpu11->chipset='radeon rx 580';
         $gpu11->mem_size=4;
@@ -257,7 +257,7 @@ class GpuTableSeeder extends Seeder
         $gpu12=new \App\Models\Gpu();
         $gpu12->price=329.99;
         $gpu12->brand='zotac';
-        $gpu12->model='zt-p10700g-10m';
+        $gpu12->model='zt p10700g 10m';
         $gpu12->interface='pcie x16';
         $gpu12->chipset='geforce gtx 1070';
         $gpu12->mem_size=8;
@@ -279,7 +279,7 @@ class GpuTableSeeder extends Seeder
         $gpu13=new \App\Models\Gpu();
         $gpu13->price=544.98;
         $gpu13->brand='asus';
-        $gpu13->model='rog strix-gtx1080-abg-gaming';
+        $gpu13->model='rog strix gtx1080 abg gaming';
         $gpu13->interface='pcie x16';
         $gpu13->chipset='geforce gtx 1080';
         $gpu13->mem_size=8;
@@ -301,7 +301,7 @@ class GpuTableSeeder extends Seeder
         $gpu14=new \App\Models\Gpu();
         $gpu14->price=697.49;
         $gpu14->brand='evga';
-        $gpu14->model='11g-p4-6390-kr';
+        $gpu14->model='11g p4 6390 kr';
         $gpu14->interface='pcie x16';
         $gpu14->chipset='geforce gtx 1080ti';
         $gpu14->mem_size=11;
@@ -323,7 +323,7 @@ class GpuTableSeeder extends Seeder
         $gpu15=new \App\Models\Gpu();
         $gpu15->price=489.99;
         $gpu15->brand='evga';
-        $gpu15->model='08g-p4-6183-kr';
+        $gpu15->model='08g p4 6183 kr';
         $gpu15->interface='pcie x16';
         $gpu15->chipset='geforce gtx 1080';
         $gpu15->mem_size=8;
@@ -367,7 +367,7 @@ class GpuTableSeeder extends Seeder
         $gpu17=new \App\Models\Gpu();
         $gpu17->price=289.99;
         $gpu17->brand='asus';
-        $gpu17->model='rog-strix-gtx1060-o6g-gaming';
+        $gpu17->model='rog strix gtx1060 o6g gaming';
         $gpu17->interface='pcie x16';
         $gpu17->chipset='geforce gtx 1060 6gb';
         $gpu17->mem_size=6;
@@ -411,7 +411,7 @@ class GpuTableSeeder extends Seeder
         $gpu19=new \App\Models\Gpu();
         $gpu19->price=99.99;
         $gpu19->brand='gigabyte';
-        $gpu19->model='gv-rx460wf2oc-4gd';
+        $gpu19->model='gv rx460wf2oc 4gd';
         $gpu19->interface='pcie x16';
         $gpu19->chipset='radeon rx 460';
         $gpu19->mem_size=4;
@@ -433,7 +433,7 @@ class GpuTableSeeder extends Seeder
         $gpu20=new \App\Models\Gpu();
         $gpu20->price=174.99;
         $gpu20->brand='msi';
-        $gpu20->model='rx750 amor 4g oc';
+        $gpu20->model='rx570 amor 4g oc';
         $gpu20->interface='pcie x16';
         $gpu20->chipset='radeon rx 570';
         $gpu20->mem_size=4;

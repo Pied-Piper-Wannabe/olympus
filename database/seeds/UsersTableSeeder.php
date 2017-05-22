@@ -18,18 +18,21 @@ class UsersTableSeeder extends Seeder
 		$user->name = 'user';
 		$user->email = 'user@gmail.com';
 		$user->password = Hash::make('password');
+		$user->photo = '01.jpg';
 		$user->save();
 
 		$user1 = new \App\User();
 		$user1->name = 'testUser';
 		$user1->email = 'testUser@gmail.com';
 		$user1->password = Hash::make('password');
+		$user1->photo = '02.jpg';
 		$user1->save();
 
 		$user2 = new \App\User();
 		$user2->name = 'pcmasterrace';
 		$user2->email = 'pcmasterrace@gmail.com';
 		$user2->password = Hash::make('password');
+		$user2->photo = '03.png';
 		$user2->save();
 	}
 }

@@ -34,12 +34,6 @@
 					<a class="dropdown-item" href="/parts/misc">Misc</a>
 				</div>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">REVIEWS</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">BLOG</a>
-			</li>
 			@if (Auth::check())
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,7 +41,7 @@
 					</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="/account">View Profile</a>
-						<a class="dropdown-item" href="/account/edit">Edit Account</a>
+						<a class="dropdown-item" href="/account/{{Auth::user()->id}}/edit">Edit Account</a>
 						<a class="dropdown-item" href="/logout">Logout</a>
 					</div>
 			</li>
