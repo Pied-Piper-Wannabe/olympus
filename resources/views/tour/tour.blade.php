@@ -1,7 +1,16 @@
 @extends('layouts.master')
 
 @section('content')
-<h1 id="app"></h1>
-
-<script src="{{url('')}}/js/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tour</title>
+        <link rel="stylesheet" href="/css/react-screen.css"/> 
+    </head>
+    <body>
+        <div id="react-screen"></div>
+        <script src="{{url('')}}/js/bundle.js"></script>
+    </body>
+</html>
 @stop
