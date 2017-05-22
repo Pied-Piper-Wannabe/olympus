@@ -9,7 +9,7 @@
 			<img src="/images/users/01.jpeg" alt="user01">
 		</div>
 		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-			<form action="{{ action ('AccountsController@store') }}" method="POST">
+			<form action="{{ action ('AccountsController@store') }}" method="POST" enctype="multipart/form-data" novalidate>
 			{!! csrf_field() !!}
 				<div class="form-group">
 			    <label for="username">Username</label>
@@ -18,6 +18,11 @@
 			  <div class="form-group">
 			    <label for="email">Email address</label>
 			    <input name="email" type="email" class="form-control" id="email" value="{{$user->email}}">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputFile">Photo</label>
+			    <input type="file" name="image" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+			    <small id="fileHelp" class="form-text text-muted">Max image size: 2MB.</small>
 			  </div>
 			  <input type="hidden" name="user" value="{{$user->id}}">
 			  <button type="submit" class="btn btn-primary">Submit</button>

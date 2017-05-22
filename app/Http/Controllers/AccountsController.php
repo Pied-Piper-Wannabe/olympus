@@ -20,10 +20,10 @@ class AccountsController extends Controller
 	public function index()
 	{
 		$loggedInUser = "";
-    if (Auth::check()) {
-        $loggedInUser = Auth::user();
-    }
-    $builds = \App\Models\Builds::where('created_by', $loggedInUser->id)->orderBy('created_at', 'desc')->paginate(10);
+		if (Auth::check()) {
+				$loggedInUser = Auth::user();
+		}
+		$builds = \App\Models\Builds::where('created_by', $loggedInUser->id)->orderBy('created_at', 'desc')->paginate(10);
 
 		$data = array( 
 			'user' => $loggedInUser,
@@ -51,31 +51,52 @@ class AccountsController extends Controller
 	public function store(Request $request)
 	{
 		if (Auth::check()) {
-        $loggedInUser = Auth::user();
-    }else {
-    	flash('Please login or register!')->error();
+				$loggedInUser = Auth::user();
+		}else {
+			flash('Please login or register!')->error();
 			return view('auth/login');
-    }
+		}
 
-    if($loggedInUser->id !== $request->user) {
-    	abort(403);
-    }else{
-    	$id = $loggedInUser->id;
-    }
+		if($loggedInUser->id !== $request->user) {
+			abort(403);
+		}else{
+			$id = $loggedInUser->id;
+		}
 
-    if(Input::get('name') !== null && Input::get('email') !== null) {
-    	$user = \App\User::findOrFail($id);
-    	$user->name = Input::get('name');
-    	$user->email = Input::get('email');
-    	$user->save();
-    	return redirect()->action('AccountsController@index');
-    }else {
-    	$data = array( 
+		if(Input::get('name') !== null && Input::get('email') !== null) {
+			$user = \App\User::findOrFail($id);
+			$user->name = Input::get('name');
+			$user->email = Input::get('email');
+
+			if($request->hasFile('image')){
+				if($request->file('image')->getClientSize() <= 41943040 
+						&& ($request->file('image')->getClientOriginalExtension() == 'png' 
+								|| $request->file('image')->getClientOriginalExtension() == 'jpg'
+								|| $request->file('image')->getClientOriginalExtension() == 'gif'
+								|| $request->file('image')->getClientOriginalExtension() == 'jpeg'))
+				{
+				//change image name
+				$imageName =  $user->id . '.' . 
+				$request->file('image')->getClientOriginalExtension();
+				//Move image to new folder
+				$request->file('image')->move(
+						base_path() . '/public/images/uploads/users/', $imageName
+				);
+				//Save image name to server
+				$user->photo = $imageName;
+				}else{
+						return "fail";  // TODO: Change this to a functional error message
+				}
+			}
+			$user->save();
+			return redirect()->action('AccountsController@index');
+		}else {
+			$data = array( 
 			'user' => $loggedInUser
 			);
 			flash('Invalid Username or Email... empty')->error();
-    	return view('accounts/edit', $data);
-    }
+			return view('accounts/edit', $data);
+		}
 	}
 
 	/**
@@ -106,17 +127,17 @@ class AccountsController extends Controller
 	public function edit($id)
 	{
 		if (Auth::check()) {
-        $loggedInUser = Auth::user();
-    }else {
-    	flash('Please login or register!')->error();
+				$loggedInUser = Auth::user();
+		}else {
+			flash('Please login or register!')->error();
 			return view('auth/login');
-    }
+		}
 
-    if($loggedInUser->id !== $id) {
-    	abort(403);
-    }
+		if($loggedInUser->id !== $id) {
+			abort(403);
+		}
 
-    $data = array( 
+		$data = array( 
 			'user' => $loggedInUser
 			);
 
