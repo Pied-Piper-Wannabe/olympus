@@ -6,7 +6,11 @@
 	<div class="row">
 		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0 userPhoto centerText">
 			<h1>Edit Account</h1>
-			<img src="/images/users/01.jpeg" alt="user01">
+			@if($user->photo === null)
+			<img src="/images/users/01.jpeg" alt="profile photo">
+			@else
+			<img src="/images/uploads/users/{{$user->photo}}" alt="profile photo">
+			@endif
 		</div>
 		<div class="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
 			<form action="{{ action ('AccountsController@store') }}" method="POST" enctype="multipart/form-data" novalidate>
