@@ -7,4 +7,4 @@ Homestead.json
 *.log
 *.codekit3
 .DS_Store
-
+bundle.js
