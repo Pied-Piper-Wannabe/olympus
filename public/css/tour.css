@@ -11,6 +11,13 @@ html, body {
     width: 100%;
     height: 100%;
 }
+.coverDiagram {
+    background: url(/images/DIY-diagram.png) center center;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 .killMargin {
     margin: 0;
 }
