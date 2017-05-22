@@ -5,10 +5,18 @@ import { Screen, ScreenSlice } from 'react-screen';
 ReactDOM.render((
     <Screen>
         <ScreenSlice>
-            <h1>First Screen</h1>
+            <div class="cover">
+                <h1 class="killMargin"></h1>
+            </div>
         </ScreenSlice>
         <ScreenSlice>
             <h1>Second Screen</h1>
+        </ScreenSlice>
+        <ScreenSlice>
+            <h1>Third Screen</h1>
+        </ScreenSlice>
+        <ScreenSlice>
+            <h1>Third Screen</h1>
         </ScreenSlice>
         <ScreenSlice>
             <h1>Third Screen</h1>
