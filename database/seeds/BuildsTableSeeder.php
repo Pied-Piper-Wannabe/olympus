@@ -29,6 +29,7 @@ class BuildsTableSeeder extends Seeder
 		$build->case = 1;
 		$build->operating_system = 1;
 		$build->misc = '1,2';
+		$build->photo = '01.jpg';
 		$build->save();
 
 		$build1 = new \App\Models\Builds();
@@ -46,24 +47,26 @@ class BuildsTableSeeder extends Seeder
 		$build1->case = 9;
 		$build1->operating_system = 1;
 		$build1->misc = '1,2';
+		$build1->photo = '02.jpg';
 		$build1->save();
 
-		$build1 = new \App\Models\Builds();
-		$build1->name = 'AMD Best';
-		$build1->created_by = 3;
-		$build1->description = 'AMD for life man.';
-		$build1->price = 1457.21;
-		$build1->motherboard = 6;
-		$build1->cpu = 1;
-		$build1->gpu = 3;
-		$build1->ram = 4;
-		$build1->cpu_cooler = 4;
-		$build1->hdd = 5;
-		$build1->psu = 7;
-		$build1->case = 9;
-		$build1->operating_system = 1;
-		$build1->misc = '1,2';
-		$build1->save();
+		$build2 = new \App\Models\Builds();
+		$build2->name = 'AMD Best';
+		$build2->created_by = 3;
+		$build2->description = 'AMD for life man.';
+		$build2->price = 1457.21;
+		$build2->motherboard = 6;
+		$build2->cpu = 1;
+		$build2->gpu = 3;
+		$build2->ram = 4;
+		$build2->cpu_cooler = 4;
+		$build2->hdd = 5;
+		$build2->psu = 7;
+		$build2->case = 9;
+		$build2->operating_system = 1;
+		$build2->misc = '1,2';
+		$build2->photo = '03.jpg';
+		$build2->save();
 
 	}
 }

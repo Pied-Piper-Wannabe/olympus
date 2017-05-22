@@ -53,6 +53,9 @@ class CreateBuildsTable extends Migration
 
 			$table->integer('misc')->nullable()->unsigned();
 			$table->foreign('misc')->references('id')->on('misc');
+
+			$table->string('photo')->nullable();
+			
 			$table->timestamps();
 
 		});
