@@ -47,7 +47,7 @@
 					</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="/account">View Profile</a>
-						<a class="dropdown-item" href="/account/edit">Edit Account</a>
+						<a class="dropdown-item" href="/account/{{Auth::user()->id}}/edit">Edit Account</a>
 						<a class="dropdown-item" href="/logout">Logout</a>
 					</div>
 			</li>

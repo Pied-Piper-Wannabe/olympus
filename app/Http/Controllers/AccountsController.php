@@ -50,7 +50,32 @@ class AccountsController extends Controller
 	 */
 	public function store(Request $request)
 	{
-		//
+		if (Auth::check()) {
+        $loggedInUser = Auth::user();
+    }else {
+    	flash('Please login or register!')->error();
+			return view('auth/login');
+    }
+
+    if($loggedInUser->id !== $request->user) {
+    	abort(403);
+    }else{
+    	$id = $loggedInUser->id;
+    }
+
+    if(Input::get('name') !== null && Input::get('email') !== null) {
+    	$user = \App\User::findOrFail($id);
+    	$user->name = Input::get('name');
+    	$user->email = Input::get('email');
+    	$user->save();
+    	return redirect()->action('AccountsController@index');
+    }else {
+    	$data = array( 
+			'user' => $loggedInUser
+			);
+			flash('Invalid Username or Email... empty')->error();
+    	return view('accounts/edit', $data);
+    }
 	}
 
 	/**
@@ -72,7 +97,22 @@ class AccountsController extends Controller
 	 */
 	public function edit($id)
 	{
-		return view('accounts/edit');
+		if (Auth::check()) {
+        $loggedInUser = Auth::user();
+    }else {
+    	flash('Please login or register!')->error();
+			return view('auth/login');
+    }
+
+    if($loggedInUser->id !== $id) {
+    	abort(403);
+    }
+
+    $data = array( 
+			'user' => $loggedInUser
+			);
+
+		return view('accounts/edit', $data);
 	}
 
 	/**
