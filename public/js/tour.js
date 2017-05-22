@@ -52,10 +52,15 @@ ReactDOM.render((
             <div class="coverDiagram"></div>
         </ScreenSlice>
         <ScreenSlice>
-            <h1>So how do I get started?</h1>
-        </ScreenSlice>
-        <ScreenSlice>
-            <h1>Ready to go?</h1>
+        <div id="colored">
+            <h1 class="descriptionExtra">So... how do I get started?</h1>
+            <p class="white textMargin">Ready to get started building your first PC?</p>
+            <p class="white textMargin">Click here to <a href="https://olympuspc.tech/builds/create">start your build</a>!</p>
+            <p class="white textMargin">Simply select the parts you would like to get started. We do all the heavy lifting for you by checking for compatibility in advance!</p>
+            <p class="white textMargin">Are you having trouble getting started? Check out our <a href="https://olympuspc.tech/builds#">pre-built PCs</a> & get inspired!</p>
+            <h2 class="white textMargin ascend">So what do you say? Are you ready to Ascend?</h2>
+            <a href="https://olympuspc.tech/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return to the site</a>
+        </div>
         </ScreenSlice>
     </Screen>
 ), document.getElementById('react-screen'));
