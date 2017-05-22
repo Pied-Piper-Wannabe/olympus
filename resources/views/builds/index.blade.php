@@ -130,7 +130,7 @@
 		</div>
 		@endforeach
 		<div class="col-sm-12 centerText botMarginSm">
-			<button type="button" class="btn btn-outline-primary btn-black">View More</button>
+			{!! $builds->render() !!}
 		</div>
 			</div>
 		</div>

@@ -1421,11 +1421,6 @@
 					@endforeach
 					@endif
 
-
-
-
-
-
 				</tbody>
 			</table>
 			{!! $parts->render() !!}
