@@ -170,6 +170,27 @@ class BuildsController extends Controller
 			$build->description = Input::get('buildDescription');
 		}
 
+		if($request->hasFile('image')){
+				if($request->file('image')->getClientSize() <= 41943040 
+						&& ($request->file('image')->getClientOriginalExtension() == 'png' 
+								|| $request->file('image')->getClientOriginalExtension() == 'jpg'
+								|| $request->file('image')->getClientOriginalExtension() == 'gif'
+								|| $request->file('image')->getClientOriginalExtension() == 'jpeg'))
+				{
+				//change image name
+				$imageName =  $build->id . '.' . 
+				$request->file('image')->getClientOriginalExtension();
+				//Move image to new folder
+				$request->file('image')->move(
+						base_path() . '/public/images/uploads/builds/', $imageName
+				);
+				//Save image name to server
+				$build->photo = $imageName;
+				}else{
+						return "fail";  // TODO: Change this to a functional error message
+				}
+			}
+
 		$build->save();
 
 		header( "Location: /builds/$id/edit" );

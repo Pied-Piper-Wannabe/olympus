@@ -118,7 +118,11 @@
 					<div class="votesBox">
 						<p class="votes">1200</p>
 					</div>
-					<a href="/builds/{{$build->id}}"><img src="/images/uploads/builds/{{$build->photo}}" alt="04"></a>
+					@if($build->photo === null)
+					<a href="/builds/{{$build->id}}"><img src="/images/terryCrews.jpg" alt="build photo"></a>
+					@else
+					<a href="/builds/{{$build->id}}"><img src="/images/uploads/builds/{{$build->photo}}" alt="build photo"></a>
+					@endif
 				</div>
 				@if($build->name === null)
 				<h3>Build Created On: {{$build->created_at}}</h3>
