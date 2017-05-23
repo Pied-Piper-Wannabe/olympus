@@ -58,8 +58,12 @@ ReactDOM.render((
             <p class="white textMargin">Simply select the parts you would like to get started. We do all the heavy lifting for you by checking for compatibility in advance!</p>
             <p class="white textMargin">Are you having trouble getting started? Check out our <a href="https://olympuspc.tech/builds#">pre-built PCs</a> & get inspired!</p>
             <h2 class="white textMargin ascend">ASCEND</h2>
-            <div><img class="mountain" src="/images/mountainLogo.png"/></div>
-            <a href="https://olympuspc.tech/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return to the site</a>
+            <div class="center">
+                <img class="mountain" src="/images/mountainLogo.png"/>
+            </div>
+            <div class="center">
+                <a href="https://olympuspc.tech/" class="btn btn-primary btn-lg active center" role="button" aria-pressed="true">Return to the site</a>
+            </div>
         </div>
         </ScreenSlice>
     </Screen>
