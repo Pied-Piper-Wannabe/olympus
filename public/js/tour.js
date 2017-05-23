@@ -42,7 +42,7 @@ ReactDOM.render((
                 </div>
                 <div class="row">
                   <div class="col-sm-2"><img class="hardware" src="/images/psu.png" /></div>
-                  <div class="col-sm-10">PSU: power supply or PSU is what you plug into the wall to power your machine.
+                  <div class="col-sm-10">PSU: A power supply or PSU is what you plug into the wall to power your machine.
                       It converts mains AC to low-voltage regulated DC power for the internal components of a computer.</div>
                 </div>
             </div>
@@ -53,12 +53,12 @@ ReactDOM.render((
         </ScreenSlice>
         <ScreenSlice>
         <div id="colored">
-            <h1 class="descriptionExtra">So... how do I get started?</h1>
-            <p class="white textMargin">Ready to get started building your first PC?</p>
+            <h1 class="descriptionExtra">Ready to get started building your PC?</h1>
             <p class="white textMargin">Click here to <a href="https://olympuspc.tech/builds/create">start your build</a>!</p>
             <p class="white textMargin">Simply select the parts you would like to get started. We do all the heavy lifting for you by checking for compatibility in advance!</p>
             <p class="white textMargin">Are you having trouble getting started? Check out our <a href="https://olympuspc.tech/builds#">pre-built PCs</a> & get inspired!</p>
-            <h2 class="white textMargin ascend">So what do you say? Are you ready to Ascend?</h2>
+            <h2 class="white textMargin ascend">ASCEND</h2>
+            <div><img class="mountain" src="/images/mountainLogo.png"/></div>
             <a href="https://olympuspc.tech/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return to the site</a>
         </div>
         </ScreenSlice>

@@ -48,7 +48,7 @@ html, body {
 .descriptionExtra {
     color: white;
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 55px;
 }
 .hardware {
     height: 80%;
@@ -61,7 +61,7 @@ html, body {
     color: white;
 }
 .textMargin {
-    margin-bottom: 105px;
+    margin-bottom: 40px;
 }
 .ascend {
     margin-top: 5%;
@@ -69,6 +69,13 @@ html, body {
 }
 .btn-primary {
     margin-left: 43%;
+    margin-top: 25px
+}
+.mountain {
+    width: 25%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 615px;
 }
 #colored {
     color: black;
