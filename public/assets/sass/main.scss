@@ -300,12 +300,12 @@ button, .btn {
 
 .signupForm {
 	label {
-		color: white;
+		color: #666666;
 	}
 
 	.inverseInput {
-		opacity: .5;
-		color: white;
+		opacity: .8;
+		color: black;
 		background: gray;
 	}
 }
@@ -386,7 +386,7 @@ button, .btn {
 
 
 .blackBackground {
-	background: black;
+	background: #d6d6d6;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -436,6 +436,7 @@ button, .btn {
  	height: 500px;
  	width:100%;
  	overflow: hidden;
+ 	opacity: .9;
 
   video {
 	  min-width: 100%;
