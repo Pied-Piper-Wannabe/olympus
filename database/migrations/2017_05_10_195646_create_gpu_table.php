@@ -33,6 +33,7 @@ class CreateGpuTable extends Migration
 			$table->integer('dvi_d');
 			$table->integer('display_port');
 			$table->integer('hdmi');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

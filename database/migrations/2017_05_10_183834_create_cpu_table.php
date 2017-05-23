@@ -29,6 +29,7 @@ class CreateCpuTable extends Migration
 			$table->boolean('hyperthreading_support');
 			$table->integer('max_supported_memory');
 			$table->string('intergrated_graphics');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

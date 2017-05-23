@@ -23,6 +23,7 @@ class CreateCpuCoolerTable extends Migration
 			$table->string('noise_level');
 			$table->string('fan_rpm');
 			$table->string('height');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}
