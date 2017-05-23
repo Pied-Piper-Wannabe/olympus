@@ -109,11 +109,6 @@
 
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<h3>Comments:</h3>
-		</div>
-	</div>
 </div>
 
 @stop

@@ -10,19 +10,12 @@
 			<img src="/images/uploads/users/{{$user->photo}}" alt="profile photo">
 			@endif
 			<h4 class="bold">{{$user->name}}</h4>	
-			<p>I am DOGE. Very wow. Such dog. I build. Lights! For Doge is king. Doge is god. Such needs. Very dog.</p>
 		</div>
 		<div class="col-md-9 col-sm-12">
 			<!-- Tab Menu -->
 			<ul class="nav nav-tabs" id="tabs">
 				<li class="nav-item">
 					<a class="nav-link active" href="#">Builds</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Reviews</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Comments</a>
 				</li>
 			</ul>
 			<!-- Tab Content -->
