@@ -93,6 +93,7 @@ class BuildsController extends Controller
 		$id = $request->session()->get('currentBuild');
 		$build = \App\Models\Builds::findOrFail($id);
 
+		$price = 0.00;
 
 		if($request->type === 'case') {
 			if($request->part === 'null'){
@@ -165,6 +166,7 @@ class BuildsController extends Controller
 			}
 		}
 
+
 		if(Input::has('buildName') || Input::has('buildDescription')) {
 			$build->name = Input::get('buildName');
 			$build->description = Input::get('buildDescription');
@@ -190,6 +192,8 @@ class BuildsController extends Controller
 						return "fail";  // TODO: Change this to a functional error message
 				}
 			}
+ 		
+		$build->price = Input::get('price');
 
 		$build->save();
 

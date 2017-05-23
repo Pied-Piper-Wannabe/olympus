@@ -21,7 +21,7 @@
 			<div class="buildBanner">
 				@if($build->price < 500.00)
 				<h3>Demigod</h3>
-				@elseif($build->price > 500.00 and $build->price < 1500.00)
+				@elseif($build->price > 500.00 && $build->price < 1500.00)
 				<h3>Olympian</h3>
 				@elseif($build->price > 1500.00)
 				<h3>Titan</h3>
@@ -30,7 +30,7 @@
 			<div class="buildTile">
 				<div class="imageBox">
 					<div class="votesBox">
-						<p class="votes">{{$build->price}}</p>
+						<p class="votes">${{$build->price}}</p>
 					</div>
 					@if($build->photo === null)
 					<a href="/builds/{{$build->id}}"><img src="/images/terryCrews.jpg" alt="build photo"></a>

@@ -275,6 +275,7 @@
           <label for="buildDescription">Build Description</label>
           <textarea name="buildDescription" class="form-control" id="buildDescription" rows="3">{{$build->description}}</textarea>
         </div>
+        <input type="hidden" name="price" value="{{$total}}">
         <div class="form-group">
           <label for="exampleInputFile">Photo</label>
           <input type="file" name="image" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">

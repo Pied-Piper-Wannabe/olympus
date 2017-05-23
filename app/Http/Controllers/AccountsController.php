@@ -57,7 +57,7 @@ class AccountsController extends Controller
 			return view('auth/login');
 		}
 
-		if($loggedInUser->id !== $request->user) {
+		if($loggedInUser->id != $request->user) {
 			abort(403);
 		}else{
 			$id = $loggedInUser->id;
@@ -133,7 +133,7 @@ class AccountsController extends Controller
 			return view('auth/login');
 		}
 
-		if($loggedInUser->id !== $id) {
+		if($loggedInUser->id != $id) {
 			abort(403);
 		}
 
