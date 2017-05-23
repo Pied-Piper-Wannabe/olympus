@@ -8,12 +8,12 @@
 			<h3>${{$part->price}}</h3>
 		</div>
 		<div class="col-sm-12 centerText">
-			<img class="showImgMax" src="http://core0.staticworld.net/images/article/2016/12/corei7front-100701359-orig.jpg" alt="">
+			<img class="showImgMax" src="/images/parts/{{$part->photo}}" alt="">
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6 col-sm-12">
+		<div class="col-sm-6 offset-sm-3 centerText">
 			<h3>SPECIFICATIONS</h3>
 
 			<!-- Cases -->
@@ -403,15 +403,6 @@
 				<p>{{$part->color}}</p>
 			</div>
 			@endif
-
-
-
-		</div>
-
-
-
-		<div class="col-md-6 col-sm-12">
-			<h3>REVIEWS</h3>
 		</div>
 	</div>
 

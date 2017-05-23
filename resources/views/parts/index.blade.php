@@ -216,7 +216,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/motherboard/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/motherboard/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->cpu_socket}}</td>
 						<td>{{$part->form_factor}}</td>
 						<td>{{$part->memory_slots}}</td>
@@ -249,7 +252,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/cpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/cpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->operating_frequency}}GHz</td>
 						<td>{{$part->number_of_cores}} Cores</td>
 						<td>{{$part->wattage}}W</td>
@@ -281,7 +287,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/gpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/gpu/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->chipset}}</td>
 						<td>{{$part->mem_size}}</td>
 						<td>{{$part->core_clock}}</td>
@@ -314,7 +323,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/memory/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/memory/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->type}}-{{$part->speed}}</td>
 						<td>{{$part->memory_slot_type}}</td>
 						<td>{{$part->CASlatency}}</td>
@@ -349,7 +361,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/storage/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/storage/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->form_factor}}</td>
 						@if($part->rpm === 0)
 						<td>SSD</td>
@@ -391,7 +406,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/power-supply/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/power-supply/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->form_factor}}</td>
 						<td>{{$part->efficiency}}</td>
 						<td>{{$part->max_wattage}}W</td>
@@ -423,7 +441,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/case/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/case/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->form_factor}}</td>
 						<td>{{$part->include_power}}</td>
 						<td>TBD SOON</td>
@@ -453,7 +474,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/cpu-cooler/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/cpu-cooler/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->fan_rpm}} RPM</td>
 						<td>{{$part->noise_level}}</td>
 						<td>TBD SOON</td>
@@ -482,7 +506,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/operating-system/{{$part->id}}">{{$part->brand}} {{$part->model}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/operating-system/{{$part->id}}">{{$part->brand}} {{$part->model}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->architecture}}</td>
 						<td>TBD SOON</td>
 						<td class="bold">${{$part->price}}</td>
@@ -510,7 +537,10 @@
 				<tbody>
 					@foreach ($parts as $part)
 					<tr>
-						<th scope="row"><a class="bold" href="/parts/misc/{{$part->id}}">{{$part->name}}</a></th>
+						<th scope="row">
+							<a class="bold" href="/parts/misc/{{$part->id}}">{{$part->name}}</a>
+							<img class="partThumbnail floatRight" src="/images/parts/{{$part->photo}}" alt="thumbnail">
+						</th>
 						<td>{{$part->type}}</td>
 						<td>{{$part->noise_level}}</td>
 						<td>TBD SOON</td>

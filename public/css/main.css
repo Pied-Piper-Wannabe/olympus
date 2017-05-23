@@ -73,6 +73,10 @@ img {
 .fullHeight {
   min-height: 100%; }
 
+.partThumbnail {
+  height: 50px;
+  width: auto; }
+
 button, .btn {
   border-radius: 0; }
 
