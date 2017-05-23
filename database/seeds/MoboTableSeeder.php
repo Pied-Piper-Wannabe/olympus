@@ -33,6 +33,7 @@ class MoboTableSeeder extends Seeder
         $mobo1->sata_express='none';
         $mobo1->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo1->onboard_usb3='yes';
+        $mobo1->photo='mobo/mobo1.jpeg';
         $mobo1->save();
 
         $mobo2=new \App\Models\Motherboard();
@@ -54,6 +55,7 @@ class MoboTableSeeder extends Seeder
         $mobo2->sata_express='none';
         $mobo2->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo2->onboard_usb3='yes';
+        $mobo2->photo='mobo/mobo2.jpeg';
         $mobo2->save();
 
         $mobo3=new \App\Models\Motherboard();
@@ -75,6 +77,7 @@ class MoboTableSeeder extends Seeder
         $mobo3->sata_express=1;
         $mobo3->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo3->onboard_usb3='yes';
+        $mobo3->photo='mobo/mobo3.jpeg';
         $mobo3->save();
 
         $mobo4=new \App\Models\Motherboard();
@@ -96,6 +99,7 @@ class MoboTableSeeder extends Seeder
         $mobo4->sata_express=2;
         $mobo4->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo4->onboard_usb3='yes';
+        $mobo4->photo='mobo/mobo4.jpeg';
         $mobo4->save();
 
         $mobo5=new \App\Models\Motherboard();
@@ -117,6 +121,7 @@ class MoboTableSeeder extends Seeder
         $mobo5->sata_express='none';
         $mobo5->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo5->onboard_usb3='yes';
+        $mobo5->photo='mobo/mobo5.jpeg';
         $mobo5->save();
 
         $mobo6=new \App\Models\Motherboard();
@@ -138,6 +143,7 @@ class MoboTableSeeder extends Seeder
         $mobo6->sata_express='none';
         $mobo6->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo6->onboard_usb3='yes';
+        $mobo6->photo='mobo/mobo6.jpeg';
         $mobo6->save();
 
         $mobo7=new \App\Models\Motherboard();
@@ -159,6 +165,7 @@ class MoboTableSeeder extends Seeder
         $mobo7->sata_express='none';
         $mobo7->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo7->onboard_usb3='yes';
+        $mobo7->photo='mobo/mobo7.jpeg';
         $mobo7->save();
 
         $mobo8=new \App\Models\Motherboard();
@@ -180,6 +187,7 @@ class MoboTableSeeder extends Seeder
         $mobo8->sata_express='none';
         $mobo8->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo8->onboard_usb3='yes';
+        $mobo8->photo='mobo/mobo8.jpeg';
         $mobo8->save();
 
         $mobo9=new \App\Models\Motherboard();
@@ -201,6 +209,7 @@ class MoboTableSeeder extends Seeder
         $mobo9->sata_express='none';
         $mobo9->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo9->onboard_usb3='yes';
+        $mobo9->photo='mobo/mobo9.jpeg';
         $mobo9->save();
 
         $mobo10=new \App\Models\Motherboard();
@@ -222,6 +231,7 @@ class MoboTableSeeder extends Seeder
         $mobo10->sata_express='none';
         $mobo10->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo10->onboard_usb3='yes';
+        $mobo10->photo='mobo/mobo10.jpeg';
         $mobo10->save();
 
         $mobo11=new \App\Models\Motherboard();
@@ -243,6 +253,7 @@ class MoboTableSeeder extends Seeder
         $mobo11->sata_express='none';
         $mobo11->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo11->onboard_usb3='yes';
+        $mobo11->photo='mobo/mobo11.jpeg';
         $mobo11->save();
 
         $mobo12=new \App\Models\Motherboard();
@@ -264,6 +275,7 @@ class MoboTableSeeder extends Seeder
         $mobo12->sata_express='none';
         $mobo12->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo12->onboard_usb3='yes';
+        $mobo12->photo='mobo/mobo12.jpeg';
         $mobo12->save();
 
         $mobo13=new \App\Models\Motherboard();
@@ -285,6 +297,7 @@ class MoboTableSeeder extends Seeder
         $mobo13->sata_express='none';
         $mobo13->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo13->onboard_usb3='yes';
+        $mobo13->photo='mobo/mobo13.jpeg';
         $mobo13->save();
 
         $mobo14=new \App\Models\Motherboard();
@@ -306,6 +319,7 @@ class MoboTableSeeder extends Seeder
         $mobo14->sata_express='none';
         $mobo14->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo14->onboard_usb3='yes';
+        $mobo14->photo='mobo/mobo14.jpeg';
         $mobo14->save();
 
         $mobo15=new \App\Models\Motherboard();
@@ -327,6 +341,7 @@ class MoboTableSeeder extends Seeder
         $mobo15->sata_express='none';
         $mobo15->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo15->onboard_usb3='yes';
+        $mobo15->photo='mobo/mobo15.jpeg';
         $mobo15->save();
 
         $mobo16=new \App\Models\Motherboard();
@@ -348,6 +363,7 @@ class MoboTableSeeder extends Seeder
         $mobo16->sata_express='none';
         $mobo16->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo16->onboard_usb3='yes';
+        $mobo16->photo='mobo/mobo16.jpeg';
         $mobo16->save();
 
         $mobo17=new \App\Models\Motherboard();
@@ -369,6 +385,7 @@ class MoboTableSeeder extends Seeder
         $mobo17->sata_express='none';
         $mobo17->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo17->onboard_usb3='yes';
+        $mobo17->photo='mobo/mobo17.jpeg';
         $mobo17->save();
 
         $mobo18=new \App\Models\Motherboard();
@@ -390,6 +407,7 @@ class MoboTableSeeder extends Seeder
         $mobo18->sata_express=1;
         $mobo18->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo18->onboard_usb3='yes';
+        $mobo18->photo='mobo/mobo18.jpeg';
         $mobo18->save();
 
         $mobo19=new \App\Models\Motherboard();
@@ -411,6 +429,7 @@ class MoboTableSeeder extends Seeder
         $mobo19->sata_express='none';
         $mobo19->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo19->onboard_usb3='yes';
+        $mobo19->photo='mobo/mobo19.jpeg';
         $mobo19->save();
 
         $mobo20=new \App\Models\Motherboard();
@@ -432,6 +451,7 @@ class MoboTableSeeder extends Seeder
         $mobo20->sata_express='none';
         $mobo20->onboard_ethernet='1 x 10/100/1000 Mbps';
         $mobo20->onboard_usb3='yes';
+        $mobo20->photo='mobo/mobo20.jpeg';
         $mobo20->save();
 
     }
