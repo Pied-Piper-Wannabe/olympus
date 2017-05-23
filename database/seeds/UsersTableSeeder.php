@@ -34,6 +34,13 @@ class UsersTableSeeder extends Seeder
 		$user2->password = Hash::make('password');
 		$user2->photo = '03.png';
 		$user2->save();
+
+		$user3 = new \App\User();
+		$user3->name = 'demo';
+		$user3->email = 'pcmasterrace@gmail.com';
+		$user3->password = Hash::make('demo');
+		$user3->photo = '02.png';
+		$user3->save();
 	}
 }
 

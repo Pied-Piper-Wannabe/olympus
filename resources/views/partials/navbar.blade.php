@@ -14,7 +14,6 @@
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					<a class="dropdown-item" href="/builds/create">My Builds</a>
 					<a class="dropdown-item" href="/builds">View Builds</a>
-					<a class="dropdown-item" href="#">Recommended Builds</a>
 				</div>
 			</li>
 			<li class="nav-item dropdown">
