@@ -50,7 +50,7 @@ class PartsController extends Controller
 
 				if(Input::has('search')){
 					$value= Input::get('search');
-					$parts = \App\Models\Motherboard::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+					$parts = \App\Models\Motherboard::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->orWhere('cpu_socket', 'like', "%$value%")->paginate(10);
 				}
 				break;
 			case 'memory':
