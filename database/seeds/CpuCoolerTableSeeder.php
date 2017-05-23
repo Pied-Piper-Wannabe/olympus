@@ -22,6 +22,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler1->noise_level='90.0-36.0 dbA';
         $cpucooler1->fan_rpm='600-900 rpm';
         $cpucooler1->height='159mm';
+        $cpucooler1->photo='cpucooler/cpucooler1.jpeg';
         $cpucooler1->save();
 
 
@@ -36,6 +37,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler2->noise_level='37.7 dbA';
         $cpucooler2->fan_rpm='2435rpm';
         $cpucooler2->height='none';
+        $cpucooler2->photo='cpucooler/cpucooler2.jpeg';
         $cpucooler2->save();
 
 
@@ -50,6 +52,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler3->noise_level='1.0-25.0 dbA';
         $cpucooler3->fan_rpm='330-1600 rpm';
         $cpucooler3->height='145mm';
+        $cpucooler3->photo='cpucooler/cpucooler3.jpeg';
         $cpucooler3->save();
 
 
@@ -64,6 +67,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler4->noise_level='21.0-38.0 dbA';
         $cpucooler4->fan_rpm='500-1800';
         $cpucooler4->height='none';
+        $cpucooler4->photo='cpucooler/cpucooler4.jpeg';
         $cpucooler4->save();
 
 
@@ -79,6 +83,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler5->noise_level='37.7 dbA';
         $cpucooler5->fan_rpm='2700rpm';
         $cpucooler5->height='none';
+        $cpucooler5->photo='cpucooler/cpucooler5.jpeg';
         $cpucooler5->save();
 
 
@@ -93,6 +98,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler6->noise_level='30.9 dbA';
         $cpucooler6->fan_rpm='2000 rpm';
         $cpucooler6->height='none';
+        $cpucooler6->photo='cpucooler/cpucooler6.jpeg';
         $cpucooler6->save();
 
 
@@ -107,6 +113,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler7->noise_level='30.0 dbA';
         $cpucooler7->fan_rpm='600-2500 rpm';
         $cpucooler7->height='47mm';
+        $cpucooler7->photo='cpucooler/cpucooler7.jpeg';
         $cpucooler7->save();
 
 
@@ -120,6 +127,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler8->noise_level='21.0-36.0 dbA';
         $cpucooler8->fan_rpm='50-2000rpm';
         $cpucooler8->height='none';
+        $cpucooler8->photo='cpucooler/cpucooler8.jpeg';
         $cpucooler8->save();
 
 
@@ -134,6 +142,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler9->noise_level='8.4-21.1 dbA';
         $cpucooler9->fan_rpm='400-1400 rpm';
         $cpucooler9->height='160mm';
+        $cpucooler9->photo='cpucooler/cpucooler9.jpeg';
         $cpucooler9->save();
 
 
@@ -148,6 +157,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler10->noise_level='17.0-35.0 dbA';
         $cpucooler10->fan_rpm='2800rpm';
         $cpucooler10->height='140mm';
+        $cpucooler10->photo='cpucooler/cpucooler10.jpeg';
         $cpucooler10->save();
 
 
@@ -163,6 +173,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler11->noise_level='9.0-31.0 dbA';
         $cpucooler11->fan_rpm='600-1600 rpm';
         $cpucooler11->height='160mm';
+        $cpucooler11->photo='cpucooler/cpucooler11.jpeg';
         $cpucooler11->save();
 
 
@@ -177,6 +188,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler12->noise_level='19.2-24.6 dbA';
         $cpucooler12->fan_rpm='300-1500 rpm';
         $cpucooler12->height='165mm';
+        $cpucooler12->photo='cpucooler/cpucooler12.jpeg';
         $cpucooler12->save();
 
 
@@ -191,6 +203,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler13->noise_level='17.0-35.0 dbA';
         $cpucooler13->fan_rpm='2800 rpm';
         $cpucooler13->height='140mm';
+        $cpucooler13->photo='cpucooler/cpucooler13.jpeg';
         $cpucooler13->save();
 
 
@@ -205,6 +218,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler14->noise_level='30.3 dbA';
         $cpucooler14->fan_rpm='1700 rpm';
         $cpucooler14->height='none';
+        $cpucooler14->photo='cpucooler/cpucooler14.jpeg';
         $cpucooler14->save();
 
 
@@ -220,6 +234,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler15->noise_level='13.4-19.0 dbA';
         $cpucooler15->fan_rpm='700-1200 rpm';
         $cpucooler15->height='171mm';
+        $cpucooler15->photo='cpucooler/cpucooler15.jpeg';
         $cpucooler15->save();
 
 
@@ -235,6 +250,7 @@ class CpuCoolerTableSeeder extends Seeder
         $cpucooler16->noise_level='40.0 dbA';
         $cpucooler16->fan_rpm='2000 rpm';
         $cpucooler16->height='none';
+        $cpucooler16->photo='cpucooler/cpucooler16.jpeg';
         $cpucooler16->save();
 
     }

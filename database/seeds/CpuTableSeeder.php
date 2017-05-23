@@ -30,6 +30,7 @@ class CpuTableSeeder extends Seeder
         $cpu1->hyperthreading_support='yes';
         $cpu1->max_supported_memory='0';
         $cpu1->intergrated_graphics='no';
+        $cpu1->photo='cpu/ryzen5.jpeg';
         $cpu1->save();
         
         $cpu2=new \App\Models\Cpu();
@@ -48,6 +49,7 @@ class CpuTableSeeder extends Seeder
         $cpu2->hyperthreading_support='no';
         $cpu2->max_supported_memory=64;
         $cpu2->intergrated_graphics='intel hd graphics 630';
+        $cpu2->photo='cpu/i5.jpeg';
         $cpu2->save();
         
         $cpu3=new \App\Models\Cpu();
@@ -66,6 +68,7 @@ class CpuTableSeeder extends Seeder
         $cpu3->hyperthreading_support='no';
         $cpu3->max_supported_memory=64;
         $cpu3->intergrated_graphics='intel hd graphics 630';
+        $cpu3->photo='cpu/i5.jpeg';
         $cpu3->save();
         
         $cpu4=new \App\Models\Cpu();
@@ -84,6 +87,7 @@ class CpuTableSeeder extends Seeder
         $cpu4->hyperthreading_support='yes';
         $cpu4->max_supported_memory=64;
         $cpu4->intergrated_graphics='intel hd graphics 630';
+        $cpu4->photo='cpu/i7.jpeg';
         $cpu4->save();
         
         $cpu5=new \App\Models\Cpu();
@@ -102,6 +106,7 @@ class CpuTableSeeder extends Seeder
         $cpu5->hyperthreading_support='yes';
         $cpu5->max_supported_memory='0';
         $cpu5->intergrated_graphics='no';
+        $cpu5->photo='cpu/ryzen5.jpeg';
         $cpu5->save();
         
         $cpu6=new \App\Models\Cpu();
@@ -120,6 +125,7 @@ class CpuTableSeeder extends Seeder
         $cpu6->hyperthreading_support='no';
         $cpu6->max_supported_memory='0';
         $cpu6->intergrated_graphics='Intel HD Graphics 530';
+        $cpu6->photo='cpu/i5.jpeg';
         $cpu6->save();
         
         $cpu7=new \App\Models\Cpu();
@@ -138,6 +144,7 @@ class CpuTableSeeder extends Seeder
         $cpu7->hyperthreading_support='yes';
         $cpu7->max_supported_memory=64;
         $cpu7->intergrated_graphics='Intel HD Graphics 530';
+        $cpu7->photo='cpu/i7.jpeg';
         $cpu7->save();
         
         $cpu8=new \App\Models\Cpu();
@@ -156,6 +163,7 @@ class CpuTableSeeder extends Seeder
         $cpu8->hyperthreading_support='yes';
         $cpu8->max_supported_memory=64;
         $cpu8->intergrated_graphics='Intel HD Graphics 610 ';
+        $cpu8->photo='cpu/pentium.jpeg';
         $cpu8->save();
         
         $cpu9=new \App\Models\Cpu();
@@ -174,6 +182,7 @@ class CpuTableSeeder extends Seeder
         $cpu9->hyperthreading_support='yes';
         $cpu9->max_supported_memory='0';
         $cpu9->intergrated_graphics='no';
+        $cpu9->photo='cpu/ryzen5.jpeg';
         $cpu9->save();
         
         $cpu10=new \App\Models\Cpu();
@@ -192,6 +201,7 @@ class CpuTableSeeder extends Seeder
         $cpu10->hyperthreading_support='yes';
         $cpu10->max_supported_memory='0';
         $cpu10->intergrated_graphics='no';
+        $cpu10->photo='cpu/ryzen5.jpeg';
         $cpu10->save();
         
         $cpu11=new \App\Models\Cpu();
@@ -210,6 +220,7 @@ class CpuTableSeeder extends Seeder
         $cpu11->hyperthreading_support='yes';
         $cpu11->max_supported_memory='0';
         $cpu11->intergrated_graphics='no';
+        $cpu11->photo='cpu/ryzen7.jpeg';
         $cpu11->save();
         
         $cpu12=new \App\Models\Cpu();
@@ -228,6 +239,7 @@ class CpuTableSeeder extends Seeder
         $cpu12->hyperthreading_support='yes';
         $cpu12->max_supported_memory=64;
         $cpu12->intergrated_graphics='intel HD Graphics 530';
+        $cpu12->photo='cpu/i3.jpeg';
         $cpu12->save();
         
         $cpu13=new \App\Models\Cpu();
@@ -246,6 +258,7 @@ class CpuTableSeeder extends Seeder
         $cpu13->hyperthreading_support='no';
         $cpu13->max_supported_memory='0';
         $cpu13->intergrated_graphics='no';
+        $cpu13->photo='cpu/amdfx8350.jpeg';
         $cpu13->save();
         
         $cpu14=new \App\Models\Cpu();
@@ -264,6 +277,7 @@ class CpuTableSeeder extends Seeder
         $cpu14->hyperthreading_support='yes';
         $cpu14->max_supported_memory='0';
         $cpu14->intergrated_graphics='no';
+        $cpu14->photo='cpu/ryzen7.jpeg';
         $cpu14->save();
         
         $cpu15=new \App\Models\Cpu();
@@ -282,6 +296,7 @@ class CpuTableSeeder extends Seeder
         $cpu15->hyperthreading_support='yes';
         $cpu15->max_supported_memory='0';
         $cpu15->intergrated_graphics='no';
+        $cpu15->photo='cpu/ryzen7.jpeg';
         $cpu15->save();
         
         $cpu16=new \App\Models\Cpu();
@@ -300,6 +315,7 @@ class CpuTableSeeder extends Seeder
         $cpu16->hyperthreading_support='no';
         $cpu16->max_supported_memory=64;
         $cpu16->intergrated_graphics='intel HD graphics 530';
+        $cpu16->photo='cpu/i5.jpeg';
         $cpu16->save();
         
         $cpu17=new \App\Models\Cpu();
@@ -318,6 +334,7 @@ class CpuTableSeeder extends Seeder
         $cpu17->hyperthreading_support='no';
         $cpu17->max_supported_memory='0';
         $cpu17->intergrated_graphics='no';
+        $cpu17->photo='cpu/amdfx6300.jpeg';
         $cpu17->save();
         
         $cpu18=new \App\Models\Cpu();
@@ -336,6 +353,7 @@ class CpuTableSeeder extends Seeder
         $cpu18->hyperthreading_support='yes';
         $cpu18->max_supported_memory=64;
         $cpu18->intergrated_graphics='intel HD graphics 630';
+        $cpu18->photo='cpu/i3.jpeg';
         $cpu18->save();
         
         $cpu19=new \App\Models\Cpu();
@@ -354,6 +372,7 @@ class CpuTableSeeder extends Seeder
         $cpu19->hyperthreading_support='yes';
         $cpu19->max_supported_memory=64;
         $cpu19->intergrated_graphics='intel HD graphics 630';
+        $cpu19->photo='cpu/i5.jpeg';
         $cpu19->save();
         
         $cpu20=new \App\Models\Cpu();
@@ -372,6 +391,7 @@ class CpuTableSeeder extends Seeder
         $cpu20->hyperthreading_support='yes';
         $cpu20->max_supported_memory=64;
         $cpu20->intergrated_graphics='intel HD graphics 630';
+        $cpu20->photo='cpu/i7.jpeg';
         $cpu20->save();
     }
 }

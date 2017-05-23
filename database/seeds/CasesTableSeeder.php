@@ -21,6 +21,7 @@ class CasesTableSeeder extends Seeder
         $case1->include_power='no';
         $case1->mobo_comp='atx, micro atx, mini itx';
         $case1->front_panel_usb='yes';
+        $case1->photo='case/case1.jpeg';
         $case1->save();
         
         $case2=new \App\Models\ComputerCase();
@@ -32,6 +33,7 @@ class CasesTableSeeder extends Seeder
         $case2->include_power='no';
         $case2->mobo_comp='atx, micro atx, mini itx';
         $case2->front_panel_usb='yes';
+        $case2->photo='case/case2.jpeg';
         $case2->save();
         
         $case3=new \App\Models\ComputerCase();
@@ -43,6 +45,7 @@ class CasesTableSeeder extends Seeder
         $case3->include_power='no';
         $case3->mobo_comp='atx, micro atx, mini itx';
         $case3->front_panel_usb='yes';
+        $case3->photo='case/case3.jpeg';
         $case3->save();
         
         $case4=new \App\Models\ComputerCase();
@@ -54,6 +57,7 @@ class CasesTableSeeder extends Seeder
         $case4->include_power='no';
         $case4->mobo_comp='atx, micro atx, mini itx';
         $case4->front_panel_usb='yes';
+        $case4->photo='case/case4.jpeg';
         $case4->save();
         
         $case5=new \App\Models\ComputerCase();
@@ -65,6 +69,7 @@ class CasesTableSeeder extends Seeder
         $case5->include_power='no';
         $case5->mobo_comp='atx, micro atx, mini itx';
         $case5->front_panel_usb='yes';
+        $case5->photo='case/case5.jpeg';
         $case5->save();
         
         $case6=new \App\Models\ComputerCase();
@@ -76,6 +81,7 @@ class CasesTableSeeder extends Seeder
         $case6->include_power='no';
         $case6->mobo_comp='atx, micro atx, mini itx';
         $case6->front_panel_usb='yes';
+        $case6->photo='case/case6.jpeg';
         $case6->save();
         
         $case7=new \App\Models\ComputerCase();
@@ -87,6 +93,7 @@ class CasesTableSeeder extends Seeder
         $case7->include_power='no';
         $case7->mobo_comp='atx, micro atx, mini itx';
         $case7->front_panel_usb='yes';
+        $case7->photo='case/case7.jpeg';
         $case7->save();
         
         $case8=new \App\Models\ComputerCase();
@@ -98,6 +105,7 @@ class CasesTableSeeder extends Seeder
         $case8->include_power='no';
         $case8->mobo_comp='atx, micro atx, mini itx';
         $case8->front_panel_usb='yes';
+        $case8->photo='case/case8.jpeg';
         $case8->save();
         
         $case9=new \App\Models\ComputerCase();
@@ -109,6 +117,7 @@ class CasesTableSeeder extends Seeder
         $case9->include_power='no';
         $case9->mobo_comp='atx, micro atx, mini itx';
         $case9->front_panel_usb='yes';
+        $case9->photo='case/case9.jpeg';
         $case9->save();
         
         $case10=new \App\Models\ComputerCase();
@@ -120,6 +129,7 @@ class CasesTableSeeder extends Seeder
         $case10->include_power='no';
         $case10->mobo_comp='micro atx, mini itx';
         $case10->front_panel_usb='yes';
+        $case10->photo='case/case10.jpeg';
         $case10->save();
         
         $case11=new \App\Models\ComputerCase();
@@ -131,6 +141,7 @@ class CasesTableSeeder extends Seeder
         $case11->include_power='no';
         $case11->mobo_comp='micro atx, mini itx';
         $case11->front_panel_usb='yes';
+        $case11->photo='case/case11.jpeg';
         $case11->save();
         
         $case12=new \App\Models\ComputerCase();
@@ -142,6 +153,7 @@ class CasesTableSeeder extends Seeder
         $case12->include_power='no';
         $case12->mobo_comp='micro atx, mini itx';
         $case12->front_panel_usb='yes';
+        $case12->photo='case/case12.jpeg';
         $case12->save();
         
         $case13=new \App\Models\ComputerCase();
@@ -153,6 +165,7 @@ class CasesTableSeeder extends Seeder
         $case13->include_power='no';
         $case13->mobo_comp='atx, eatx, micro atx, mini itx, xl atx';
         $case13->front_panel_usb='yes';
+        $case13->photo='case/case13.jpeg';
         $case13->save();
         
         $case14=new \App\Models\ComputerCase();
@@ -164,6 +177,7 @@ class CasesTableSeeder extends Seeder
         $case14->include_power='no';
         $case14->mobo_comp='atx, micro atx, mini itx';
         $case14->front_panel_usb='yes';
+        $case14->photo='case/case14.jpeg';
         $case14->save();
         
         $case15=new \App\Models\ComputerCase();
@@ -175,6 +189,7 @@ class CasesTableSeeder extends Seeder
         $case15->include_power='no';
         $case15->mobo_comp='atx, eatx, micro atx, mini itx';
         $case15->front_panel_usb='yes';
+        $case15->photo='case/case15.jpeg';
         $case15->save();
         
         $case16=new \App\Models\ComputerCase();
@@ -186,6 +201,7 @@ class CasesTableSeeder extends Seeder
         $case16->include_power='no';
         $case16->mobo_comp='atx, micro atx, mini itx';
         $case16->front_panel_usb='yes';
+        $case16->photo='case/case16.jpeg';
         $case16->save();
         
         $case17=new \App\Models\ComputerCase();
@@ -197,6 +213,7 @@ class CasesTableSeeder extends Seeder
         $case17->include_power='no';
         $case17->mobo_comp='atx, micro atx, mini itx';
         $case17->front_panel_usb='yes';
+        $case17->photo='case/case17.jpeg';
         $case17->save();
         
         $case18=new \App\Models\ComputerCase();
@@ -208,6 +225,7 @@ class CasesTableSeeder extends Seeder
         $case18->include_power='no';
         $case18->mobo_comp='micro atx, mini itx';
         $case18->front_panel_usb='yes';
+        $case18->photo='case/case18.jpeg';
         $case18->save();
         
         $case19=new \App\Models\ComputerCase();
@@ -219,6 +237,7 @@ class CasesTableSeeder extends Seeder
         $case19->include_power='no';
         $case19->mobo_comp='atx, micro atx, mini itx';
         $case19->front_panel_usb='yes';
+        $case19->photo='case/case19.jpeg';
         $case19->save();
         
         $case20=new \App\Models\ComputerCase();
@@ -230,6 +249,7 @@ class CasesTableSeeder extends Seeder
         $case20->include_power='no';
         $case20->mobo_comp='atx, eatx, micro atx, mini itx';
         $case20->front_panel_usb='yes';
+        $case20->photo='case/case20.jpeg';
         $case20->save();
     }
 }
