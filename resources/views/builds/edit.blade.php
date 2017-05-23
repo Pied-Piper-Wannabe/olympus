@@ -239,28 +239,6 @@
             </form>
           </tr>
           @endif
-            
-          <!-- MISC -->
-          @if($build->misc === null)
-          <tr>
-            <th scope="row"><a href="/parts/misc">Misc</a></th>
-            <td><a class="btn btn-primary btn-sm" href="/parts/misc" role="button">Choose Misc</a></td>
-            <td>$0.00</td>
-            <td></td>
-          </tr>
-          @else
-          <tr>
-            <th scope="row"><a href="/parts/misc/">Misc</a></th>
-            <td><a href="/parts/misc/{{$build->misc}}">{{$build->miscExtract->brand}} {{$build->miscExtract->model}}</a></td>
-            <td>${{$build->miscExtract->price}}</td>
-            <form method="POST" action="/builds">
-            {!! csrf_field() !!}
-              <input type="hidden" name="type" value="misc">
-              <input type="hidden" name="part" value="null">
-              <td><input type="submit" class="btn btn-danger btn-sm" value="remove"></td>
-            </form>
-          </tr>
-          @endif
         </tbody>
       </table>
     </div>
