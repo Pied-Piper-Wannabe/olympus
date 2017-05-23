@@ -32,6 +32,7 @@ class GpuTableSeeder extends Seeder
         $gpu1->dvi_d=1;
         $gpu1->display_port=2;
         $gpu1->hdmi=2;
+        $gpu1->photo='gpu/gpu1.jpeg';
         $gpu1->save();
         
         $gpu2=new \App\Models\Gpu();
@@ -54,6 +55,7 @@ class GpuTableSeeder extends Seeder
         $gpu2->dvi_d=1;
         $gpu2->display_port=1;
         $gpu2->hdmi=1;
+        $gpu2->photo='gpu/gpu2.jpeg';
         $gpu2->save();
         
         $gpu3=new \App\Models\Gpu();
@@ -76,6 +78,7 @@ class GpuTableSeeder extends Seeder
         $gpu3->dvi_d=1;
         $gpu3->display_port=3;
         $gpu3->hdmi=1;
+        $gpu3->photo='gpu/gpu3.jpeg';
         $gpu3->save();
         
         $gpu4=new \App\Models\Gpu();
@@ -98,6 +101,7 @@ class GpuTableSeeder extends Seeder
         $gpu4->dvi_d=1;
         $gpu4->display_port=3;
         $gpu4->hdmi=1;
+        $gpu4->photo='gpu/gpu4.jpeg';
         $gpu4->save();
         
         $gpu5=new \App\Models\Gpu();
@@ -120,6 +124,7 @@ class GpuTableSeeder extends Seeder
         $gpu5->dvi_d=1;
         $gpu5->display_port=2;
         $gpu5->hdmi=2;
+        $gpu5->photo='gpu/gpu5.jpeg';
         $gpu5->save();
         
         $gpu6=new \App\Models\Gpu();
@@ -142,6 +147,7 @@ class GpuTableSeeder extends Seeder
         $gpu6->dvi_d=1;
         $gpu6->display_port=1;
         $gpu6->hdmi=1;
+        $gpu6->photo='gpu/gpu6.jpeg';
         $gpu6->save();
         
         $gpu7=new \App\Models\Gpu();
@@ -164,6 +170,7 @@ class GpuTableSeeder extends Seeder
         $gpu7->dvi_d=1;
         $gpu7->display_port=3;
         $gpu7->hdmi=1;
+        $gpu7->photo='gpu/gpu7.jpeg';
         $gpu7->save();
         
         $gpu8=new \App\Models\Gpu();
@@ -186,6 +193,7 @@ class GpuTableSeeder extends Seeder
         $gpu8->dvi_d=1;
         $gpu8->display_port=3;
         $gpu8->hdmi=1;
+        $gpu8->photo='gpu/gpu8.jpeg';
         $gpu8->save();
         
         $gpu9=new \App\Models\Gpu();
@@ -208,6 +216,7 @@ class GpuTableSeeder extends Seeder
         $gpu9->dvi_d=1;
         $gpu9->display_port=2;
         $gpu9->hdmi=2;
+        $gpu9->photo='gpu/gpu9.jpeg';
         $gpu9->save();
         
         $gpu10=new \App\Models\Gpu();
@@ -230,6 +239,7 @@ class GpuTableSeeder extends Seeder
         $gpu10->dvi_d=1;
         $gpu10->display_port=3;
         $gpu10->hdmi=1;
+        $gpu10->photo='gpu/gpu10.jpeg';
         $gpu10->save();
         
         $gpu11=new \App\Models\Gpu();
@@ -252,6 +262,7 @@ class GpuTableSeeder extends Seeder
         $gpu11->dvi_d=1;
         $gpu11->display_port=3;
         $gpu11->hdmi=1;
+        $gpu11->photo='gpu/gpu11.jpeg';
         $gpu11->save();
         
         $gpu12=new \App\Models\Gpu();
@@ -274,6 +285,7 @@ class GpuTableSeeder extends Seeder
         $gpu12->dvi_d=1;
         $gpu12->display_port=3;
         $gpu12->hdmi=1;
+        $gpu12->photo='gpu/gpu12.jpeg';
         $gpu12->save();
         
         $gpu13=new \App\Models\Gpu();
@@ -296,6 +308,7 @@ class GpuTableSeeder extends Seeder
         $gpu13->dvi_d=1;
         $gpu13->display_port=2;
         $gpu13->hdmi=2;
+        $gpu13->photo='gpu/gpu13.jpeg';
         $gpu13->save();
         
         $gpu14=new \App\Models\Gpu();
@@ -318,6 +331,7 @@ class GpuTableSeeder extends Seeder
         $gpu14->dvi_d='none';
         $gpu14->display_port=3;
         $gpu14->hdmi=1;
+        $gpu14->photo='gpu/gpu14.jpeg';
         $gpu14->save();
         
         $gpu15=new \App\Models\Gpu();
@@ -340,6 +354,7 @@ class GpuTableSeeder extends Seeder
         $gpu15->dvi_d=1;
         $gpu15->display_port=3;
         $gpu15->hdmi=1;
+        $gpu15->photo='gpu/gpu15.jpeg';
         $gpu15->save();
         
         $gpu16=new \App\Models\Gpu();
@@ -362,6 +377,7 @@ class GpuTableSeeder extends Seeder
         $gpu16->dvi_d=1;
         $gpu16->display_port=1;
         $gpu16->hdmi=1;
+        $gpu16->photo='gpu/gpu16.jpeg';
         $gpu16->save();
         
         $gpu17=new \App\Models\Gpu();
@@ -384,6 +400,7 @@ class GpuTableSeeder extends Seeder
         $gpu17->dvi_d=1;
         $gpu17->display_port=2;
         $gpu17->hdmi=2;
+        $gpu17->photo='gpu/gpu17.jpeg';
         $gpu17->save();
         
         $gpu18=new \App\Models\Gpu();
@@ -406,6 +423,7 @@ class GpuTableSeeder extends Seeder
         $gpu18->dvi_d=1;
         $gpu18->display_port=3;
         $gpu18->hdmi=1;
+        $gpu18->photo='gpu/gpu18.jpeg';
         $gpu18->save();
         
         $gpu19=new \App\Models\Gpu();
@@ -428,6 +446,7 @@ class GpuTableSeeder extends Seeder
         $gpu19->dvi_d=1;
         $gpu19->display_port=1;
         $gpu19->hdmi=1;
+        $gpu19->photo='gpu/gpu19.jpeg';
         $gpu19->save();
         
         $gpu20=new \App\Models\Gpu();
@@ -450,6 +469,7 @@ class GpuTableSeeder extends Seeder
         $gpu20->dvi_d=1;
         $gpu20->display_port=3;
         $gpu20->hdmi=1;
+        $gpu20->photo='gpu/gpu20.jpeg';
         $gpu20->save();
     }
 }
