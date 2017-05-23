@@ -23,6 +23,7 @@ class CreatePsuTable extends Migration
 			$table->string('moduler');
 			$table->string('efficiency');
 			$table->integer('pcie_62pin');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

@@ -22,6 +22,7 @@ class CreateCaseTable extends Migration
 			$table->string('include_power');
 			$table->string('mobo_comp');
 			$table->string('front_panel_usb');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

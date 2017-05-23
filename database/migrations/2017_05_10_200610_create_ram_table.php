@@ -29,6 +29,7 @@ class CreateRamTable extends Migration
 			$table->string('ECC');
 			$table->string('registered');
 			$table->string('color');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

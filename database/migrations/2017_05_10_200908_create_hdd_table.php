@@ -22,6 +22,7 @@ class CreateHddTable extends Migration
 			$table->string('cache');
 			$table->integer('rpm');
 			$table->string('form_factor');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

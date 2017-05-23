@@ -65,7 +65,7 @@ class PsuTableSeeder extends Seeder
         $psu5=new \App\Models\Psu();
         $psu5->price=29.89;
         $psu5->brand='evga';
-        $psu5->model='none';
+        $psu5->model='430W 80+';
         $psu5->form_factor='atx12v/eps12v';
         $psu5->max_wattage=430;
         $psu5->fans=1;
@@ -101,7 +101,7 @@ class PsuTableSeeder extends Seeder
         $psu8=new \App\Models\Psu();
         $psu8->price=33.90;
         $psu8->brand='seasonic';
-        $psu8->model='none';
+        $psu8->model='S12II 520W 80+';
         $psu8->form_factor='atx12v/eps12v';
         $psu8->max_wattage=520;
         $psu8->fans=1;
@@ -137,7 +137,7 @@ class PsuTableSeeder extends Seeder
         $psu11=new \App\Models\Psu();
         $psu11->price=38.98;
         $psu11->brand='evga';
-        $psu11->model='none';
+        $psu11->model='500W 80+';
         $psu11->form_factor='atx';
         $psu11->max_wattage=500;
         $psu11->fans=1;
@@ -197,7 +197,7 @@ class PsuTableSeeder extends Seeder
         $psu16=new \App\Models\Psu();
         $psu16->price=79.39;
         $psu16->brand='evga';
-        $psu16->model='supernova';
+        $psu16->model='SuperNOVA GS 550W 80+';
         $psu16->form_factor='atx';
         $psu16->max_wattage=850;
         $psu16->fans=1;
@@ -221,7 +221,7 @@ class PsuTableSeeder extends Seeder
         $psu18=new \App\Models\Psu();
         $psu18->price=31.49;
         $psu18->brand='evga';
-        $psu18->model='none';
+        $psu18->model='500w';
         $psu18->form_factor='atx12v/eps12v';
         $psu18->max_wattage=500;
         $psu18->fans=1;
@@ -233,7 +233,7 @@ class PsuTableSeeder extends Seeder
         $psu19=new \App\Models\Psu();
         $psu19->price=49.99;
         $psu19->brand='thermaltake';
-        $psu19->model='none';
+        $psu19->model='750w gold';
         $psu19->form_factor='atx12v/eps12v';
         $psu19->max_wattage=750;
         $psu19->fans=1;
@@ -243,9 +243,9 @@ class PsuTableSeeder extends Seeder
         $psu19->save();
         
         $psu20=new \App\Models\Psu();
-        $psu20->price=16.00;
+        $psu20->price=41.65;
         $psu20->brand='thermaltake';
-        $psu20->model='none';
+        $psu20->model='tr2 500w';
         $psu20->form_factor='atx12v';
         $psu20->max_wattage=500;
         $psu20->fans=1;

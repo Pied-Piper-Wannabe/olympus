@@ -20,6 +20,7 @@ class CreateOsTable extends Migration
 			$table->integer('max_supported_memory');
 			$table->string('kernel');
 			$table->string('brand');
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}
