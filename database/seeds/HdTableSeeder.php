@@ -69,7 +69,7 @@ class HdTableSeeder extends Seeder
         $hdd5->cache='512mb';
         $hdd5->rpm=0;
         $hdd5->form_factor='m.2-2280';
-        $hdd5->photo='hd/hd5.jpeg';
+        $hdd5->photo='hd/hdd5.jpeg';
         $hdd5->save();
         
         $hdd6=new \App\Models\Hdd();
