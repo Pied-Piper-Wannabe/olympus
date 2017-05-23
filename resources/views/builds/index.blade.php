@@ -22,29 +22,43 @@
 						</form>
 
 					<!-- Tier Checks -->
-				  <fieldset class="form-group">
-				    <legend>Tiers</legend>
-				    <div class="form-check">
-				      <label class="form-check-label">
-				        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				        Titan
-				      </label>
-				    </div>
-				    <div class="form-check">
-				    <label class="form-check-label">
-				        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-				        Olympian
-				      </label>
-				    </div>
-				    <div class="form-check">
-				    <label class="form-check-label">
-				        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-				        Demigod
-				      </label>
-				    </div>  
-				  </fieldset>
-
-				  <button type="submit" class="btn btn-block btn-outline-primary btn-black">Submit</button>
+					<form class="botMarginSm" action="/builds" method="GET">
+						{!! csrf_field() !!}
+					  <fieldset class="form-group">
+					    <legend>Tiers</legend>
+					    <div class="form-check">
+					      <label class="form-check-label">
+					      	@if($tier == 'titan')
+					        <input type="radio" class="form-check-input" name="tier" id="tier1" value="titan" checked>
+					        @else
+					        <input type="radio" class="form-check-input" name="tier" id="tier1" value="titan">
+					        @endif
+					        Titan
+					      </label>
+					    </div>
+					    <div class="form-check">
+					    <label class="form-check-label">
+					    		@if($tier == 'olympian')
+					        <input type="radio" class="form-check-input" name="tier" id="tier2" value="olympian" checked>
+					        @else
+					        <input type="radio" class="form-check-input" name="tier" id="tier2" value="olympian">
+					        @endif
+					        Olympian
+					      </label>
+					    </div>
+					    <div class="form-check">
+					    <label class="form-check-label">
+					    		@if($tier == 'demigod')
+					        <input type="radio" class="form-check-input" name="tier" id="tier2" value="demigod" checked>
+					        @else
+					        <input type="radio" class="form-check-input" name="tier" id="tier2" value="demigod">
+					        @endif
+					        Demigod
+					      </label>
+					    </div>  
+					  </fieldset>
+					  <button type="submit" class="btn btn-block btn-outline-primary btn-black">Submit</button>
+					</form>
 				</div>
 			</div>
 		</div>

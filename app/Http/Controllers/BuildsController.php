@@ -31,12 +31,30 @@ class BuildsController extends Controller
 	 */
 	public function index()
 	{
+		$tier = 'titan'; //Default
 		// Default (most recent)
 		$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
 
 		if(Input::has('search')){
 			$value= Input::get('search');
 			$builds = \App\Models\Builds::where('name', 'like', "%$value%")->paginate(10);
+		}
+
+		if(Input::has('tier')){
+			$value= Input::get('tier');
+
+			if($value == 'titan'){
+				$tier = 'titan';
+				$builds = \App\Models\Builds::where('price', '>=', 1500)->paginate(10);
+			}
+			if($value == 'olympian'){
+				$tier = 'olympian';
+				$builds = \App\Models\Builds::whereBetween('price', [500, 1500])->paginate(10);
+			}
+			if($value == 'demigod'){
+				$tier = 'demigod';
+				$builds = \App\Models\Builds::where('price', '<=', 500)->paginate(10);
+			}
 		}
 
 		if(Input::has('sort')){
@@ -56,7 +74,8 @@ class BuildsController extends Controller
 
 
 		$data = array(
-			'builds' => $builds);
+			'builds' => $builds,
+			'tier' => $tier);
 
 		return view('builds/index', $data);
 	}
