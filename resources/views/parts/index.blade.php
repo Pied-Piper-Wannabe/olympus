@@ -167,10 +167,6 @@
 						Sort
 					</button>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Most Popular Today</a>
-						<a class="dropdown-item" href="#">Most Popular This Week</a>
-						<a class="dropdown-item" href="#">Most Popular All Time</a>
-						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Newest</a>
 						<a class="dropdown-item" href="#">Oldest</a>
 						<div class="dropdown-divider"></div>

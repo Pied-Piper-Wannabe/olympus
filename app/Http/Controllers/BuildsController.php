@@ -34,6 +34,11 @@ class BuildsController extends Controller
 		// Default (most recent)
 		$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
 
+		if(Input::has('search')){
+			$value= Input::get('search');
+			$builds = \App\Models\Builds::where('name', 'like', "%$value%")->paginate(10);
+		}
+
 		if(Input::has('sort')){
 			if(Input::get('sort') === 'oldest') {
 				$builds = \App\Models\Builds::orderBy('created_at', 'asc')->paginate(10);
@@ -47,6 +52,8 @@ class BuildsController extends Controller
 				$builds = \App\Models\Builds::orderBy('created_at', 'desc')->paginate(10);
 			}
 		}
+
+
 
 		$data = array(
 			'builds' => $builds);

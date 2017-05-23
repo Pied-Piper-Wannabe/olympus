@@ -12,64 +12,38 @@
 				<div class="collapse" id="collapseFilter">
 					<h2 class="centerText">Filter</h2>
 
+					<form class="botMarginSm" action="/builds" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Search</button>
+						</form>
+
 					<!-- Tier Checks -->
-					<h3>Tier</h3>
-					<div class="form-check">
+				  <fieldset class="form-group">
+				    <legend>Tiers</legend>
+				    <div class="form-check">
+				      <label class="form-check-label">
+				        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				        Titan
+				      </label>
+				    </div>
+				    <div class="form-check">
 				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      Titan
-				    </label>
-				  </div>
-				  <div class="form-check">
+				        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+				        Olympian
+				      </label>
+				    </div>
+				    <div class="form-check">
 				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      Olympian
-				    </label>
-				  </div>
-				  <div class="form-check">
-				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      Demigod
-				    </label>
-				  </div>
+				        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+				        Demigod
+				      </label>
+				    </div>  
+				  </fieldset>
 
-					<!-- Price -->
-					<h3>Price: </h3>
-				  <div class="form-group">
-				    <label for="minPriceBox">Min price:</label>
-				    <input type="number" class="form-control" id="minPriceBox" aria-describedby="minPrice" placeholder="min price">
-				    <label for="maxPriceBox">Max price:</label>
-				    <input type="number" class="form-control" id="maxPriceBox" aria-describedby="maxPrice" placeholder="max price">
-				  </div>
-
-					<!-- Card Type -->
-				  <h3>GPU</h3>
-					<div class="form-check">
-				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      AMD
-				    </label>
-				  </div>
-				  <div class="form-check">
-				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      Nvidia
-				    </label>
-				  </div>
-
-				  <h3>CPU</h3>
-					<div class="form-check">
-				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      Intel
-				    </label>
-				  </div>
-				  <div class="form-check">
-				    <label class="form-check-label">
-				      <input type="checkbox" class="form-check-input">
-				      AMD
-				    </label>
-				  </div>
 				  <button type="submit" class="btn btn-block btn-outline-primary btn-black">Submit</button>
 				</div>
 			</div>
@@ -88,10 +62,6 @@
 				    Sort
 				  </button>
 				  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-				    <a class="dropdown-item" href="#">Most Popular Today</a>
-				    <a class="dropdown-item" href="#">Most Popular This Week</a>
-				    <a class="dropdown-item" href="#">Most Popular All Time</a>
-				    <div class="dropdown-divider"></div>
 				    <a class="dropdown-item" href="/builds?sort=newest">Newest</a>
 				    <a class="dropdown-item" href="/builds?sort=oldest">Oldest</a>
 				    <div class="dropdown-divider"></div>
