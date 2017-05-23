@@ -49,6 +49,18 @@ p, a {
 	color: red;
 }
 
+.greenText {
+	color: green;
+}
+
+.redText {
+	color: red;
+}
+
+.yellowText {
+	color: yellow;
+}
+
 .compGreen {
 	color: green;
 	font-weight: 700;
@@ -60,7 +72,8 @@ p, a {
 }
 
 .compRed {
-	color: red;
+	color: white;
+	background: red;
 	font-weight: 700;
 }
 // =========END General Text Attributes END=======
@@ -333,6 +346,13 @@ button, .btn {
 	padding-bottom: 40px;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.terminal {
+	color: #e2e2e2;
+	background: black;
+	width: 100%;
+	padding: 20px;
 }
 // =========END Unique Classes END===========
 
