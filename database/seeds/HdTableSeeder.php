@@ -21,6 +21,7 @@ class HdTableSeeder extends Seeder
         $hdd1->cache='none';
         $hdd1->rpm=0;
         $hdd1->form_factor='2.5';
+        $hdd1->photo='hd/samsungssd.jpeg';
         $hdd1->save();
         
         $hdd2=new \App\Models\Hdd();
@@ -32,6 +33,7 @@ class HdTableSeeder extends Seeder
         $hdd2->cache='none';
         $hdd2->rpm=0;
         $hdd2->form_factor='2.5';
+        $hdd2->photo='hd/samsungssd.jpeg';
         $hdd2->save();
         
         $hdd3=new \App\Models\Hdd();
@@ -43,6 +45,7 @@ class HdTableSeeder extends Seeder
         $hdd3->cache='64mb';
         $hdd3->rpm=7200;
         $hdd3->form_factor='3.5';
+        $hdd3->photo='hd/seagate.jpeg';
         $hdd3->save();
         
         $hdd4=new \App\Models\Hdd();
@@ -54,6 +57,7 @@ class HdTableSeeder extends Seeder
         $hdd4->cache='64mb';
         $hdd4->rpm=7200;
         $hdd4->form_factor='3.5';
+        $hdd4->photo='hd/wd1tb.jpeg';
         $hdd4->save();
         
         $hdd5=new \App\Models\Hdd();
@@ -65,6 +69,7 @@ class HdTableSeeder extends Seeder
         $hdd5->cache='512mb';
         $hdd5->rpm=0;
         $hdd5->form_factor='m.2-2280';
+        $hdd5->photo='hd/hd5.jpeg';
         $hdd5->save();
         
         $hdd6=new \App\Models\Hdd();
@@ -76,6 +81,7 @@ class HdTableSeeder extends Seeder
         $hdd6->cache='none';
         $hdd6->rpm=0;
         $hdd6->form_factor='2.5';
+        $hdd6->photo='hd/samsungssd.jpeg';
         $hdd6->save();
         
         $hdd7=new \App\Models\Hdd();
@@ -87,6 +93,7 @@ class HdTableSeeder extends Seeder
         $hdd7->cache='64mb';
         $hdd7->rpm=7200;
         $hdd7->form_factor='3.5';
+        $hdd7->photo='hd/hdd7.jpeg';
         $hdd7->save();
         
         $hdd8=new \App\Models\Hdd();
@@ -98,6 +105,7 @@ class HdTableSeeder extends Seeder
         $hdd8->cache='64mb';
         $hdd8->rpm=7200;
         $hdd8->form_factor='3.5';
+        $hdd8->photo='hd/hdd8.jpeg';
         $hdd8->save();
         
         $hdd9=new \App\Models\Hdd();
@@ -109,6 +117,7 @@ class HdTableSeeder extends Seeder
         $hdd9->cache='none';
         $hdd9->rpm=0;
         $hdd9->form_factor='pcie';
+        $hdd9->photo='hd/hdd9.jpeg';
         $hdd9->save();
         
         $hdd10=new \App\Models\Hdd();
@@ -120,6 +129,7 @@ class HdTableSeeder extends Seeder
         $hdd10->cache='none';
         $hdd10->rpm=0;
         $hdd10->form_factor='2.5';
+        $hdd10->photo='hd/hdd10.jpeg';
         $hdd10->save();
         
         $hdd11=new \App\Models\Hdd();
@@ -131,6 +141,7 @@ class HdTableSeeder extends Seeder
         $hdd11->cache='512mb';
         $hdd11->rpm=0;
         $hdd11->form_factor='m.2-2280';
+        $hdd11->photo='hd/samsungssd.jpeg';
         $hdd11->save();
         
         $hdd12=new \App\Models\Hdd();
@@ -142,6 +153,7 @@ class HdTableSeeder extends Seeder
         $hdd12->cache='none';
         $hdd12->rpm=0;
         $hdd12->form_factor='2.5';
+        $hdd12->photo='hd/sandisk.jpeg';
         $hdd12->save();
         
         $hdd13=new \App\Models\Hdd();
@@ -153,6 +165,7 @@ class HdTableSeeder extends Seeder
         $hdd13->cache='none';
         $hdd13->rpm=0;
         $hdd13->form_factor='2.5';
+        $hdd13->photo='hd/hdd10.jpeg';
         $hdd13->save();
         
         $hdd14=new \App\Models\Hdd();
@@ -164,6 +177,7 @@ class HdTableSeeder extends Seeder
         $hdd14->cache='512mb';
         $hdd14->rpm=0;
         $hdd14->form_factor='m.2-2280';
+        $hdd14->photo='hd/samsungssd.jpeg';
         $hdd14->save();
         
         $hdd15=new \App\Models\Hdd();
@@ -175,6 +189,7 @@ class HdTableSeeder extends Seeder
         $hdd15->cache='none';
         $hdd15->rpm=0;
         $hdd15->form_factor='2.5';
+        $hdd15->photo='hd/sandisk.jpeg';
         $hdd15->save();
         
         $hdd16=new \App\Models\Hdd();
@@ -186,6 +201,7 @@ class HdTableSeeder extends Seeder
         $hdd16->cache='64mb';
         $hdd16->rpm=7200;
         $hdd16->form_factor='3.5';
+        $hdd16->photo='hd/hdd16.jpeg';
         $hdd16->save();
 
     }
