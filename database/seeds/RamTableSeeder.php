@@ -30,6 +30,7 @@ class RamTableSeeder extends Seeder
         $ram1->ECC='no';
         $ram1->registered='no';
         $ram1->color='black and yellow';
+        $ram1->photo='ram/ram1.jpeg';
         $ram1->save();
         
         $ram2=new \App\Models\Ram();
@@ -48,6 +49,7 @@ class RamTableSeeder extends Seeder
         $ram2->ECC='no';
         $ram2->registered='no';
         $ram2->color='black and white';
+        $ram2->photo='ram/ram2.jpeg';
         $ram2->save();
         
         $ram3=new \App\Models\Ram();
@@ -66,6 +68,7 @@ class RamTableSeeder extends Seeder
         $ram3->ECC='no';
         $ram3->registered='no';
         $ram3->color='black and silver';
+        $ram3->photo='ram/ram3.jpeg';
         $ram3->save();
         
         $ram4=new \App\Models\Ram();
@@ -84,6 +87,7 @@ class RamTableSeeder extends Seeder
         $ram4->ECC='no';
         $ram4->registered='no';
         $ram4->color='black and silver';
+        $ram4->photo='ram/ram4.jpeg';
         $ram4->save();
         
         $ram5=new \App\Models\Ram();
@@ -102,6 +106,7 @@ class RamTableSeeder extends Seeder
         $ram5->ECC='no';
         $ram5->registered='no';
         $ram5->color='silver';
+        $ram5->photo='ram/ram5.jpeg';
         $ram5->save();
         
         $ram6=new \App\Models\Ram();
@@ -120,6 +125,7 @@ class RamTableSeeder extends Seeder
         $ram6->ECC='no';
         $ram6->registered='no';
         $ram6->color='black and green';
+        $ram6->photo='ram/ram6.jpeg';
         $ram6->save();
         
         $ram7=new \App\Models\Ram();
@@ -138,6 +144,7 @@ class RamTableSeeder extends Seeder
         $ram7->ECC='no';
         $ram7->registered='no';
         $ram7->color='black and red';
+        $ram7->photo='ram/ram7.jpeg';
         $ram7->save();
         
         $ram8=new \App\Models\Ram();
@@ -156,6 +163,7 @@ class RamTableSeeder extends Seeder
         $ram8->ECC='no';
         $ram8->registered='no';
         $ram8->color='black';
+        $ram8->photo='ram/ram8.jpeg';
         $ram8->save();
         
         $ram9=new \App\Models\Ram();
@@ -174,6 +182,7 @@ class RamTableSeeder extends Seeder
         $ram9->ECC='no';
         $ram9->registered='no';
         $ram9->color='black and red';
+        $ram9->photo='ram/ram9.jpeg';
         $ram9->save();
         
         $ram10=new \App\Models\Ram();
@@ -192,6 +201,7 @@ class RamTableSeeder extends Seeder
         $ram10->ECC='no';
         $ram10->registered='no';
         $ram10->color='black';
+        $ram10->photo='ram/ram10.jpeg';
         $ram10->save();
         
         $ram11=new \App\Models\Ram();
@@ -210,6 +220,7 @@ class RamTableSeeder extends Seeder
         $ram11->ECC='no';
         $ram11->registered='no';
         $ram11->color='black and silver';
+        $ram11->photo='ram/ram11.jpeg';
         $ram11->save();
         
         $ram12=new \App\Models\Ram();
@@ -228,6 +239,7 @@ class RamTableSeeder extends Seeder
         $ram12->ECC='no';
         $ram12->registered='no';
         $ram12->color='black and silver';
+        $ram12->photo='ram/ram12.jpeg';
         $ram12->save();
         
         $ram13=new \App\Models\Ram();
@@ -246,6 +258,7 @@ class RamTableSeeder extends Seeder
         $ram13->ECC='no';
         $ram13->registered='no';
         $ram13->color='red';
+        $ram13->photo='ram/ram13.jpeg';
         $ram13->save();
         
         $ram14=new \App\Models\Ram();
@@ -264,6 +277,7 @@ class RamTableSeeder extends Seeder
         $ram14->ECC='yes';
         $ram14->registered='no';
         $ram14->color='black and gold';
+        $ram14->photo='ram/ram14.jpeg';
         $ram14->save();
         
         $ram15=new \App\Models\Ram();
@@ -282,6 +296,7 @@ class RamTableSeeder extends Seeder
         $ram15->ECC='no';
         $ram15->registered='no';
         $ram15->color='black and yellow';
+        $ram15->photo='ram/ram15.jpeg';
         $ram15->save();
         
         $ram16=new \App\Models\Ram();
@@ -300,6 +315,7 @@ class RamTableSeeder extends Seeder
         $ram16->ECC='no';
         $ram16->registered='no';
         $ram16->color='white';
+        $ram16->photo='ram/ram16.jpeg';
         $ram16->save();
         
         $ram17=new \App\Models\Ram();
@@ -318,6 +334,7 @@ class RamTableSeeder extends Seeder
         $ram17->ECC='yes';
         $ram17->registered='yes';
         $ram17->color='black and green';
+        $ram17->photo='ram/ram17.jpeg';
         $ram17->save();
         
         $ram18=new \App\Models\Ram();
@@ -336,6 +353,7 @@ class RamTableSeeder extends Seeder
         $ram18->ECC='no';
         $ram18->registered='no';
         $ram18->color='red';
+        $ram18->photo='ram/ram18.jpeg';
         $ram18->save();
        
     }
