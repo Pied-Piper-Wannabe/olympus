@@ -17,7 +17,7 @@ class PartsController extends Controller
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function index($type)
+	public function index(Request $request, $type)
 	{
 		if (Auth::check()) {
 			$loggedInUser = Auth::user()->id;
@@ -29,42 +29,92 @@ class PartsController extends Controller
 			case 'cpu':
 				$type = 'CPUs';
 				$parts = \App\Models\Cpu::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Cpu::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'cpu-cooler':
 				$type = 'CPU Coolers';
 				$parts = \App\Models\CpuCooler::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\CpuCooler::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'motherboard':
 				$type = 'Motherboards';
 				$parts = \App\Models\Motherboard::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Motherboard::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'memory':
 				$type = 'Memory';
 				$parts = \App\Models\Ram::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Ram::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'storage':
 				$type = 'Storage Devices';
 				$parts = \App\Models\Hdd::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Hdd::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'gpu':
 				$type = 'GPUs';
 				$parts = \App\Models\Gpu::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Gpu::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'case':
 				$type = 'Cases';
 				$parts = \App\Models\ComputerCase::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\ComputerCase::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'power-supply':
 				$type = 'PSUs';
 				$parts = \App\Models\Psu::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Psu::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'operating-system':
 				$type = 'Operating Systems';
 				$parts = \App\Models\Os::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Os::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 			case 'misc':
 				$type = 'Misc';
 				$parts = \App\Models\Misc::paginate(10);
+
+				if(Input::has('search')){
+					$value= Input::get('search');
+					$parts = \App\Models\Misc::where('model', 'like', "%$value%")->orWhere('brand', 'like', "%$value%")->paginate(10);
+				}
 				break;
 		}
 

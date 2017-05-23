@@ -34,8 +34,8 @@
 					<label for="verifyPassword">Verify Password</label>
 					<input type="password" class="form-control inverseInput" name="password_confirmation" id="password_confirmation" placeholder="Password" data-required>
 				</div>
-				<button type="submit" class="btn btn-primary">Signup</button>
-				<a href="/login" class="btn btn-primary floatRight">Go to login</a>
+				<button type="submit" class="btn btn-outline-primary btn-black">Signup</button>
+				<a href="/login" class="btn btn-outline-primary floatRight btn-black">Go to login</a>
 			</form>
 			@if (count($errors))
 			<ul>

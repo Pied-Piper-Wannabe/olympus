@@ -32,8 +32,8 @@
 						<input type="checkbox" name="remember"> Remember Me
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary">Login</button>
-				<a href="/register" class="btn btn-primary floatRight">Signup</a>
+				<button type="submit" class="btn btn-outline-primary btn-black">Login</button>
+				<a href="/register" class="btn btn-outline-primary floatRight btn-black">Signup</a>
 			</form>
 		@if (count($errors))
 		<ul>

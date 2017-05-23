@@ -11,13 +11,124 @@
 				</button>
 				<div class="collapse" id="collapseFilter">
 					<h2 class="centerText">Parts</h2>
-					<form action="">
-						<div class="form-group">
-							<label for="search">Search</label>
-							<input type="email" class="form-control" id="search" placeholder="search">
-						</div>
-						<button type="submit" class="btn btn-primary btn-block">Submit</button>
-					</form>
+					@if($type === 'Motherboards')
+						<form action="/parts/motherboard" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========CPU Table========= -->
+					@if($type === 'CPUs')
+						<form action="/parts/cpu" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========GPU Table========= -->
+					@if($type === 'GPUs')
+						<form action="/parts/gpu" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========RAM Table========= -->
+					@if($type === 'Memory')
+						<form action="/parts/memory" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+						
+					<!-- ==========HDD Table========= -->
+					@if($type === 'Storage Devices')
+						<form action="/parts/storage" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========PSU Table========= -->
+					@if($type === 'PSUs')
+						<form action="/parts/power-supply" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========Case Table========= -->
+					@if($type === 'Cases')
+						<form action="/parts/case" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========CPU Cooler========= -->
+					@if($type === 'CPU Coolers')
+						<form action="/parts/cpu-cooler" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========OS Table========= -->
+					@if($type === 'Operating Systems')
+						<form action="/parts/operating-system" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
+
+					<!-- ==========Misc Table========= -->
+					@if($type === 'Misc')
+						<form action="/parts/misc" method="GET">
+						{!! csrf_field() !!}
+							<div class="form-group">
+								<label for="search">Search</label>
+								<input type="text" name="search" class="form-control" id="search" placeholder="search">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">Submit</button>
+						</form>
+					@endif
 					<ul class="nav flex-column topMarginSm">
 						<li class="nav-item">
 							<a class="nav-link active" href="/parts/cpu">CPU</a>
