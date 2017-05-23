@@ -9,7 +9,7 @@
 <div class="container">
   <div class="row">
     <div id="tourBox" class="col-sm-12 centerText border">
-      <p>Need Help? <a href="/builds/tour">Take the tour!</a> or checkout finished <a href="/builds">builds.</a></p>
+      <p>Need Help? <a href="/tour">Take the tour!</a> or checkout finished <a href="/builds">builds.</a></p>
     </div>
   </div>
   <div class="row">
