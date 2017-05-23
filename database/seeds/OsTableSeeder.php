@@ -20,6 +20,7 @@ class OsTableSeeder extends Seeder
         $os1->max_supported_memory=512;
         $os1->kernel='none';
         $os1->brand='Microsoft';
+        $os1->photo='os/os1.jpeg';
         $os1->save();
 
         $os2= new \App\Models\Os();
@@ -29,6 +30,7 @@ class OsTableSeeder extends Seeder
         $os2->max_supported_memory=16;
         $os2->kernel='none';
         $os2->brand='Microsoft';
+        $os2->photo='os/os2.jpeg';
         $os2->save();
 
         $os3= new \App\Models\Os();
@@ -38,6 +40,7 @@ class OsTableSeeder extends Seeder
         $os3->max_supported_memory=16;
         $os3->kernel='none';
         $os3->brand='Microsoft';
+        $os3->photo='os/os3.jpeg';
         $os3->save();
 
         $os4= new \App\Models\Os();
@@ -47,6 +50,7 @@ class OsTableSeeder extends Seeder
         $os4->max_supported_memory=128;
         $os4->kernel='none';
         $os4->brand='Microsoft';
+        $os4->photo='os/os4.jpeg';
         $os4->save();
 
 

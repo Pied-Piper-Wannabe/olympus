@@ -24,6 +24,7 @@ class PsuTableSeeder extends Seeder
         $psu1->moduler='semi'; 
         $psu1->efficiency='80+bronze';
         $psu1->pcie_62pin= 2;
+        $psu1->photo='psu/psu1.jpeg';
         $psu1->save();
         
         $psu2=new \App\Models\Psu();
@@ -36,6 +37,7 @@ class PsuTableSeeder extends Seeder
         $psu2->moduler='no';
         $psu2->efficiency='80+bronze';
         $psu2->pcie_62pin= 2;
+        $psu2->photo='psu/psu2.jpeg';
         $psu2->save();
         
         $psu3=new \App\Models\Psu();
@@ -48,6 +50,7 @@ class PsuTableSeeder extends Seeder
         $psu3->moduler='full';
         $psu3->efficiency='80+gold';
         $psu3->pcie_62pin= 4;
+        $psu3->photo='psu/psu3.jpeg';
         $psu3->save();
         
         $psu4=new \App\Models\Psu();
@@ -60,6 +63,7 @@ class PsuTableSeeder extends Seeder
         $psu4->moduler='full';
         $psu4->efficiency='80+gold';
         $psu4->pcie_62pin=4;
+        $psu4->photo='psu/psu4.jpeg';
         $psu4->save();
         
         $psu5=new \App\Models\Psu();
@@ -72,6 +76,7 @@ class PsuTableSeeder extends Seeder
         $psu5->moduler='no';
         $psu5->efficiency='80+';
         $psu5->pcie_62pin=0;
+        $psu5->photo='psu/psu5.jpeg';
         $psu5->save();
         
         $psu6=new \App\Models\Psu();
@@ -84,6 +89,7 @@ class PsuTableSeeder extends Seeder
         $psu6->moduler='full';
         $psu6->efficiency='80+gold';
         $psu6->pcie_62pin=2;
+        $psu6->photo='psu/psu6.jpeg';
         $psu6->save();
         
         $psu7=new \App\Models\Psu();
@@ -96,6 +102,7 @@ class PsuTableSeeder extends Seeder
         $psu7->moduler='full';
         $psu7->efficiency='80=gold';
         $psu7->pcie_62pin=2;
+        $psu7->photo='psu/psu7.jpeg';
         $psu7->save();
         
         $psu8=new \App\Models\Psu();
@@ -108,6 +115,7 @@ class PsuTableSeeder extends Seeder
         $psu8->moduler='full';
         $psu8->efficiency='80+bronze';
         $psu8->pcie_62pin=1;
+        $psu8->photo='psu/psu8.jpeg';
         $psu8->save();
         
         $psu9=new \App\Models\Psu();
@@ -120,6 +128,7 @@ class PsuTableSeeder extends Seeder
         $psu9->moduler='semi';
         $psu9->efficiency='80+bronze';
         $psu9->pcie_62pin=2;
+        $psu9->photo='psu/psu9.jpeg';
         $psu9->save();
         
         $psu10=new \App\Models\Psu();
@@ -132,6 +141,7 @@ class PsuTableSeeder extends Seeder
         $psu10->moduler='semi';
         $psu10->efficiency='80+bronze';
         $psu10->pcie_62pin=4;
+        $psu10->photo='psu/psu10.jpeg';
         $psu10->save();
         
         $psu11=new \App\Models\Psu();
@@ -144,6 +154,7 @@ class PsuTableSeeder extends Seeder
         $psu11->moduler='semi';
         $psu11->efficiency='80+bronze';
         $psu11->pcie_62pin=2;
+        $psu11->photo='psu/psu11.jpeg';
         $psu11->save();
         
         $psu12=new \App\Models\Psu();
@@ -156,6 +167,7 @@ class PsuTableSeeder extends Seeder
         $psu12->moduler='no';
         $psu12->efficiency='80=bronze';
         $psu12->pcie_62pin=2;
+        $psu12->photo='psu/psu12.jpeg';
         $psu12->save();
         
         $psu13=new \App\Models\Psu();
@@ -168,6 +180,7 @@ class PsuTableSeeder extends Seeder
         $psu13->moduler='full';
         $psu13->efficiency='80+plantinum';
         $psu13->pcie_62pin=4;
+        $psu13->photo='psu/psu13.jpeg';
         $psu13->save();
         
         $psu14=new \App\Models\Psu();
@@ -180,6 +193,7 @@ class PsuTableSeeder extends Seeder
         $psu14->moduler='full';
         $psu14->efficiency='80+gold';
         $psu14->pcie_62pin=4;
+        $psu14->photo='psu/psu14.jpeg';
         $psu14->save();
         
         $psu15=new \App\Models\Psu();
@@ -192,6 +206,7 @@ class PsuTableSeeder extends Seeder
         $psu15->moduler='full';
         $psu15->efficiency='80+gold';
         $psu15->pcie_62pin=4;
+        $psu15->photo='psu/psu15.jpeg';
         $psu15->save();
         
         $psu16=new \App\Models\Psu();
@@ -204,6 +219,7 @@ class PsuTableSeeder extends Seeder
         $psu16->moduler='full';
         $psu16->efficiency='80+gold';
         $psu16->pcie_62pin=2;
+        $psu16->photo='psu/psu16.jpeg';
         $psu16->save();
         
         $psu17=new \App\Models\Psu();
@@ -216,6 +232,7 @@ class PsuTableSeeder extends Seeder
         $psu17->moduler='full';
         $psu17->efficiency='80+gold';
         $psu17->pcie_62pin=2;
+        $psu17->photo='psu/psu17.jpeg';
         $psu17->save();
         
         $psu18=new \App\Models\Psu();
@@ -228,6 +245,7 @@ class PsuTableSeeder extends Seeder
         $psu18->moduler='no';
         $psu18->efficiency='80+';
         $psu18->pcie_62pin=2;
+        $psu18->photo='psu/psu18.jpeg';
         $psu18->save();
         
         $psu19=new \App\Models\Psu();
@@ -240,6 +258,7 @@ class PsuTableSeeder extends Seeder
         $psu19->moduler='semi';
         $psu19->efficiency='80+gold';
         $psu19->pcie_62pin=4;
+        $psu19->photo='psu/psu19.jpeg';
         $psu19->save();
         
         $psu20=new \App\Models\Psu();
@@ -252,6 +271,7 @@ class PsuTableSeeder extends Seeder
         $psu20->moduler='no';
         $psu20->efficiency='none';
         $psu20->pcie_62pin=1;
+        $psu20->photo='psu/psu20.jpeg';
         $psu20->save();
     }
 }
