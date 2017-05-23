@@ -118,17 +118,6 @@
 						</form>
 					@endif
 
-					<!-- ==========Misc Table========= -->
-					@if($type === 'Misc')
-						<form action="/parts/misc" method="GET">
-						{!! csrf_field() !!}
-							<div class="form-group">
-								<label for="search">Search</label>
-								<input type="text" name="search" class="form-control" id="search" placeholder="search">
-							</div>
-							<button type="submit" class="btn btn-primary btn-block">Submit</button>
-						</form>
-					@endif
 					<ul class="nav flex-column topMarginSm">
 						<li class="nav-item">
 							<a class="nav-link active" href="/parts/cpu">CPU</a>
@@ -156,10 +145,7 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/parts/operating-system">Operating System</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/parts/misc">Misc</a>
-						</li>				
+						</li>			
 					</ul>
 				</div>
 			</div>
@@ -181,10 +167,6 @@
 						Sort
 					</button>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Most Popular Today</a>
-						<a class="dropdown-item" href="#">Most Popular This Week</a>
-						<a class="dropdown-item" href="#">Most Popular All Time</a>
-						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Newest</a>
 						<a class="dropdown-item" href="#">Oldest</a>
 						<div class="dropdown-divider"></div>

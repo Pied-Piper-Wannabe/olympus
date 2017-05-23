@@ -11,8 +11,6 @@
               <li><a href="/tour">Visual Tour</a></li>
               <li><a href="/faq">FAQs</a></li>
               <li><a href="">Contact Us</a></li>
-              <li><a href="">Privacy</a></li>
-              <li><a href="">Terms</a></li>
             </ul>
           </div>
           <div class="col-md-3 offset-md-1 col-sm-12 offset-sm-0 centerText">
