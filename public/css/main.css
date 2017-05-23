@@ -219,10 +219,10 @@ button, .btn {
     color: white; }
 
 .signupForm label {
-  color: white; }
+  color: #666666; }
 .signupForm .inverseInput {
-  opacity: .5;
-  color: white;
+  opacity: .8;
+  color: black;
   background: gray; }
 
 .userPhoto img {
@@ -278,7 +278,7 @@ button, .btn {
   top: 0; }
 
 .blackBackground {
-  background: black;
+  background: #d6d6d6;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -309,7 +309,8 @@ button, .btn {
   position: relative;
   height: 500px;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: .9; }
   #createAccountVideo video {
     min-width: 100%;
     min-height: 100%; }
