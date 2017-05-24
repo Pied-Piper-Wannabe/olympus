@@ -19,6 +19,10 @@ Route::get('/contact', function () {
   return view('contact');
 });
 
+Route::get('/faq', function () {
+  return view('faq');
+});
+
 Route::get('/', 'BuildsController@frontPage');
 Route::get('/builds/new', 'BuildsController@setupBuild');
 
@@ -46,7 +50,4 @@ Route::get('/register', 'Auth\AuthController@getRegister');
 
 Route::post('/register', 'Auth\AuthController@postRegister');
 
-//FAQ route
-Route::get('/faq', function () {
-	return view('/help/faq');
-});
+
