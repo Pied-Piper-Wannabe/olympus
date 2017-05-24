@@ -21,7 +21,7 @@
       <p>#<span class="compGreen"> Compatibility Check</span>: <span class="greenText">{{$compatable}}</span></p>
       @elseif($compatable === 'warning')
       <p>#<span class="compYellow"> Compatibility Check</span>: <span class="yellowText">{{$compatable}}</span></p>
-      @elseif($compatable === 'NOT COMPATIBLE')
+      @elseif($compatable === 'NOT COMPATABLE')
       <p>#<span class="compRed"> Compatibility Check</span>: <span class="redText">{{$compatable}}</span></p>
       @endif
 
