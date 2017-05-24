@@ -246,7 +246,7 @@
       <h4>Total: ${{$total}}</h4>
     </div>
     <div class="col-sm-12">
-      <form method="POST" action="/builds" enctype="multipart/form-data" novalidate>
+      <form class="botMarginSm" method="POST" action="/builds" enctype="multipart/form-data" novalidate>
       {!! csrf_field() !!}
         <div class="form-group">
           <label for="buildName">Build Name</label>

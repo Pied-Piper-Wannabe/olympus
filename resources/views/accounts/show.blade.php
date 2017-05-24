@@ -9,8 +9,7 @@
 			@else
 			<img src="/images/uploads/users/{{$user->photo}}" alt="profile photo">
 			@endif
-			<h4 class="bold">{{$user->name}}</h4>	
-			<p>I am DOGE. Very wow. Such dog. I build. Lights! For Doge is king. Doge is god. Such needs. Very dog.</p>
+			<h4 class="bold">{{$user->name}}</h4>
 		</div>
 		<div class="col-md-9 col-sm-12">
 			<!-- Tab Menu -->
