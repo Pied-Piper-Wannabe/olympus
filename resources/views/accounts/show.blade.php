@@ -17,12 +17,6 @@
 				<li class="nav-item">
 					<a class="nav-link active" href="#">Builds</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Reviews</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Comments</a>
-				</li>
 			</ul>
 			<!-- Tab Content -->
 			<div class="row topMarginSm">
