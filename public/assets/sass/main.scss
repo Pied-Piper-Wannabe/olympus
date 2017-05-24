@@ -76,6 +76,24 @@ p, a {
 	background: red;
 	font-weight: 700;
 }
+
+.socialLink{
+	img {
+		margin-right: 10px;
+	}
+	#{$a-tags} {
+		font-family: $lato;
+		color: gray;
+		font-weight: 300;
+		text-decoration: none;
+	}
+
+	#{$a-tags-hover} {
+		color: gray;
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
 // =========END General Text Attributes END=======
 
 // =========Sizing Attributes==========
@@ -123,6 +141,11 @@ img {
 .partThumbnail {
 	height: 50px;
 	width: auto;
+}
+
+.socialIcon {
+	height: 32px;
+	width: 32px;
 }
 // =========END Sizing Attributes END==========
 

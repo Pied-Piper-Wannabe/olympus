@@ -10,7 +10,7 @@
             <ul>
               <li><a href="/tour">Visual Tour</a></li>
               <li><a href="/faq">FAQs</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-md-3 offset-md-1 col-sm-12 offset-sm-0 centerText">

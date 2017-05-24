@@ -15,6 +15,10 @@ Route::get('/tour', function () {
   return view('tour.tour');
 });
 
+Route::get('/contact', function () {
+  return view('contact');
+});
+
 Route::get('/', 'BuildsController@frontPage');
 Route::get('/builds/new', 'BuildsController@setupBuild');
 

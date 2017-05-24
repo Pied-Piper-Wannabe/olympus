@@ -51,6 +51,18 @@ p, a {
   background: red;
   font-weight: 700; }
 
+.socialLink img {
+  margin-right: 10px; }
+.socialLink a, .socialLink a:active, .socialLink a:hover, .socialLink a:visited {
+  font-family: "Lato", sans-serif;
+  color: gray;
+  font-weight: 300;
+  text-decoration: none; }
+.socialLink a:active, .socialLink a:hover {
+  color: gray;
+  text-decoration: none;
+  font-weight: 700; }
+
 img {
   width: 100%;
   height: auto; }
@@ -86,6 +98,10 @@ img {
 .partThumbnail {
   height: 50px;
   width: auto; }
+
+.socialIcon {
+  height: 32px;
+  width: 32px; }
 
 button, .btn {
   border-radius: 0; }
