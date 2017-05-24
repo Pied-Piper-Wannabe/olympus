@@ -15,14 +15,14 @@
   <div class="row">
     <div class="col-sm-12 terminal">
       <p>$ Uploading build...</p>
-      <p>$ Running compatability checks...</p>
+      <p>$ Running compatibility checks...</p>
       <p>$ Compiling checks...</p>
       @if($compatable === 'clean')
-      <p>#<span class="compGreen"> Compatability Check</span>: <span class="greenText">{{$compatable}}</span></p>
+      <p>#<span class="compGreen"> Compatibility Check</span>: <span class="greenText">{{$compatable}}</span></p>
       @elseif($compatable === 'warning')
-      <p>#<span class="compYellow"> Compatability Check</span>: <span class="yellowText">{{$compatable}}</span></p>
-      @elseif($compatable === 'NOT COMPATABLE')
-      <p>#<span class="compRed"> Compatability Check</span>: <span class="redText">{{$compatable}}</span></p>
+      <p>#<span class="compYellow"> Compatibility Check</span>: <span class="yellowText">{{$compatable}}</span></p>
+      @elseif($compatable === 'NOT COMPATIBLE')
+      <p>#<span class="compRed"> Compatibility Check</span>: <span class="redText">{{$compatable}}</span></p>
       @endif
 
       @if($compatable !== 'clean')
