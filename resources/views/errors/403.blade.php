@@ -1,10 +1,10 @@
 @extends('layouts.dark')
 
 @section('content')
-<div class="container-fluid errorPage">
-  <h4>403: ACCESS DENIED</h4>
-  <h4>Reboot and Select proper Boot device</h4>
-  <h4>or Insert Boot Media in selected Boot Device</h4>
+<div class="container-fluid">
+  <h2 class="centerText topMarginSm">403: Forgot password</h2>
+  <img src="/images/403.png" alt="">
+  <h3 class="centerText topMarginSm botMarginSm">Actually, you're just not authorized.</h3>
 </div>
 
 @stop

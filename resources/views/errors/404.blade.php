@@ -1,10 +1,10 @@
 @extends('layouts.dark')
 
 @section('content')
-<div class="container-fluid errorPage">
-	<h4>404: Page not found...</h4>
-	<h4>Reboot and Select proper Boot device</h4>
-	<h4>or Insert Boot Media in selected Boot Device</h4>
+<div class="container-fluid">
+	<h2 class="centerText topMarginSm">404: CPU Cooler Not Found</h2>
+  <img src="/images/404.jpg" alt="">
+  <h3 class="centerText topMarginSm botMarginSm">Eh, we just can't find the page.</h3>
 </div>
 
 @stop
