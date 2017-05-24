@@ -348,19 +348,19 @@ class BuildsController extends Controller
 
 				// Ram Type Check
 				if(strpos(trim($build->motherboardExtract->memory_type), trim($build->ramExtract->type)) === false){
-					$check5 = 'NOT COMPATABLE';
-				array_push($compatabilityErrors, 'RAM is not compatable with Motherboard');
+					$check5 = 'NOT COMPATIBLE';
+				array_push($compatabilityErrors, 'RAM is not compatible with Motherboard');
 				}
 
 				// RAM Total Size Check
 				if(trim($build->ramExtract->size) > trim($build->motherboardExtract->max_memory)){
-					$check6 = 'NOT COMPATABLE';
+					$check6 = 'NOT COMPATIBLE';
 				array_push($compatabilityErrors, 'RAM is over capacity for Motherboard');
 				}
 
 				// RAM Pin Check
 				if(trim($build->ramExtract->memory_slot_type) !== trim($build->motherboardExtract->memory_pin)){
-					$check7 = 'NOT COMPATABLE';
+					$check7 = 'NOT COMPATIBLE';
 				array_push($compatabilityErrors, 'RAM pin types do not match');
 				}
 			}
@@ -396,7 +396,7 @@ class BuildsController extends Controller
 			|| $check5 === false
 			|| $check6 === false
 			|| $check7 === false) {
-			$compatable = 'NOT COMPATABLE';
+			$compatable = 'NOT COMPATIBLE';
 		}
 
 		// =========END PRICE/COMPATABILITY CHECKS==========
